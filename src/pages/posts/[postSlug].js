@@ -4,7 +4,7 @@ import { gql } from '@apollo/client';
 
 import { getApolloClient } from 'lib/apollo-client';
 
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Home.module.scss'
 
 export default function Post({ post, site }) {
   return (
