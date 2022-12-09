@@ -13,22 +13,62 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export default function Navbar() {
   const isDesktop = useBreakpointValue({ base: false, md: true, lg: true });
   return (
-    <Flex justify="center" alignItems="center">
+    <Flex
+      justify="center"
+      alignItems="center"
+      borderBottom="1px"
+      borderBottomColor="brand.grey"
+      h="56px"
+    >
       <Box width={[280, 280, 728, 952, 1128]}>
-        <HStack>
-          <OnlineLogo />
+        <HStack gap="24px">
+          <Flex justify="space-between" alignItems="center" gap="24px">
+            <OnlineLogo />
+            <Box h="24px" w="1px" bg="brand.grey"></Box>
+          </Flex>
           {isDesktop ? (
             <Flex justify="space-between" flex="1">
-              <ButtonGroup variant="link" spacing="8">
-                <Button>Inici</Button>
-                <Button>Serveis</Button>
-                <Button>Nosaltres</Button>
-                <Button>Blog</Button>
+              <ButtonGroup gap="24px">
+                <Box
+                  as="button"
+                  color="brand.black"
+                  _hover={{ color: "brand.red" }}
+                >
+                  Inici
+                </Box>
+                <Box
+                  as="button"
+                  color="brand.black"
+                  _hover={{ color: "brand.red" }}
+                >
+                  Serveis
+                </Box>
+                <Box
+                  as="button"
+                  color="brand.black"
+                  _hover={{ color: "brand.red" }}
+                >
+                  Nosaltres
+                </Box>
+                <Box
+                  as="button"
+                  color="brand.black"
+                  _hover={{ color: "brand.red" }}
+                >
+                  Blog
+                </Box>
               </ButtonGroup>
-              <HStack spacing="3">
-                <Button>
+              <HStack>
+                <Button
+                  bg="brand.red"
+                  color="brand.white"
+                  w="168px"
+                  h="36px"
+                  verticalAlign="text-bottom"
+                  borderRadius="999"
+                  rightIcon={<WavingHand />}
+                >
                   Contacta
-                  <WavingHand />
                 </Button>
               </HStack>
             </Flex>
