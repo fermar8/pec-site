@@ -11,7 +11,7 @@ import { OnlineLogo, WavingHand } from "./icons";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
-  const isDesktop = useBreakpointValue({ base: false, md: true, lg: true });
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
   return (
     <Flex
       justify="center"
@@ -73,11 +73,13 @@ export default function Navbar() {
               </HStack>
             </Flex>
           ) : (
-            <IconButton
-              variant="ghost"
-              icon={<HamburgerIcon fontSize="1.25rem" />}
-              aria-label="Open Menu"
-            />
+            <Flex justify="flex-end" flex="1">
+              <IconButton
+                variant="ghost"
+                icon={<HamburgerIcon h="32px" w="32px" color="brand.red" />}
+                aria-label="Open Menu"
+              />
+            </Flex>
           )}
         </HStack>
       </Box>
