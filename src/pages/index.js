@@ -31,8 +31,9 @@ export default function Home({ page }) {
           mt="80px"
           mb="80px"
           w={[280, 280, 728, 952, 1128]}
-          h="586.5px"
+          h="586px"
           align="stretch"
+          spacing="0px"
         >
           <Box h="82px">
             <Heading as="h1" fontSize="21px" fontWeight="normal">
@@ -42,7 +43,7 @@ export default function Home({ page }) {
               Agencia Marketing Digital y Diseño Web Barcelona
             </Heading>
           </Box>
-          <Box h="280px">
+          <Box h="280px" boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)">
             <Image
               w="1128px"
               h="280px"
@@ -55,19 +56,20 @@ export default function Home({ page }) {
             align="center"
             bg="brand.white"
             borderRadius="0px 0px 9px 9px"
+            boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
           >
             <Box
-              h="152.5px"
+              h="200px"
               w="608px"
               display="flex"
+              p="24px 0px 24px 0px"
               flexDirection="column"
-              justifyContent="space-around"
             >
-              <Heading as="h3" fontSize="18px" fontWeight="light">
+              <Heading as="h3" fontSize="18px" fontWeight="light" pb="24px">
                 Dissenyem i desenvolupem pàgines webs ràpides, visualment
                 atractives i amb una bona presència en línia.
               </Heading>
-              <Heading as="h4" fontSize="18px" fontWeight="bold">
+              <Heading as="h4" fontSize="18px" fontWeight="bold" pb="24px">
                 Comença de zero o contacta'ns per a millorar la teva pàgina web.
               </Heading>
               <Button
@@ -86,11 +88,11 @@ export default function Home({ page }) {
           </Center>
         </VStack>
       </Flex>
-      <Flex justify="center" alignItems="center" bg="brand.white">
+      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
         <VStack
           mb="80px"
           w={[280, 280, 728, 952, 1128]}
-          h="1228.5px"
+          h="1228px"
           align="stretch"
         >
           <Box w="821px" h="136px" display="flex" flexDirection="column" justifyContent="space-around">
@@ -110,7 +112,7 @@ export default function Home({ page }) {
             <Box h="374px">
 
             </Box>
-            <Box h="144.5px">
+            <Box h="144px">
 
             </Box>
           </Box>
