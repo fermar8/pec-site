@@ -1,20 +1,18 @@
 import {
   Button,
-  ButtonGroup,
   Box,
   Center,
   Flex,
   Image,
   Heading,
-  HStack,
   VStack,
-  StackDivider,
-  IconButton,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Layout from "../components/layout";
 import { WavingHand } from "../components/icons";
-import styles from "../styles/Home.module.scss";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+const CardServices = dynamic(() => import("../components/home/cardServices"))
 
 export default function Home({ page }) {
   const { title, description } = page;
@@ -95,8 +93,19 @@ export default function Home({ page }) {
           h="1228px"
           align="stretch"
         >
-          <Box w="821px" h="136px" display="flex" flexDirection="column" justifyContent="space-around">
-            <Heading as="h5" fontSize="32px" fontWeight="semi-bold" color="brand.red">
+          <Box
+            w="821px"
+            h="136px"
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-around"
+          >
+            <Heading
+              as="h5"
+              fontSize="32px"
+              fontWeight="semi-bold"
+              color="brand.red"
+            >
               Serveis web per a petites i mitjanes empreses
             </Heading>
             <Heading as="h6" fontSize="22px" fontWeight="light">
@@ -105,16 +114,39 @@ export default function Home({ page }) {
               la conversió de venda en pàgina.
             </Heading>
           </Box>
-          <Box h="940px" display="flex" justifyContent="space-around">
-            <Box h="422px">
-
+          <Box
+            h="940px"
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-around"
+          >
+            <Box
+              h="422px"
+              w="1128px"
+              padding="48px 0 48px 0"
+              display="flex"
+              justifyContent="space-between"
+            >
+              <CardServices />
+              <CardServices />
+              <CardServices />
             </Box>
-            <Box h="374px">
-
+            <Box
+              h="374px"
+              w="1128px"
+              display="flex"
+              justifyContent="space-between"
+            >
+              <CardServices />
+              <CardServices />
+              <CardServices />
             </Box>
-            <Box h="144px">
-
-            </Box>
+            <Box
+              h="144px"
+              w="1128px"
+              display="flex"
+              justifyContent="space-between"
+            ></Box>
           </Box>
         </VStack>
       </Flex>
