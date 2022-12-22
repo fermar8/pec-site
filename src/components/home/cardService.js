@@ -4,7 +4,7 @@ import {
   } from "@chakra-ui/react";
   import Link from "next/link";
 
-export default function cardServices() {
+export default function cardService() {
   return (
     <Box
       w="360px"
