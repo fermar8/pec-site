@@ -20,7 +20,6 @@ export default function about() {
           h={[689, null, null, null, null, null]}
           display="flex"
           flexDirection="column"
-          align="stretch"
           spacing="0px"
         >
           <Box

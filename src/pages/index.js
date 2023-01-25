@@ -21,7 +21,6 @@ export default function Home({ page }) {
       <Services />
       <About />
       <Blog />
-      <Box h="383" bg="brand.beige"></Box>
     </Layout>
   );
 }
