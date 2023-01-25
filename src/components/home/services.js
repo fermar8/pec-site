@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 import { WavingHand } from "../../components/icons";
-import CardService from "./cardService";
+import CardService from "./services/cardService";
 
 export default function services() {
   const isMobile = useMediaQuery("(max-width: 480px)");

@@ -1,5 +1,5 @@
-import { Box, Button, Flex, VStack, useMediaQuery } from "@chakra-ui/react";
-import CardBlog from "./cardBlog";
+import { Box, Flex, VStack, useMediaQuery } from "@chakra-ui/react";
+import CardBlog from "./blog/cardBlog";
 
 export default function blog() {
   const isMobile = useMediaQuery("(max-width: 480px)");
