@@ -30,7 +30,7 @@ export async function getStaticProps() {
     title: "Home title",
     description: "Home description",
   };
-
+// un
   return {
     props: {
       page,
