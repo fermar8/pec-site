@@ -6,9 +6,11 @@ function MyApp({ Component, pageProps = {} }) {
     colors: {
       brand: {
         red: "#F55951",
-        white: "#FFFFFF",
+        white: "#fafafa",
+        pureWhite: "#ffffff",
         grey: "#D7D7D7",
-        black: "#292929"
+        black: "#292929",
+        beige: "#fff9f4"
       },
     },
   })

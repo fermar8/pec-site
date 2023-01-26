@@ -1,6 +1,12 @@
-import Head from 'next/head'
+import { Box } from "@chakra-ui/react";
+
+import Head from "next/head";
 import Layout from "../components/layout";
-import styles from '../styles/Home.module.scss'
+
+import Intro from "../components/home/intro";
+import Services from "../components/home/services";
+import About from "../components/home/about";
+import Blog from "../components/home/blog";
 
 export default function Home({ page }) {
   const { title, description } = page;
@@ -11,23 +17,23 @@ export default function Home({ page }) {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        HOME
-      </main>
+      <Intro />
+      <Services />
+      <About />
+      <Blog />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
   const page = {
-    title: 'Home title',
-    description: 'Home description'
-  }
-
+    title: "Home title",
+    description: "Home description",
+  };
+// un
   return {
     props: {
       page,
-    }
-  }
+    },
+  };
 }
