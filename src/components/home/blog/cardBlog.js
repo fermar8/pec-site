@@ -2,30 +2,30 @@ import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 import BlogPost from './blogPost';
 
-export default function cardBlog() {
-  const isMobile = useMediaQuery("(max-width: 480px)");
+export default function cardBlog(props) {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <Box
-        h={[418, null, null, null, null, null]}
-        w={[320, null, null, null, null, null]}
+        h={[418, 346, null, null, null, null]}
+        w={[320, 440, null, null, null, null]}
         display="flex"
         flexDirection="column"
       >
         <Box
-          h={[146, null, null, null, null, null]}
-          mb={["16px", null, null, null, null, null]}
+          h={[146, 146, null, null, null, null]}
+          mb={["16px", "16px", null, null, null, null]}
         >
           <Image
-            w={[320, null, null, null, null, null]}
-            h={[146, null, null, null, null, null]}
+            w={[320, 440, null, null, null, null]}
+            h={[146, 146, null, null, null, null]}
             src="img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box
-          w={[280, null, null, null, null, null]}
+          w={[280, 432, null, null, null, null]}
           mb={["16px", null, null, null, null, null]}
           ml={["8px", null, null, null, null, null]}
         >
@@ -34,40 +34,17 @@ export default function cardBlog() {
           </Text>
         </Box>
         <Box
-          w={[280, null, null, null, null, null]}
+          w={[280, 432, null, null, null, null]}
           mb={["24px", null, null, null, null, null]}
           ml={["8px", null, null, null, null, null]}
+          lineHeight="16px"
         >
           <Text fontSize="16px">
             El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
             veces el equilibrio entre salud mental y trabajo no es fácil.
           </Text>
         </Box>
-        <Box
-          w={[320, null, null, null, null, null]}
-          h={["64px", null, null, null, null, null]}
-          borderTop="1px"
-          borderBottom="1px"
-          borderColor="brand.grey"
-          display="flex"
-          alignItems="center"
-        >
-          <Box
-            w="48px"
-            h="48px"
-            display="flex"
-            ml={["16px", null, null, null, null, null]}
-          >
-            <Image
-              w="48px"
-              h="48px"
-              src="img/Placeholder1128x280.jpg"
-              alt="home-image"
-              borderRadius="50%"
-            ></Image>
-          </Box>
-          <BlogPost />
-        </Box>
+        <BlogPost selectedAuthor={props.selectedAuthor} loaded={props.loaded} />
       </Box>
     );
   }
