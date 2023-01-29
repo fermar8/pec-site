@@ -2,7 +2,7 @@ import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 import BlogPost from './blogPost';
 
-export default function cardBlog() {
+export default function cardBlog(props) {
   const isMobile = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
@@ -44,7 +44,7 @@ export default function cardBlog() {
             veces el equilibrio entre salud mental y trabajo no es fácil.
           </Text>
         </Box>
-          <BlogPost />
+        <BlogPost selectedAuthor={props.selectedAuthor} loaded={props.loaded} />
       </Box>
     );
   }
