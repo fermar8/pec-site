@@ -7,7 +7,7 @@ function blogPost(props) {
     opacity = loaded ? 1 : 0;
     return opacity;
   }
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <>

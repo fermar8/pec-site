@@ -11,52 +11,52 @@ import {
 import { WavingHand } from "../../components/icons";
 
 export default function intro() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
     <Flex justify="center" alignItems="center" bg="brand.beige">
       <VStack
-        mt={["20px", "20px", null, null, null, null]}
-        mb={[null, "40px", null, null, null, null]}
-        w={[320, 440, null, null, null, null]}
-        h={[508, 651, null, null, null, null]}
+        mt={["20px", "20px", "40px", null, null, null]}
+        mb={[null, "40px", "80px", null, null, null]}
+        w={[320, 440, 728, null, null, null]}
+        h={[508, 651, 600, null, null, null]}
         align="stretch"
         spacing="0px"
       >
         <Box
-          h={[184, 169, null, null, null, null]}
-          mb={["16px", "16px", null, null, null, null]}
+          h={[184, 169, "96px", null, null, null]}
+          mb={["16px", "16px", "16px", null, null, null]}
         >
           <Heading
             as="h1"
-            fontSize={["18px", "21px", null, null, null, null]}
+            fontSize={["18px", "21px", "21px", null, null, null]}
             fontWeight="normal"
-            mb={["16px", "16px", null, null, null, null]}
+            mb={["16px", "16px", "16px", null, null, null]}
           >
             Pàgines web web web web web
           </Heading>
           <Heading
             as="h2"
-            fontSize={["30px", "36px", null, null, null, null]}
-            lineHeight={["133%", "120%", null, null, null, null]}
+            fontSize={["30px", "36px", "30px", null, null, null]}
+            lineHeight={["133%", "120%", "120%", null, null, null]}
           >
             Agencia Marketing Digital y Diseño Web Barcelona
           </Heading>
         </Box>
         <Box
-          h={[140, 280, null, null, null, null]}
+          h={[140, 280, 280, null, null, null]}
           boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
         >
           <Image
-            w={[320, 440, null, null, null, null]}
-            h={[140, 280, null, null, null, null]}
+            w={[320, 440, 728, null, null, null]}
+            h={[140, 280, 280, null, null, null]}
             src="img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box
-          h={[152, 130, null, null, null, null]}
-          w={[320, 440, null, null, null, null]}
+          h={[152, 130, 208, null, null, null]}
+          w={[320, 440, 728, null, null, null]}
           display="flex"
           flexDirection="column"
           align="center"
@@ -66,16 +66,16 @@ export default function intro() {
         >
           <Heading
             as="h3"
-            fontSize={["16px", "16px", null, null, null, null]}
+            fontSize={["16px", "16px", "18px", null, null, null]}
             fontWeight="light"
-            mt={["24px", "24px", null, null, null, null]}
-            mb={["24px", "24px", null, null, null, null]}
+            mt={["24px", "24px", "24px", null, null, null]}
+            mb={["24px", "24px", "24px", null, null, null]}
           >
             Dissenyem i desenvolupem pàgines webs ràpides, visualment atractives
             i amb una bona presència en línia.
           </Heading>
           {!isMobile ? (
-            <Heading as="h4" fontSize="18px" fontWeight="bold" mb="24px">
+            <Heading as="h4" fontSize={[null, null, "18px", null, null, null]} fontWeight="bold" mb="24px">
               Comença de zero o contacta'ns per a millorar la teva pàgina web.
             </Heading>
           ) : (
@@ -84,10 +84,10 @@ export default function intro() {
           <Button
             bg="brand.red"
             color="brand.white"
-            mb={["32px", "32px", null, null, null, null]}
-            w={[204, 204, null, null, null, null]}
-            h={["32px", "32px", null, null, null, null]}
-            fontSize={["14px", "14px", null, null, null, null]}
+            mb={["32px", "32px", "32px", null, null, null]}
+            w={[204, 204, 204, null, null, null]}
+            h={["32px", "32px", "32px", null, null, null]}
+            fontSize={["14px", "14px", "14px", null, null, null]}
             verticalAlign="text-bottom"
             borderRadius="999px"
             rightIcon={<WavingHand />}

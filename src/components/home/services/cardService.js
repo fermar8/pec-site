@@ -1,9 +1,12 @@
-import { Box, useMediaQuery } from "@chakra-ui/react";
+import { Box, Image, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { WavingHand } from "../../icons";
 
 export default function cardService() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isTablet] = useMediaQuery(
+    "(min-width: 768px) and (max-width: 1280px)"
+  );
   if (isMobile) {
     return (
       <>
@@ -33,7 +36,7 @@ export default function cardService() {
             fontSize={["16px", "16px", null, null, null, null]}
             fontWeight="bold"
           >
-            <h6>Desenvolupament Web</h6>
+            <Heading as="h6">Desenvolupament Web</Heading>
           </Box>
 
           <Box
@@ -50,6 +53,89 @@ export default function cardService() {
           </Box>
         </Box>
       </>
+    );
+  } else if (isTablet) {
+    return (
+      <Box
+        w={[null, null, 360, null, null, null]}
+        h={[null, null, 326, null, null, null]}
+        display="flex"
+        flexDirection="column"
+        border="1px"
+        borderColor="brand.red"
+        borderRadius="9px"
+      >
+        <Box
+          w={[null, null, 360, null, null, null]}
+          h={[null, null, 146, null, null, null]}
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-around"
+          alignItems="center"
+        >
+          <Box
+            w={[null, null, 360, null, null, null]}
+            h={[null, null, 146, null, null, null]}
+            display="flex"
+            justifyContent="center"
+          >
+            <Image
+              w={[null, null, 360, null, null, null]}
+              h={[null, null, 146, null, null, null]}
+              borderRadiusTop="999"
+              src="img/Placeholder1128x280.jpg"
+            />
+          </Box>
+        </Box>
+        <Box
+          h={[null, null, "48px", null, null, null]}
+          bg="brand.grey"
+          borderTop="1px"
+          borderColor="brand.red"
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-around"
+          alignItems="center"
+        >
+          <Box
+            h={[null, null, "16px", null, null, null]}
+            display="flex"
+            justifyContent="center"
+            fontWeight="bold"
+          >
+            <h6>Desenvolupament Web</h6>
+          </Box>
+        </Box>
+        <Box
+          h={[null, null, 148, null, null, null]}
+          bg="brand.grey"
+          borderBottomRadius="9px"
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Box
+            h={[null, null, "72px", null, null, null]}
+            w={[null, null, 280, null, null, null]}
+            textAlign="center"
+          >
+            <Text>
+              Incrementa les teves vendes en línia i coneix als teus clients.
+              Augmenta la teva conversió en pàgina.
+            </Text>
+          </Box>
+          <Box
+            h={[null, null, "44px", null, null, null]}
+            w={[null, null, 176, null, null, null]}
+            fontSize="14px"
+            color="brand.red"
+            textDecoration="underline"
+          >
+            <Link href="/">Veure serveis de SEO</Link>
+          </Box>
+        </Box>
+      </Box>
     );
   } else {
     return (

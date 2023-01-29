@@ -3,7 +3,7 @@ import { TimeIcon } from "@chakra-ui/icons";
 import BlogPost from './blogPost';
 
 export default function cardBlog(props) {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <Box

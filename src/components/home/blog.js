@@ -2,7 +2,7 @@ import { Box, Flex, VStack, useMediaQuery } from "@chakra-ui/react";
 import CardBlog from "./blog/cardBlog";
 import ButtonCarousel from "./blog/buttonCarousel";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function blog() {
   const provBlogAuthors = [
@@ -28,7 +28,7 @@ export default function blog() {
     selectNewAuthor(buttonIndex, provBlogAuthors);
   };
 
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <Flex justify="center" alignItems="center" bg="brand.pureWhite">

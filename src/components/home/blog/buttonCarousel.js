@@ -5,7 +5,7 @@ function buttonCarousel(props) {
     background = buttonIndex === selectedIndex ? "brand.red" : "brand.grey";
     return background;
   };
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <Box
