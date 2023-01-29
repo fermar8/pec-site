@@ -3,10 +3,8 @@ import { TimeIcon } from "@chakra-ui/icons";
 
 function blogPost(props) {
   const opacityChange = (loaded) => {
-    console.log('loaded', loaded)
     let opacity;
     opacity = loaded ? 1 : 0;
-    console.log(opacity);
     return opacity;
   }
   const isMobile = useMediaQuery("(max-width: 768px)");

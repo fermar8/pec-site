@@ -13,7 +13,7 @@ export default function blog() {
   ];
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedAuthor, setSelectedAuthor] = useState(provBlogAuthors[0]);
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
 
   const selectNewAuthor = (buttonIndex, provBlogAuthors) => {
     setLoaded(false);
@@ -69,10 +69,10 @@ export default function blog() {
               display="flex"
               justifyContent="space-between"
             >
-              <ButtonCarousel selectButton={selectButton} index={0} />
-              <ButtonCarousel selectButton={selectButton} index={1} />
-              <ButtonCarousel selectButton={selectButton} index={2} />
-              <ButtonCarousel selectButton={selectButton} index={3} />
+              <ButtonCarousel selectButton={selectButton} index={0} selectedIndex={selectedIndex}/>
+              <ButtonCarousel selectButton={selectButton} index={1} selectedIndex={selectedIndex}/>
+              <ButtonCarousel selectButton={selectButton} index={2} selectedIndex={selectedIndex}/>
+              <ButtonCarousel selectButton={selectButton} index={3} selectedIndex={selectedIndex}/>
             </Box>
           </Box>
         </VStack>
