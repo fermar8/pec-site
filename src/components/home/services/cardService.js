@@ -3,13 +3,13 @@ import Link from "next/link";
 import { WavingHand } from "../../icons";
 
 export default function cardService() {
-  const isMobile = useMediaQuery("(max-width: 480px)");
+  const isMobile = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <>
         <Box
-          w={[320, null, null, null, null, null]}
-          h={[136, null, null, null, null, null]}
+          w={[320, 440, null, null, null, null]}
+          h={[136, 136, null, null, null, null]}
           display="flex"
           flexDirection="column"
           border="1px"
@@ -18,26 +18,27 @@ export default function cardService() {
           alignItems="center"
           bg="brand.grey"
         >
-          <Box mt={["20px", null, null, null, null, null]}>
+          <Box mt={["20px", "24px", null, null, null, null]}>
             <WavingHand
               h={[24, null, null, null, null, null]}
               w={[24, null, null, null, null, null]}
             />
           </Box>
           <Box
-            mt={["8px", null, null, null, null, null]}
-            mb={["8px", null, null, null, null, null]}
-            h={["16px", null, null, null, null, null]}
+            mt={["8px", "8px", null, null, null, null]}
+            mb={["8px", "8px", null, null, null, null]}
+            h={["16px", "16px", null, null, null, null]}
             display="flex"
             justifyContent="center"
+            fontSize={["16px", "16px", null, null, null, null]}
             fontWeight="bold"
           >
             <h6>Desenvolupament Web</h6>
           </Box>
 
           <Box
-            h={["44px", null, null, null, null, null]}
-            fontSize={["14px", null, null, null, null, null]}
+            h={["44px", "44px", null, null, null, null]}
+            fontSize={["14px", "14px", null, null, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="center"

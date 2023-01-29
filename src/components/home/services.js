@@ -16,33 +16,33 @@ export default function services() {
     return (
       <Flex justify="center" alignItems="center" bg="brand.pureWhite">
         <VStack
-          mt={["64px", null, null, null, null, null]}
-          mb={["64px", null, null, null, null, null]}
-          w={[320, null, null, null, null, null]}
-          h={[1456, null, null, null, null, null]}
+          mt={["64px", "64px", null, null, null, null]}
+          mb={["64px", "64px", null, null, null, null]}
+          w={[320, 440, null, null, null, null]}
+          h={[1456, 1376, null, null, null, null]}
           align="stretch"
         >
           <Box
-            w={[320, null, null, null, null, null]}
-            h={[296, null, null, null, null, null]}
+            w={[320, 440, null, null, null, null]}
+            h={[296, 256, null, null, null, null]}
             mb={["24px", null, null, null, null, null]}
             display="flex"
             flexDirection="column"
           >
             <Heading
               as="h5"
-              fontSize={["24px", null, null, null, null, null]}
-              lineHeight={["40px", null, null, null, null, null]}
+              fontSize={["24px", "24px", null, null, null, null]}
+              lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="semi-bold"
               color="brand.red"
-              mb={["16px", null, null, null, null, null]}
+              mb={["16px", "16px", null, null, null, null]}
             >
               Serveis web per a petites i mitjanes empreses
             </Heading>
             <Heading
               as="h6"
-              fontSize={["18px", null, null, null, null, null]}
-              lineHeight={["40px", null, null, null, null, null]}
+              fontSize={["18px", "18px", null, null, null, null]}
+              lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="light"
             >
               Que vulguin començar de zero o millorar la seva pàgina web
@@ -51,7 +51,7 @@ export default function services() {
             </Heading>
           </Box>
           <Box
-            h={[1136, null, null, null, null, null]}
+            h={[1136, 1096, null, null, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
@@ -62,10 +62,11 @@ export default function services() {
             <CardService />
             <CardService />
             <CardService />
-            
+
             <Box
-              h={[224, null, null, null, null, null]}
-              w={[320, null, null, null, null, null]}
+              h={[224, 184, null, null, null, null]}
+              w={[320, 440, null, null, null, null]}
+              mt={["16px", "16px", null, null, null, null]}
               display="flex"
               flexDirection="column"
               justifyContent="space-between"
@@ -73,9 +74,9 @@ export default function services() {
             >
               <Box
                 textAlign="center"
-                mb={["24px", null, null, null, null, null]}
-                fontSize={["16px", null, null, null, null, null]}
-                lineHeight={["40px", null, null, null, null, null]}
+                mb={["24px", "24px", null, null, null, null]}
+                fontSize={["16px", "16px", null, null, null, null]}
+                lineHeight={["40px", "40px", null, null, null, null]}
                 fontWeight="light"
               >
                 <p>
@@ -85,13 +86,16 @@ export default function services() {
                   millorar la conversió de venda en pàgina.
                 </p>
               </Box>
-              <Box h="40px" w="212px">
+              <Box
+                h={["40px", "40px", null, null, null, null]}
+                w={[212, 212, null, null, null, null]}
+              >
                 <Button
                   bg="brand.red"
                   color="brand.white"
-                  w="204px"
-                  h="32px"
-                  fontSize="14px"
+                  w={[204, 204, null, null, null, null]}
+                  h={["32px", "32px", null, null, null, null]}
+                  fontSize={["14px", "14px", null, null, null, null]}
                   verticalAlign="text-bottom"
                   borderRadius="999"
                   rightIcon={<WavingHand />}

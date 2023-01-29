@@ -11,136 +11,148 @@ import {
 import Link from "next/link";
 
 export default function about() {
-  const isMobile = useMediaQuery("(max-width: 480px)");
+  const isMobile = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.beige">
+      <Flex
+        justify="center"
+        alignItems="center"
+        bg="brand.beige"
+        h={[null, 686, null, null, null, null]}
+      >
         <VStack
-          w={[320, null, null, null, null, null]}
-          h={[689, null, null, null, null, null]}
+          w={[320, 440, null, null, null, null]}
+          h={[689, 606, null, null, null, null]}
           display="flex"
           flexDirection="column"
-          spacing="0px"
+          spacing="0"
+          bg="brand.white"
         >
           <Box
-            h={[227, null, null, null, null, null]}
-            w={[320, null, null, null, null, null]}
+            h={[227, 227, null, null, null, null]}
+            w={[320, 440, null, null, null, null]}
           >
             <Image
-              w={[320, null, null, null, null, null]}
-              h={[227, null, null, null, null, null]}
+              w={[320, 440, null, null, null, null]}
+              h={[227, 227, null, null, null, null]}
               src="img/Placeholder1128x280.jpg"
               alt="home-image"
             ></Image>
           </Box>
-          <Box
-            h={[307, null, null, null, null, null]}
-            w={[280, null, null, null, null, null]}
-            display="flex"
-            flexDirection="column"
+          <VStack
+            w={[320, 440, null, null, null, null]}
+            bg="brand.white"
+            spacing="0"
           >
             <Box
-              h={["16px", null, null, null, null, null]}
-              w={[199, null, null, null, null, null]}
-              mt={["40px", null, null, null, null, null]}
-              fontSize={["18px", null, null, null, null, null]}
-            >
-              <h6>Coneix el nostre equip</h6>
-            </Box>
-            <Box
+              h={[307, 300, null, null, null, null]}
+              w={[280, 400, null, null, null, null]}
               display="flex"
               flexDirection="column"
-              justifyContent="center"
-              h={["40px", null, null, null, null, null]}
-              w={[185, null, null, null, null, null]}
-              mb={["24px", null, null, null, null, null]}
-              fontSize={["24px", null, null, null, null, null]}
-              fontWeight="bold"
-            >
-              <h5>Sobre nosaltres</h5>
-            </Box>
-            <Box
-              w={[280, null, null, null, null, null]}
-              h={[227, null, null, null, null, null]}
-              display="flex"
-              flexDirection="column"
-              mb={["55px", null, null, null, null, null]}
             >
               <Box
-                maxH={[132, null, null, null, null, null]}
-                mb={["27px", null, null, null, null, null]}
-                fontSize={["16px", null, null, null, null, null]}
-                fontWeight="light"
-                lineHeight="22px"
+                h={["16px", "16px", null, null, null, null]}
+                w={[199, 199, null, null, null, null]}
+                mt={["40px", "40px", null, null, null, null]}
+                fontSize={["18px", "18px", null, null, null, null]}
               >
-                <p>
-                  Coneix el nostre equip multidisciplinar format per tres
-                  talents europeus en l’àmbit digital: Ferransito_el_dev;
-                  Eudald_the_Controller & designzone.
-                </p>
+                <h6>Coneix el nostre equip</h6>
               </Box>
               <Box
-                h={["68px", null, null, null, null, null]}
-                w={[247, null, null, null, null, null]}
                 display="flex"
-                justifyContent="space-between"
-                flexWrap="wrap"
+                flexDirection="column"
+                justifyContent="center"
+                h={["40px", "40px", null, null, null, null]}
+                w={[185, 185, null, null, null, null]}
+                mb={["24px", "24px", null, null, null, null]}
+                fontSize={["24px", "24px", null, null, null, null]}
+                fontWeight="bold"
               >
-                <Tag
-                  bg="brand.pureWhite"
-                  color="brand.red"
-                  maxW={["140px", null, null, null, null, null]}
-                  h={["30px", null, null, null, null, null]}
-                  fontSize="14px"
-                  fontWeight="bold"
-                  textAlign="center"
-                  border="1px"
-                  borderColor="brand.red"
-                  borderRadius="999"
+                <h5>Sobre nosaltres</h5>
+              </Box>
+              <Box
+                w={[280, 400, null, null, null, null]}
+                h={[227, null, null, null, null, null]}
+                display="flex"
+                flexDirection="column"
+              >
+                <Box
+                  maxH={[132, 148, null, null, null, null]}
+                  mb={["24px", "24px", null, null, null, null]}
+                  fontSize={["16px", "16px", null, null, null, null]}
+                  fontWeight="light"
+                  lineHeight="22px"
                 >
-                  <p>Multidisciplinar</p>
-                </Tag>
-                <Tag
-                  bg="brand.pureWhite"
-                  color="brand.red"
-                  maxW={["140px", null, null, null, null, null]}
-                  h={["30px", null, null, null, null, null]}
-                  fontSize="14px"
-                  fontWeight="bold"
-                  textAlign="center"
-                  border="1px"
-                  borderColor="brand.red"
-                  borderRadius="999"
+                  <p>
+                    Coneix el nostre equip multidisciplinar format per tres
+                    talents europeus en l’àmbit digital: Ferransito_el_dev;
+                    Eudald_the_Controller & designzone.
+                  </p>
+                </Box>
+                <Box
+                  h={["68px", "30px", null, null, null, null]}
+                  w={[247, 372, null, null, null, null]}
+                  display="flex"
+                  justifyContent="space-between"
+                  flexWrap="wrap"
                 >
-                  Àmbit Digital
-                </Tag>
-                <Tag
-                  bg="brand.pureWhite"
+                  <Tag
+                    bg="brand.pureWhite"
+                    color="brand.red"
+                    maxW={["140px", null, null, null, null, null]}
+                    h={["30px", null, null, null, null, null]}
+                    fontSize="14px"
+                    fontWeight="bold"
+                    textAlign="center"
+                    border="1px"
+                    borderColor="brand.red"
+                    borderRadius="999"
+                  >
+                    <p>Multidisciplinar</p>
+                  </Tag>
+                  <Tag
+                    bg="brand.pureWhite"
+                    color="brand.red"
+                    maxW={["140px", null, null, null, null, null]}
+                    h={["30px", null, null, null, null, null]}
+                    fontSize="14px"
+                    fontWeight="bold"
+                    textAlign="center"
+                    border="1px"
+                    borderColor="brand.red"
+                    borderRadius="999"
+                  >
+                    Àmbit Digital
+                  </Tag>
+                  <Tag
+                    bg="brand.pureWhite"
+                    color="brand.red"
+                    maxW={["140px", null, null, null, null, null]}
+                    h={["30px", null, null, null, null, null]}
+                    fontSize="14px"
+                    fontWeight="bold"
+                    textAlign="center"
+                    border="1px"
+                    borderColor="brand.red"
+                    borderRadius="999"
+                  >
+                    Emprenedoria
+                  </Tag>
+                </Box>
+                <Box
+                  h={["20px", "20px", null, null, null, null]}
+                  maxW={["110px", "110px", null, null, null, null]}
+                  mt={["54px", "54px", null, null, null, null]}
+                  fontSize={["16px", null, null, null, null, null]}
+                  fontWeight="medium"
                   color="brand.red"
-                  maxW={["140px", null, null, null, null, null]}
-                  h={["30px", null, null, null, null, null]}
-                  fontSize="14px"
-                  fontWeight="bold"
-                  textAlign="center"
-                  border="1px"
-                  borderColor="brand.red"
-                  borderRadius="999"
+                  textDecoration="underline"
                 >
-                  Emprenedoria
-                </Tag>
+                  <Link href="/">Veure l'equip</Link>
+                </Box>
               </Box>
             </Box>
-            <Box
-              h={["20px", null, null, null, null, null]}
-              maxW={["110px", null, null, null, null, null]}
-              fontSize={["16px", null, null, null, null, null]}
-              fontWeight="medium"
-              color="brand.red"
-              textDecoration="underline"
-            >
-              <Link href="/">Veure l'equip</Link>
-            </Box>
-          </Box>
+          </VStack>
         </VStack>
       </Flex>
     );
