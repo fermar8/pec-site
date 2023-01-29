@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Image,
+  Text,
   Tag,
   VStack,
   useMediaQuery,
@@ -11,7 +12,7 @@ import {
 import Link from "next/link";
 
 export default function about() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
       <Flex
@@ -160,40 +161,56 @@ export default function about() {
     return (
       <Flex justify="center" alignItems="center" bg="brand.beige">
         <VStack
-          w={[280, 280, 728, 952, 1128]}
-          h="640px"
+          w={[null, null, 728, null, null, null]}
+          h={[null, null, 640, null, null, null]}
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
           align="stretch"
           spacing="0px"
         >
-          <Box h="480px" w="1128px" bg="brand.pureWhite" display="flex">
-            <Box h="480px" w="453px">
+          <Box
+            h={[null, null, 480, null, null, null]}
+            w={[null, null, 728, null, null, null]}
+            bg="brand.pureWhite"
+            borderRadius="0px 9px 0px 0px"
+            display="flex"
+          >
+            <Box
+              h={[null, null, 480, null, null, null]}
+              w={[null, null, 346, null, null, null]}
+            >
               <Image
-                w="453px"
-                h="480px"
+                w={[null, null, 346, null, null, null]}
+                h={[null, null, 480, null, null, null]}
                 src="img/Placeholder1128x280.jpg"
                 alt="home-image"
                 borderRadius="9px 0px 0px 9px"
               ></Image>
             </Box>
-            <Box h="480px" w="40px"></Box>
-            <Box h="480px" w="435px">
+            <Box
+              h={[null, null, 480, null, null, null]}
+              w={[null, null, 382, null, null, null]}
+            >
               <Box
-                h="284px"
-                w="435px"
-                mt="56px"
+                h={[null, null, 404, null, null, null]}
+                w={[null, null, 342, null, null, null]}
+                mt={[null, null, "40px", null, null, null]}
+                ml={[null, null, "20px", null, null, null]}
                 display="flex"
                 flexDirection="column"
               >
-                <Box h="16px" w="231px" fontSize="21px">
+                <Box
+                  h={[null, null, "16px", null, null, null]}
+                  w={[null, null, 200, null, null, null]}
+                  fontSize={[null, null, "18px", null, null, null]}
+                >
                   <h6>Coneix el nostre equip</h6>
                 </Box>
                 <Box
-                  h="64px"
-                  w="231px"
-                  fontSize="30px"
+                  h={[null, null, "40px", null, null, null]}
+                  w={[null, null, 186, null, null, null]}
+                  fontSize={[null, null, "24px", null, null, null]}
                   fontWeight="bold"
                   display="flex"
                   flexDirection="column"
@@ -201,25 +218,34 @@ export default function about() {
                 >
                   <h5>Sobre nosaltres</h5>
                 </Box>
-                <Box h="24px"></Box>
                 <Box
-                  w="435px"
-                  h="120px"
+                  w={[null, null, 342, null, null, null]}
+                  h={[null, null, 348, null, null, null]}
+                  mt={[null, null, "24px", null, null, null]}
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-between"
                 >
-                  <p>
+                  <Text fontSize={[null, null, "16px", null, null, null]}>
                     Coneix el nostre equip multidisciplinar format per tres
-                    talents europeus en l’àmbit digital.
-                  </p>
+                    talents europeus en l’àmbit digital: Ferransito_el_dev;
+                    Eudald_the_Controller & designzone
+                  </Text>
+                  <Text
+                    fontSize={[null, null, "16px", null, null, null]}
+                    fontWeight="bold"
+                  >
+                    Comença de zero o contacta'ns per a millorar la teva pàgina
+                    web.
+                  </Text>
                   <Box
-                    h="30px"
-                    w="372px"
+                    h={[null, null, "68px", null, null, null]}
+                    w={[null, null, 247, null, null, null]}
                     display="flex"
+                    flexWrap="wrap"
                     justifyContent="space-between"
                   >
-                    <Button
+                    <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
                       w="129px"
@@ -233,8 +259,8 @@ export default function about() {
                       alignSelf="center"
                     >
                       Multidisciplinar
-                    </Button>
-                    <Button
+                    </Tag>
+                    <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
                       w="110px"
@@ -248,8 +274,8 @@ export default function about() {
                       alignSelf="center"
                     >
                       Àmbit Digital
-                    </Button>
-                    <Button
+                    </Tag>
+                    <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
                       w="117px"
@@ -263,22 +289,21 @@ export default function about() {
                       alignSelf="center"
                     >
                       Emprenedoria
-                    </Button>
+                    </Tag>
+                  </Box>
+                  <Box
+                    h="20px"
+                    w="94px"
+                    fontSize="14px"
+                    fontWeight="medium"
+                    color="brand.red"
+                    textDecoration="underline"
+                  >
+                    <Link href="/">Veure l'equip</Link>
                   </Box>
                 </Box>
               </Box>
-              <Box
-                h="20px"
-                w="94px"
-                fontSize="14px"
-                fontWeight="medium"
-                color="brand.red"
-                textDecoration="underline"
-              >
-                <Link href="/">Veure l'equip</Link>
-              </Box>
             </Box>
-            <Box h="480px" w="200px"></Box>
           </Box>
         </VStack>
       </Flex>
