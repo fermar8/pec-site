@@ -1,4 +1,4 @@
-import { Box, Flex, VStack, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack, useMediaQuery } from "@chakra-ui/react";
 import CardBlog from "./blog/cardBlog";
 import ButtonCarousel from "./blog/buttonCarousel";
 
@@ -12,23 +12,24 @@ export default function blog() {
     "Rarulicius",
   ];
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [selectedAuthor, setSelectedAuthor] = useState(provBlogAuthors[0]);
   const [loaded, setLoaded] = useState(true);
 
   const selectNewAuthor = (buttonIndex, provBlogAuthors) => {
     setLoaded(false);
     setTimeout(() => {
-      setSelectedAuthor(provBlogAuthors[buttonIndex]);
       setSelectedIndex(buttonIndex);
       setLoaded(true);
     }, 500);
   };
 
   const selectButton = (buttonIndex) => {
-    selectNewAuthor(buttonIndex, provBlogAuthors);
+    selectNewAuthor(buttonIndex);
   };
 
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isTablet] = useMediaQuery(
+    "(min-width: 768px) and (max-width: 1280px)"
+  );
   if (isMobile) {
     return (
       <Flex justify="center" alignItems="center" bg="brand.pureWhite">
@@ -48,12 +49,13 @@ export default function blog() {
             color="brand.red"
             fontWeight="semibold"
           >
-            <h6>Blog</h6>
+            <Heading as="h6">Blog</Heading>
           </Box>
           <CardBlog
             loaded={loaded}
             onLoad={() => setLoaded(true)}
-            selectedAuthor={selectedAuthor}
+            selectedAuthor={provBlogAuthors[selectedIndex]}
+            selectedIndex={selectedIndex}
           />
           <Box
             w={[320, 440, null, null, null, null]}
@@ -69,10 +71,103 @@ export default function blog() {
               display="flex"
               justifyContent="space-between"
             >
-              <ButtonCarousel selectButton={selectButton} index={0} selectedIndex={selectedIndex}/>
-              <ButtonCarousel selectButton={selectButton} index={1} selectedIndex={selectedIndex}/>
-              <ButtonCarousel selectButton={selectButton} index={2} selectedIndex={selectedIndex}/>
-              <ButtonCarousel selectButton={selectButton} index={3} selectedIndex={selectedIndex}/>
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={0}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={1}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={2}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={3}
+                selectedIndex={selectedIndex}
+              />
+            </Box>
+          </Box>
+        </VStack>
+      </Flex>
+    );
+  } else if (isTablet) {
+    return (
+      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+        <VStack
+          w={[null, null, 768, null, null, null]}
+          h={[null, null, 626, null, null, null]}
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          spacing="0px"
+        >
+          <Box
+            h={[null, null, "40px", null, null, null]}
+            w={[null, null, 728, null, null, null]}
+            mb={[null, null, "24px", null, null, null]}
+            fontSize={[null, null, "32px", null, null, null]}
+            color="brand.red"
+            fontWeight="semibold"
+          >
+            <Heading as="h6">Blog</Heading>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            w={[null, null, 728, null, null, null]}
+          >
+            <CardBlog
+              loaded={loaded}
+              onLoad={() => setLoaded(true)}
+              selectedAuthor={provBlogAuthors[selectedIndex]}
+            />
+            {provBlogAuthors[selectedIndex + 1] ?
+              <CardBlog
+                loaded={loaded}
+                onLoad={() => setLoaded(true)}
+                selectedAuthor={provBlogAuthors[selectedIndex + 1]}
+              /> : null}
+          </Box>
+          <Box
+            w={[null, null, 728, null, null, null]}
+            h={[null, null, "24px", null, null, null]}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            <Box
+              mt={[null, null, "16px", null, null, null]}
+              w={[null, null, "108px", null, null, null]}
+              h={[null, null, "24px", null, null, null]}
+              display="flex"
+              justifyContent="space-between"
+            >
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={0}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={1}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={2}
+                selectedIndex={selectedIndex}
+              />
+              <ButtonCarousel
+                selectButton={selectButton}
+                index={3}
+                selectedIndex={selectedIndex}
+              />
             </Box>
           </Box>
         </VStack>
@@ -91,7 +186,7 @@ export default function blog() {
         >
           <Box h="64px"></Box>
           <Box h="40px" fontSize="32px" color="brand.red" fontWeight="semibold">
-            <h6>Blog</h6>
+            <Heading as="h6">Blog</Heading>
           </Box>
           <Box h="24px"></Box>
           <Box h="378px" display="flex" justifyContent="space-between">
