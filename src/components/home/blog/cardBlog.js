@@ -61,45 +61,45 @@ export default function cardBlog(props) {
   } else if (isTablet) {
     return (
       <Box
-        h={[null, null, 434, null, null, null]}
-        w={[null, null, 728, null, null, null]}
+        h={[null, null, 434, 418, null, null]}
+        w={[null, null, 728, 952, null, null]}
         display="flex"
         flexDirection="column"
         opacity={opacityChange(props.loaded)}
         transition="1s"
       >
         <Box
-          w={[null, null, 352, null, null, null]}
-          h={[null, null, 146, null, null, null]}
-          mb={[null, null, "32px", null, null, null]}
+          w={[null, null, 352, 464, null, null]}
+          h={[null, null, 146, 146, null, null]}
+          mb={[null, null, "32px", "32px", null, null]}
         >
           <Image
-            w={[null, null, 352, null, null, null]}
-            h={[null, null, 146, null, null, null]}
+            w={[null, null, 352, 464, null, null]}
+            h={[null, null, 146, 146, null, null]}
             src="img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box
-          w={[null, null, 352, null, null, null]}
-          mb={[null, null, "16px", null, null, null]}
-          lineHeight={[null, null, "16px", null, null, null]}
+          w={[null, null, 352, 464, null, null]}
+          mb={[null, null, "16px", "16px", null, null]}
+          lineHeight={[null, null, "16px", "16px", null, null]}
         >
           <Text
             as="b"
-            fontSize={[null, null, "18px", null, null, null]}
+            fontSize={[null, null, "18px", "18px", null, null]}
           >
             Trabajo y salud mental, un delicado equilibrio
           </Text>
         </Box>
         <Box
-          w={[null, null, 352, null, null, null]}
-          h={[null, null, "64px", null, null, null]}
-          mb={[null, null, "24px", null, null, null]}
-          lineHeight={[null, null, "16px", null, null, null]}
+          w={[null, null, 352, 464, null, null]}
+          h={[null, null, "64px", "64px", null, null]}
+          mb={[null, null, "24px", "24px", null, null]}
+          lineHeight={[null, null, "16px", "16px", null, null]}
         >
-          <Text fontSize={[null, null, "18px", null, null, null]}>
+          <Text fontSize={[null, null, "18px", "18px", null, null]}>
             El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
             veces el equilibrio entre salud mental y trabajo no es fácil.
           </Text>

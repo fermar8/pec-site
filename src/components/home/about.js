@@ -161,8 +161,8 @@ export default function about() {
     return (
       <Flex justify="center" alignItems="center" bg="brand.beige">
         <VStack
-          w={[null, null, 728, null, null, null]}
-          h={[null, null, 640, null, null, null]}
+          w={[null, null, 728, 952, null, null]}
+          h={[null, null, 640, 640, null, null]}
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
@@ -170,47 +170,47 @@ export default function about() {
           spacing="0px"
         >
           <Box
-            h={[null, null, 480, null, null, null]}
-            w={[null, null, 728, null, null, null]}
+            h={[null, null, 480, 480, null, null]}
+            w={[null, null, 728, 952, null, null]}
             bg="brand.pureWhite"
             borderRadius="0px 9px 0px 0px"
             display="flex"
           >
             <Box
-              h={[null, null, 480, null, null, null]}
-              w={[null, null, 346, null, null, null]}
+              h={[null, null, 480, 480, null, null]}
+              w={[null, null, 346, 346, null, null]}
             >
               <Image
-                w={[null, null, 346, null, null, null]}
-                h={[null, null, 480, null, null, null]}
+                w={[null, null, 346, 346, null, null]}
+                h={[null, null, 480, 480, null, null]}
                 src="img/Placeholder1128x280.jpg"
                 alt="home-image"
                 borderRadius="9px 0px 0px 9px"
               ></Image>
             </Box>
             <Box
-              h={[null, null, 480, null, null, null]}
-              w={[null, null, 382, null, null, null]}
+              h={[null, null, 480, 488, null, null]}
+              w={[null, null, 382, 606, null, null]}
             >
               <Box
-                h={[null, null, 404, null, null, null]}
-                w={[null, null, 342, null, null, null]}
-                mt={[null, null, "40px", null, null, null]}
-                ml={[null, null, "20px", null, null, null]}
+                h={[null, null, 404, 338, null, null]}
+                w={[null, null, 342, 556, null, null]}
+                mt={[null, null, "40px", "40px", null, null]}
+                ml={[null, null, "20px", "20px", null, null]}
                 display="flex"
                 flexDirection="column"
               >
                 <Box
-                  h={[null, null, "16px", null, null, null]}
-                  w={[null, null, 200, null, null, null]}
-                  fontSize={[null, null, "18px", null, null, null]}
+                  h={[null, null, "16px", "16px", null, null]}
+                  w={[null, null, 200, 200, null, null]}
+                  fontSize={[null, null, "18px", "18px", null, null]}
                 >
                   <h6>Coneix el nostre equip</h6>
                 </Box>
                 <Box
-                  h={[null, null, "40px", null, null, null]}
-                  w={[null, null, 186, null, null, null]}
-                  fontSize={[null, null, "24px", null, null, null]}
+                  h={[null, null, "40px", "40px", null, null]}
+                  w={[null, null, 186, 186, null, null]}
+                  fontSize={[null, null, "24px", "24px", null, null]}
                   fontWeight="bold"
                   display="flex"
                   flexDirection="column"
@@ -219,28 +219,28 @@ export default function about() {
                   <h5>Sobre nosaltres</h5>
                 </Box>
                 <Box
-                  w={[null, null, 342, null, null, null]}
-                  h={[null, null, 348, null, null, null]}
-                  mt={[null, null, "24px", null, null, null]}
+                  w={[null, null, 342, 566, null, null]}
+                  h={[null, null, 348, 282, null, null]}
+                  mt={[null, null, "24px", "24px", null, null]}
                   display="flex"
                   flexDirection="column"
                   justifyContent="space-between"
                 >
-                  <Text fontSize={[null, null, "16px", null, null, null]}>
+                  <Text fontSize={[null, null, "16px", "16px", null, null]}>
                     Coneix el nostre equip multidisciplinar format per tres
                     talents europeus en l’àmbit digital: Ferransito_el_dev;
                     Eudald_the_Controller & designzone
                   </Text>
                   <Text
-                    fontSize={[null, null, "16px", null, null, null]}
+                    fontSize={[null, null, "16px", "16px", null, null]}
                     fontWeight="bold"
                   >
                     Comença de zero o contacta'ns per a millorar la teva pàgina
                     web.
                   </Text>
                   <Box
-                    h={[null, null, "68px", null, null, null]}
-                    w={[null, null, 247, null, null, null]}
+                    h={[null, null, "68px", "68px", null, null]}
+                    w={[null, null, 247, 247, null, null]}
                     display="flex"
                     flexWrap="wrap"
                     justifyContent="space-between"

@@ -36,7 +36,7 @@ export default function cardService() {
             fontSize={["16px", "16px", null, null, null, null]}
             fontWeight="bold"
           >
-            <Heading as="h6">Desenvolupament Web</Heading>
+            <Heading fontSize={["16px", "16px", null, null, null, null]} as="h6">Desenvolupament Web</Heading>
           </Box>
 
           <Box

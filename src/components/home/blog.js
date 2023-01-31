@@ -100,18 +100,18 @@ export default function blog() {
     return (
       <Flex justify="center" alignItems="center" bg="brand.pureWhite">
         <VStack
-          w={[null, null, 768, null, null, null]}
-          h={[null, null, 626, null, null, null]}
+          w={[null, null, 768, 992, null, null]}
+          h={[null, null, 626, 610, null, null]}
           display="flex"
           flexDirection="column"
           justifyContent="center"
           spacing="0px"
         >
           <Box
-            h={[null, null, "40px", null, null, null]}
-            w={[null, null, 728, null, null, null]}
-            mb={[null, null, "24px", null, null, null]}
-            fontSize={[null, null, "32px", null, null, null]}
+            h={[null, null, "40px", "40px", null, null]}
+            w={[null, null, 728, 952, null, null]}
+            mb={[null, null, "24px", "24px", null, null]}
+            fontSize={[null, null, "32px", "32px", null, null]}
             color="brand.red"
             fontWeight="semibold"
           >
@@ -120,7 +120,7 @@ export default function blog() {
           <Box
             display="flex"
             justifyContent="space-between"
-            w={[null, null, 728, null, null, null]}
+            w={[null, null, 728, 952, null, null]}
           >
             <CardBlog
               loaded={loaded}
@@ -135,16 +135,16 @@ export default function blog() {
               /> : null}
           </Box>
           <Box
-            w={[null, null, 728, null, null, null]}
-            h={[null, null, "24px", null, null, null]}
+            w={[null, null, 728, 952, null, null]}
+            h={[null, null, "24px", "24px", null, null]}
             display="flex"
             flexDirection="column"
             alignItems="center"
           >
             <Box
-              mt={[null, null, "16px", null, null, null]}
-              w={[null, null, "108px", null, null, null]}
-              h={[null, null, "24px", null, null, null]}
+              mt={[null, null, "16px", "16px", null, null]}
+              w={[null, null, "108px", "108px", null, null]}
+              h={[null, null, "24px", "24px", null, null]}
               display="flex"
               justifyContent="space-between"
             >
@@ -161,11 +161,6 @@ export default function blog() {
               <ButtonCarousel
                 selectButton={selectButton}
                 index={2}
-                selectedIndex={selectedIndex}
-              />
-              <ButtonCarousel
-                selectButton={selectButton}
-                index={3}
                 selectedIndex={selectedIndex}
               />
             </Box>
