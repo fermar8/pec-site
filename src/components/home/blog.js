@@ -127,12 +127,13 @@ export default function blog() {
               onLoad={() => setLoaded(true)}
               selectedAuthor={provBlogAuthors[selectedIndex]}
             />
-            {provBlogAuthors[selectedIndex + 1] ?
+            {provBlogAuthors[selectedIndex + 1] ? (
               <CardBlog
                 loaded={loaded}
                 onLoad={() => setLoaded(true)}
                 selectedAuthor={provBlogAuthors[selectedIndex + 1]}
-              /> : null}
+              />
+            ) : null}
           </Box>
           <Box
             w={[null, null, 728, 952, null, null]}
@@ -172,19 +173,30 @@ export default function blog() {
     return (
       <Flex justify="center" alignItems="center" bg="brand.pureWhite">
         <VStack
-          w={[320, 280, 728, 952, 1128]}
-          h="570px"
+          w={[null, null, null, null, 1128, null]}
+          h={[null, null, null, null, 570, null]}
           display="flex"
           flexDirection="column"
           align="stretch"
           spacing="0px"
         >
-          <Box h="64px"></Box>
-          <Box h="40px" fontSize="32px" color="brand.red" fontWeight="semibold">
-            <Heading as="h6">Blog</Heading>
+          <Box h={[null, null, null, null, "64px", null]}></Box>
+          <Box h={[null, null, null, null, "40px", null]}>
+            <Heading
+              as="h6"
+              fontSize={[null, null, null, null, "32px", null]}
+              color="brand.red"
+              fontWeight="semibold"
+            >
+              Blog
+            </Heading>
           </Box>
-          <Box h="24px"></Box>
-          <Box h="378px" display="flex" justifyContent="space-between">
+          <Box h={[null, null, null, null, "24px", null]}></Box>
+          <Box
+            h={[null, null, null, null, "378px", null]}
+            display="flex"
+            justifyContent="space-between"
+          >
             <CardBlog />
             <CardBlog />
             <CardBlog />
