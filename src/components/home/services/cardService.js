@@ -36,7 +36,12 @@ export default function cardService() {
             fontSize={["16px", "16px", null, null, null, null]}
             fontWeight="bold"
           >
-            <Heading as="h6">Desenvolupament Web</Heading>
+            <Heading
+              fontSize={["16px", "16px", null, null, null, null]}
+              as="h6"
+            >
+              Desenvolupament Web
+            </Heading>
           </Box>
 
           <Box
@@ -57,8 +62,8 @@ export default function cardService() {
   } else if (isTablet) {
     return (
       <Box
-        w={[null, null, 360, null, null, null]}
-        h={[null, null, 326, null, null, null]}
+        w={[null, null, 360, 472, null, null]}
+        h={[null, null, 326, 326, null, null]}
         display="flex"
         flexDirection="column"
         border="1px"
@@ -66,29 +71,29 @@ export default function cardService() {
         borderRadius="9px"
       >
         <Box
-          w={[null, null, 360, null, null, null]}
-          h={[null, null, 146, null, null, null]}
+          w={[null, null, 360, 472, null, null]}
+          h={[null, null, 146, 146, null, null]}
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
         >
           <Box
-            w={[null, null, 360, null, null, null]}
-            h={[null, null, 146, null, null, null]}
+            w={[null, null, 360, 472, null, null]}
+            h={[null, null, 146, 146, null, null]}
             display="flex"
             justifyContent="center"
           >
             <Image
-              w={[null, null, 360, null, null, null]}
-              h={[null, null, 146, null, null, null]}
+              w={[null, null, 360, 472, null, null]}
+              h={[null, null, 146, 146, null, null]}
               borderRadiusTop="999"
               src="img/Placeholder1128x280.jpg"
             />
           </Box>
         </Box>
         <Box
-          h={[null, null, "48px", null, null, null]}
+          h={[null, null, "48px", "48px", null, null]}
           bg="brand.grey"
           borderTop="1px"
           borderColor="brand.red"
@@ -98,7 +103,7 @@ export default function cardService() {
           alignItems="center"
         >
           <Box
-            h={[null, null, "16px", null, null, null]}
+            h={[null, null, "16px", "16px", null, null]}
             display="flex"
             justifyContent="center"
             fontWeight="bold"
@@ -107,7 +112,7 @@ export default function cardService() {
           </Box>
         </Box>
         <Box
-          h={[null, null, 148, null, null, null]}
+          h={[null, null, 148, 148, null, null]}
           bg="brand.grey"
           borderBottomRadius="9px"
           display="flex"
@@ -116,9 +121,10 @@ export default function cardService() {
           alignItems="center"
         >
           <Box
-            h={[null, null, "72px", null, null, null]}
-            w={[null, null, 280, null, null, null]}
+            h={[null, null, "72px", "48px", null, null]}
+            w={[null, null, 280, 392, null, null]}
             textAlign="center"
+            lineHeight={[null, null, "16px", "16px", null, null]}
           >
             <Text>
               Incrementa les teves vendes en línia i coneix als teus clients.
@@ -126,9 +132,9 @@ export default function cardService() {
             </Text>
           </Box>
           <Box
-            h={[null, null, "44px", null, null, null]}
-            w={[null, null, 176, null, null, null]}
-            fontSize="14px"
+            h={[null, null, "44px", "44px", null, null]}
+            w={[null, null, 176, 176, null, null]}
+            fontSize={[null, null, "14px", "14px", null, null]}
             color="brand.red"
             textDecoration="underline"
           >
@@ -140,8 +146,8 @@ export default function cardService() {
   } else {
     return (
       <Box
-        w="360px"
-        h="326px"
+        w={[null, null, null, null, 360, null]}
+        h={[null, null, null, null, 326, null]}
         display="flex"
         flexDirection="column"
         border="1px"
@@ -149,19 +155,28 @@ export default function cardService() {
         borderRadius="9px"
       >
         <Box
-          w="360px"
-          h="146px"
+          w={[null, null, null, null, 360, null]}
+          h={[null, null, null, null, 146, null]}
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box w="180px" h="114px" display="flex" justifyContent="center">
-            <img w="180px" h="114px" src="img/Placeholder1128x280.jpg" />
+          <Box
+            w={[null, null, null, null, 180, null]}
+            h={[null, null, null, null, 114, null]}
+            display="flex"
+            justifyContent="center"
+          >
+            <Image
+              w={[null, null, null, null, 180, null]}
+              h={[null, null, null, null, 114, null]}
+              src="img/Placeholder1128x280.jpg"
+            />
           </Box>
         </Box>
         <Box
-          h="48px"
+          h={[null, null, null, null, "48px", null]}
           bg="brand.grey"
           borderTop="1px"
           borderColor="brand.red"
@@ -171,7 +186,7 @@ export default function cardService() {
           alignItems="center"
         >
           <Box
-            h="16px"
+            h={[null, null, null, null, "16px", null]}
             display="flex"
             justifyContent="center"
             fontWeight="bold"
@@ -180,7 +195,7 @@ export default function cardService() {
           </Box>
         </Box>
         <Box
-          h="148px"
+          h={[null, null, null, null, 144, null]}
           bg="brand.grey"
           borderBottomRadius="9px"
           display="flex"
@@ -188,16 +203,22 @@ export default function cardService() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box h="72px" w="280px" textAlign="center">
-            <p>
+          <Box
+            h={[null, null, null, null, "72px", null]}
+            w={[null, null, null, null, 280, null]}
+            textAlign="center"
+          >
+            <Text>
               Incrementa les teves vendes en línia i coneix als teus clients.
               Augmenta la teva conversió en pàgina.
-            </p>
+            </Text>
           </Box>
           <Box
-            h="44px"
-            w="176px"
-            fontWeight="14px"
+            h={[null, null, null, null, "44px", null]}
+            w={[null, null, null, null, 176, null]}
+            fontSize={[null, null, null, null, "14px", null]}
+            display="flex"
+            justifyContent="center"
             color="brand.red"
             textDecoration="underline"
           >
