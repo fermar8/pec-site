@@ -10,6 +10,8 @@ import {
 import { OnlineLogo, WavingHand } from "./icons";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
+import Link from "next/link";
+
 export default function Navbar() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   return (
@@ -20,7 +22,7 @@ export default function Navbar() {
       borderBottomColor="brand.grey"
       h="56px"
     >
-      <Box width={[280, 280, 728, 952, 1128]}>
+      <Box width={[320, 440, 728, 952, 1128, null]}>
         <HStack gap="24px">
           <Flex justify="space-between" alignItems="center" gap="24px">
             <OnlineLogo />
@@ -33,29 +35,33 @@ export default function Navbar() {
                   as="button"
                   color="brand.black"
                   _hover={{ color: "brand.red" }}
+                  fontSize={[null, null, "16px", "16px", "16px", null]}
                 >
-                  Inici
+                  <Link href="/">Inici</Link>
                 </Box>
                 <Box
                   as="button"
                   color="brand.black"
                   _hover={{ color: "brand.red" }}
+                  fontSize={[null, null, "16px", "16px", "16px", null]}
                 >
-                  Serveis
+                  <Link href="/">Serveis</Link>
                 </Box>
                 <Box
                   as="button"
                   color="brand.black"
                   _hover={{ color: "brand.red" }}
+                  fontSize={[null, null, "16px", "16px", "16px", null]}
                 >
-                  Nosaltres
+                  <Link href="/">Nosaltres</Link>
                 </Box>
                 <Box
                   as="button"
                   color="brand.black"
                   _hover={{ color: "brand.red" }}
+                  fontSize={[null, null, "16px", "16px", "16px", null]}
                 >
-                  Blog
+                  <Link href="/">Blog</Link>
                 </Box>
               </ButtonGroup>
               <HStack>
