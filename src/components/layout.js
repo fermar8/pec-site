@@ -4,8 +4,8 @@ import { Box } from "@chakra-ui/react";
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
-      <Box>{children}</Box>
+      <Navbar/>
+      <Box paddingTop="56px">{children}</Box>
     </>
   );
 }
