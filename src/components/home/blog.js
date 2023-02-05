@@ -14,7 +14,7 @@ export default function blog() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loaded, setLoaded] = useState(true);
 
-  const selectNewAuthor = (buttonIndex, provBlogAuthors) => {
+  const selectNewAuthor = (buttonIndex) => {
     setLoaded(false);
     setTimeout(() => {
       setSelectedIndex(buttonIndex);

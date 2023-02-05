@@ -2,14 +2,22 @@ import {
   Button,
   ButtonGroup,
   Box,
+  Collapse,
   Flex,
   Stack,
+  Text,
   HStack,
   IconButton,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { OnlineLogo, WavingHand } from "./icons";
+import {
+  OnlineLogo,
+  WavingHand,
+  EmailIcon,
+  PhoneIcon,
+  LocationIcon,
+} from "./icons";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
@@ -23,30 +31,43 @@ export default function Navbar() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
 
   const controlNavbar = () => {
-    if (typeof window !== 'undefined') { 
+    if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        setShow(false); 
-      } else { 
-        setShow(true);  
+        setShow(false);
+      } else {
+        setShow(true);
       }
 
-      setLastScrollY(window.scrollY); 
+      setLastScrollY(window.scrollY);
     }
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
 
       return () => {
-        window.removeEventListener('scroll', controlNavbar);
+        window.removeEventListener("scroll", controlNavbar);
       };
     }
   }, [lastScrollY]);
 
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "visible";
+  }, [isOpen]);
+
   return (
     <>
-      <Flex position="fixed" top={show ? "0px" : "-56px"} w="100%" flexDirection="column" bg="brand.white" zIndex={300}>
+      <Flex
+        position="fixed"
+        top={show ? "0px" : "-56px"}
+        w="100%"
+        flexDirection="column"
+        bg="brand.white"
+        zIndex={300}
+        transition="0.3s"
+      >
         <Flex
           as="header"
           justify="center"
@@ -131,16 +152,66 @@ export default function Navbar() {
           </Box>
         </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
-              <Link href="/">Inici</Link>
-              <Link href="/">Els nostres serveis</Link>
-              <Link href="/">Sobre nosaltres</Link>
-              <Link href="/">El nostre blog</Link>
+        <Collapse in={isOpen}>
+          <Flex
+            h="calc(100vh - 56px)"
+            flexDirection="column"
+            justifyContent="space-around"
+            alignItems="center"
+          >
+            <Stack
+              as={"nav"}
+              justifyContent="space-between"
+              alignItems="center"
+              width="100%"
+              fontSize="20px"
+              fontWeight="bold"
+              h="calc(38vh - 56px)"
+            >
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-between"
+                h={[248, 248, null, null, null, null]}
+                w={[320, 440, null, null, null, null]}
+              >
+                <Link href="/">Inici</Link>
+                <Link href="/">Els nostres serveis</Link>
+                <Link href="/">Sobre nosaltres</Link>
+                <Link href="/">El nostre blog</Link>
+              </Box>
             </Stack>
-          </Box>
-        ) : null}
+            <Stack
+              as={"nav"}
+              justifyContent="space-between"
+              alignItems="center"
+              fontSize="16px"
+              h="calc(28vh - 56px)"
+              w="100%"
+            >
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-between"
+                h={[128, 128, null, null, null, null]}
+                w={[320, 440, null, null, null, null]}
+              >
+                <Box display="flex" alignItems="center" w="100%">
+                  <EmailIcon />
+                  <Text ml="16px">mail@mailto.com</Text>
+                </Box>
+                <Box display="flex" alignItems="center" w="100%">
+                  <PhoneIcon />
+                  <Text ml="16px">933237184</Text>
+                </Box>
+                <Box display="flex" alignItems="center" w="100%">
+                  <LocationIcon />
+                  <Text ml="16px">C/ Eudald el dèbil, 2n 2a, Gelida</Text>
+                </Box>
+              </Box>
+            </Stack>
+          </Flex>
+        </Collapse>
       </Flex>
     </>
   );
