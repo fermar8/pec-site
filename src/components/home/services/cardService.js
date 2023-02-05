@@ -2,7 +2,8 @@ import { Box, Image, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { WavingHand } from "../../icons";
 
-export default function cardService() {
+export default function cardService(props) {
+  const { title, text } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1280px)"
@@ -40,7 +41,7 @@ export default function cardService() {
               fontSize={["16px", "16px", null, null, null, null]}
               as="h6"
             >
-              Desenvolupament Web
+              {title}
             </Heading>
           </Box>
 
@@ -108,7 +109,12 @@ export default function cardService() {
             justifyContent="center"
             fontWeight="bold"
           >
-            <h6>Desenvolupament Web</h6>
+            <Heading
+              as="h6"
+              fontSize={[null, null, "16px", "16px", null, null]}
+            >
+              {title}
+            </Heading>
           </Box>
         </Box>
         <Box
@@ -126,10 +132,7 @@ export default function cardService() {
             textAlign="center"
             lineHeight={[null, null, "16px", "16px", null, null]}
           >
-            <Text>
-              Incrementa les teves vendes en línia i coneix als teus clients.
-              Augmenta la teva conversió en pàgina.
-            </Text>
+            <Text>{text}</Text>
           </Box>
           <Box
             h={[null, null, "44px", "44px", null, null]}
@@ -137,6 +140,8 @@ export default function cardService() {
             fontSize={[null, null, "14px", "14px", null, null]}
             color="brand.red"
             textDecoration="underline"
+            display="flex"
+            justifyContent="center"
           >
             <Link href="/">Veure serveis de SEO</Link>
           </Box>
@@ -191,7 +196,12 @@ export default function cardService() {
             justifyContent="center"
             fontWeight="bold"
           >
-            <h6>Desenvolupament Web</h6>
+            <Heading
+              as="h6"
+              fontSize={[ null, null, null, null, "16px", null]}
+            >
+              {title}
+            </Heading>
           </Box>
         </Box>
         <Box
@@ -208,10 +218,7 @@ export default function cardService() {
             w={[null, null, null, null, 280, null]}
             textAlign="center"
           >
-            <Text>
-              Incrementa les teves vendes en línia i coneix als teus clients.
-              Augmenta la teva conversió en pàgina.
-            </Text>
+            <Text>{text}</Text>
           </Box>
           <Box
             h={[null, null, null, null, "44px", null]}

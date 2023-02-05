@@ -11,7 +11,24 @@ import {
 import { WavingHand } from "../../components/icons";
 import CardService from "./services/cardService";
 
-export default function services() {
+export default function services(props) {
+  const {
+    title,
+    mainText,
+    buttonText,
+    webTitle,
+    webText,
+    designTitle,
+    designText,
+    uxTitle,
+    uxText,
+    seoTitle,
+    seoText,
+    semTitle,
+    semText,
+    socialTitle,
+    socialText,
+  } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1280px)"
@@ -41,7 +58,7 @@ export default function services() {
               color="brand.red"
               mb={["16px", "16px", null, null, null, null]}
             >
-              Serveis web per a petites i mitjanes empreses
+              {title}
             </Heading>
             <Heading
               as="h6"
@@ -49,9 +66,7 @@ export default function services() {
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="light"
             >
-              Que vulguin començar de zero o millorar la seva pàgina web
-              existent, captar nous clients, conèixer als existents i millorar
-              la conversió de venda en pàgina.
+              {mainText}
             </Heading>
           </Box>
           <Box
@@ -60,12 +75,12 @@ export default function services() {
             flexDirection="column"
             justifyContent="space-around"
           >
-            <CardService />
-            <CardService />
-            <CardService />
-            <CardService />
-            <CardService />
-            <CardService />
+            <CardService title={webTitle} text={webText} />
+            <CardService title={designTitle} text={designText} />
+            <CardService title={uxTitle} text={uxText} />
+            <CardService title={seoTitle} text={seoText} />
+            <CardService title={semTitle} text={semText} />
+            <CardService title={socialTitle} text={socialText} />
 
             <Box
               h={[224, 184, null, null, null, null]}
@@ -83,11 +98,7 @@ export default function services() {
                 lineHeight={["40px", "40px", null, null, null, null]}
                 fontWeight="light"
               >
-                <Text>
-                  Que vulguin començar de zero o millorar la seva pàgina web
-                  existent, captar nous clients, conèixer als existents i
-                  millorar la conversió de venda en pàgina.
-                </Text>
+                <Text>{mainText}</Text>
               </Box>
               <Box
                 h={["40px", "40px", null, null, null, null]}
@@ -103,7 +114,7 @@ export default function services() {
                   borderRadius="999"
                   rightIcon={<WavingHand />}
                 >
-                  Contacta amb nosaltres
+                  {buttonText}
                 </Button>
               </Box>
             </Box>
@@ -134,7 +145,7 @@ export default function services() {
               fontWeight="semi-bold"
               color="brand.red"
             >
-              Serveis web per a petites i mitjanes empreses
+              {title}
             </Heading>
             <Heading
               as="h6"
@@ -142,9 +153,7 @@ export default function services() {
               lineHeight={[null, null, "40px", "40px", null, null]}
               fontWeight="light"
             >
-              Que vulguin començar de zero o millorar la seva pàgina web
-              existent, captar nous clients, conèixer als existents i millorar
-              la conversió de venda en pàgina.
+              {mainText}
             </Heading>
           </Box>
           <Box
@@ -162,8 +171,8 @@ export default function services() {
               flexWrap="wrap"
               justifyContent="space-between"
             >
-              <CardService />
-              <CardService />
+              <CardService title={webTitle} text={webText} />
+              <CardService title={designTitle} text={designText} />
             </Box>
             <Box
               h={[null, null, 422, 422, null, null]}
@@ -172,8 +181,8 @@ export default function services() {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService />
-              <CardService />
+              <CardService title={uxTitle} text={uxText} />
+              <CardService title={seoTitle} text={seoText} />
             </Box>
             <Box
               h={[null, null, 422, 422, null, null]}
@@ -182,8 +191,8 @@ export default function services() {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService />
-              <CardService />
+              <CardService title={semTitle} text={semText} />
+              <CardService title={socialTitle} text={socialText} />
             </Box>
             <Box
               minHeight={[null, null, 144, 144, null, null]}
@@ -202,11 +211,7 @@ export default function services() {
                 lineHeight={[null, null, "40px", "40px", null, null]}
                 fontWeight="light"
               >
-                <Text>
-                  Que vulguin començar de zero o millorar la seva pàgina web
-                  existent, captar nous clients, conèixer als existents i
-                  millorar la conversió de venda en pàgina.
-                </Text>
+                <Text>{mainText}</Text>
               </Box>
               <Box
                 h={[null, null, "32px", "32px", null, null]}
@@ -222,7 +227,7 @@ export default function services() {
                   borderRadius="999"
                   rightIcon={<WavingHand />}
                 >
-                  Contacta amb nosaltres
+                  {buttonText}
                 </Button>
               </Box>
             </Box>
@@ -241,7 +246,7 @@ export default function services() {
           align="stretch"
         >
           <Box
-            w={[null, null, null, null, 821, null]}
+            w={[null, null, null, null, 1000, null]}
             h={[null, null, null, null, 136, null]}
             display="flex"
             flexDirection="column"
@@ -253,12 +258,14 @@ export default function services() {
               fontWeight="semi-bold"
               color="brand.red"
             >
-              Serveis web per a petites i mitjanes empreses
+              {title}
             </Heading>
-            <Heading as="h6" fontSize={[null, null, null, null, "22px", null]} fontWeight="light">
-              Que vulguin començar de zero o millorar la seva pàgina web
-              existent, captar nous clients, conèixer als existents i millorar
-              la conversió de venda en pàgina.
+            <Heading
+              as="h6"
+              fontSize={[null, null, null, null, "22px", null]}
+              fontWeight="light"
+            >
+              {mainText}
             </Heading>
           </Box>
           <Box
@@ -275,9 +282,9 @@ export default function services() {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService />
-              <CardService />
-              <CardService />
+              <CardService title={webTitle} text={webText} />
+              <CardService title={designTitle} text={designText} />
+              <CardService title={uxTitle} text={uxText} />
             </Box>
             <Box
               h={[null, null, null, null, 326, null]}
@@ -286,9 +293,9 @@ export default function services() {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService />
-              <CardService />
-              <CardService />
+              <CardService title={seoTitle} text={seoText} />
+              <CardService title={semTitle} text={semText} />
+              <CardService title={socialTitle} text={socialText} />
             </Box>
             <Box
               minHeight={[null, null, null, null, 144, null]}
@@ -307,15 +314,17 @@ export default function services() {
                 fontWeight="light"
               >
                 <Text>
-                  Que vulguin començar de zero o millorar la seva pàgina web
-                  existent, captar nous clients, conèixer als existents i
-                  millorar la conversió de venda en pàgina.
+                  {mainText}
                 </Text>
               </Box>
-              <Box h={[null, null, null, null, "40px", null]} w={[null, null, null, null, "212px", null]}>
+              <Box
+                h={[null, null, null, null, "40px", null]}
+                w={[null, null, null, null, "212px", null]}
+              >
                 <Button
                   bg="brand.red"
                   color="brand.white"
+                  mt={[null, null, null, null, "24px", null]}
                   w={[null, null, null, null, 204, null]}
                   h={[null, null, null, null, "32px", null]}
                   fontSize={[null, null, null, null, "14px", null]}
@@ -323,7 +332,7 @@ export default function services() {
                   borderRadius="999"
                   rightIcon={<WavingHand />}
                 >
-                  Contacta amb nosaltres
+                  {buttonText}
                 </Button>
               </Box>
             </Box>

@@ -10,7 +10,8 @@ import {
 
 import { WavingHand } from "../../components/icons";
 
-export default function intro() {
+export default function intro(props) {
+  const { title, subtitle, text, cta, buttonText } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
     <Flex justify="center" alignItems="center" bg="brand.beige">
@@ -18,7 +19,7 @@ export default function intro() {
         mt={["20px", "20px", "40px", "80px", "80px", null]}
         mb={[null, "40px", "80px", "80px", "80px", null]}
         w={[320, 440, 728, 952, 1128, null]}
-        h={[508, 651, 600, 624, 582, null]}
+        h={[584, 651, 600, 624, 582, null]}
         align="stretch"
         spacing="0px"
       >
@@ -32,14 +33,14 @@ export default function intro() {
             fontWeight="normal"
             mb={["16px", "16px", "16px", "16px", "16px", null]}
           >
-            Pàgines web web web web web
+            {title}
           </Heading>
           <Heading
             as="h2"
             fontSize={["30px", "36px", "30px", "38px", "38px", null]}
             lineHeight={["133%", "120%", "120%", "120%", null, null]}
           >
-            Agencia Marketing Digital y Diseño Web Barcelona
+            {subtitle}
           </Heading>
         </Box>
         <Box
@@ -55,7 +56,7 @@ export default function intro() {
           ></Image>
         </Box>
         <Box
-          h={[152, 130, 208, 208, 198, null]}
+          h={[208, 186, 208, 208, 204, null]}
           w={[320, 440, 728, 952, 1128, null]}
           display="flex"
           flexDirection="column"
@@ -73,8 +74,7 @@ export default function intro() {
               mt={["24px", "24px", "24px", "24px", "24px", null]}
               mb={["24px", "24px", "24px", "24px", "24px", null]}
             >
-              Dissenyem i desenvolupem pàgines webs ràpides, visualment
-              atractives i amb una bona presència en línia.
+              {text}
             </Heading>
             {!isMobile ? (
               <Heading
@@ -83,7 +83,7 @@ export default function intro() {
                 fontWeight="bold"
                 mb="24px"
               >
-                Comença de zero o contacta'ns per a millorar la teva pàgina web.
+                {cta}
               </Heading>
             ) : (
               <></>
@@ -100,7 +100,7 @@ export default function intro() {
               rightIcon={<WavingHand />}
               alignSelf="center"
             >
-              Contacta amb nosaltres
+              {buttonText}
             </Button>
           </Box>
         </Box>
