@@ -40,7 +40,7 @@ export default function services(props) {
           mt={["64px", "64px", null, null, null, null]}
           mb={["64px", "64px", null, null, null, null]}
           w={[320, 440, null, null, null, null]}
-          h={[1456, 1376, null, null, null, null]}
+          h={[1176, 1176, null, null, null, null]}
           align="stretch"
         >
           <Box
@@ -70,7 +70,7 @@ export default function services(props) {
             </Heading>
           </Box>
           <Box
-            h={[1136, 1096, null, null, null, null]}
+            h={[896, 896, null, null, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
@@ -81,43 +81,6 @@ export default function services(props) {
             <CardService title={seoTitle} text={seoText} />
             <CardService title={semTitle} text={semText} />
             <CardService title={socialTitle} text={socialText} />
-
-            <Box
-              h={[224, 184, null, null, null, null]}
-              w={[320, 440, null, null, null, null]}
-              mt={["16px", "16px", null, null, null, null]}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Box
-                textAlign="center"
-                mb={["24px", "24px", null, null, null, null]}
-                fontSize={["16px", "16px", null, null, null, null]}
-                lineHeight={["40px", "40px", null, null, null, null]}
-                fontWeight="light"
-              >
-                <Text>{mainText}</Text>
-              </Box>
-              <Box
-                h={["40px", "40px", null, null, null, null]}
-                w={[212, 212, null, null, null, null]}
-              >
-                <Button
-                  bg="brand.red"
-                  color="brand.white"
-                  w={[204, 204, null, null, null, null]}
-                  h={["32px", "32px", null, null, null, null]}
-                  fontSize={["14px", "14px", null, null, null, null]}
-                  verticalAlign="text-bottom"
-                  borderRadius="999"
-                  rightIcon={<WavingHand />}
-                >
-                  {buttonText}
-                </Button>
-              </Box>
-            </Box>
           </Box>
         </VStack>
       </Flex>
@@ -129,7 +92,7 @@ export default function services(props) {
           mt={[null, null, "64px", "64px", null, null]}
           mb={[null, null, "64px", "64px", null, null]}
           w={[null, null, 728, 952, null, null]}
-          h={[null, null, 1474, 1474, null, null]}
+          h={[null, null, 1330, 1330, null, null]}
           align="stretch"
         >
           <Box
@@ -157,7 +120,7 @@ export default function services(props) {
             </Heading>
           </Box>
           <Box
-            h={[null, null, 1314, 1314, null, null]}
+            h={[null, null, 1170, 1170, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
@@ -194,43 +157,6 @@ export default function services(props) {
               <CardService title={semTitle} text={semText} />
               <CardService title={socialTitle} text={socialText} />
             </Box>
-            <Box
-              minHeight={[null, null, 144, 144, null, null]}
-              h={[null, null, 144, 144, null, null]}
-              w={[null, null, 728, 952, null, null]}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Box
-                h={[null, null, "80px", "80px", null, null]}
-                w={[null, null, 728, 952, null, null]}
-                textAlign="center"
-                fontSize={[null, null, "16px", "16px", null, null]}
-                lineHeight={[null, null, "40px", "40px", null, null]}
-                fontWeight="light"
-              >
-                <Text>{mainText}</Text>
-              </Box>
-              <Box
-                h={[null, null, "32px", "32px", null, null]}
-                w={[null, null, 204, 204, null, null]}
-              >
-                <Button
-                  bg="brand.red"
-                  color="brand.white"
-                  w={[null, null, 204, 204, null, null]}
-                  h={[null, null, "32px", "32px", null, null]}
-                  fontSize={[null, null, "14px", "14px", null, null]}
-                  verticalAlign="text-bottom"
-                  borderRadius="999"
-                  rightIcon={<WavingHand />}
-                >
-                  {buttonText}
-                </Button>
-              </Box>
-            </Box>
           </Box>
         </VStack>
       </Flex>
@@ -242,7 +168,7 @@ export default function services(props) {
           mt={[null, null, null, null, "64px", null]}
           mb={[null, null, null, null, "64px", null]}
           w={[null, null, null, null, 1128, null]}
-          h={[null, null, null, null, 1100, null]}
+          h={[null, null, null, null, 956, null]}
           align="stretch"
         >
           <Box
@@ -269,10 +195,10 @@ export default function services(props) {
             </Heading>
           </Box>
           <Box
-            h={[null, null, null, null, 940, null]}
+            h={[null, null, null, null, 844, null]}
             display="flex"
             flexDirection="column"
-            justifyContent="space-around"
+            justifyContent="space-between"
           >
             <Box
               h={[null, null, null, null, 422, null]}
@@ -296,45 +222,6 @@ export default function services(props) {
               <CardService title={seoTitle} text={seoText} />
               <CardService title={semTitle} text={semText} />
               <CardService title={socialTitle} text={socialText} />
-            </Box>
-            <Box
-              minHeight={[null, null, null, null, 144, null]}
-              h={[null, null, null, null, 144, null]}
-              w={[null, null, null, null, 1128, null]}
-              display="flex"
-              flexDirection="column"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Box
-                h={[null, null, null, null, "80px", null]}
-                w={[null, null, null, null, 821, null]}
-                textAlign="center"
-                fontSize={[null, null, null, null, "22px", null]}
-                fontWeight="light"
-              >
-                <Text>
-                  {mainText}
-                </Text>
-              </Box>
-              <Box
-                h={[null, null, null, null, "40px", null]}
-                w={[null, null, null, null, "212px", null]}
-              >
-                <Button
-                  bg="brand.red"
-                  color="brand.white"
-                  mt={[null, null, null, null, "24px", null]}
-                  w={[null, null, null, null, 204, null]}
-                  h={[null, null, null, null, "32px", null]}
-                  fontSize={[null, null, null, null, "14px", null]}
-                  verticalAlign="text-bottom"
-                  borderRadius="999"
-                  rightIcon={<WavingHand />}
-                >
-                  {buttonText}
-                </Button>
-              </Box>
             </Box>
           </Box>
         </VStack>

@@ -20,11 +20,11 @@ export default function about() {
         justify="center"
         alignItems="center"
         bg="brand.beige"
-        h={[null, 686, null, null, null, null]}
+        h={[686, 686, null, null, null, null]}
       >
         <VStack
           w={[320, 440, null, null, null, null]}
-          h={[689, 606, null, null, null, null]}
+          h={[606, 606, null, null, null, null]}
           display="flex"
           flexDirection="column"
           spacing="0"
