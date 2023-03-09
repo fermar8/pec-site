@@ -10,11 +10,14 @@ export default function Home({ page }) {
   const {
     title,
     description,
+
     buttonText,
+
     introTitle,
     introSubtitle,
     introText,
     introCta,
+
     servicesTitle,
     servicesMainText,
     servicesWebTitle,
@@ -29,6 +32,17 @@ export default function Home({ page }) {
     servicesSemText,
     servicesSocialTitle,
     servicesSocialText,
+
+    aboutKnowUs,
+    aboutTitle,
+    aboutText,
+    aboutText2,
+    aboutTag,
+    aboutTag2,
+    aboutTag3,
+    aboutKnowUs2,
+
+    blogTitle
   } = page;
   return (
     <Layout>
@@ -61,8 +75,19 @@ export default function Home({ page }) {
         socialTitle={servicesSocialTitle}
         socialText={servicesSocialText}
       />
-      <About />
-      <Blog />
+      <About 
+        knowUs={aboutKnowUs}
+        title={aboutTitle}
+        text={aboutText}
+        text2={aboutText2}
+        tag={aboutTag}
+        tag2={aboutTag2}
+        tag3={aboutTag3}
+        knowUs2={aboutKnowUs2}
+      />
+      <Blog 
+        title={blogTitle}
+      />
     </Layout>
   );
 }
@@ -72,12 +97,15 @@ export async function getStaticProps() {
     title: "ON LINE | Agencia de Marketing Digital Barcelona",
     description:
       "ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web",
+    
     buttonText: "Contacta con nosotros",
-    introTitle: "Agencia Marketing Digital y Diseño Web Barcelona",
-    introSubtitle: "Agencia Marketing Digital Barcelona",
+
+    introSubtitle: "Agencia Marketing Digital y Diseño Web Barcelona",
+    introTitle: "Agencia Marketing Digital Barcelona",
     introText:
       "Disponemos de un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio.",
-    introCta: "Contáctanos para dar el siguiente paso con tu página web ",
+    introCta: "Contáctanos para dar el siguiente paso con tu negocio",
+
     servicesTitle: "Servicios de Marketing Digital",
     servicesMainText:
       "Con el objetivo de mejorar tu presencia online y posicionamiento web, tener una web rápida y eficiente, incrementar las ventas en tu eCommerce y captar nuevos clientes o conocer los existentes.",
@@ -99,6 +127,17 @@ export async function getStaticProps() {
     servicesSocialTitle: "Social Media",
     servicesSocialText:
       "Reforzamos tu marca y su influencia gracias a una medida gestión de las redes sociales de tu empresa",
+    
+    aboutKnowUs: "Conócenos",
+    aboutTitle: "Nuestro equipo",
+    aboutText: "Formado por expertos en distintos ámbitos, nuestro equipo dispone de un gran talento multidisciplinar con años de experiencia delante de las pantallas.",
+    aboutText2: "Somos una Agencia Digital completa formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
+    aboutTag: "Multidisciplinar",
+    aboutTag2: "Ámbito Digital",
+    aboutTag3: "Emprendenduría",
+    aboutKnowUs2: "Conóce al equipo",
+
+    blogTitle: "Blog"
   };
 
   return {

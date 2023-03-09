@@ -4,7 +4,7 @@ import ButtonCarousel from "./blog/buttonCarousel";
 
 import React, { useState } from "react";
 
-export default function blog() {
+export default function Blog() {
   const provBlogAuthors = [
     "Eudald Capellades",
     "Victor López",
@@ -49,7 +49,7 @@ export default function blog() {
             color="brand.red"
             fontWeight="semibold"
           >
-            <Heading as="h6">Blog</Heading>
+            <Heading as="h3">Blog</Heading>
           </Box>
           <CardBlog
             loaded={loaded}
@@ -115,7 +115,7 @@ export default function blog() {
             color="brand.red"
             fontWeight="semibold"
           >
-            <Heading as="h6">Blog</Heading>
+            <Heading as="h3">Blog</Heading>
           </Box>
           <Box
             display="flex"
@@ -183,7 +183,7 @@ export default function blog() {
           <Box h={[null, null, null, null, "64px", null]}></Box>
           <Box h={[null, null, null, null, "40px", null]}>
             <Heading
-              as="h6"
+              as="h3"
               fontSize={[null, null, null, null, "32px", null]}
               color="brand.red"
               fontWeight="semibold"

@@ -1,8 +1,8 @@
-import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 import BlogPost from "./blogPost";
 
-export default function cardBlog(props) {
+export default function CardBlog(props) {
   const opacityChange = (loaded) => {
     let opacity;
     opacity = loaded ? 1 : 0;
@@ -40,9 +40,9 @@ export default function cardBlog(props) {
           mb={["16px", null, null, null, null, null]}
           ml={["8px", null, null, null, null, null]}
         >
-          <Text as="b" fontSize="18px">
+          <Heading as="h4" fontSize="18px">
             Trabajo y salud mental, un delicado equilibrio
-          </Text>
+          </Heading>
         </Box>
         <Box
           w={[280, 432, null, null, null, null]}
@@ -86,12 +86,12 @@ export default function cardBlog(props) {
           mb={[null, null, "16px", "16px", null, null]}
           lineHeight={[null, null, "16px", "16px", null, null]}
         >
-          <Text
-            as="b"
+          <Heading
+            as="h4"
             fontSize={[null, null, "18px", "18px", null, null]}
           >
             Trabajo y salud mental, un delicado equilibrio
-          </Text>
+          </Heading>
         </Box>
         <Box
           w={[null, null, 352, 464, null, null]}
@@ -120,15 +120,15 @@ export default function cardBlog(props) {
           ></Image>
         </Box>
         <Box h="32px"></Box>
-        <Box h="32px" fontSize="18px" fontWeight="semibold" lineHeight="16px">
-          <h6>Trabajo y salud mental, un delicado equilibrio</h6>
+        <Box h="32px">
+          <Heading as="h4" fontSize="18px" fontWeight="semibold" lineHeight="16px">Trabajo y salud mental, un delicado equilibrio</Heading>
         </Box>
         <Box h="16px"></Box>
-        <Box h="64px" lineHeight="16px">
-          <p>
+        <Box h="64px">
+          <Text lineHeight="16px">
             El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
             veces el equilibrio entre salud mental y trabajo no es fácil.
-          </p>
+          </Text>
         </Box>
         <Box h="24px"></Box>
         <Box
@@ -177,7 +177,7 @@ export default function cardBlog(props) {
           >
             <TimeIcon />
             <Box fontSize="14px" fontWeight="light">
-              <p>3 min</p>
+              <Text>3 min</Text>
             </Box>
           </Box>
         </Box>

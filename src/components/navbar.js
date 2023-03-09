@@ -1,5 +1,4 @@
 import {
-  Button,
   ButtonGroup,
   Box,
   Collapse,
@@ -11,13 +10,8 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import {
-  OnlineLogo,
-  WavingHand,
-  EmailIcon,
-  PhoneIcon,
-  LocationIcon,
-} from "./icons";
+import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
+import ButtonContact from "./general/buttons/buttonContact";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
@@ -50,7 +44,7 @@ export default function Navbar() {
         window.removeEventListener("scroll", controlNavbar);
       };
     }
-  }, [lastScrollY]);
+  });
 
   useEffect(() => {
     if (isOpen) document.body.style.overflow = "hidden";
@@ -119,17 +113,7 @@ export default function Navbar() {
                     </Box>
                   </ButtonGroup>
                   <HStack>
-                    <Button
-                      bg="brand.red"
-                      color="brand.white"
-                      w="168px"
-                      h="36px"
-                      verticalAlign="text-bottom"
-                      borderRadius="999"
-                      rightIcon={<WavingHand />}
-                    >
-                      Contacta
-                    </Button>
+                    <ButtonContact />
                   </HStack>
                 </Flex>
               ) : (

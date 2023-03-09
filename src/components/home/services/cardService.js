@@ -2,7 +2,7 @@ import { Box, Image, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { WavingHand } from "../../icons";
 
-export default function cardService(props) {
+export default function CardService(props) {
   const { title, text } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
@@ -39,7 +39,7 @@ export default function cardService(props) {
           >
             <Heading
               fontSize={["16px", "16px", null, null, null, null]}
-              as="h6"
+              as="h4"
             >
               {title}
             </Heading>
@@ -90,6 +90,7 @@ export default function cardService(props) {
               h={[null, null, 146, 146, null, null]}
               borderRadiusTop="999"
               src="img/Placeholder1128x280.jpg"
+              alt="service-image"
             />
           </Box>
         </Box>
@@ -110,7 +111,7 @@ export default function cardService(props) {
             fontWeight="bold"
           >
             <Heading
-              as="h6"
+              as="h4"
               fontSize={[null, null, "16px", "16px", null, null]}
             >
               {title}
@@ -177,6 +178,7 @@ export default function cardService(props) {
               w={[null, null, null, null, 180, null]}
               h={[null, null, null, null, 114, null]}
               src="img/Placeholder1128x280.jpg"
+              alt="service-image"
             />
           </Box>
         </Box>
@@ -197,7 +199,7 @@ export default function cardService(props) {
             fontWeight="bold"
           >
             <Heading
-              as="h6"
+              as="h4"
               fontSize={[ null, null, null, null, "16px", null]}
             >
               {title}

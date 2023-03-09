@@ -1,5 +1,4 @@
 import {
-  Button,
   Box,
   Flex,
   Image,
@@ -12,7 +11,7 @@ import {
 
 import Link from "next/link";
 
-export default function about() {
+export default function About({ knowUs, title, text, text2, tag, tag2, tag3, knowUs2 }) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
@@ -58,7 +57,7 @@ export default function about() {
                 mt={["40px", "40px", null, null, null, null]}
                 fontSize={["18px", "18px", null, null, null, null]}
               >
-                <h6>Coneix el nostre equip</h6>
+                <Text>{knowUs}</Text>
               </Box>
               <Box
                 display="flex"
@@ -67,10 +66,14 @@ export default function about() {
                 h={["40px", "40px", null, null, null, null]}
                 w={[185, 185, null, null, null, null]}
                 mb={["24px", "24px", null, null, null, null]}
-                fontSize={["24px", "24px", null, null, null, null]}
-                fontWeight="bold"
               >
-                <h5>Sobre nosaltres</h5>
+                <Heading
+                  as="h3"
+                  fontSize={["24px", "24px", null, null, null, null]}
+                  fontWeight="bold"
+                >
+                  {title}
+                </Heading>
               </Box>
               <Box
                 w={[280, 400, null, null, null, null]}
@@ -85,11 +88,9 @@ export default function about() {
                   fontWeight="light"
                   lineHeight="22px"
                 >
-                  <p>
-                    Coneix el nostre equip multidisciplinar format per tres
-                    talents europeus en l’àmbit digital: Ferransito_el_dev;
-                    Eudald_the_Controller & designzone.
-                  </p>
+                  <Text>
+                    {text}
+                  </Text>
                 </Box>
                 <Box
                   h={["68px", "30px", null, null, null, null]}
@@ -110,7 +111,7 @@ export default function about() {
                     borderColor="brand.red"
                     borderRadius="999"
                   >
-                    <p>Multidisciplinar</p>
+                    {tag}
                   </Tag>
                   <Tag
                     bg="brand.pureWhite"
@@ -124,7 +125,7 @@ export default function about() {
                     borderColor="brand.red"
                     borderRadius="999"
                   >
-                    Àmbit Digital
+                    {tag2}
                   </Tag>
                   <Tag
                     bg="brand.pureWhite"
@@ -138,19 +139,18 @@ export default function about() {
                     borderColor="brand.red"
                     borderRadius="999"
                   >
-                    Emprenedoria
+                    {tag3}
                   </Tag>
                 </Box>
                 <Box
                   h={["20px", "20px", null, null, null, null]}
-                  maxW={["110px", "110px", null, null, null, null]}
                   mt={["54px", "54px", null, null, null, null]}
                   fontSize={["16px", null, null, null, null, null]}
                   fontWeight="medium"
                   color="brand.red"
                   textDecoration="underline"
                 >
-                  <Link href="/">Veure l'equip</Link>
+                  <Link href="/">{knowUs2}</Link>
                 </Box>
               </Box>
             </Box>
@@ -205,13 +205,12 @@ export default function about() {
                   h={[null, null, "16px", "16px", "16px", null]}
                   w={[null, null, 200, 200, 232, null]}
                 >
-                  <Heading
-                    as="h6"
+                  <Text
                     fontSize={[null, null, "18px", "18px", "21px", null]}
                     fontWeight="light"
                   >
-                    Coneix el nostre equip
-                  </Heading>
+                    {knowUs}
+                  </Text>
                 </Box>
                 <Box
                   h={[null, null, "40px", "40px", "64px", null]}
@@ -222,10 +221,10 @@ export default function about() {
                   justifyContent="center"
                 >
                   <Heading
-                    as="h5"
+                    as="h3"
                     fontSize={[null, null, "24px", "24px", "30px", null]}
                   >
-                    Sobre nosaltres
+                    {title}
                   </Heading>
                 </Box>
                 <Box
@@ -237,16 +236,13 @@ export default function about() {
                   justifyContent="space-between"
                 >
                   <Text fontSize={[null, null, "16px", "16px", "16px", null]}>
-                    Coneix el nostre equip multidisciplinar format per tres
-                    talents europeus en l’àmbit digital: Ferransito_el_dev;
-                    Eudald_the_Controller & designzone
+                    {text}
                   </Text>
                   <Text
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     fontWeight="bold"
                   >
-                    Comença de zero o contacta'ns per a millorar la teva pàgina
-                    web.
+                    {text2}
                   </Text>
                   <Box
                     h={[null, null, "68px", "68px", "68px", null]}
@@ -258,7 +254,6 @@ export default function about() {
                     <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
-                      w="129px"
                       h="30px"
                       fontSize="14px"
                       fontWeight="bold"
@@ -268,12 +263,11 @@ export default function about() {
                       borderRadius="999"
                       alignSelf="center"
                     >
-                      Multidisciplinar
+                      {tag}
                     </Tag>
                     <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
-                      w="110px"
                       h="30px"
                       fontSize="14px"
                       fontWeight="bold"
@@ -283,12 +277,11 @@ export default function about() {
                       borderRadius="999"
                       alignSelf="center"
                     >
-                      Àmbit Digital
+                      {tag2}
                     </Tag>
                     <Tag
                       bg="brand.pureWhite"
                       color="brand.red"
-                      w="117px"
                       h="30px"
                       fontSize="14px"
                       fontWeight="bold"
@@ -298,7 +291,7 @@ export default function about() {
                       borderRadius="999"
                       alignSelf="center"
                     >
-                      Emprenedoria
+                      {tag3}
                     </Tag>
                   </Box>
                   <Box
@@ -308,7 +301,7 @@ export default function about() {
                     color="brand.red"
                     textDecoration="underline"
                   >
-                    <Link href="/">Veure l'equip</Link>
+                    <Link href="/">{knowUs2}</Link>
                   </Box>
                 </Box>
               </Box>

@@ -1,21 +1,17 @@
 import {
-  Button,
   Box,
   Flex,
   Heading,
-  Text,
   VStack,
   useMediaQuery,
 } from "@chakra-ui/react";
 
-import { WavingHand } from "../../components/icons";
 import CardService from "./services/cardService";
 
-export default function services(props) {
+export default function Services(props) {
   const {
     title,
     mainText,
-    buttonText,
     webTitle,
     webText,
     designTitle,
@@ -51,7 +47,7 @@ export default function services(props) {
             flexDirection="column"
           >
             <Heading
-              as="h5"
+              as="h2"
               fontSize={["24px", "24px", null, null, null, null]}
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="semi-bold"
@@ -61,7 +57,7 @@ export default function services(props) {
               {title}
             </Heading>
             <Heading
-              as="h6"
+              as="h3"
               fontSize={["18px", "18px", null, null, null, null]}
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="light"
@@ -103,7 +99,7 @@ export default function services(props) {
             justifyContent="space-around"
           >
             <Heading
-              as="h5"
+              as="h2"
               fontSize={[null, null, "24px", "24px", null, null]}
               fontWeight="semi-bold"
               color="brand.red"
@@ -111,7 +107,7 @@ export default function services(props) {
               {title}
             </Heading>
             <Heading
-              as="h6"
+              as="h3"
               fontSize={[null, null, "18px", "18px", null, null]}
               lineHeight={[null, null, "40px", "40px", null, null]}
               fontWeight="light"
@@ -179,7 +175,7 @@ export default function services(props) {
             justifyContent="space-around"
           >
             <Heading
-              as="h5"
+              as="h2"
               fontSize={[null, null, null, null, "32px", null]}
               fontWeight="semi-bold"
               color="brand.red"
@@ -187,7 +183,7 @@ export default function services(props) {
               {title}
             </Heading>
             <Heading
-              as="h6"
+              as="h3"
               fontSize={[null, null, null, null, "22px", null]}
               fontWeight="light"
             >

@@ -1,5 +1,5 @@
 import {
-  Button,
+  Text,
   Box,
   Flex,
   Image,
@@ -8,9 +8,9 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-import { WavingHand } from "../../components/icons";
+import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 
-export default function intro(props) {
+export default function Intro(props) {
   const { title, subtitle, text, cta, buttonText } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
@@ -28,7 +28,7 @@ export default function intro(props) {
           mb={["16px", "16px", "16px", "16px", "16px", null]}
         >
           <Heading
-            as="h1"
+            as="h2"
             fontSize={["18px", "21px", "21px", "21px", "21px", null]}
             fontWeight="normal"
             mb={["16px", "16px", "16px", "16px", "16px", null]}
@@ -36,7 +36,7 @@ export default function intro(props) {
             {title}
           </Heading>
           <Heading
-            as="h2"
+            as="h1"
             fontSize={["30px", "36px", "30px", "38px", "38px", null]}
             lineHeight={["133%", "120%", "120%", "120%", null, null]}
           >
@@ -66,42 +66,27 @@ export default function intro(props) {
           borderRadius="0px 0px 9px 9px"
           boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
         >
-          <Box w={[320, 440, 728, 952, 608, null]}>
-            <Heading
-              as="h3"
+          <Box w={[320, 440, 728, 808, 952, null]}>
+            <Text
               fontSize={["16px", "16px", "18px", "18px", "18px", null]}
               fontWeight="light"
               mt={["24px", "24px", "24px", "24px", "24px", null]}
               mb={["24px", "24px", "24px", "24px", "24px", null]}
             >
               {text}
-            </Heading>
+            </Text>
             {!isMobile ? (
-              <Heading
-                as="h4"
+              <Text
                 fontSize={[null, null, "18px", "18px", "18px", null]}
                 fontWeight="bold"
                 mb="24px"
               >
                 {cta}
-              </Heading>
+              </Text>
             ) : (
               <></>
             )}
-            <Button
-              bg="brand.red"
-              color="brand.white"
-              mb={["32px", "32px", "32px", "32px", "32px", null]}
-              w={[204, 204, 204, 204, 204, null]}
-              h={["32px", "32px", "32px", "32px", "32px", null]}
-              fontSize={["14px", "14px", "14px", "14px", "14px", null]}
-              verticalAlign="text-bottom"
-              borderRadius="999px"
-              rightIcon={<WavingHand />}
-              alignSelf="center"
-            >
-              {buttonText}
-            </Button>
+            <ButtonContactWithUs buttonText={buttonText} />
           </Box>
         </Box>
       </VStack>
