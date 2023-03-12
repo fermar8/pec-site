@@ -1,4 +1,3 @@
-/*
 import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
@@ -7,6 +6,8 @@ import { getApolloClient } from 'lib/apollo-client';
 
 export default function Post({ post, site }) {
   return (
+    <></>
+    /* 
     <div className={styles.container}>
       <Head>
         <title>{ post.title }</title>
@@ -34,9 +35,12 @@ export default function Post({ post, site }) {
         </p>
       </main>
     </div>
+    */
   )
 }
 
+
+/* 
 export async function getStaticProps({ params = {} } = {}) {
   const { postSlug } = params;
 
@@ -88,4 +92,5 @@ export async function getStaticPaths() {
     fallback: 'blocking'
   }
 }
+
 */

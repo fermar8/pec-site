@@ -1,4 +1,3 @@
-/*
 import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
@@ -6,8 +5,10 @@ import { gql } from '@apollo/client';
 import { getApolloClient } from '../../lib/apollo-client';
 
 export default function Home({ page, posts }) {
-  const { title, description } = page;
+  // const { title, description } = page;
   return (
+    <></>
+    /*
     <div className={styles.container}>
       <Head>
         <title>{title}</title>
@@ -48,9 +49,11 @@ export default function Home({ page, posts }) {
         </ul>
       </main>
     </div>
+    */
   )
 }
 
+/*
 export async function getStaticProps() {
   const apolloClient = getApolloClient();
 
