@@ -86,7 +86,7 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Inici</Link>
+                      <Link href="/">Inicio</Link>
                     </Box>
                     <Box
                       as="button"
@@ -95,7 +95,7 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Serveis</Link>
+                      <Link href="/">Servicios</Link>
                     </Box>
                     <Box
                       as="button"
@@ -103,7 +103,7 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Nosaltres</Link>
+                      <Link href="/">Nosotros</Link>
                     </Box>
                     <Box
                       as="button"
@@ -167,28 +167,28 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                     textDecoration={isHome ? "underline" : "none"}
                     _hover={{ color: "brand.red" }}
                   >
-                    <Link href="/">Inici</Link>
+                    <Link href="/">Inicio</Link>
                   </Box>
                   <Box
                     color={isService ? "brand.red" : "brand.black"}
                     textDecoration={isService ? "underline" : "none"}
                     _hover={{ color: "brand.red" }}
                   >
-                    <Link href="/">Els nostres serveis</Link>
+                    <Link href="/">Nuestros servicios</Link>
                   </Box>
                   <Box
                     color={isAbout ? "brand.red" : "brand.black"}
                     textDecoration={isAbout ? "underline" : "none"}
                     _hover={{ color: "brand.red" }}
                   >
-                    <Link href="/">Sobre nosaltres</Link>
+                    <Link href="/">Sobre nosotros</Link>
                   </Box>
                   <Box
                     color={isBlog ? "brand.red" : "brand.black"}
                     textDecoration={isBlog ? "underline" : "none"}
                     _hover={{ color: "brand.red" }}
                   >
-                    <Link href="/">El nostre blog</Link>
+                    <Link href="/">Nuestro blog</Link>
                   </Box>
                 </Box>
               </Stack>
