@@ -1,3 +1,4 @@
+/*
 import Head from 'next/head'
 import Link from 'next/link'
 import { gql } from '@apollo/client';
@@ -92,3 +93,5 @@ export async function getStaticProps() {
     }
   }
 }
+
+*/
