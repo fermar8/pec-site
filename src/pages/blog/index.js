@@ -4,8 +4,6 @@ import { gql } from '@apollo/client';
 
 import { getApolloClient } from '../../lib/apollo-client';
 
-import styles from '../../styles/Home.module.scss'
-
 export default function Home({ page, posts }) {
   const { title, description } = page;
   return (

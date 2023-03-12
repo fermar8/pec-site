@@ -136,66 +136,70 @@ export default function Navbar() {
           </Box>
         </Flex>
 
-        <Collapse in={isOpen}>
-          <Flex
-            h="calc(100vh - 56px)"
-            flexDirection="column"
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Stack
-              as={"nav"}
-              justifyContent="space-between"
+        {!isDesktop ? (
+          <Collapse in={isOpen}>
+            <Flex
+              h="calc(100vh - 56px)"
+              flexDirection="column"
+              justifyContent="space-around"
               alignItems="center"
-              width="100%"
-              fontSize="20px"
-              fontWeight="bold"
-              h="calc(38vh - 56px)"
             >
-              <Box
-                display="flex"
-                flexDirection="column"
+              <Stack
+                as={"nav"}
                 justifyContent="space-between"
-                h={[248, 248, null, null, null, null]}
-                w={[320, 440, null, null, null, null]}
+                alignItems="center"
+                width="100%"
+                fontSize="20px"
+                fontWeight="bold"
+                h="calc(38vh - 56px)"
               >
-                <Link href="/">Inici</Link>
-                <Link href="/">Els nostres serveis</Link>
-                <Link href="/">Sobre nosaltres</Link>
-                <Link href="/">El nostre blog</Link>
-              </Box>
-            </Stack>
-            <Stack
-              as={"nav"}
-              justifyContent="space-between"
-              alignItems="center"
-              fontSize="16px"
-              h="calc(28vh - 56px)"
-              w="100%"
-            >
-              <Box
-                display="flex"
-                flexDirection="column"
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-between"
+                  h={[248, 248, null, null, null, null]}
+                  w={[320, 440, null, null, null, null]}
+                >
+                  <Link href="/">Inici</Link>
+                  <Link href="/">Els nostres serveis</Link>
+                  <Link href="/">Sobre nosaltres</Link>
+                  <Link href="/">El nostre blog</Link>
+                </Box>
+              </Stack>
+              <Stack
+                as={"nav"}
                 justifyContent="space-between"
-                h={[128, 128, null, null, null, null]}
-                w={[320, 440, null, null, null, null]}
+                alignItems="center"
+                fontSize="16px"
+                h="calc(28vh - 56px)"
+                w="100%"
               >
-                <Box display="flex" alignItems="center" w="100%">
-                  <EmailIcon />
-                  <Text ml="16px">mail@mailto.com</Text>
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-between"
+                  h={[128, 128, null, null, null, null]}
+                  w={[320, 440, null, null, null, null]}
+                >
+                  <Box display="flex" alignItems="center" w="100%">
+                    <EmailIcon />
+                    <Text ml="16px">mail@mailto.com</Text>
+                  </Box>
+                  <Box display="flex" alignItems="center" w="100%">
+                    <PhoneIcon />
+                    <Text ml="16px">933237184</Text>
+                  </Box>
+                  <Box display="flex" alignItems="center" w="100%">
+                    <LocationIcon />
+                    <Text ml="16px">C/ Eudald el dèbil, 2n 2a, Gelida</Text>
+                  </Box>
                 </Box>
-                <Box display="flex" alignItems="center" w="100%">
-                  <PhoneIcon />
-                  <Text ml="16px">933237184</Text>
-                </Box>
-                <Box display="flex" alignItems="center" w="100%">
-                  <LocationIcon />
-                  <Text ml="16px">C/ Eudald el dèbil, 2n 2a, Gelida</Text>
-                </Box>
-              </Box>
-            </Stack>
-          </Flex>
-        </Collapse>
+              </Stack>
+            </Flex>
+          </Collapse>
+        ) : (
+          <></>
+        )}
       </Flex>
     </>
   );
