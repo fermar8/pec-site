@@ -1,7 +1,7 @@
 import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 
-function blogPost(props) {
+export default function BlogPost(props) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1280px)"
@@ -126,5 +126,3 @@ function blogPost(props) {
     );
   }
 }
-
-export default blogPost;

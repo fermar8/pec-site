@@ -1,5 +1,5 @@
 import { Box, useMediaQuery } from "@chakra-ui/react";
-function buttonCarousel(props) {
+export default function ButtonCarousel(props) {
   const backgroundColorChange = (buttonIndex, selectedIndex) => {
     let background;
     background = buttonIndex === selectedIndex ? "brand.red" : "brand.grey";
@@ -33,5 +33,3 @@ function buttonCarousel(props) {
     );
   }
 }
-
-export default buttonCarousel;
