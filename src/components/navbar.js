@@ -18,7 +18,7 @@ import { useState, useEffect } from "react";
 
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({ isHome, isService, isAbout, isBlog }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -81,7 +81,8 @@ export default function Navbar() {
                   <ButtonGroup gap="24px">
                     <Box
                       as="button"
-                      color="brand.black"
+                      color={isHome ? "brand.red" : "brand.black"}
+                      textDecoration={isHome ? "underline" : "none"}
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
@@ -89,7 +90,8 @@ export default function Navbar() {
                     </Box>
                     <Box
                       as="button"
-                      color="brand.black"
+                      color={isService ? "brand.red" : "brand.black"}
+                      textDecoration={isService ? "underline" : "none"}
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
@@ -160,10 +162,34 @@ export default function Navbar() {
                   h={[248, 248, null, null, null, null]}
                   w={[320, 440, null, null, null, null]}
                 >
-                  <Link href="/">Inici</Link>
-                  <Link href="/">Els nostres serveis</Link>
-                  <Link href="/">Sobre nosaltres</Link>
-                  <Link href="/">El nostre blog</Link>
+                  <Box
+                    color={isHome ? "brand.red" : "brand.black"}
+                    textDecoration={isHome ? "underline" : "none"}
+                    _hover={{ color: "brand.red" }}
+                  >
+                    <Link href="/">Inici</Link>
+                  </Box>
+                  <Box
+                    color={isService ? "brand.red" : "brand.black"}
+                    textDecoration={isService ? "underline" : "none"}
+                    _hover={{ color: "brand.red" }}
+                  >
+                    <Link href="/">Els nostres serveis</Link>
+                  </Box>
+                  <Box
+                    color={isAbout ? "brand.red" : "brand.black"}
+                    textDecoration={isAbout ? "underline" : "none"}
+                    _hover={{ color: "brand.red" }}
+                  >
+                    <Link href="/">Sobre nosaltres</Link>
+                  </Box>
+                  <Box
+                    color={isBlog ? "brand.red" : "brand.black"}
+                    textDecoration={isBlog ? "underline" : "none"}
+                    _hover={{ color: "brand.red" }}
+                  >
+                    <Link href="/">El nostre blog</Link>
+                  </Box>
                 </Box>
               </Stack>
               <Stack

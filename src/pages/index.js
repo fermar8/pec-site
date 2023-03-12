@@ -6,6 +6,7 @@ import Services from "../components/home/services";
 import About from "../components/home/about";
 import Blog from "../components/home/blog";
 
+
 export default function Home({ page }) {
   const {
     title,
@@ -45,7 +46,7 @@ export default function Home({ page }) {
     blogTitle
   } = page;
   return (
-    <Layout>
+    <Layout isHome={true}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

@@ -17,7 +17,7 @@ export default function ServicePage(props) {
   const { title, mainText, offerText, howText, whatText } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
-    <Layout>
+    <Layout isService={true}>
       <Head>
         <title>ON LINE | Agencia de Marketing Digital Barcelona</title>
         <meta
