@@ -1,4 +1,4 @@
-name: Publish Develop to GitHub Pages
+name: Publish to GitHub Pages
 
 on:
   push:
@@ -17,7 +17,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  #Build Job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -75,18 +74,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-
-  #Lint Job
-  lintTest:
-    name: Lint
-    runs-on: ubuntu-latest
-      steps: 
-        - name: Run Linter
-          run: |
-             echo "Running Linting tests ..."
-             npm run lint
-        env:
-          CI: true
 
   # Deployment job
   deploy:
