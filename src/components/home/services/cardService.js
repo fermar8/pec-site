@@ -55,7 +55,7 @@ export default function CardService(props) {
             color="brand.red"
             textDecoration="underline"
           >
-            <Link href="/">Veure serveis de SEO</Link>
+            <Link href="/">Ver más</Link>
           </Box>
         </Box>
       </>
@@ -144,7 +144,7 @@ export default function CardService(props) {
             display="flex"
             justifyContent="center"
           >
-            <Link href="/">Veure serveis de SEO</Link>
+            <Link href="/">Ver más</Link>
           </Box>
         </Box>
       </Box>
@@ -167,63 +167,45 @@ export default function CardService(props) {
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
+          borderColor="brand.red"
+          borderRadius="9px"
         >
-          <Box
-            w={[null, null, null, null, 180, null]}
-            h={[null, null, null, null, 114, null]}
-            display="flex"
-            justifyContent="center"
-          >
-            <Image
-              w={[null, null, null, null, 180, null]}
-              h={[null, null, null, null, 114, null]}
-              src="img/Placeholder1128x280.jpg"
-              alt="service-image"
-            />
-          </Box>
+          <Image
+            borderRadius="9px 9px 0 0"
+            w={[null, null, null, null, 358, null]}
+            h={[null, null, null, null, 144, null]}
+            src="img/Placeholder1128x280.jpg"
+            alt="service-image"
+          />
         </Box>
         <Box
-          h={[null, null, null, null, "48px", null]}
+          h={[null, null, null, null, "180px", null]}
           bg="brand.grey"
           borderTop="1px"
           borderColor="brand.red"
+          borderRadius="0 0 9px 9px"
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
         >
           <Box
-            h={[null, null, null, null, "16px", null]}
             display="flex"
             justifyContent="center"
             fontWeight="bold"
           >
-            <Heading
-              as="h4"
-              fontSize={[ null, null, null, null, "16px", null]}
-            >
+            <Heading as="h4" fontSize={[null, null, null, null, "16px", null]}>
               {title}
             </Heading>
           </Box>
-        </Box>
-        <Box
-          h={[null, null, null, null, 144, null]}
-          bg="brand.grey"
-          borderBottomRadius="9px"
-          display="flex"
-          flexDirection="column"
-          justifyContent="space-between"
-          alignItems="center"
-        >
           <Box
-            h={[null, null, null, null, "72px", null]}
             w={[null, null, null, null, 280, null]}
             textAlign="center"
+            lineHeight="16px"
           >
             <Text>{text}</Text>
           </Box>
           <Box
-            h={[null, null, null, null, "44px", null]}
             w={[null, null, null, null, 176, null]}
             fontSize={[null, null, null, null, "14px", null]}
             display="flex"
@@ -231,7 +213,7 @@ export default function CardService(props) {
             color="brand.red"
             textDecoration="underline"
           >
-            <Link href="/">Veure serveis de SEO</Link>
+            <Link href="/">Ver más</Link>
           </Box>
         </Box>
       </Box>
