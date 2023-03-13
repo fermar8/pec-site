@@ -36,7 +36,7 @@ export default function About({ knowUs, title, text, text2, tag, tag2, tag3, kno
             <Image
               w={[320, 440, null, null, null, null]}
               h={[227, 227, null, null, null, null]}
-              src="img/Placeholder1128x280.jpg"
+              src="/img/Placeholder1128x280.jpg"
               alt="home-image"
             ></Image>
           </Box>
@@ -184,7 +184,7 @@ export default function About({ knowUs, title, text, text2, tag, tag2, tag3, kno
               <Image
                 w={[null, null, 346, 346, 454, null]}
                 h={[null, null, 480, 480, 480, null]}
-                src="img/Placeholder1128x280.jpg"
+                src="/img/Placeholder1128x280.jpg"
                 alt="home-image"
                 borderRadius="9px 0px 0px 9px"
               ></Image>

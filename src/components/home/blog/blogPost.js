@@ -27,7 +27,7 @@ export default function BlogPost(props) {
             <Image
               w="48px"
               h="48px"
-              src="img/Placeholder1128x280.jpg"
+              src="/img/Placeholder1128x280.jpg"
               alt="home-image"
               borderRadius="50%"
             ></Image>
@@ -86,7 +86,7 @@ export default function BlogPost(props) {
             <Image
               w={[null, null, "48px", "48px", null, null]}
               h={[null, null, "48px", "48px", null, null]}
-              src="img/Placeholder1128x280.jpg"
+              src="/img/Placeholder1128x280.jpg"
               alt="home-image"
               borderRadius="50%"
             ></Image>

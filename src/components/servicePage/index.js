@@ -62,7 +62,7 @@ export default function ServicePage(props) {
               >
                 <Image
                   h={[140, null, null, null, null, null]}
-                  src="/img/Placeholder1128x280.jpg"
+                  src="//img/Placeholder1128x280.jpg"
                   alt="home-image"
                   borderRadius="9px 9px 0px 0px"
                 ></Image>

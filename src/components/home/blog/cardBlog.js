@@ -30,7 +30,7 @@ export default function CardBlog(props) {
           <Image
             w={[320, 440, null, null, null, null]}
             h={[146, 146, null, null, null, null]}
-            src="img/Placeholder1128x280.jpg"
+            src="/img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
@@ -76,7 +76,7 @@ export default function CardBlog(props) {
           <Image
             w={[null, null, 352, 464, null, null]}
             h={[null, null, 146, 146, null, null]}
-            src="img/Placeholder1128x280.jpg"
+            src="/img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
@@ -114,7 +114,7 @@ export default function CardBlog(props) {
           <Image
             w="359px"
             h="146px"
-            src="img/Placeholder1128x280.jpg"
+            src="/img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>
@@ -146,7 +146,7 @@ export default function CardBlog(props) {
               <Image
                 w="48px"
                 h="48px"
-                src="img/Placeholder1128x280.jpg"
+                src="/img/Placeholder1128x280.jpg"
                 alt="home-image"
                 borderRadius="50%"
               ></Image>

@@ -50,7 +50,7 @@ export default function Intro(props) {
           <Image
             w={[320, 440, 728, 952, 1128, null]}
             h={[140, 280, 280, 280, 280, null]}
-            src="img/Placeholder1128x280.jpg"
+            src="/img/Placeholder1128x280.jpg"
             alt="home-image"
             borderRadius="9px 9px 0px 0px"
           ></Image>

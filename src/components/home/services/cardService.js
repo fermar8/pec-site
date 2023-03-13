@@ -89,7 +89,7 @@ export default function CardService(props) {
               w={[null, null, 360, 472, null, null]}
               h={[null, null, 146, 146, null, null]}
               borderRadiusTop="999"
-              src="img/Placeholder1128x280.jpg"
+              src="/img/Placeholder1128x280.jpg"
               alt="service-image"
             />
           </Box>
@@ -174,7 +174,7 @@ export default function CardService(props) {
             borderRadius="9px 9px 0 0"
             w={[null, null, null, null, 358, null]}
             h={[null, null, null, null, 144, null]}
-            src="img/Placeholder1128x280.jpg"
+            src="/img/Placeholder1128x280.jpg"
             alt="service-image"
           />
         </Box>
