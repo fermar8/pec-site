@@ -30,7 +30,7 @@ export default function BlogPost(props) {
           >
             <Image
               layout="fill"
-              src="/img/Placeholder1128x280.jpg"
+              src="img/Placeholder1128x280.jpg"
               alt="home-image"
             ></Image>
           </Box>
@@ -89,7 +89,7 @@ export default function BlogPost(props) {
           >
             <Image
               layout="fill"
-              src="/img/Placeholder1128x280.jpg"
+              src="img/Placeholder1128x280.jpg"
               alt="home-image"
             ></Image>
           </Box>

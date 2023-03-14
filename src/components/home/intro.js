@@ -53,7 +53,7 @@ export default function Intro(props) {
         >
           <Image
             layout="fill"
-            src="/img/home/home-intro.png"
+            src="img/home/home-intro.png"
             alt="home-image"
           ></Image>
         </Box>

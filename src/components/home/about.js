@@ -44,7 +44,7 @@ export default function About({
           >
             <Image
               layout="fill"
-              src="/img/home/home-intro.png"
+              src="img/home/home-intro.png"
               alt="home-about"
             ></Image>
           </Box>
@@ -191,7 +191,7 @@ export default function About({
             >
               <Image
                 layout="fill"
-                src="/img/home/home-intro.png"
+                src="img/home/home-intro.png"
                 alt="home-about"
               ></Image>
             </Box>
