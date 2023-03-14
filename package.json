@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prod": "next build && next start"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
@@ -16,7 +17,8 @@
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "eslint": "8.35.0",
