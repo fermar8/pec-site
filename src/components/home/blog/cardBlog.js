@@ -33,7 +33,7 @@ export default function CardBlog(props) {
         >
           <Image
             layout="fill"
-            src="./img/Placeholder1128x280.jpg"
+            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
           ></Image>
         </Box>
@@ -79,7 +79,7 @@ export default function CardBlog(props) {
         >
           <Image
             layout="fill"
-            src="./img/Placeholder1128x280.jpg"
+            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
           ></Image>
         </Box>
@@ -117,7 +117,7 @@ export default function CardBlog(props) {
         >
           <Image
             layout="fill"
-            src="./img/Placeholder1128x280.jpg"
+            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
           ></Image>
         </Box>
@@ -160,7 +160,7 @@ export default function CardBlog(props) {
             >
               <Image
                 layout="fill"
-                src="./img/Placeholder1128x280.jpg"
+                src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
                 alt="home-image"
               ></Image>
             </Box>

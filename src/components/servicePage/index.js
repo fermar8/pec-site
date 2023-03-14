@@ -18,12 +18,12 @@ import { useState, useEffect } from "react";
 
 export default function ServicePage(props) {
   const { title, mainText, offerText, howText, whatText, image } = props;
-  const [imageUrl, setImageUrl] = useState(`./img/services/services-web.png`);
+  const [imageUrl, setImageUrl] = useState(`${process.env.basePath}/img/services/services-web.png`);
   const [imageAlt, setImageAlt] = useState(`services-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
-    setImageUrl(`./img/services/services-${image}.png`);
+    setImageUrl(`${process.env.basePath}/img/services/services-${image}.png`);
     setImageAlt(`services-${image}`)
   }, [image]);
 

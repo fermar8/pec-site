@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function CardService(props) {
   const { title, text, image } = props;
-  const [imageUrl, setImageUrl] = useState(`./img/home/home-web.png`);
+  const [imageUrl, setImageUrl] = useState(`${process.env.basePath}/img/home/home-web.png`);
   const [imageAlt, setImageAlt] = useState(`home-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
@@ -14,7 +14,7 @@ export default function CardService(props) {
   );
 
   useEffect(() => {
-    setImageUrl(`./img/home/home-${image}.png`);
+    setImageUrl(`${process.env.basePath}/img/home/home-${image}.png`);
     setImageAlt(`home-${image}`)
   }, [image]);
 
