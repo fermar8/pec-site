@@ -1,13 +1,23 @@
-import { Box, Image, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import { WavingHand } from "../../icons";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function CardService(props) {
-  const { title, text } = props;
+  const { title, text, image } = props;
+  const [imageUrl, setImageUrl] = useState(`/img/home/home-web.png`);
+  const [imageAlt, setImageAlt] = useState(`home-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1280px)"
   );
+
+  useEffect(() => {
+    setImageUrl(`/img/home/home-${image}.png`);
+    setImageAlt(`home-${image}`)
+  }, [image]);
+
   if (isMobile) {
     return (
       <>
@@ -84,13 +94,13 @@ export default function CardService(props) {
             h={[null, null, 146, 146, null, null]}
             display="flex"
             justifyContent="center"
+            position="relative"
+            borderRadiusTop="999"
           >
             <Image
-              w={[null, null, 360, 472, null, null]}
-              h={[null, null, 146, 146, null, null]}
-              borderRadiusTop="999"
-              src="/img/Placeholder1128x280.jpg"
-              alt="service-image"
+              layout="fill"
+              src={imageUrl}
+              alt={imageAlt}
             />
           </Box>
         </Box>
@@ -168,15 +178,10 @@ export default function CardService(props) {
           justifyContent="space-around"
           alignItems="center"
           borderColor="brand.red"
-          borderRadius="9px"
+          borderRadius="9px 9px 0 0"
+          position="relative"
         >
-          <Image
-            borderRadius="9px 9px 0 0"
-            w={[null, null, null, null, 358, null]}
-            h={[null, null, null, null, 144, null]}
-            src="/img/Placeholder1128x280.jpg"
-            alt="service-image"
-          />
+          <Image layout="fill" src={imageUrl} alt={imageAlt} />
         </Box>
         <Box
           h={[null, null, null, null, "180px", null]}
@@ -189,11 +194,7 @@ export default function CardService(props) {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box
-            display="flex"
-            justifyContent="center"
-            fontWeight="bold"
-          >
+          <Box display="flex" justifyContent="center" fontWeight="bold">
             <Heading as="h4" fontSize={[null, null, null, null, "16px", null]}>
               {title}
             </Heading>

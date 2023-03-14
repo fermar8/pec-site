@@ -1,6 +1,8 @@
-import { Box, Image, Text, Heading, useMediaQuery } from "@chakra-ui/react";
+import { Box, Text, Heading, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 import BlogPost from "./blogPost";
+
+import Image from "next/image";
 
 export default function CardBlog(props) {
   const opacityChange = (loaded) => {
@@ -26,13 +28,13 @@ export default function CardBlog(props) {
         <Box
           h={[146, 146, null, null, null, null]}
           mb={["16px", "16px", null, null, null, null]}
+          position="relative"
+          borderRadius="9px 9px 0px 0px"
         >
           <Image
-            w={[320, 440, null, null, null, null]}
-            h={[146, 146, null, null, null, null]}
+            layout="fill"
             src="/img/Placeholder1128x280.jpg"
             alt="home-image"
-            borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box
@@ -72,13 +74,13 @@ export default function CardBlog(props) {
           w={[null, null, 352, 464, null, null]}
           h={[null, null, 146, 146, null, null]}
           mb={[null, null, "32px", "32px", null, null]}
+          position="relative"
+          borderRadius="9px 9px 0px 0px"
         >
           <Image
-            w={[null, null, 352, 464, null, null]}
-            h={[null, null, 146, 146, null, null]}
+            layout="fill"
             src="/img/Placeholder1128x280.jpg"
             alt="home-image"
-            borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box
@@ -86,10 +88,7 @@ export default function CardBlog(props) {
           mb={[null, null, "16px", "16px", null, null]}
           lineHeight={[null, null, "16px", "16px", null, null]}
         >
-          <Heading
-            as="h4"
-            fontSize={[null, null, "18px", "18px", null, null]}
-          >
+          <Heading as="h4" fontSize={[null, null, "18px", "18px", null, null]}>
             Trabajo y salud mental, un delicado equilibrio
           </Heading>
         </Box>
@@ -110,18 +109,28 @@ export default function CardBlog(props) {
   } else {
     return (
       <Box h="378px" w="359px" display="flex" flexDirection="column">
-        <Box h="146px" w="359">
+        <Box
+          h="146px"
+          w="359"
+          position="relative"
+          borderRadius="9px 9px 0px 0px"
+        >
           <Image
-            w="359px"
-            h="146px"
+            layout="fill"
             src="/img/Placeholder1128x280.jpg"
             alt="home-image"
-            borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box h="32px"></Box>
         <Box h="32px">
-          <Heading as="h4" fontSize="18px" fontWeight="semibold" lineHeight="16px">Trabajo y salud mental, un delicado equilibrio</Heading>
+          <Heading
+            as="h4"
+            fontSize="18px"
+            fontWeight="semibold"
+            lineHeight="16px"
+          >
+            Trabajo y salud mental, un delicado equilibrio
+          </Heading>
         </Box>
         <Box h="16px"></Box>
         <Box h="64px">
@@ -142,13 +151,17 @@ export default function CardBlog(props) {
         >
           <Box w="16px"></Box>
           <Box w="215px" h="48px" display="flex">
-            <Box w="48px" h="48px" display="flex">
+            <Box
+              w="48px"
+              h="48px"
+              display="flex"
+              position="relative"
+              borderRadius="50%"
+            >
               <Image
-                w="48px"
-                h="48px"
+                layout="fill"
                 src="/img/Placeholder1128x280.jpg"
                 alt="home-image"
-                borderRadius="50%"
               ></Image>
             </Box>
             <Box w="16px"></Box>

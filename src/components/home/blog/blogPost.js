@@ -1,5 +1,7 @@
-import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
+
+import Image from "next/image";
 
 export default function BlogPost(props) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -23,13 +25,13 @@ export default function BlogPost(props) {
             h="48px"
             display="flex"
             ml={["16px", null, null, null, null, null]}
+            position="relative"
+            borderRadius="50%"
           >
             <Image
-              w="48px"
-              h="48px"
+              layout="fill"
               src="/img/Placeholder1128x280.jpg"
               alt="home-image"
-              borderRadius="50%"
             ></Image>
           </Box>
           <Box
@@ -82,13 +84,13 @@ export default function BlogPost(props) {
             h={[null, null, "48px", "48px", null, null]}
             display="flex"
             ml={[null, null, "16px", "16px", null, null]}
+            position="relative"
+            borderRadius="50%"
           >
             <Image
-              w={[null, null, "48px", "48px", null, null]}
-              h={[null, null, "48px", "48px", null, null]}
+              layout="fill"
               src="/img/Placeholder1128x280.jpg"
               alt="home-image"
-              borderRadius="50%"
             ></Image>
           </Box>
           <Box

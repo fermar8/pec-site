@@ -2,13 +2,15 @@ import {
   Text,
   Box,
   Flex,
-  Image,
   Heading,
   VStack,
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import Image from 'next/image';
+
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
+
 
 export default function Intro(props) {
   const { title, subtitle, text, cta, buttonText } = props;
@@ -46,13 +48,13 @@ export default function Intro(props) {
         <Box
           h={[140, 280, 280, 280, 280, null]}
           boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
+          borderRadius="9px 9px 0px 0px"
+          position="relative"
         >
           <Image
-            w={[320, 440, 728, 952, 1128, null]}
-            h={[140, 280, 280, 280, 280, null]}
-            src="/img/Placeholder1128x280.jpg"
+            layout="fill"
+            src="/img/home/home-intro.png"
             alt="home-image"
-            borderRadius="9px 9px 0px 0px"
           ></Image>
         </Box>
         <Box

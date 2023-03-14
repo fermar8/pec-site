@@ -2,20 +2,31 @@ import {
   Text,
   Box,
   Flex,
-  Image,
   Heading,
   VStack,
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import Image from "next/image";
 import Head from "next/head";
+
 import Layout from "components/layout";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 import { OnlineLogoWhite } from "components/icons/onlineLogoWhite";
 
+import { useState, useEffect } from "react";
+
 export default function ServicePage(props) {
-  const { title, mainText, offerText, howText, whatText } = props;
+  const { title, mainText, offerText, howText, whatText, image } = props;
+  const [imageUrl, setImageUrl] = useState(`/img/services/services-web.png`);
+  const [imageAlt, setImageAlt] = useState(`services-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+
+  useEffect(() => {
+    setImageUrl(`/img/services/services-${image}.png`);
+    setImageAlt(`services-${image}`)
+  }, [image]);
+
   return (
     <Layout isService={true}>
       <Head>
@@ -59,12 +70,13 @@ export default function ServicePage(props) {
               <Box
                 h={[140, null, null, null, null, null]}
                 boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
+                position="relative"
+                borderRadius="9px 9px 0px 0px"
               >
                 <Image
-                  h={[140, null, null, null, null, null]}
-                  src="//img/Placeholder1128x280.jpg"
-                  alt="home-image"
-                  borderRadius="9px 9px 0px 0px"
+                  layout="fill"
+                  src={imageUrl}
+                  alt={imageAlt}
                 ></Image>
               </Box>
               <Box
@@ -78,7 +90,8 @@ export default function ServicePage(props) {
                 boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
               >
                 <Box w={[256, null, null, null, null, null]}>
-                  <Heading as="h3"
+                  <Heading
+                    as="h3"
                     fontSize={["16px", null, null, null, null, null]}
                     fontWeight="light"
                     lineHeight="24px"
@@ -165,7 +178,7 @@ export default function ServicePage(props) {
               </Box>
             </VStack>
           </Flex>
-          </>
+        </>
       ) : (
         <></>
       )}

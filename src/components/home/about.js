@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-  Image,
   Text,
   Heading,
   Tag,
@@ -10,8 +9,17 @@ import {
 } from "@chakra-ui/react";
 
 import Link from "next/link";
-
-export default function About({ knowUs, title, text, text2, tag, tag2, tag3, knowUs2 }) {
+import Image from "next/image";
+export default function About({
+  knowUs,
+  title,
+  text,
+  text2,
+  tag,
+  tag2,
+  tag3,
+  knowUs2,
+}) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   if (isMobile) {
     return (
@@ -32,12 +40,12 @@ export default function About({ knowUs, title, text, text2, tag, tag2, tag3, kno
           <Box
             h={[227, 227, null, null, null, null]}
             w={[320, 440, null, null, null, null]}
+            position="relative"
           >
             <Image
-              w={[320, 440, null, null, null, null]}
-              h={[227, 227, null, null, null, null]}
-              src="/img/Placeholder1128x280.jpg"
-              alt="home-image"
+              layout="fill"
+              src="/img/home/home-intro.png"
+              alt="home-about"
             ></Image>
           </Box>
           <VStack
@@ -88,9 +96,7 @@ export default function About({ knowUs, title, text, text2, tag, tag2, tag3, kno
                   fontWeight="light"
                   lineHeight="22px"
                 >
-                  <Text>
-                    {text}
-                  </Text>
+                  <Text>{text}</Text>
                 </Box>
                 <Box
                   h={["68px", "30px", null, null, null, null]}
@@ -180,13 +186,13 @@ export default function About({ knowUs, title, text, text2, tag, tag2, tag3, kno
             <Box
               h={[null, null, 480, 480, 480, null]}
               w={[null, null, 346, 346, 454, null]}
+              position="relative"
+              borderRadius="9px 0px 0px 9px"
             >
               <Image
-                w={[null, null, 346, 346, 454, null]}
-                h={[null, null, 480, 480, 480, null]}
-                src="/img/Placeholder1128x280.jpg"
-                alt="home-image"
-                borderRadius="9px 0px 0px 9px"
+                layout="fill"
+                src="/img/home/home-intro.png"
+                alt="home-about"
               ></Image>
             </Box>
             <Box

@@ -9,6 +9,7 @@ export default function WebPage({ page }) {
       offerText={offerText}
       howText={howText}
       whatText={whatText}
+      image="web"
     />
   );
 }
