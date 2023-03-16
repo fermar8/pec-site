@@ -41,14 +41,13 @@ export default function ServicePage(props) {
       <>
         <Flex
           justify="center"
-          
           bg="brand.beige"
-          h={[420, null, 636, null, null, null]}
+          h={[420, null, 636, null, 694, null]}
         >
           <VStack
             mt={["32px", null, "40px", null, "80px", null]}
             w={[320, null, 728, null, 1128, null]}
-            h={[396, null, 516, null, 694, null]}
+            h={[396, null, 516, null, 533, null]}
             align="stretch"
             spacing="0px"
           >
