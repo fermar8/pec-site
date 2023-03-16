@@ -17,14 +17,15 @@ import { OnlineLogoWhite } from "components/icons/onlineLogoWhite";
 import { useState, useEffect } from "react";
 
 export default function ServicePage(props) {
-  const { title, mainText, offerText, howText, whatText, image } = props;
-  const [imageUrl, setImageUrl] = useState(`${process.env.basePath}/img/services/services-web.png`);
+  const { title, subtitle, subtitle2, subtitle3, mainText, subText, subText2, subText3, image } = props;
+  const [imageUrl, setImageUrl] = useState(
+    `${process.env.basePath}/img/services/services-web.png`
+  );
   const [imageAlt, setImageAlt] = useState(`services-default`);
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     setImageUrl(`${process.env.basePath}/img/services/services-${image}.png`);
-    setImageAlt(`services-${image}`)
+    setImageAlt(`services-${image}`);
   }, [image]);
 
   return (
@@ -37,151 +38,150 @@ export default function ServicePage(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {isMobile ? (
-        <>
-          <Flex justify="center" alignItems="center" bg="brand.beige">
-            <VStack
-              mt={["36px", null, null, null, null, null]}
-              mb={[null, null, null, null, null, null]}
-              w={[320, null, null, null, null, null]}
-              h={[396, null, null, null, null, null]}
-              align="stretch"
-              spacing="0px"
+      <>
+        <Flex
+          justify="center"
+          
+          bg="brand.beige"
+          h={[420, null, 636, null, null, null]}
+        >
+          <VStack
+            mt={["32px", null, "40px", null, "80px", null]}
+            w={[320, null, 728, null, 1128, null]}
+            h={[396, null, 516, null, 694, null]}
+            align="stretch"
+            spacing="0px"
+          >
+            <Box
+              h={["56px", null, "56px", null, 74, null]}
+              mb={["24px", null, "32px", null, "32px", null]}
             >
-              <Box
-                h={["56px", null, null, null, null, null]}
+              <Heading
+                as="h5"
+                fontSize={["24px", null, "24px", null, "24px", null]}
+                fontWeight="bold"
+                color="brand.red"
+              >
+                Servicios
+              </Heading>
+              <Heading
+                as="h2"
+                fontSize={["32px", null, "32px", null, "36px", null]}
+              >
+                {title}
+              </Heading>
+            </Box>
+            <Box
+              h={[140, null, 280, null, 280, null]}
+              boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
+              position="relative"
+              borderRadius="9px 9px 0px 0px"
+            >
+              <Image layout="fill" src={imageUrl} alt={imageAlt}></Image>
+            </Box>
+            <Box
+              h={[152, null, 164, null, 164, null]}
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              align="center"
+              bg="brand.white"
+              borderRadius="0px 0px 9px 9px"
+              boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
+            >
+              <Box w={[256, null, 688, null, 608, null]}>
+                <Heading
+                  as="h3"
+                  fontSize={["16px", null, "16px", null, "18px", null]}
+                  fontWeight={["light", null, "light", null, "regular", null]}
+                  lineHeight="24px"
+                  mt={["8px", null, "24px", null, "24px", null]}
+                  mb={["8px", null, "24px", null, "24px", null]}
+                  letterSpacing="0.4px"
+                  textAlign="center"
+                >
+                  {mainText}
+                </Heading>
+                <ButtonContactWithUs buttonText="Contacta con nosotros" />
+              </Box>
+            </Box>
+          </VStack>
+        </Flex>
+        <Flex justify="center" alignItems="center" bg="brand.white">
+          <VStack
+            mt={["32px", null, "64px", null, "64px", null]}
+            w={[320, null, 568, null, 728, null]}
+            h="100%"
+            align="stretch"
+            spacing="0px"
+          >
+            <Box
+              h={["136px", null, "136px", null, "136px", null]}
+              display="flex"
+              justifyContent="center"
+            >
+              <OnlineLogoWhite />
+            </Box>
+            <Box h="100%">
+              <Text
+                color="brand.red"
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="semibold"
+                mb={["8px", null, "8px", null, "8px", null]}
+              >
+                1. {subtitle}
+              </Text>
+              <Text
                 mb={["16px", null, null, null, null, null]}
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="light"
+                lineHeight="28px"
               >
-                <Heading
-                  as="h5"
-                  fontSize={["24px", null, null, null, null, null]}
-                  fontWeight="bold"
-                  color="brand.red"
-                >
-                  Servicios
-                </Heading>
-                <Heading
-                  as="h2"
-                  fontSize={["32px", null, null, null, null, null]}
-                >
-                  {title}
-                </Heading>
-              </Box>
-              <Box
-                h={[140, null, null, null, null, null]}
-                boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
-                position="relative"
-                borderRadius="9px 9px 0px 0px"
+                {subText}
+              </Text>
+              <Text
+                color="brand.red"
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="semibold"
+                mb={["8px", null, null, null, null, null]}
               >
-                <Image
-                  layout="fill"
-                  src={imageUrl}
-                  alt={imageAlt}
-                ></Image>
-              </Box>
-              <Box
-                h={[152, null, null, null, null, null]}
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                align="center"
-                bg="brand.white"
-                borderRadius="0px 0px 9px 9px"
-                boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
+                2. {subtitle2}
+              </Text>
+              <Text
+                mb={["16px", null, null, null, null, null]}
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="light"
+                lineHeight="28px"
               >
-                <Box w={[256, null, null, null, null, null]}>
-                  <Heading
-                    as="h3"
-                    fontSize={["16px", null, null, null, null, null]}
-                    fontWeight="light"
-                    lineHeight="24px"
-                    mt={["8px", null, null, null, null, null]}
-                    mb={["8px", null, null, null, null, null]}
-                  >
-                    {mainText}
-                  </Heading>
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
-                </Box>
-              </Box>
-            </VStack>
-          </Flex>
-          <Flex justify="center" alignItems="center" bg="brand.white">
-            <VStack
-              mt={["32px", null, null, null, null, null]}
-              w={[320, null, null, null, null, null]}
-              h={[718, null, null, null, null, null]}
-              align="stretch"
-              spacing="0px"
-            >
+                {subText2}
+              </Text>
+              <Text
+                color="brand.red"
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="semibold"
+                mb={["8px", null, null, null, null, null]}
+              >
+                3. {subtitle3}
+              </Text>
+              <Text
+                fontSize={["16px", null, null, null, null, null]}
+                fontWeight="light"
+                lineHeight="28px"
+              >
+                {subText3}
+              </Text>
               <Box
-                h={["136px", null, null, null, null, null]}
+                mt={["32px", null, "32px", null, "32px", null]}
+                mb={["32px", null, "64px", null, "64px", null]}
                 display="flex"
                 justifyContent="center"
               >
-                <OnlineLogoWhite />
+                <ButtonContactWithUs buttonText="Contacta con nosotros" />
               </Box>
-              <Box h={[564, null, null, null, null, null]}>
-                <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, null, null, null, null]}
-                >
-                  1. Qué ofrecemos
-                </Text>
-                <Text
-                  mb={["16px", null, null, null, null, null]}
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {offerText}
-                </Text>
-                <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, null, null, null, null]}
-                >
-                  2. Cómo lo hacemos
-                </Text>
-                <Text
-                  mb={["16px", null, null, null, null, null]}
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {howText}
-                </Text>
-                <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, null, null, null, null]}
-                >
-                  3. Siempre a la última
-                </Text>
-                <Text
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {whatText}
-                </Text>
-                <Box
-                  mt={["32px", null, null, null, null, null]}
-                  display="flex"
-                  justifyContent="center"
-                >
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
-                </Box>
-              </Box>
-            </VStack>
-          </Flex>
-        </>
-      ) : (
-        <></>
-      )}
+            </Box>
+          </VStack>
+        </Flex>
+      </>
     </Layout>
   );
 }

@@ -1,14 +1,26 @@
 import ServicePage from "../../../components/servicePage";
 
 export default function WebPage({ page }) {
-  const { title, mainText, offerText, howText, whatText } = page;
+  const {
+    title,
+    subtitle,
+    subtitle2,
+    subtitle3,
+    mainText,
+    subText,
+    subText2,
+    subText3,
+  } = page;
   return (
     <ServicePage
       title={title}
+      subtitle={subtitle}
+      subtitle2={subtitle2}
+      subtitle3={subtitle3}
       mainText={mainText}
-      offerText={offerText}
-      howText={howText}
-      whatText={whatText}
+      subText={subText}
+      subText2={subText2}
+      subText3={subText3}
       image="web"
     />
   );
@@ -17,13 +29,16 @@ export default function WebPage({ page }) {
 export async function getStaticProps() {
   const page = {
     title: "Desarrollo Web",
+    subtitle: "Qué ofrecemos",
+    subtitle2: "Cómo lo hacemos",
+    subtitle3: "Siempre a la última",
     mainText:
       "Desarrollamos páginas web desde cero para adaptarnos lo máximo al cliente y a los motores de búsqueda.",
-    offerText:
+    subText:
       "Cuidamos hasta el último detalle para diseñar webs eficientes y rápidas, siempre con el objetivo de que sean óptimas para un buen posicionamiento SEO.",
-    howText:
+    subText2:
       "Hechas a medida, brindamos soluciones 360º a nuestros clientes para lograr cumplir y llevar a la realidad la web ideal que tiene en mente para su negocio.",
-    whatText:
+    subText3:
       "Utilizamos la última tecnología para conseguir una web responsiva y moderna (Wordpress, NextJs, etc)",
   };
 
