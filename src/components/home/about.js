@@ -3,13 +3,14 @@ import {
   Flex,
   Text,
   Heading,
-  Tag,
   VStack,
   useMediaQuery,
 } from "@chakra-ui/react";
 
 import Link from "next/link";
 import Image from "next/image";
+
+import TagWhiteBg from "../general/buttons/tagWhiteBg";
 export default function About({
   knowUs,
   title,
@@ -105,48 +106,9 @@ export default function About({
                   justifyContent="space-between"
                   flexWrap="wrap"
                 >
-                  <Tag
-                    bg="brand.pureWhite"
-                    color="brand.red"
-                    maxW={["140px", null, null, null, null, null]}
-                    h={["30px", null, null, null, null, null]}
-                    fontSize="14px"
-                    fontWeight="bold"
-                    textAlign="center"
-                    border="1px"
-                    borderColor="brand.red"
-                    borderRadius="999"
-                  >
-                    {tag}
-                  </Tag>
-                  <Tag
-                    bg="brand.pureWhite"
-                    color="brand.red"
-                    maxW={["140px", null, null, null, null, null]}
-                    h={["30px", null, null, null, null, null]}
-                    fontSize="14px"
-                    fontWeight="bold"
-                    textAlign="center"
-                    border="1px"
-                    borderColor="brand.red"
-                    borderRadius="999"
-                  >
-                    {tag2}
-                  </Tag>
-                  <Tag
-                    bg="brand.pureWhite"
-                    color="brand.red"
-                    maxW={["140px", null, null, null, null, null]}
-                    h={["30px", null, null, null, null, null]}
-                    fontSize="14px"
-                    fontWeight="bold"
-                    textAlign="center"
-                    border="1px"
-                    borderColor="brand.red"
-                    borderRadius="999"
-                  >
-                    {tag3}
-                  </Tag>
+                  <TagWhiteBg tagText={tag} />
+                  <TagWhiteBg tagText={tag2} />
+                  <TagWhiteBg tagText={tag3} />
                 </Box>
                 <Box
                   h={["20px", "20px", null, null, null, null]}
@@ -210,6 +172,7 @@ export default function About({
                 <Box
                   h={[null, null, "16px", "16px", "16px", null]}
                   w={[null, null, 200, 200, 232, null]}
+                  mb="8px"
                 >
                   <Text
                     fontSize={[null, null, "18px", "18px", "21px", null]}
@@ -241,11 +204,12 @@ export default function About({
                   flexDirection="column"
                   justifyContent="space-between"
                 >
-                  <Text fontSize={[null, null, "16px", "16px", "16px", null]}>
+                  <Text fontSize={[null, null, "16px", "16px", "16px", null]} mb="8px">
                     {text}
                   </Text>
                   <Text
                     fontSize={[null, null, "16px", "16px", "16px", null]}
+                    mb="8px"
                     fontWeight="bold"
                   >
                     {text2}
@@ -257,48 +221,9 @@ export default function About({
                     flexWrap="wrap"
                     justifyContent="space-between"
                   >
-                    <Tag
-                      bg="brand.pureWhite"
-                      color="brand.red"
-                      h="30px"
-                      fontSize="14px"
-                      fontWeight="bold"
-                      verticalAlign="text-bottom"
-                      border="1px"
-                      borderColor="brand.red"
-                      borderRadius="999"
-                      alignSelf="center"
-                    >
-                      {tag}
-                    </Tag>
-                    <Tag
-                      bg="brand.pureWhite"
-                      color="brand.red"
-                      h="30px"
-                      fontSize="14px"
-                      fontWeight="bold"
-                      verticalAlign="text-bottom"
-                      border="1px"
-                      borderColor="brand.red"
-                      borderRadius="999"
-                      alignSelf="center"
-                    >
-                      {tag2}
-                    </Tag>
-                    <Tag
-                      bg="brand.pureWhite"
-                      color="brand.red"
-                      h="30px"
-                      fontSize="14px"
-                      fontWeight="bold"
-                      verticalAlign="text-bottom"
-                      border="1px"
-                      borderColor="brand.red"
-                      borderRadius="999"
-                      alignSelf="center"
-                    >
-                      {tag3}
-                    </Tag>
+                    <TagWhiteBg tagText={tag} />
+                    <TagWhiteBg tagText={tag2} />
+                    <TagWhiteBg tagText={tag3} />
                   </Box>
                   <Box
                     h={[null, null, "20px", "20px", "20px", null]}
