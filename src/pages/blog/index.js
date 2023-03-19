@@ -1,45 +1,42 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { gql } from '@apollo/client';
 
-import { getApolloClient } from '../../lib/apollo-client';
+import { getAllPostsFromWordPress } from '../../lib/posts';
 
-export default function Home({ page, posts }) {
-  // const { title, description } = page;
+export default function Blog({ allPosts }) {
+  console.log('allPosts', allPosts);
   return (
-    <></>
-    /*
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>aTitle</title>
+        <meta name="description" content="aContent"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>{title}</h1>
+      <main>
+        <h1>BLOG</h1>
 
-        <p className={styles.description}>{ description }</p>
+        <p>Nuestro blog</p>
 
-        <ul className={styles.grid}>
-          {posts && posts.length > 0 && posts.map(post => {
+        <ul >
+          {allPosts && allPosts.length > 0 && allPosts.map(post => {
             return (
-              <li key={post.slug} className={styles.card}>
-                <Link href={post.path}>
+              <li key={post.node.slug}>
+                <Link href={`/blog/${post.node.slug}`}>
                   <a>
                     <h3 dangerouslySetInnerHTML={{
-                      __html: post.title
+                      __html: post.node.title
                     }} />
                   </a>
                 </Link>
                 <div dangerouslySetInnerHTML={{
-                  __html: post.excerpt
+                  __html: post.node.excerpt
                 }} />
               </li>
             );
           })}
 
-          {!posts || posts.length === 0 && (
+          {!allPosts || allPosts.length === 0 && (
             <li>
               <p>
                 Oops, no posts found!
@@ -49,52 +46,16 @@ export default function Home({ page, posts }) {
         </ul>
       </main>
     </div>
-    */
   )
 }
 
-/*
-export async function getStaticProps() {
-  const apolloClient = getApolloClient();
 
-  const data = await apolloClient.query({
-    query: gql`
-      {
-        generalSettings {
-          title
-          description
-        }
-        posts(first: 10000) {
-          edges {
-            node {
-              id
-              excerpt
-              title
-              slug
-            }
-          }
-        }
-      }
-    `,
-  });
-
-  const posts = data?.data.posts.edges.map(({ node }) => node).map(post => {
-    return {
-      ...post,
-      path: `/posts/${post.slug}`
-    }
-  });
-
-  const page = {
-    ...data?.data.generalSettings
-  }
+export async function getStaticProps({ preview = false }) {
+  const allPosts = await getAllPostsFromWordPress(preview)
 
   return {
-    props: {
-      page,
-      posts
-    }
+    props: { allPosts: allPosts.edges, preview },
+    revalidate: 10,
   }
 }
 
-*/

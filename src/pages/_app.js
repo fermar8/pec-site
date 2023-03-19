@@ -10,14 +10,14 @@ function MyApp({ Component, pageProps = {} }) {
         pureWhite: "#ffffff",
         grey: "#D7D7D7",
         black: "#292929",
-        beige: "#fff9f4"
+        beige: "#fff9f4",
       },
     },
-  })
+  });
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
   );
 }
 
