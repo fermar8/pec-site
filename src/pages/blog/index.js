@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { getAllPostsFromWordPress } from '../../lib/posts';
 
 export default function Blog({ allPosts }) {
-  console.log('allPosts', allPosts);
   return (
     <div>
       <Head>

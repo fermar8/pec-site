@@ -1,4 +1,8 @@
-import DOMPurify from 'isomorphic-dompurify';
+import Layout from "components/layout";
+
+import DOMPurify from "isomorphic-dompurify";
+
+import styles from "../../styles/Blog.module.scss";
 
 import { Box, Flex, Text, Image, Heading, VStack } from "@chakra-ui/react";
 
@@ -8,33 +12,35 @@ import Link from "next/link";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/posts";
 
 export default function Post({ post, site }) {
-    console.log('content', post.content);
+  console.log("content", post.content);
   return (
-    <Flex justify="center" alignItems="center" bg="brand.beige">
-      <Head>
-        <title>{post.title}</title>
-        <meta name="description" content={`Read more about ${post.title}`} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <Flex
+        justify="center"
+        flexDirection="column"
+        alignItems="center"
+        bg="brand.beige"
+      >
+        <Head>
+          <title>{post.title}</title>
+          <meta name="description" content={`Read more about ${post.title}`} />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      
-        <Heading as="h1" mb="24px">
-          {post.title}
-        </Heading>
-   
-        <div
-          dangerouslySetInnerHTML={{
-            __html:  DOMPurify.sanitize(post.content),
-          }}
-        />
+        <VStack w="1200px">
+          <Heading as="h1" mb="24px">
+            {post.title}
+          </Heading>
 
-        <p>
-          <Link href="/">
-            <a>&lt; Back to home</a>
-          </Link>
-        </p>
-      
-    </Flex>
+          <div
+            className={styles.singlePost}
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(post.content),
+            }}
+          />
+        </VStack>
+      </Flex>
+    </Layout>
   );
 }
 

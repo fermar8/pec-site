@@ -111,7 +111,7 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Blog</Link>
+                      <Link href="/blog">Blog</Link>
                     </Box>
                   </ButtonGroup>
                   <HStack>
@@ -188,7 +188,7 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                     textDecoration={isBlog ? "underline" : "none"}
                     _hover={{ color: "brand.red" }}
                   >
-                    <Link href="/">Nuestro blog</Link>
+                    <Link href="/blog">Nuestro blog</Link>
                   </Box>
                 </Box>
               </Stack>
