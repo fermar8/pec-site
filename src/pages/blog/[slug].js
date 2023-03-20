@@ -7,13 +7,13 @@ import styles from "../../styles/Blog.module.scss";
 import { Box, Flex, Text, Image, Heading, VStack } from "@chakra-ui/react";
 
 import Head from "next/head";
-import Link from "next/link";
 
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/posts";
 
 export default function Post({ post, site }) {
-  console.log("content", post.content);
   return (
+    <div>Blog detail</div>
+    /*
     <Layout>
       <Flex
         justify="center"
@@ -41,8 +41,11 @@ export default function Post({ post, site }) {
         </VStack>
       </Flex>
     </Layout>
+    */
   );
 }
+
+/*
 
 export const getStaticProps = async ({
   params,
@@ -69,3 +72,4 @@ export const getStaticPaths = async () => {
     fallback: true,
   };
 };
+*/

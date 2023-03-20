@@ -5,6 +5,8 @@ import { getAllPostsFromWordPress } from '../../lib/posts';
 
 export default function Blog({ allPosts }) {
   return (
+    <div>Blog Page</div>
+    /*
     <div>
       <Head>
         <title>aTitle</title>
@@ -45,9 +47,11 @@ export default function Blog({ allPosts }) {
         </ul>
       </main>
     </div>
+    */
   )
 }
 
+/*
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = await getAllPostsFromWordPress(preview)
@@ -57,4 +61,6 @@ export async function getStaticProps({ preview = false }) {
     revalidate: 10,
   }
 }
+
+*/
 
