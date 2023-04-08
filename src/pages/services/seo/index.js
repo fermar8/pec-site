@@ -10,6 +10,7 @@ export default function SeoPage({ page }) {
     subText,
     subText2,
     subText3,
+    whyText,
   } = page;
   return (
     <ServicePage
@@ -21,6 +22,7 @@ export default function SeoPage({ page }) {
       subText={subText}
       subText2={subText2}
       subText3={subText3}
+      whyText={whyText}
     />
   );
 }
@@ -39,6 +41,8 @@ export async function getStaticProps() {
       "En ON LINE realizamos un análisis intensivo de tu negocio para afinar tu página web a las palabras clave que buscan tus clientes potenciales.",
     subText3:
       "Verás cómo aumentar tus visitas y generar tráfico orgánico no es tan difícil como parece y puedes encontrar nuevos clientes (o más bien que ellos te encuentren a ti) sin hacer nada!",
+    whyText: "¿Por qué invertir en posicionamiento SEO?",
+    
   };
 
   return {

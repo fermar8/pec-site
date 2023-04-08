@@ -10,6 +10,7 @@ export default function SocialMediaPage({ page }) {
     subText,
     subText2,
     subText3,
+    whyText,
   } = page;
   return (
     <ServicePage
@@ -21,6 +22,7 @@ export default function SocialMediaPage({ page }) {
       subText={subText}
       subText2={subText2}
       subText3={subText3}
+      whyText={whyText}
     />
   );
 }
@@ -39,6 +41,7 @@ export async function getStaticProps() {
       "En ON LINE te brindamos estrategias a tu medida, consensuando y adaptándonos a tus objetivos e ideas. ",
     subText3:
       "Deja en manos de nuestro equipo la ardua tarea de gestionar tu Instagram, Facebook, etc. y céntrate en tu día a día, que nosotros nos encargamos de que tu marca mejore en imagen y aumente en seguidores.",
+    whyText: "¿Por qué invertir en redes sociales?"
   };
 
   return {

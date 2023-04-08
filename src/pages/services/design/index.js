@@ -10,6 +10,7 @@ export default function DesignPage({ page }) {
     subText,
     subText2,
     subText3,
+    whyText,
   } = page;
   return (
     <ServicePage
@@ -21,6 +22,7 @@ export default function DesignPage({ page }) {
       subText={subText}
       subText2={subText2}
       subText3={subText3}
+      whyText={whyText}
     />
   );
 }
@@ -39,6 +41,7 @@ export async function getStaticProps() {
       "Lo logramos gracias a la atención y delicadeza de nuestros diseñadores.",
     subText3:
       "Buscamos alcanzar la mejor conversión posible, es por eso que diseñamos las páginas web siempre desde el punto de vista del usuario buscando el equilibrio entre un posicionamiento SEO idóneo y un UX/UI óptimo para el usuario.",
+    whyText: "¿Por qué invertir en diseño?"
   };
 
   return {

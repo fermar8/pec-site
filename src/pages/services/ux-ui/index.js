@@ -10,6 +10,7 @@ export default function UxUiPage({ page }) {
     subText,
     subText2,
     subText3,
+    whyText,
   } = page;
   return (
     <ServicePage
@@ -21,6 +22,7 @@ export default function UxUiPage({ page }) {
       subText={subText}
       subText2={subText2}
       subText3={subText3}
+      whyText={whyText}
     />
   );
 }
@@ -39,6 +41,7 @@ export async function getStaticProps() {
       "Con tener una página bonita no basta, debe ser fácil de navegar y que lleve a tus clientes a donde tú quieres para así aprovechar cada visita a tu página web.",
     subText3:
       "Una página web mal optimizada en cuanto a UX/UI resulta en un mayor porcentaje de rebote lo que se traduce en ventas no realizadas o perdidas. Déjanos guiar a tus clientes para minimizar el porcentaje de rebote y maximizar el de conversión.",
+    whyText: "¿Por qué invertir en diseño UX/UI?"
   };
 
   return {
