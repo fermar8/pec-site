@@ -15,6 +15,7 @@ import ServiceDescription from "components/services/serviceDescriptions";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 import { OnlineLogoWhite } from "components/icons/onlineLogoWhite";
 import { SemIcon } from "components/icons/semIcon";
+import { SemIconBig } from "components/icons/semIconBig";
 
 import { useState, useEffect } from "react";
 
@@ -32,7 +33,6 @@ export default function ServicePage(props) {
     whyText,
     image,
   } = props;
-  console.log(whyText);
   const [imageUrl, setImageUrl] = useState(
     `${process.env.basePath}/img/services/services-web.png`
   );
@@ -67,7 +67,7 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box position="absolute" top="76px" left="160px">
+              <Box position="absolute" top={["5%", null, null, null, null]} left={["40%", null, null, null, null]}>
                 <SemIcon />
               </Box>
               <Box h={["202px", null, null, null, null, null]}>
@@ -154,7 +154,7 @@ export default function ServicePage(props) {
                 subtitle={subtitle3}
                 subText={subText3}
               />
-              <ButtonContactWithUs buttonText="Contacta con nosotros"/>
+              <ButtonContactWithUs buttonText="Contacta con nosotros" />
             </VStack>
           </Flex>
         </>
@@ -174,23 +174,21 @@ export default function ServicePage(props) {
         <>
           <Flex
             justify="center"
-            bg="brand.beige"
-            h={[420, null, 636, null, 694, null]}
+            bg="brand.white"
+            h={[440, null, null, null, null, null]}
           >
-            <VStack
-              mt={["32px", null, "40px", null, "80px", null]}
-              w={[320, null, 728, null, 1128, null]}
-              h={[396, null, 516, null, 533, null]}
+            <Flex
+              mt={["120px", null, null, null, null, null]}
+              w={[720, null, null, null, null, null]}
+              h={[440, null, null, null, null, null]}
+              justify="space-between"
               align="stretch"
               spacing="0px"
             >
-              <Box
-                h={["56px", null, "56px", null, 74, null]}
-                mb={["24px", null, "32px", null, "32px", null]}
-              >
+              <Box w={["460px", null, null, null, null, null]} h={["174px", null, null, null, null, null]}>
                 <Heading
                   as="h5"
-                  fontSize={["24px", null, "24px", null, "24px", null]}
+                  fontSize={["24px", null, null, null, null, null]}
                   fontWeight="bold"
                   color="brand.red"
                 >
@@ -198,119 +196,83 @@ export default function ServicePage(props) {
                 </Heading>
                 <Heading
                   as="h2"
-                  fontSize={["32px", null, "32px", null, "36px", null]}
+                  fontSize={["36px", null, null, null, null, null]}
+                  fontWeight="bold"
                 >
                   {title}
                 </Heading>
+                <Text lineHeight="28px" fontSize="16px" fontWeight="light">
+                  {mainText}
+                </Text>
               </Box>
-              <Box
-                h={[140, null, 280, null, 280, null]}
-                boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
-                position="relative"
-                borderRadius="9px 9px 0px 0px"
-              >
-                <Image layout="fill" src={imageUrl} alt={imageAlt}></Image>
+              <Box>
+                <SemIconBig />
               </Box>
-              <Box
-                h={[152, null, 164, null, 164, null]}
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                align="center"
-                bg="brand.white"
-                borderRadius="0px 0px 9px 9px"
-                boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
-              >
-                <Box w={[256, null, 688, null, 608, null]}>
-                  <Heading
-                    as="h3"
-                    fontSize={["16px", null, "16px", null, "18px", null]}
-                    fontWeight={["light", null, "light", null, "regular", null]}
-                    lineHeight="24px"
-                    mt={["8px", null, "24px", null, "24px", null]}
-                    mb={["8px", null, "24px", null, "24px", null]}
-                    letterSpacing="0.4px"
-                    textAlign="center"
-                  >
-                    {mainText}
-                  </Heading>
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
-                </Box>
-              </Box>
-            </VStack>
+            </Flex>
           </Flex>
-          <Flex justify="center" alignItems="center" bg="brand.white">
+          <Flex justify="center" w="100%" bg="brand.red">
             <VStack
-              mt={["32px", null, "64px", null, "64px", null]}
-              w={[320, null, 568, null, 728, null]}
-              h="100%"
+              w={[720, null, null, null, null, null]}
+              h={[192, null, null, null, null, null]}
+              display="flex"
+              flexDirection="column"
+              justify="space-around"
               align="stretch"
               spacing="0px"
             >
-              <Box
-                h={["136px", null, "136px", null, "136px", null]}
-                display="flex"
-                justifyContent="center"
-              >
-                <OnlineLogoWhite />
+              <Box>
+                <Text color="brand.white" fontSize="18px" fontWeight="bold">
+                  En ON LINE te brindamos estrategias a tu medida, consensuando
+                  y adaptándonos a tus objetivos e ideas.
+                </Text>
               </Box>
-              <Box h="100%">
+            </VStack>
+          </Flex>
+          <Flex
+            w="100%"
+            bg="brand.white"
+            flexDirection="column"
+            justify="space-around"
+            alignItems="center"
+          >
+            <VStack
+              w={[720, null, null, null, null, null]}
+              h={[688, null, null, null, null, null]}
+              mt="64px"
+              mb="64px"
+              display="flex"
+              flexDirection="column"
+              justify="space-between"
+              align="stretch"
+              spacing="0px"
+            >
+              <Box>
                 <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, "8px", null, "8px", null]}
+                  color="brand.white"
+                  fontSize="30px"
+                  lineHeight="36px"
+                  fontWeight="bold"
+                  textShadow="0 0 2px #F55951"
                 >
-                  1. {subtitle}
+                  {whyText}
                 </Text>
-                <Text
-                  mb={["16px", null, null, null, null, null]}
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {subText}
-                </Text>
-                <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, null, null, null, null]}
-                >
-                  2. {subtitle2}
-                </Text>
-                <Text
-                  mb={["16px", null, null, null, null, null]}
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {subText2}
-                </Text>
-                <Text
-                  color="brand.red"
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="semibold"
-                  mb={["8px", null, null, null, null, null]}
-                >
-                  3. {subtitle3}
-                </Text>
-                <Text
-                  fontSize={["16px", null, null, null, null, null]}
-                  fontWeight="light"
-                  lineHeight="28px"
-                >
-                  {subText3}
-                </Text>
-                <Box
-                  mt={["32px", null, "32px", null, "32px", null]}
-                  mb={["32px", null, "64px", null, "64px", null]}
-                  display="flex"
-                  justifyContent="center"
-                >
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
-                </Box>
               </Box>
+              <ServiceDescription
+                number={1}
+                subtitle={subtitle}
+                subText={subText}
+              />
+              <ServiceDescription
+                number={2}
+                subtitle={subtitle2}
+                subText={subText2}
+              />
+              <ServiceDescription
+                number={3}
+                subtitle={subtitle3}
+                subText={subText3}
+              />
+              <ButtonContactWithUs buttonText="Contacta con nosotros" />
             </VStack>
           </Flex>
         </>
