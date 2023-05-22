@@ -1,4 +1,6 @@
 import ServicePage from "../../../components/servicePage";
+import { DesignIcon } from "../../../components/icons/services/designIcon";
+import { DesignIconBig } from "../../../components//icons/services/designIconBig";
 
 export default function DesignPage({ page }) {
   const {

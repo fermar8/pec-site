@@ -1,4 +1,6 @@
 import ServicePage from "../../../components/servicePage";
+import { SemIcon } from "../../../components/icons/services/semIcon";
+import { SemIconBig } from "../../../components//icons/services/semIconBig";
 
 export default function SemPage({ page }) {
   const {

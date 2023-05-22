@@ -3,7 +3,7 @@ import { Text, Box } from "@chakra-ui/react";
 export default function ServiceDescription(props) {
   const { number, subtitle, subText } = props;
   return (
-    <Box display="flex">
+    <Box display="flex" alignItems="center">
       <Box display="flex" alignItems="center">
         <Text
           color="brand.white"

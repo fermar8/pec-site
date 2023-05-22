@@ -3,6 +3,6 @@ import { WavingHand } from './wavingHand';
 import { EmailIcon } from './emailIcon';
 import { PhoneIcon } from './phoneIcon';
 import { LocationIcon } from './locationIcon';
-import { SemIcon } from './semIcon';
+import { SemIcon } from './services/semIcon';
 
 export { OnlineLogo, WavingHand, EmailIcon, PhoneIcon, LocationIcon, SemIcon };
