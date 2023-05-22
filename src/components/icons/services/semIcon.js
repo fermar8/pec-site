@@ -13,7 +13,7 @@ export const SemIcon = () => (
       cy="45.9028"
       r="43.1483"
       stroke="#F8B3B8"
-      stroke-width="0.567741"
+      strokeWidth="0.567741"
     />
     <circle cx="43.4305" cy="48.7414" r="14.4774" fill="#F8B3B8" />
     <circle
@@ -21,7 +21,7 @@ export const SemIcon = () => (
       cy="80.393"
       r="21.5742"
       stroke="#F8B3B8"
-      stroke-width="0.28387"
+      strokeWidth="0.28387"
     />
     <circle cx="66.2836" cy="81.8124" r="7.2387" fill="#F8B3B8" />
     <circle
@@ -29,7 +29,7 @@ export const SemIcon = () => (
       cy="13.3035"
       r="13.2166"
       stroke="#F8B3B8"
-      stroke-width="0.173903"
+      strokeWidth="0.173903"
     />
     <circle cx="72.8974" cy="14.173" r="4.43452" fill="#F8B3B8" />
     <circle
@@ -37,7 +37,7 @@ export const SemIcon = () => (
       cy="78.0766"
       r="13.2166"
       stroke="#F8B3B8"
-      stroke-width="0.173903"
+      strokeWidth="0.173903"
     />
     <circle cx="16.2685" cy="78.9461" r="4.43452" fill="#F8B3B8" />
   </chakra.svg>

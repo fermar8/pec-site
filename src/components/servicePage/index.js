@@ -156,7 +156,7 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box>
+              <Box mb="16px">
                 <Text
                   color="brand.white"
                   fontSize="30px"
@@ -182,6 +182,7 @@ export default function ServicePage(props) {
                 subtitle={subtitle3}
                 subText={subText3}
               />
+              <Box padding="16px"></Box>
               <ButtonContactWithUs buttonText="Contacta con nosotros" />
             </VStack>
           </Flex>
@@ -273,7 +274,7 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box>
+              <Box mb="16px">
                 <Text
                   color="brand.white"
                   fontSize="30px"
