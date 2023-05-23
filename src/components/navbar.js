@@ -99,11 +99,12 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                     </Box>
                     <Box
                       as="button"
-                      color="brand.black"
+                      color={isAbout ? "brand.red" : "brand.black"}
+                      textDecoration={isAbout ? "underline" : "none"}
                       _hover={{ color: "brand.red" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Nosotros</Link>
+                      <Link href="/about">Nosotros</Link>
                     </Box>
                     <Box
                       as="button"

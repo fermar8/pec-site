@@ -207,7 +207,6 @@ export default function ServicePage(props) {
             h={[null, null, 500, null, null, null]}
           >
             <Flex
-              mt={[null, null, null, null, null, null]}
               w={[null, null, 720, null, null, null]}
               h={[null, null, 440, null, null, null]}
               justify="center"
