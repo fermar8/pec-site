@@ -6,19 +6,30 @@ import {
   Stack,
   Text,
   HStack,
+  Button,
   IconButton,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
 import ButtonContact from "./general/buttons/buttonContact";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
 
-export default function Navbar({ isHome, isService, isAbout, isBlog }) {
+export default function Navbar({
+  isHome,
+  isService,
+  serviceType,
+  isAbout,
+  isBlog,
+}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -88,15 +99,73 @@ export default function Navbar({ isHome, isService, isAbout, isBlog }) {
                     >
                       <Link href="/">Inicio</Link>
                     </Box>
-                    <Box
-                      as="button"
-                      color={isService ? "brand.red" : "brand.black"}
-                      textDecoration={isService ? "underline" : "none"}
-                      _hover={{ color: "brand.red" }}
-                      fontSize={[null, null, "16px", "16px", "16px", null]}
+                    <Menu
+                      backgroundColor="brand.white"
+                      _selected={{ color: "brand.red", bg: "brand.white" }}
+                      _focus={{ bg: "brand.white" }}
                     >
-                      <Link href="/services/web">Servicios</Link>
-                    </Box>
+                      <MenuButton
+                        colorScheme="whiteAlpha"
+                        as={Button}
+                        fontWeight="normal"
+                        backgroundColor="brand.white"
+                        color={isService ? "brand.red" : "brand.black"}
+                        textDecoration={isService ? "underline" : "none"}
+                        fontSize={[null, null, "16px", "16px", "16px", null]}
+                      >
+                        Servicios <ChevronDownIcon />
+                      </MenuButton>
+                      <MenuList>
+                        <MenuItem
+                          _focus={{ bg: "white" }}
+                          _hover={{ bg: "brand.white" }}
+                          color={
+                            serviceType === "Desarrollo Web"
+                              ? "brand.red"
+                              : "brand.black"
+                          }
+                        >
+                          <Link href="/services/web">Desarrollo Web</Link>
+                        </MenuItem>
+                        <MenuItem _hover={{ bg: "brand.white" }} color={
+                            serviceType === "Diseño Web"
+                              ? "brand.red"
+                              : "brand.black"
+                          }>
+                          <Link href="/services/design">Diseño Web</Link>
+                        </MenuItem>
+                        <MenuItem _hover={{ bg: "brand.white" }} color={
+                            serviceType === "Consultoría UX/UI"
+                              ? "brand.red"
+                              : "brand.black"
+                          }>
+                          <Link href="/services/ux-ui">Consultoría UX/UI</Link>
+                        </MenuItem>
+                        <MenuItem _hover={{ bg: "brand.white" }} color={
+                            serviceType === "Social Media"
+                              ? "brand.red"
+                              : "brand.black"
+                          }>
+                          <Link href="/services/social-media">
+                            Marketing Digital
+                          </Link>
+                        </MenuItem>
+                        <MenuItem _hover={{ bg: "brand.white" }} color={
+                            serviceType === "Campañas SEM"
+                              ? "brand.red"
+                              : "brand.black"
+                          }>
+                          <Link href="/services/sem">Campañas SEM</Link>
+                        </MenuItem>
+                        <MenuItem _hover={{ bg: "brand.white" }} color={
+                            serviceType === "Posicionamiento SEO"
+                              ? "brand.red"
+                              : "brand.black"
+                          }>
+                          <Link href="/services/seo">Posicionamiento SEO</Link>
+                        </MenuItem>
+                      </MenuList>
+                    </Menu>
                     <Box
                       as="button"
                       color={isAbout ? "brand.red" : "brand.black"}

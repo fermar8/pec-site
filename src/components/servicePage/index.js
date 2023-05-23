@@ -66,10 +66,10 @@ export default function ServicePage(props) {
     subText3,
     whyText,
   } = props;
-
+  
   if (isMobile) {
     return (
-      <Layout isService={true}>
+      <Layout isService={true} serviceType={title}>
         <Head>
           <title>ON LINE | Agencia de Marketing Digital Barcelona</title>
           <meta
@@ -191,7 +191,7 @@ export default function ServicePage(props) {
     );
   } else {
     return (
-      <Layout isService={true}>
+      <Layout isService={true} serviceType={title}>
         <Head>
           <title>ON LINE | Agencia de Marketing Digital Barcelona</title>
           <meta
