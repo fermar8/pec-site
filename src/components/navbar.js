@@ -44,7 +44,7 @@ export default function Navbar({
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const isTabled = useBreakpointValue({ base: false, md: true });
+  const isTablet = useBreakpointValue({ base: false, md: true });
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -98,7 +98,7 @@ export default function Navbar({
                 <OnlineLogo />
                 <Box h="24px" w="1px" bg="brand.grey"></Box>
               </Flex>
-              {isTabled ? (
+              {isTablet ? (
                 <Flex justify="space-between" flex="1">
                   <ButtonGroup gap="24px">
                     <Box
@@ -251,7 +251,7 @@ export default function Navbar({
           </Box>
         </Flex>
 
-        {!isTabled ? (
+        {!isTablet ? (
           <Collapse in={isOpen}>
             <Flex h="calc(100vh - 56px)">
               <Flex>
@@ -444,8 +444,6 @@ export default function Navbar({
                           display="flex"
                           alignItems="center"
                           textAlign="left"
-                          color={isBlog ? "brand.red" : "brand.black"}
-                          textDecoration={isBlog ? "underline" : "none"}
                         >
                           <EmailIcon />
                           <Text ml="16px">mail@mailto.com</Text>
@@ -465,8 +463,6 @@ export default function Navbar({
                           display="flex"
                           alignItems="center"
                           textAlign="left"
-                          color={isBlog ? "brand.red" : "brand.black"}
-                          textDecoration={isBlog ? "underline" : "none"}
                         >
                           <PhoneIcon />
                           <Text ml="16px">933237184</Text>
@@ -486,8 +482,6 @@ export default function Navbar({
                           display="flex"
                           alignItems="center"
                           textAlign="left"
-                          color={isBlog ? "brand.red" : "brand.black"}
-                          textDecoration={isBlog ? "underline" : "none"}
                         >
                           <LocationIcon />
                           <Text ml="16px">

@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps = {} }) {
         grey: "#D7D7D7",
         black: "#292929",
         beige: "#fff9f4",
+        lightPink: "#FFE2DC"
       },
     },
   });
