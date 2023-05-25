@@ -8,7 +8,9 @@ import {
   FormLabel,
   Input,
   VStack,
+  HStack,
   Textarea,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 import { EmailIcon, PhoneIcon, LocationIcon } from "./icons";
@@ -20,6 +22,8 @@ export default function Footer() {
   const [showForm, setShowForm] = useState(true);
   const [afterErrorMessage, setAfterErrorMessage] = useState("");
   const [afterSuccessMessage, setAfterSuccessMessage] = useState("");
+
+  const [isDesktop] = useMediaQuery("(min-width: 1280px)");
   const validate = (values) => {
     const errors = {};
     if (!values.name) {
@@ -85,253 +89,568 @@ export default function Footer() {
     },
   });
 
-  return (
-    <VStack
-      minHeight="890px"
-      width="100%"
-      color="white"
-      textAlign="center"
-      justifyContent="space-around"
-    >
+  if (!isDesktop) {
+    return (
       <VStack
-        justifyContent="space-around"
-        minHeight="660px"
+        minHeight="890px"
         width="100%"
-        backgroundColor="brand.beige"
         color="white"
         textAlign="center"
-        overflow="hidden"
+        justifyContent="space-around"
       >
-        <Box mb="16px">
-          <Text
-            color="brand.white"
-            fontSize="40px"
-            lineHeight="36px"
-            fontWeight="bold"
-            textShadow="0 0 2px #F55951"
-            mt="32px"
-          >
-            ¿Hablamos?
-          </Text>
-        </Box>
-        {showForm ? (
-          <form onSubmit={formik.handleSubmit}>
-            <VStack
-              spacing={4}
-              align="flex-start"
-              width={[320, null, null, null, null, null]}
+        <VStack
+          justifyContent="space-around"
+          pb="40px"
+          minHeight="660px"
+          width="100%"
+          backgroundColor="brand.beige"
+          color="white"
+          textAlign="center"
+          overflow="hidden"
+        >
+          <Box mb="16px">
+            <Text
+              color="brand.white"
+              fontSize="40px"
+              lineHeight="36px"
+              fontWeight="bold"
+              textShadow="0 0 2px #F55951"
+              mt="32px"
             >
-              <FormControl>
-                <VisuallyHidden>
-                  <FormLabel htmlFor="name">Nombre completo</FormLabel>
-                </VisuallyHidden>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder="Nombre completo*"
-                  type="text"
-                  variant="standard"
-                  outlineColor="brand.lightPink"
-                  sx={{
-                    ":focus": {
-                      outlineColor: "brand.red",
-                    },
-                  }}
-                  color="black"
-                  bg="white"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.name}
-                />
-              </FormControl>
-              {formik.touched.name && formik.errors.name ? (
-                <Box mt="8px" color="brand.red">
-                  {formik.errors.name}
-                </Box>
-              ) : null}
-              <FormControl>
-                <VisuallyHidden>
-                  <FormLabel htmlFor="email">Correo electrónico</FormLabel>
-                </VisuallyHidden>
-                <Input
-                  id="email"
-                  name="email"
-                  placeholder="Correo electrónico*"
-                  type="email"
-                  variant="standard"
-                  outlineColor="brand.lightPink"
-                  sx={{
-                    ":focus": {
-                      outlineColor: "brand.red",
-                    },
-                  }}
-                  bg="white"
-                  color="black"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                />
-              </FormControl>
-              {formik.touched.email && formik.errors.email ? (
-                <Box mt="8px" color="brand.red">
-                  {formik.errors.email}
-                </Box>
-              ) : null}
-              <FormControl>
-                <VisuallyHidden>
-                  <FormLabel htmlFor="phone">Teléfono</FormLabel>
-                </VisuallyHidden>
-                <Input
-                  id="phone"
-                  name="phone"
-                  placeholder="Teléfono*"
-                  type="tel"
-                  variant="standard"
-                  outlineColor="brand.lightPink"
-                  sx={{
-                    ":focus": {
-                      outlineColor: "brand.red",
-                    },
-                  }}
-                  bg="white"
-                  color="black"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.phone}
-                />
-              </FormControl>
-              {formik.touched.phone && formik.errors.phone ? (
-                <Box mt="8px" color="brand.red">
-                  {formik.errors.phone}
-                </Box>
-              ) : null}
-              <FormControl>
-                <VisuallyHidden>
-                  <FormLabel htmlFor="company">Empresa</FormLabel>
-                </VisuallyHidden>
-                <Input
-                  id="company"
-                  name="company"
-                  placeholder="Empresa"
-                  type="text"
-                  variant="standard"
-                  outlineColor="brand.lightPink"
-                  sx={{
-                    ":focus": {
-                      outlineColor: "brand.red",
-                    },
-                  }}
-                  bg="white"
-                  color="black"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.company}
-                />
-              </FormControl>
-              <FormControl>
-                <VisuallyHidden>
-                  <FormLabel htmlFor="message">Escribe tu mensaje</FormLabel>
-                </VisuallyHidden>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Escribe tu mensaje"
-                  type="text"
-                  bg="white"
-                  variant="standard"
-                  outlineColor="brand.lightPink"
-                  sx={{
-                    ":focus": {
-                      outlineColor: "brand.red",
-                    },
-                  }}
-                  color="black"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.message}
-                />
-              </FormControl>
-              <Button
-                type="submit"
-                bg="brand.red"
-                color="brand.white"
-                w="50%"
-                h="36px"
-                verticalAlign="text-bottom"
-                borderRadius="999"
-                sx={{
-                  ":focus": {
-                    bg: "brand.red",
-                  },
-                }}
+              ¿Hablamos?
+            </Text>
+          </Box>
+          {showForm ? (
+            <form onSubmit={formik.handleSubmit}>
+              <VStack
+                spacing={4}
+                align="flex-start"
+                width={[320, 440, null, null, null, null]}
               >
-                Enviar
-              </Button>
-            </VStack>
-          </form>
-        ) : null}
+                <FormControl>
+                  <VisuallyHidden>
+                    <FormLabel htmlFor="name">Nombre completo</FormLabel>
+                  </VisuallyHidden>
+                  <Input
+                    id="name"
+                    name="name"
+                    placeholder="Nombre completo*"
+                    type="text"
+                    variant="standard"
+                    outlineColor="brand.lightPink"
+                    sx={{
+                      ":focus": {
+                        outlineColor: "brand.red",
+                      },
+                    }}
+                    color="black"
+                    bg="white"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.name}
+                  />
+                </FormControl>
+                {formik.touched.name && formik.errors.name ? (
+                  <Box mt="8px" color="brand.red">
+                    {formik.errors.name}
+                  </Box>
+                ) : null}
+                <FormControl>
+                  <VisuallyHidden>
+                    <FormLabel htmlFor="email">Correo electrónico</FormLabel>
+                  </VisuallyHidden>
+                  <Input
+                    id="email"
+                    name="email"
+                    placeholder="Correo electrónico*"
+                    type="email"
+                    variant="standard"
+                    outlineColor="brand.lightPink"
+                    sx={{
+                      ":focus": {
+                        outlineColor: "brand.red",
+                      },
+                    }}
+                    bg="white"
+                    color="black"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                  />
+                </FormControl>
+                {formik.touched.email && formik.errors.email ? (
+                  <Box mt="8px" color="brand.red">
+                    {formik.errors.email}
+                  </Box>
+                ) : null}
+                <FormControl>
+                  <VisuallyHidden>
+                    <FormLabel htmlFor="phone">Teléfono</FormLabel>
+                  </VisuallyHidden>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    placeholder="Teléfono*"
+                    type="tel"
+                    variant="standard"
+                    outlineColor="brand.lightPink"
+                    sx={{
+                      ":focus": {
+                        outlineColor: "brand.red",
+                      },
+                    }}
+                    bg="white"
+                    color="black"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.phone}
+                  />
+                </FormControl>
+                {formik.touched.phone && formik.errors.phone ? (
+                  <Box mt="8px" color="brand.red">
+                    {formik.errors.phone}
+                  </Box>
+                ) : null}
+                <FormControl>
+                  <VisuallyHidden>
+                    <FormLabel htmlFor="company">Empresa</FormLabel>
+                  </VisuallyHidden>
+                  <Input
+                    id="company"
+                    name="company"
+                    placeholder="Empresa"
+                    type="text"
+                    variant="standard"
+                    outlineColor="brand.lightPink"
+                    sx={{
+                      ":focus": {
+                        outlineColor: "brand.red",
+                      },
+                    }}
+                    bg="white"
+                    color="black"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.company}
+                  />
+                </FormControl>
+                <FormControl>
+                  <VisuallyHidden>
+                    <FormLabel htmlFor="message">Escribe tu mensaje</FormLabel>
+                  </VisuallyHidden>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Escribe tu mensaje"
+                    type="text"
+                    bg="white"
+                    variant="standard"
+                    outlineColor="brand.lightPink"
+                    sx={{
+                      ":focus": {
+                        outlineColor: "brand.red",
+                      },
+                    }}
+                    color="black"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.message}
+                  />
+                </FormControl>
+                <Button
+                  type="submit"
+                  bg="brand.red"
+                  color="brand.white"
+                  w={["50%", "30%", null, null, null, null]}
+                  h="36px"
+                  verticalAlign="text-bottom"
+                  borderRadius="999"
+                  sx={{
+                    ":focus": {
+                      bg: "brand.red",
+                    },
+                    ":active": {
+                      bg: "brand.red",
+                    },
+                    ":after": {
+                      bg: "brand.red",
+                    },
+                  }}
+                >
+                  Enviar
+                </Button>
+              </VStack>
+            </form>
+          ) : null}
           <Box color="brand.red">{afterSuccessMessage}</Box>
           <Box color="brand.red">{afterErrorMessage}</Box>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+            minHeight={[108, 128, null, null, null, null]}
+            w={[320, 440, null, null, null, null]}
+          >
+            <Box
+              display="flex"
+              alignItems="center"
+              w="100%"
+              marginLeft={[0, "60px", null, null, null, null]}
+            >
+              <EmailIcon />
+              <Text color="brand.black" ml="16px">
+                mail@mailto.com
+              </Text>
+            </Box>
+            <Box
+              display="flex"
+              alignItems="center"
+              w="100%"
+              marginLeft={[0, "60px", null, null, null, null]}
+            >
+              <PhoneIcon />
+              <Text color="brand.black" ml="16px">
+                933237184
+              </Text>
+            </Box>
+            <Box
+              display="flex"
+              alignItems="center"
+              w="100%"
+              marginLeft={[0, "60px", null, null, null, null]}
+            >
+              <LocationIcon />
+              <Text color="brand.black" ml="16px">
+                C/ Eudald el dèbil, 2n 2a, Gelida
+              </Text>
+            </Box>
+          </Box>
+        </VStack>
         <Box
           display="flex"
           flexDirection="column"
-          justifyContent="space-between"
-          minHeight={[108, 128, null, null, null, null]}
-          w={[320, 440, null, null, null, null]}
+          justifyContent="space-around"
+          backgroundColor="brand.white"
+          minHeight={[250, null, null, null, null, null]}
+          w="100%"
+          pb="20px"
         >
-          <Box display="flex" alignItems="center" w="100%">
-            <EmailIcon />
+          <Box w="100%" mt="16px">
             <Text color="brand.black" ml="16px">
-              mail@mailto.com
+              Política de privacidad
             </Text>
           </Box>
-          <Box display="flex" alignItems="center" w="100%">
-            <PhoneIcon />
+          <Box w="100%">
             <Text color="brand.black" ml="16px">
-              933237184
+              Configuración de cookies
             </Text>
           </Box>
-          <Box display="flex" alignItems="center" w="100%">
-            <LocationIcon />
+          <Box w="100%">
             <Text color="brand.black" ml="16px">
-              C/ Eudald el dèbil, 2n 2a, Gelida
+              Términos y condiciones
             </Text>
+          </Box>
+          <Box w="100%">
+            <Text color="brand.black" ml="16px">
+              Aviso Legal
+            </Text>
+          </Box>
+          <Box display="flex" justifyContent="center" w="100%">
+            <TwitterIcon />
+            <LinkedinIcon />
           </Box>
         </Box>
       </VStack>
-      <Box
-        display="flex"
-        flexDirection="column"
+    );
+  } else {
+    return (
+      <VStack
+        width="100%"
+        color="white"
+        textAlign="center"
         justifyContent="space-around"
-        backgroundColor="brand.red"
-        minHeight={[250, null, null, null, null, null]}
-        w="100%"
+        backgroundColor="brand.beige"
       >
-        <Box w="100%" mt="16px">
-          <Text color="brand.white" ml="16px">
-            Política de privacidad
-          </Text>
+        <VStack
+          justifyContent="space-around"
+          minHeight="480px"
+          width="100%"
+          backgroundColor="brand.beige"
+          color="white"
+          textAlign="center"
+          overflow="hidden"
+        >
+          <Box mb="16px">
+            <Text
+              color="brand.white"
+              fontSize="40px"
+              lineHeight="36px"
+              fontWeight="bold"
+              textShadow="0 0 2px #F55951"
+              mt="32px"
+            >
+              ¿Hablamos?
+            </Text>
+          </Box>
+          {showForm ? (
+            <form onSubmit={formik.handleSubmit}>
+              <VStack
+                spacing={4}
+                align="flex-start"
+                width={[320, 440, null, null, 720, null]}
+              >
+                <Box display="flex" justifyContent="center">
+                  <Box
+                    display="flex"
+                    flexDirection="column"
+                    minHeight={[108, 128, null, null, null, null]}
+                    w={[320, 440, null, null, 360, null]}
+                  >
+                    <Box display="flex" w="100%" mb="16px">
+                      <EmailIcon />
+                      <Text color="brand.black" ml="16px">
+                        mail@mailto.com
+                      </Text>
+                    </Box>
+                    <Box display="flex" w="100%" mb="16px">
+                      <PhoneIcon />
+                      <Text color="brand.black" ml="16px">
+                        933237184
+                      </Text>
+                    </Box>
+                    <Box display="flex" w="100%" mb="16px">
+                      <LocationIcon />
+                      <Text color="brand.black" ml="16px">
+                        C/ Eudald el dèbil, 2n 2a, Gelida
+                      </Text>
+                    </Box>
+                  </Box>
+                  <VStack>
+                    <FormControl minWidth="320px">
+                      <VisuallyHidden>
+                        <FormLabel htmlFor="name">Nombre completo</FormLabel>
+                      </VisuallyHidden>
+                      <Input
+                        id="name"
+                        name="name"
+                        placeholder="Nombre completo*"
+                        type="text"
+                        variant="standard"
+                        outlineColor="brand.lightPink"
+                        sx={{
+                          ":focus": {
+                            outlineColor: "brand.red",
+                          },
+                        }}
+                        color="black"
+                        bg="white"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.name}
+                      />
+                    </FormControl>
+                    {formik.touched.name && formik.errors.name ? (
+                      <Box mt="8px" color="brand.red">
+                        {formik.errors.name}
+                      </Box>
+                    ) : null}
+                    <FormControl>
+                      <VisuallyHidden>
+                        <FormLabel htmlFor="email">
+                          Correo electrónico
+                        </FormLabel>
+                      </VisuallyHidden>
+                      <Input
+                        id="email"
+                        name="email"
+                        placeholder="Correo electrónico*"
+                        type="email"
+                        variant="standard"
+                        outlineColor="brand.lightPink"
+                        sx={{
+                          ":focus": {
+                            outlineColor: "brand.red",
+                          },
+                        }}
+                        bg="white"
+                        color="black"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.email}
+                      />
+                    </FormControl>
+                    {formik.touched.email && formik.errors.email ? (
+                      <Box mt="8px" color="brand.red">
+                        {formik.errors.email}
+                      </Box>
+                    ) : null}
+                    <FormControl>
+                      <VisuallyHidden>
+                        <FormLabel htmlFor="phone">Teléfono</FormLabel>
+                      </VisuallyHidden>
+                      <Input
+                        id="phone"
+                        name="phone"
+                        placeholder="Teléfono*"
+                        type="tel"
+                        variant="standard"
+                        outlineColor="brand.lightPink"
+                        sx={{
+                          ":focus": {
+                            outlineColor: "brand.red",
+                          },
+                        }}
+                        bg="white"
+                        color="black"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.phone}
+                      />
+                    </FormControl>
+                    {formik.touched.phone && formik.errors.phone ? (
+                      <Box mt="8px" color="brand.red">
+                        {formik.errors.phone}
+                      </Box>
+                    ) : null}
+                    <FormControl>
+                      <VisuallyHidden>
+                        <FormLabel htmlFor="company">Empresa</FormLabel>
+                      </VisuallyHidden>
+                      <Input
+                        id="company"
+                        name="company"
+                        placeholder="Empresa"
+                        type="text"
+                        variant="standard"
+                        outlineColor="brand.lightPink"
+                        sx={{
+                          ":focus": {
+                            outlineColor: "brand.red",
+                          },
+                        }}
+                        bg="white"
+                        color="black"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.company}
+                      />
+                    </FormControl>
+                    <FormControl>
+                      <VisuallyHidden>
+                        <FormLabel htmlFor="message">
+                          Escribe tu mensaje
+                        </FormLabel>
+                      </VisuallyHidden>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Escribe tu mensaje"
+                        type="text"
+                        bg="white"
+                        variant="standard"
+                        outlineColor="brand.lightPink"
+                        sx={{
+                          ":focus": {
+                            outlineColor: "brand.red",
+                          },
+                        }}
+                        color="black"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.message}
+                      />
+                    </FormControl>
+                    <Button
+                      type="submit"
+                      bg="brand.red"
+                      alignSelf="start"
+                      color="brand.white"
+                      w={["50%", "30%", null, null, null, null]}
+                      h="36px"
+                      verticalAlign="text-bottom"
+                      borderRadius="999"
+                      sx={{
+                        ":focus": {
+                          bg: "brand.red",
+                        },
+                        ":active": {
+                          bg: "brand.red",
+                        },
+                        ":after": {
+                          bg: "brand.red",
+                        },
+                      }}
+                    >
+                      Enviar
+                    </Button>
+                  </VStack>
+                </Box>
+              </VStack>
+            </form>
+          ) : (
+            <Box
+              display="flex"
+              flexDirection="column"
+              minHeight={[108, 128, null, null, null, null]}
+              
+            >
+              <Box display="flex" w="100%" mb="16px">
+                <EmailIcon />
+                <Text color="brand.black" ml="16px">
+                  mail@mailto.com
+                </Text>
+              </Box>
+              <Box display="flex" w="100%" mb="16px">
+                <PhoneIcon />
+                <Text color="brand.black" ml="16px">
+                  933237184
+                </Text>
+              </Box>
+              <Box display="flex" w="100%" mb="16px">
+                <LocationIcon />
+                <Text color="brand.black" ml="16px">
+                  C/ Eudald el dèbil, 2n 2a, Gelida
+                </Text>
+              </Box>
+            </Box>
+          )}
+          <Box color="brand.red">{afterSuccessMessage}</Box>
+          <Box color="brand.red">{afterErrorMessage}</Box>
+        </VStack>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-around"
+          backgroundColor="brand.white"
+          minHeight={[250, null, null, null, 280, null]}
+          w="100%"
+        >
+          <Box w="100%" mt="16px">
+            <Text color="brand.black" ml="16px">
+              Política de privacidad
+            </Text>
+          </Box>
+          <Box w="100%">
+            <Text color="brand.black" ml="16px">
+              Configuración de cookies
+            </Text>
+          </Box>
+          <Box w="100%">
+            <Text color="brand.black" ml="16px">
+              Términos y condiciones
+            </Text>
+          </Box>
+          <Box w="100%">
+            <Text color="brand.black" ml="16px">
+              Aviso Legal
+            </Text>
+          </Box>
+          <Box display="flex" justifyContent="center" w="100%" pb="20px">
+            <TwitterIcon />
+            <LinkedinIcon />
+          </Box>
         </Box>
-        <Box w="100%">
-          <Text color="brand.white" ml="16px">
-            Configuración de cookies
-          </Text>
-        </Box>
-        <Box w="100%">
-          <Text color="brand.white" ml="16px">
-            Términos y condiciones
-          </Text>
-        </Box>
-        <Box w="100%">
-          <Text color="brand.white" ml="16px">
-            Aviso Legal
-          </Text>
-        </Box>
-        <Box display="flex" justifyContent="center" w="100%">
-          <TwitterIcon />
-          <LinkedinIcon />
-        </Box>
-      </Box>
-    </VStack>
-  );
+      </VStack>
+    );
+  }
 }
