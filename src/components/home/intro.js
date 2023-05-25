@@ -16,7 +16,7 @@ export default function Intro(props) {
   const { title, subtitle, text, cta, buttonText } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   return (
-    <Flex justify="center" alignItems="center" bg="brand.beige">
+    <Flex justify="center" alignItems="center" bg="brand.warmBackground">
       <VStack
         mt={["20px", "20px", "40px", "80px", "80px", null]}
         mb={[null, "40px", "80px", "80px", "80px", null]}
@@ -64,7 +64,7 @@ export default function Intro(props) {
           flexDirection="column"
           alignItems="center"
           align="center"
-          bg="brand.white"
+          bg="brand.whiteBackground"
           borderRadius="0px 0px 9px 9px"
           boxShadow="0px 4px 50px rgba(0, 0, 0, 0.1)"
         >

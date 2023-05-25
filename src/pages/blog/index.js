@@ -1,66 +1,205 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Layout from "../../components/layout";
 
-import { getAllPostsFromWordPress } from '../../lib/posts';
+import { Text, Box, Flex, Heading, VStack, chakra, useMediaQuery } from "@chakra-ui/react";
 
-export default function Blog({ allPosts }) {
-  return (
-    <div>Blog Page</div>
-    /*
-    <div>
-      <Head>
-        <title>aTitle</title>
-        <meta name="description" content="aContent"/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import Head from "next/head";
+import Image from "next/image";
 
-      <main>
-        <h1>BLOG</h1>
+export default function Blog() {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isTablet] = useMediaQuery(
+    "(min-width: 768px) and (max-width: 1280px)"
+  );
 
-        <p>Nuestro blog</p>
-
-        <ul >
-          {allPosts && allPosts.length > 0 && allPosts.map(post => {
-            return (
-              <li key={post.node.slug}>
-                <Link href={`/blog/${post.node.slug}`}>
-                  <a>
-                    <h3 dangerouslySetInnerHTML={{
-                      __html: post.node.title
-                    }} />
-                  </a>
-                </Link>
-                <div dangerouslySetInnerHTML={{
-                  __html: post.node.excerpt
-                }} />
-              </li>
-            );
-          })}
-
-          {!allPosts || allPosts.length === 0 && (
-            <li>
-              <p>
-                Oops, no posts found!
-              </p>
-            </li>
-          )}
-        </ul>
-      </main>
-    </div>
-    */
-  )
-}
-
-/*
-
-export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllPostsFromWordPress(preview)
-
-  return {
-    props: { allPosts: allPosts.edges, preview },
-    revalidate: 10,
+  if (isMobile || isTablet) {
+    return (
+      <Layout isBlog={true}>
+        <Head>
+          <title>ON LINE | Quiénes Somos</title>
+          <meta
+            name="description"
+            content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <>
+          <Flex
+            justify="center"
+            bg="brand.whiteBackground"
+            minHeight="1000px"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <VStack
+              w={[320, null, 720, null, null, null]}
+              minHeight={[900, null, 600, null, null, null]}
+              align="stretch"
+              justifyContent="space-around"
+              spacing="0px"
+            >
+              <Box>
+                <Box marginLeft="140px">
+                  <Image
+                    width={120}
+                    height={120}
+                    src={`${process.env.basePath}/img/bookImage.png`}
+                    alt="about-image"
+                  ></Image>
+                </Box>
+                <Heading
+                  as="h1"
+                  fontSize={["24px", null, null, null, null, null]}
+                  fontWeight="bold"
+                  color="brand.main"
+                  lineHeight="1"
+                >
+                  Blog
+                </Heading>
+                <Heading
+                  as="h5"
+                  fontSize={["36px", null, null, null, null, null]}
+                  fontWeight="bold"
+                  color="brand.text"
+                  lineHeight="1"
+                >
+                  Coming Soon
+                </Heading>
+              </Box>
+              <Text>
+                ¡Bienvenidos a nuestra sección de blogs! Estamos emocionados de
+                compartir contenido increíble contigo{" "}
+                <chakra.span fontWeight="bold">
+                  en un futuro próximo.
+                </chakra.span>
+                &nbsp; Mientras preparamos nuestra próxima publicaciones de
+                blog, aquí hay una vista previa de lo que puedes esperar:
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Guías educacionales y tutoriales:{" "}
+                </chakra.span>
+                Tutoriales y guías paso a paso sobre principios de diseño web,
+                técnicas de programación, mejores prácticas de experiencia de
+                usuario y estrategias de marketing digital.{" "}
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Case Studies and Success Stories:{" "}
+                </chakra.span>
+                Ejemplos reales de proyectos exitosos que hemos emprendido.
+                &nbsp; Obtendrás información sobre nuestros procesos de diseño y
+                desarrollo, decisiones UX/UI y estrategias de marketing que
+                condujeron a notables resultados.{" "}
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Notícias de la indústria y tendencias:{" "}
+                </chakra.span>
+                Manténgase actualizado con lo último tendencias, innovaciones y
+                avances en diseño web, desarrollo, UX/UI y marketing.
+              </Text>
+            </VStack>
+          </Flex>
+        </>
+      </Layout>
+    );
+  } else {
+    return (
+      <Layout isBlog={true}>
+        <Head>
+          <title>ON LINE | Quiénes Somos</title>
+          <meta
+            name="description"
+            content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <>
+          <Flex
+            justify="center"
+            bg="brand.whiteBackground"
+            minHeight="600px"
+            alignItems="center"
+            flexDirection="row"
+          >
+            <VStack
+              w={[320, null, 720, null, 720, null]}
+              minHeight={[900, null, 600, null, 500, null]}
+              align="stretch"
+              justifyContent="space-around"
+              spacing="0px"
+            >
+              <Box>
+                <Heading
+                  as="h1"
+                  fontSize={["24px", null, null, null, null, null]}
+                  fontWeight="bold"
+                  color="brand.main"
+                  lineHeight="1"
+                >
+                  Blog
+                </Heading>
+                <Heading
+                  as="h5"
+                  fontSize={["36px", null, null, null, null, null]}
+                  fontWeight="bold"
+                  color="brand.text"
+                  lineHeight="1"
+                >
+                  Coming Soon
+                </Heading>
+              </Box>
+              <Text>
+                ¡Bienvenidos a nuestra sección de blogs! Estamos emocionados de
+                compartir contenido increíble contigo{" "}
+                <chakra.span fontWeight="bold">
+                  en un futuro próximo.
+                </chakra.span>
+                &nbsp; Mientras preparamos nuestra próxima publicaciones de
+                blog, aquí hay una vista previa de lo que puedes esperar:
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Guías educacionales y tutoriales:{" "}
+                </chakra.span>
+                Tutoriales y guías paso a paso sobre principios de diseño web,
+                técnicas de programación, mejores prácticas de experiencia de
+                usuario y estrategias de marketing digital.{" "}
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Case Studies and Success Stories:{" "}
+                </chakra.span>
+                Ejemplos reales de proyectos exitosos que hemos emprendido.
+                &nbsp; Obtendrás información sobre nuestros procesos de diseño y
+                desarrollo, decisiones UX/UI y estrategias de marketing que
+                condujeron a notables resultados.{" "}
+              </Text>
+              <Text>
+                <chakra.span fontWeight="bold">
+                  {" "}
+                  · Notícias de la indústria y tendencias:{" "}
+                </chakra.span>
+                Manténgase actualizado con lo último tendencias, innovaciones y
+                avances en diseño web, desarrollo, UX/UI y marketing.
+              </Text>
+            </VStack>
+            <Box marginLeft="140px">
+                  <Image
+                    width={256}
+                    height={256}
+                    src={`${process.env.basePath}/img/bookImage.png`}
+                    alt="about-image"
+                  ></Image>
+                </Box>
+          </Flex>
+        </>
+      </Layout>
+    );
   }
 }
-
-*/
-

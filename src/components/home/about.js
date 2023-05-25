@@ -27,7 +27,7 @@ export default function About({
       <Flex
         justify="center"
         alignItems="center"
-        bg="brand.beige"
+        bg="brand.warmBackground"
         h={[686, 686, null, null, null, null]}
       >
         <VStack
@@ -36,7 +36,7 @@ export default function About({
           display="flex"
           flexDirection="column"
           spacing="0"
-          bg="brand.white"
+          bg="brand.whiteBackground"
         >
           <Box
             h={[227, 227, null, null, null, null]}
@@ -51,7 +51,7 @@ export default function About({
           </Box>
           <VStack
             w={[320, 440, null, null, null, null]}
-            bg="brand.white"
+            bg="brand.whiteBackground"
             spacing="0"
           >
             <Box
@@ -115,7 +115,7 @@ export default function About({
                   mt={["54px", "54px", null, null, null, null]}
                   fontSize={["16px", null, null, null, null, null]}
                   fontWeight="medium"
-                  color="brand.red"
+                  color="brand.main"
                   textDecoration="underline"
                 >
                   <Link href="/">{knowUs2}</Link>
@@ -128,7 +128,7 @@ export default function About({
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.beige">
+      <Flex justify="center" alignItems="center" bg="brand.warmBackground">
         <VStack
           w={[null, null, 728, 952, 1128, null]}
           h={[null, null, 640, 640, 640, null]}
@@ -141,7 +141,7 @@ export default function About({
           <Box
             h={[null, null, 480, 480, 480, null]}
             w={[null, null, 728, 952, 1128, null]}
-            bg="brand.pureWhite"
+            bg="brand.whiteBackground"
             borderRadius="0px 9px 0px 0px"
             display="flex"
           >
@@ -229,7 +229,7 @@ export default function About({
                     h={[null, null, "20px", "20px", "20px", null]}
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     fontWeight="medium"
-                    color="brand.red"
+                    color="brand.main"
                     textDecoration="underline"
                   >
                     <Link href="/">{knowUs2}</Link>

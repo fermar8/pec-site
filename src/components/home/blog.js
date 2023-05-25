@@ -32,7 +32,7 @@ export default function Blog() {
   );
   if (isMobile) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           w={[320, 480, null, null, null, null]}
           h={[610, 578, null, null, null, null]}
@@ -46,7 +46,7 @@ export default function Blog() {
             w={[320, 440, null, null, null, null]}
             mb={["24px", null, null, null, null, null]}
             fontSize={["32px", null, null, null, null, null]}
-            color="brand.red"
+            color="brand.main"
             fontWeight="semibold"
           >
             <Heading as="h3">Blog</Heading>
@@ -98,7 +98,7 @@ export default function Blog() {
     );
   } else if (isTablet) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           w={[null, null, 768, 992, null, null]}
           h={[null, null, 626, 610, null, null]}
@@ -112,7 +112,7 @@ export default function Blog() {
             w={[null, null, 728, 952, null, null]}
             mb={[null, null, "24px", "24px", null, null]}
             fontSize={[null, null, "32px", "32px", null, null]}
-            color="brand.red"
+            color="brand.main"
             fontWeight="semibold"
           >
             <Heading as="h3">Blog</Heading>
@@ -171,7 +171,7 @@ export default function Blog() {
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           w={[null, null, null, null, 1128, null]}
           h={[null, null, null, null, 570, null]}
@@ -185,7 +185,7 @@ export default function Blog() {
             <Heading
               as="h3"
               fontSize={[null, null, null, null, "32px", null]}
-              color="brand.red"
+              color="brand.main"
               fontWeight="semibold"
             >
               Blog

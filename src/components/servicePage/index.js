@@ -81,7 +81,7 @@ export default function ServicePage(props) {
         <>
           <Flex
             justify="center"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             h={[440, null, null, null, null, null]}
           >
             <VStack
@@ -103,7 +103,7 @@ export default function ServicePage(props) {
                   as="h5"
                   fontSize={["24px", null, null, null, null, null]}
                   fontWeight="bold"
-                  color="brand.red"
+                  color="brand.main"
                 >
                   Servicios
                 </Heading>
@@ -120,7 +120,7 @@ export default function ServicePage(props) {
               </Box>
             </VStack>
           </Flex>
-          <Flex justify="center" w="100%" bg="brand.red">
+          <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[320, null, null, null, null, null]}
               h={[192, null, null, null, null, null]}
@@ -131,7 +131,7 @@ export default function ServicePage(props) {
               spacing="0px"
             >
               <Box>
-                <Text color="brand.white" fontSize="18px" fontWeight="bold">
+                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -140,7 +140,7 @@ export default function ServicePage(props) {
           </Flex>
           <Flex
             w="100%"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             flexDirection="column"
             justify="space-around"
             alignItems="center"
@@ -158,7 +158,7 @@ export default function ServicePage(props) {
             >
               <Box mb="16px">
                 <Text
-                  color="brand.white"
+                  color="brand.whiteBackground"
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"
@@ -203,7 +203,7 @@ export default function ServicePage(props) {
         <>
           <Flex
             justify="center"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             h={[null, null, 500, null, null, null]}
           >
             <Flex
@@ -218,7 +218,7 @@ export default function ServicePage(props) {
                   as="h5"
                   fontSize={[null, null, "24px", null, null, null]}
                   fontWeight="bold"
-                  color="brand.red"
+                  color="brand.main"
                 >
                   Servicios
                 </Heading>
@@ -238,7 +238,7 @@ export default function ServicePage(props) {
               </Box>
             </Flex>
           </Flex>
-          <Flex justify="center" w="100%" bg="brand.red">
+          <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[720, null, null, null, null, null]}
               h={[136, null, null, null, null, null]}
@@ -249,7 +249,7 @@ export default function ServicePage(props) {
               spacing="0px"
             >
               <Box>
-                <Text color="brand.white" fontSize="18px" fontWeight="bold">
+                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -258,7 +258,7 @@ export default function ServicePage(props) {
           </Flex>
           <Flex
             w="100%"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             flexDirection="column"
             justify="center"
             alignItems="center"
@@ -275,7 +275,7 @@ export default function ServicePage(props) {
             >
               <Box mb="16px">
                 <Text
-                  color="brand.white"
+                  color="brand.whiteBackground"
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"

@@ -4,8 +4,8 @@ import { WavingHand } from "../../icons";
 function buttonContactWithUs({ buttonText }) {
   return (
     <Button
-      bg="brand.red"
-      color="brand.white"
+      bg="brand.main"
+      color="brand.whiteBackground"
       mb={["32px", "32px", "32px", "32px", "32px", null]}
       w={[204, 204, 204, 204, 204, null]}
       h={["32px", "32px", "32px", "32px", "32px", null]}

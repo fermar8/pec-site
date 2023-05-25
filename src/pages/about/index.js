@@ -29,7 +29,7 @@ export default function AboutPage() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <>
-          <Flex justify="center" bg="brand.white">
+          <Flex justify="center" bg="brand.whiteBackground">
             <VStack
               w={[320, null, null, null, null, null]}
               h={[648, null, null, null, null, null]}
@@ -65,7 +65,7 @@ export default function AboutPage() {
                     as="h5"
                     fontSize={["24px", null, null, null, null, null]}
                     fontWeight="bold"
-                    color="brand.red"
+                    color="brand.main"
                     lineHeight="1"
                   >
                     Sobre
@@ -98,7 +98,7 @@ export default function AboutPage() {
               </Box>
             </VStack>
           </Flex>
-          <Flex justify="center" w="100%" bg="brand.red">
+          <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[320, null, null, null, null, null]}
               h={[192, null, null, null, null, null]}
@@ -109,7 +109,7 @@ export default function AboutPage() {
               spacing="0px"
             >
               <Box>
-                <Text color="brand.white" fontSize="18px" fontWeight="bold">
+                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -118,7 +118,7 @@ export default function AboutPage() {
           </Flex>
           <Flex
             w="100%"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             flexDirection="column"
             justify="space-between"
             alignItems="center"
@@ -143,7 +143,7 @@ export default function AboutPage() {
                     as="h5"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
-                    color="brand.red"
+                    color="brand.main"
                   >
                     Nuestra misión
                   </Heading>
@@ -171,7 +171,7 @@ export default function AboutPage() {
               </Box>
               <Box mb="16px" display="flex" flexDirection="column">
                 <Text
-                  color="brand.white"
+                  color="brand.whiteBackground"
                   fontSize="40px"
                   lineHeight="36px"
                   fontWeight="bold"
@@ -216,7 +216,7 @@ export default function AboutPage() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <>
-          <Flex justify="center" bg="brand.white">
+          <Flex justify="center" bg="brand.whiteBackground">
             <Flex
               w={[null, null, 720, null, null, null]}
               h={[null, null, 500, null, null, null]}
@@ -229,7 +229,7 @@ export default function AboutPage() {
                   as="h5"
                   fontSize={[null, null, "24px", null, null, null]}
                   fontWeight="bold"
-                  color="brand.red"
+                  color="brand.main"
                   lineHeight="1"
                 >
                   Sobre
@@ -276,7 +276,7 @@ export default function AboutPage() {
               </Box>
             </Flex>
           </Flex>
-          <Flex justify="center" w="100%" bg="brand.red">
+          <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[720, null, null, null, null, null]}
               h={[136, null, null, null, null, null]}
@@ -287,7 +287,7 @@ export default function AboutPage() {
               spacing="0px"
             >
               <Box>
-                <Text color="brand.white" fontSize="18px" fontWeight="bold">
+                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -296,7 +296,7 @@ export default function AboutPage() {
           </Flex>
           <Flex
             w="100%"
-            bg="brand.white"
+            bg="brand.whiteBackground"
             flexDirection="column"
             justify="space-between"
             alignItems="center"
@@ -321,7 +321,7 @@ export default function AboutPage() {
                     as="h5"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
-                    color="brand.red"
+                    color="brand.main"
                   >
                     Nuestra misión
                   </Heading>
@@ -349,7 +349,7 @@ export default function AboutPage() {
               </Box>
               <Box mb="16px" display="flex" flexDirection="column">
                 <Text
-                  color="brand.white"
+                  color="brand.whiteBackground"
                   fontSize="40px"
                   lineHeight="36px"
                   fontWeight="bold"

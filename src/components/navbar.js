@@ -103,9 +103,9 @@ export default function Navbar({
                   <ButtonGroup gap="24px">
                     <Box
                       as="button"
-                      color={isHome ? "brand.red" : "brand.black"}
+                      color={isHome ? "brand.main" : "brand.text"}
                       textDecoration={isHome ? "underline" : "none"}
-                      _hover={{ color: "brand.red" }}
+                      _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
                       <Link href="/">Inicio</Link>
@@ -113,7 +113,7 @@ export default function Navbar({
                     <Menu
                       isOpen={isDropdownOpen}
                       backgroundColor="brand.white"
-                      _selected={{ color: "brand.red", bg: "brand.white" }}
+                      _selected={{ color: "brand.main", bg: "brand.white" }}
                       _focus={{ bg: "brand.white" }}
                     >
                       {({ isOpen }) => (
@@ -123,7 +123,8 @@ export default function Navbar({
                             as={Button}
                             fontWeight="normal"
                             backgroundColor="brand.white"
-                            color={isService ? "brand.red" : "brand.black"}
+                            _hover={{ color: "brand.main" }}
+                            color={isService ? "brand.main" : "brand.text"}
                             textDecoration={isService ? "underline" : "none"}
                             fontSize={[
                               null,
@@ -143,8 +144,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Desarrollo Web"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/web">Desarrollo Web</Link>
@@ -153,8 +154,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Diseño Web"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/design">Diseño Web</Link>
@@ -163,8 +164,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Consultoría UX/UI"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/ux-ui">
@@ -175,8 +176,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Social Media"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/social-media">
@@ -187,8 +188,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Campañas SEM"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/sem">Campañas SEM</Link>
@@ -197,8 +198,8 @@ export default function Navbar({
                               _hover={{ bg: "brand.white" }}
                               color={
                                 serviceType === "Posicionamiento SEO"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                             >
                               <Link href="/services/seo">
@@ -211,18 +212,19 @@ export default function Navbar({
                     </Menu>
                     <Box
                       as="button"
-                      color={isAbout ? "brand.red" : "brand.black"}
+                      color={isAbout ? "brand.main" : "brand.text"}
                       textDecoration={isAbout ? "underline" : "none"}
-                      _hover={{ color: "brand.red" }}
+                      _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
                       <Link href="/about">Nosotros</Link>
                     </Box>
                     <Box
                       as="button"
-                      color="brand.black"
-                      _hover={{ color: "brand.red" }}
+                      _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
+                      color={isBlog ? "brand.main" : "brand.text"}
+                      textDecoration={isBlog ? "underline" : "none"}
                     >
                       <Link href="/blog">Blog</Link>
                     </Box>
@@ -238,9 +240,9 @@ export default function Navbar({
                     variant="ghost"
                     icon={
                       isOpen ? (
-                        <CloseIcon h="18px" w="18px" color="brand.red" />
+                        <CloseIcon h="18px" w="18px" color="brand.main" />
                       ) : (
-                        <HamburgerIcon h="32px" w="32px" color="brand.red" />
+                        <HamburgerIcon h="32px" w="32px" color="brand.main" />
                       )
                     }
                     aria-label="Open Menu"
@@ -274,7 +276,7 @@ export default function Navbar({
                           as="span"
                           flex="1"
                           textAlign="left"
-                          color={isHome ? "brand.red" : "brand.black"}
+                          color={isHome ? "brand.main" : "brand.text"}
                           textDecoration={isHome ? "underline" : "none"}
                         >
                           <Link href="/">Inicio</Link>
@@ -296,7 +298,7 @@ export default function Navbar({
                               as="span"
                               flex="1"
                               textAlign="left"
-                              color={isService ? "brand.red" : "brand.black"}
+                              color={isService ? "brand.main" : "brand.text"}
                               textDecoration={isService ? "underline" : "none"}
                             >
                               Nuestros servicios
@@ -317,8 +319,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Desarrollo Web"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                               ml="8px"
@@ -329,8 +331,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Diseño Web"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                             >
@@ -340,8 +342,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Consultoría UX/UI"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                             >
@@ -353,8 +355,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Marketing Digital"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                             >
@@ -366,8 +368,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Campañas SEM"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                             >
@@ -377,8 +379,8 @@ export default function Navbar({
                               as="button"
                               color={
                                 serviceType === "Posicionamiento SEO"
-                                  ? "brand.red"
-                                  : "brand.black"
+                                  ? "brand.main"
+                                  : "brand.text"
                               }
                               fontSize="16px"
                             >
@@ -402,7 +404,7 @@ export default function Navbar({
                           as="span"
                           flex="1"
                           textAlign="left"
-                          color={isAbout ? "brand.red" : "brand.black"}
+                          color={isAbout ? "brand.main" : "brand.text"}
                           textDecoration={isAbout ? "underline" : "none"}
                         >
                           <Link href="/about">Sobre nosotros</Link>
@@ -421,7 +423,7 @@ export default function Navbar({
                           as="span"
                           flex="1"
                           textAlign="left"
-                          color={isBlog ? "brand.red" : "brand.black"}
+                          color={isBlog ? "brand.main" : "brand.text"}
                           textDecoration={isBlog ? "underline" : "none"}
                         >
                           <Link href="/blog">Nuestro Blog</Link>

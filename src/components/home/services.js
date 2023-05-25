@@ -31,7 +31,7 @@ export default function Services(props) {
   );
   if (isMobile) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           mt={["64px", "64px", null, null, null, null]}
           mb={["64px", "64px", null, null, null, null]}
@@ -51,7 +51,7 @@ export default function Services(props) {
               fontSize={["24px", "24px", null, null, null, null]}
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="semi-bold"
-              color="brand.red"
+              color="brand.main"
               mb={["16px", "16px", null, null, null, null]}
             >
               {title}
@@ -83,7 +83,7 @@ export default function Services(props) {
     );
   } else if (isTablet) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           mt={[null, null, "64px", "64px", null, null]}
           mb={[null, null, "64px", "64px", null, null]}
@@ -102,7 +102,7 @@ export default function Services(props) {
               as="h2"
               fontSize={[null, null, "24px", "24px", null, null]}
               fontWeight="semi-bold"
-              color="brand.red"
+              color="brand.main"
             >
               {title}
             </Heading>
@@ -159,7 +159,7 @@ export default function Services(props) {
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
         <VStack
           mt={[null, null, null, null, "64px", null]}
           mb={[null, null, null, null, "64px", null]}
@@ -178,7 +178,7 @@ export default function Services(props) {
               as="h2"
               fontSize={[null, null, null, null, "32px", null]}
               fontWeight="semi-bold"
-              color="brand.red"
+              color="brand.main"
             >
               {title}
             </Heading>

@@ -103,14 +103,14 @@ export default function Footer() {
           pb="40px"
           minHeight="660px"
           width="100%"
-          backgroundColor="brand.beige"
+          backgroundColor="brand.warmBackground"
           color="white"
           textAlign="center"
           overflow="hidden"
         >
           <Box mb="16px">
             <Text
-              color="brand.white"
+              color="brand.whiteBackground"
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
@@ -137,10 +137,10 @@ export default function Footer() {
                     placeholder="Nombre completo*"
                     type="text"
                     variant="standard"
-                    outlineColor="brand.lightPink"
+                    outlineColor="brand.border"
                     sx={{
                       ":focus": {
-                        outlineColor: "brand.red",
+                        outlineColor: "brand.main",
                       },
                     }}
                     color="black"
@@ -151,7 +151,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.name && formik.errors.name ? (
-                  <Box mt="8px" color="brand.red">
+                  <Box mt="8px" color="brand.main">
                     {formik.errors.name}
                   </Box>
                 ) : null}
@@ -165,10 +165,10 @@ export default function Footer() {
                     placeholder="Correo electrónico*"
                     type="email"
                     variant="standard"
-                    outlineColor="brand.lightPink"
+                    outlineColor="brand.border"
                     sx={{
                       ":focus": {
-                        outlineColor: "brand.red",
+                        outlineColor: "brand.main",
                       },
                     }}
                     bg="white"
@@ -179,7 +179,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.email && formik.errors.email ? (
-                  <Box mt="8px" color="brand.red">
+                  <Box mt="8px" color="brand.main">
                     {formik.errors.email}
                   </Box>
                 ) : null}
@@ -193,10 +193,10 @@ export default function Footer() {
                     placeholder="Teléfono*"
                     type="tel"
                     variant="standard"
-                    outlineColor="brand.lightPink"
+                    outlineColor="brand.border"
                     sx={{
                       ":focus": {
-                        outlineColor: "brand.red",
+                        outlineColor: "brand.main",
                       },
                     }}
                     bg="white"
@@ -207,7 +207,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.phone && formik.errors.phone ? (
-                  <Box mt="8px" color="brand.red">
+                  <Box mt="8px" color="brand.main">
                     {formik.errors.phone}
                   </Box>
                 ) : null}
@@ -221,10 +221,10 @@ export default function Footer() {
                     placeholder="Empresa"
                     type="text"
                     variant="standard"
-                    outlineColor="brand.lightPink"
+                    outlineColor="brand.border"
                     sx={{
                       ":focus": {
-                        outlineColor: "brand.red",
+                        outlineColor: "brand.main",
                       },
                     }}
                     bg="white"
@@ -245,10 +245,10 @@ export default function Footer() {
                     type="text"
                     bg="white"
                     variant="standard"
-                    outlineColor="brand.lightPink"
+                    outlineColor="brand.border"
                     sx={{
                       ":focus": {
-                        outlineColor: "brand.red",
+                        outlineColor: "brand.main",
                       },
                     }}
                     color="black"
@@ -259,21 +259,21 @@ export default function Footer() {
                 </FormControl>
                 <Button
                   type="submit"
-                  bg="brand.red"
-                  color="brand.white"
+                  bg="brand.main"
+                  color="brand.whiteBackground"
                   w={["50%", "30%", null, null, null, null]}
                   h="36px"
                   verticalAlign="text-bottom"
                   borderRadius="999"
                   sx={{
                     ":focus": {
-                      bg: "brand.red",
+                      bg: "brand.main",
                     },
                     ":active": {
-                      bg: "brand.red",
+                      bg: "brand.main",
                     },
                     ":after": {
-                      bg: "brand.red",
+                      bg: "brand.main",
                     },
                   }}
                 >
@@ -282,8 +282,8 @@ export default function Footer() {
               </VStack>
             </form>
           ) : null}
-          <Box color="brand.red">{afterSuccessMessage}</Box>
-          <Box color="brand.red">{afterErrorMessage}</Box>
+          <Box color="brand.main">{afterSuccessMessage}</Box>
+          <Box color="brand.main">{afterErrorMessage}</Box>
           <Box
             display="flex"
             flexDirection="column"
@@ -298,7 +298,7 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
             >
               <EmailIcon />
-              <Text color="brand.black" ml="16px">
+              <Text color="brand.text" ml="16px">
                 mail@mailto.com
               </Text>
             </Box>
@@ -309,7 +309,7 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
             >
               <PhoneIcon />
-              <Text color="brand.black" ml="16px">
+              <Text color="brand.text" ml="16px">
                 933237184
               </Text>
             </Box>
@@ -320,7 +320,7 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
             >
               <LocationIcon />
-              <Text color="brand.black" ml="16px">
+              <Text color="brand.text" ml="16px">
                 C/ Eudald el dèbil, 2n 2a, Gelida
               </Text>
             </Box>
@@ -330,28 +330,28 @@ export default function Footer() {
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
-          backgroundColor="brand.white"
+          backgroundColor="brand.whiteBackground"
           minHeight={[250, null, null, null, null, null]}
           w="100%"
           pb="20px"
         >
           <Box w="100%" mt="16px">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Política de privacidad
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Configuración de cookies
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Términos y condiciones
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Aviso Legal
             </Text>
           </Box>
@@ -369,20 +369,20 @@ export default function Footer() {
         color="white"
         textAlign="center"
         justifyContent="space-around"
-        backgroundColor="brand.beige"
+        backgroundColor="brand.warmBackground"
       >
         <VStack
           justifyContent="space-around"
           minHeight="480px"
           width="100%"
-          backgroundColor="brand.beige"
+          backgroundColor="brand.warmBackground"
           color="white"
           textAlign="center"
           overflow="hidden"
         >
           <Box mb="16px">
             <Text
-              color="brand.white"
+              color="brand.whiteBackground"
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
@@ -408,19 +408,19 @@ export default function Footer() {
                   >
                     <Box display="flex" w="100%" mb="16px">
                       <EmailIcon />
-                      <Text color="brand.black" ml="16px">
+                      <Text color="brand.text" ml="16px">
                         mail@mailto.com
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
                       <PhoneIcon />
-                      <Text color="brand.black" ml="16px">
+                      <Text color="brand.text" ml="16px">
                         933237184
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
                       <LocationIcon />
-                      <Text color="brand.black" ml="16px">
+                      <Text color="brand.text" ml="16px">
                         C/ Eudald el dèbil, 2n 2a, Gelida
                       </Text>
                     </Box>
@@ -436,10 +436,10 @@ export default function Footer() {
                         placeholder="Nombre completo*"
                         type="text"
                         variant="standard"
-                        outlineColor="brand.lightPink"
+                        outlineColor="brand.border"
                         sx={{
                           ":focus": {
-                            outlineColor: "brand.red",
+                            outlineColor: "brand.main",
                           },
                         }}
                         color="black"
@@ -450,7 +450,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.name && formik.errors.name ? (
-                      <Box mt="8px" color="brand.red">
+                      <Box mt="8px" color="brand.main">
                         {formik.errors.name}
                       </Box>
                     ) : null}
@@ -466,10 +466,10 @@ export default function Footer() {
                         placeholder="Correo electrónico*"
                         type="email"
                         variant="standard"
-                        outlineColor="brand.lightPink"
+                        outlineColor="brand.border"
                         sx={{
                           ":focus": {
-                            outlineColor: "brand.red",
+                            outlineColor: "brand.main",
                           },
                         }}
                         bg="white"
@@ -480,7 +480,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.email && formik.errors.email ? (
-                      <Box mt="8px" color="brand.red">
+                      <Box mt="8px" color="brand.main">
                         {formik.errors.email}
                       </Box>
                     ) : null}
@@ -494,10 +494,10 @@ export default function Footer() {
                         placeholder="Teléfono*"
                         type="tel"
                         variant="standard"
-                        outlineColor="brand.lightPink"
+                        outlineColor="brand.border"
                         sx={{
                           ":focus": {
-                            outlineColor: "brand.red",
+                            outlineColor: "brand.main",
                           },
                         }}
                         bg="white"
@@ -508,7 +508,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.phone && formik.errors.phone ? (
-                      <Box mt="8px" color="brand.red">
+                      <Box mt="8px" color="brand.main">
                         {formik.errors.phone}
                       </Box>
                     ) : null}
@@ -522,10 +522,10 @@ export default function Footer() {
                         placeholder="Empresa"
                         type="text"
                         variant="standard"
-                        outlineColor="brand.lightPink"
+                        outlineColor="brand.border"
                         sx={{
                           ":focus": {
-                            outlineColor: "brand.red",
+                            outlineColor: "brand.main",
                           },
                         }}
                         bg="white"
@@ -548,10 +548,10 @@ export default function Footer() {
                         type="text"
                         bg="white"
                         variant="standard"
-                        outlineColor="brand.lightPink"
+                        outlineColor="brand.border"
                         sx={{
                           ":focus": {
-                            outlineColor: "brand.red",
+                            outlineColor: "brand.main",
                           },
                         }}
                         color="black"
@@ -562,22 +562,22 @@ export default function Footer() {
                     </FormControl>
                     <Button
                       type="submit"
-                      bg="brand.red"
+                      bg="brand.main"
                       alignSelf="start"
-                      color="brand.white"
+                      color="brand.whiteBackground"
                       w={["50%", "30%", null, null, null, null]}
                       h="36px"
                       verticalAlign="text-bottom"
                       borderRadius="999"
                       sx={{
                         ":focus": {
-                          bg: "brand.red",
+                          bg: "brand.main",
                         },
                         ":active": {
-                          bg: "brand.red",
+                          bg: "brand.main",
                         },
                         ":after": {
-                          bg: "brand.red",
+                          bg: "brand.main",
                         },
                       }}
                     >
@@ -596,52 +596,52 @@ export default function Footer() {
             >
               <Box display="flex" w="100%" mb="16px">
                 <EmailIcon />
-                <Text color="brand.black" ml="16px">
+                <Text color="brand.text" ml="16px">
                   mail@mailto.com
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
                 <PhoneIcon />
-                <Text color="brand.black" ml="16px">
+                <Text color="brand.text" ml="16px">
                   933237184
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
                 <LocationIcon />
-                <Text color="brand.black" ml="16px">
+                <Text color="brand.text" ml="16px">
                   C/ Eudald el dèbil, 2n 2a, Gelida
                 </Text>
               </Box>
             </Box>
           )}
-          <Box color="brand.red">{afterSuccessMessage}</Box>
-          <Box color="brand.red">{afterErrorMessage}</Box>
+          <Box color="brand.main">{afterSuccessMessage}</Box>
+          <Box color="brand.main">{afterErrorMessage}</Box>
         </VStack>
         <Box
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
-          backgroundColor="brand.white"
+          backgroundColor="brand.whiteBackground"
           minHeight={[250, null, null, null, 280, null]}
           w="100%"
         >
           <Box w="100%" mt="16px">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Política de privacidad
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Configuración de cookies
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Términos y condiciones
             </Text>
           </Box>
           <Box w="100%">
-            <Text color="brand.black" ml="16px">
+            <Text color="brand.text" ml="16px">
               Aviso Legal
             </Text>
           </Box>

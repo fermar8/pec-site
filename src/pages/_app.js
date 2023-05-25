@@ -1,23 +1,31 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, Text, extendTheme} from "@chakra-ui/react";
+import { Inter } from 'next/font/google';
+ 
+const inter = Inter({ weight: '400', subsets: ['latin'] });
+
+const fonts = {
+  heading: inter.style.fontFamily,
+  body: inter.style.fontFamily,
+};
 
 function MyApp({ Component, pageProps = {} }) {
   const theme = extendTheme({
     colors: {
       brand: {
-        red: "#F55951",
-        white: "#fafafa",
-        pureWhite: "#ffffff",
-        grey: "#D7D7D7",
-        black: "#292929",
-        beige: "#fff9f4",
-        lightPink: "#FFE2DC"
+        main: "#F55951",
+        border: "#FFE2DC",
+        whiteBackground: "#ffffff",
+        warmBackground: "#fff9f4",
+        text: "#292929",
+        cardBackground: "#E5E5E5",
+        grey: "#80000000",
       },
     },
+    fonts,
   });
   return (
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
+    <ChakraProvider theme={theme}>
+        <Component {...pageProps}/>
       </ChakraProvider>
   );
 }

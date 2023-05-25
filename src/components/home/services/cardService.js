@@ -62,7 +62,7 @@ export default function CardService(props) {
             flexDirection="column"
             justifyContent="center"
             fontWeight="medium"
-            color="brand.red"
+            color="brand.main"
             textDecoration="underline"
           >
             <Link href="/">Ver más</Link>
@@ -78,7 +78,7 @@ export default function CardService(props) {
         display="flex"
         flexDirection="column"
         border="1px"
-        borderColor="brand.red"
+        borderColor="brand.main"
         borderRadius="9px"
       >
         <Box
@@ -108,7 +108,7 @@ export default function CardService(props) {
           h={[null, null, "48px", "48px", null, null]}
           bg="brand.grey"
           borderTop="1px"
-          borderColor="brand.red"
+          borderColor="brand.main"
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
@@ -149,7 +149,7 @@ export default function CardService(props) {
             h={[null, null, "44px", "44px", null, null]}
             w={[null, null, 176, 176, null, null]}
             fontSize={[null, null, "14px", "14px", null, null]}
-            color="brand.red"
+            color="brand.main"
             textDecoration="underline"
             display="flex"
             justifyContent="center"
@@ -167,7 +167,7 @@ export default function CardService(props) {
         display="flex"
         flexDirection="column"
         border="1px"
-        borderColor="brand.red"
+        borderColor="brand.main"
         borderRadius="9px"
       >
         <Box
@@ -177,7 +177,7 @@ export default function CardService(props) {
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
-          borderColor="brand.red"
+          borderColor="brand.main"
           borderRadius="9px 9px 0 0"
           position="relative"
         >
@@ -187,7 +187,7 @@ export default function CardService(props) {
           h={[null, null, null, null, "180px", null]}
           bg="brand.grey"
           borderTop="1px"
-          borderColor="brand.red"
+          borderColor="brand.main"
           borderRadius="0 0 9px 9px"
           display="flex"
           flexDirection="column"
@@ -211,7 +211,7 @@ export default function CardService(props) {
             fontSize={[null, null, null, null, "14px", null]}
             display="flex"
             justifyContent="center"
-            color="brand.red"
+            color="brand.main"
             textDecoration="underline"
           >
             <Link href="/">Ver más</Link>

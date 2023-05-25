@@ -31,8 +31,8 @@ export default function Custom404() {
         </Head>
         <VStack minHeight="400px" justifyContent="center">
           <Image
-            height="140px"
-            width="140px"
+            height={140}
+            width={140}
             src={`${process.env.basePath}/img/404error.png`}
             alt="error-image"
           ></Image>
@@ -41,7 +41,7 @@ export default function Custom404() {
               as="h1"
               fontSize={["24px", null, null, null, null, null]}
               fontWeight="bold"
-              color="brand.red"
+              color="brand.main"
               lineHeight="1"
             >
               Error
@@ -50,7 +50,7 @@ export default function Custom404() {
               as="h2"
               fontSize={["36px", null, null, null, null, null]}
               fontWeight="bold"
-              color="brand.black"
+              color="brand.text"
               lineHeight="1"
             >
               404
@@ -85,7 +85,7 @@ export default function Custom404() {
                 as="h1"
                 fontSize={["24px", null, null, null, null, null]}
                 fontWeight="bold"
-                color="brand.red"
+                color="brand.main"
                 lineHeight="1"
               >
                 Error
@@ -94,7 +94,7 @@ export default function Custom404() {
                 as="h2"
                 fontSize={["36px", null, null, null, null, null]}
                 fontWeight="bold"
-                color="brand.black"
+                color="brand.text"
                 lineHeight="1"
               >
                 404
@@ -105,8 +105,8 @@ export default function Custom404() {
               </Text>
             </Box>
             <Image
-              height="140px"
-              width="140px"
+              height={140}
+              width={140}
               src={`${process.env.basePath}/img/404error.png`}
               alt="error-image"
             ></Image>

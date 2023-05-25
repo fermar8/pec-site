@@ -2,7 +2,7 @@ import { Box, useMediaQuery } from "@chakra-ui/react";
 export default function ButtonCarousel(props) {
   const backgroundColorChange = (buttonIndex, selectedIndex) => {
     let background;
-    background = buttonIndex === selectedIndex ? "brand.red" : "brand.grey";
+    background = buttonIndex === selectedIndex ? "brand.main" : "brand.grey";
     return background;
   };
   const [isMobile] = useMediaQuery("(max-width: 768px)");
