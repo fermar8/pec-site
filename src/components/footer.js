@@ -134,17 +134,15 @@ export default function Footer() {
                     <FormLabel htmlFor="name">Nombre completo</FormLabel>
                   </VisuallyHidden>
                   <Input
+                    borderRadius="none"
                     id="name"
                     name="name"
                     placeholder="Nombre completo*"
                     type="text"
-                    variant="standard"
-                    outlineColor="brand.border"
-                    sx={{
-                      ":focus": {
-                        outlineColor: "brand.main",
-                      },
-                    }}
+                    variant="outline"
+                    borderColor="brand.border"
+                    focusBorderColor="brand.main"
+                    hoverBorderColor="brand.main"
                     color="black"
                     bg="white"
                     onChange={formik.handleChange}
@@ -160,17 +158,15 @@ export default function Footer() {
                     <FormLabel htmlFor="email">Correo electrónico</FormLabel>
                   </VisuallyHidden>
                   <Input
+                    borderRadius="none"
                     id="email"
                     name="email"
                     placeholder="Correo electrónico*"
                     type="email"
-                    variant="standard"
-                    outlineColor="brand.border"
-                    sx={{
-                      ":focus": {
-                        outlineColor: "brand.main",
-                      },
-                    }}
+                    variant="outline"
+                    borderColor="brand.border"
+                    focusBorderColor="brand.main"
+                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -186,17 +182,15 @@ export default function Footer() {
                     <FormLabel htmlFor="phone">Teléfono</FormLabel>
                   </VisuallyHidden>
                   <Input
+                    borderRadius="none"
                     id="phone"
                     name="phone"
                     placeholder="Teléfono*"
                     type="tel"
-                    variant="standard"
-                    outlineColor="brand.border"
-                    sx={{
-                      ":focus": {
-                        outlineColor: "brand.main",
-                      },
-                    }}
+                    variant="outline"
+                    borderColor="brand.border"
+                    focusBorderColor="brand.main"
+                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -212,17 +206,15 @@ export default function Footer() {
                     <FormLabel htmlFor="company">Empresa</FormLabel>
                   </VisuallyHidden>
                   <Input
+                    borderRadius="none"
                     id="company"
                     name="company"
                     placeholder="Empresa"
                     type="text"
-                    variant="standard"
-                    outlineColor="brand.border"
-                    sx={{
-                      ":focus": {
-                        outlineColor: "brand.main",
-                      },
-                    }}
+                    variant="outline"
+                    borderColor="brand.border"
+                    focusBorderColor="brand.main"
+                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -235,18 +227,16 @@ export default function Footer() {
                     <FormLabel htmlFor="message">Escribe tu mensaje</FormLabel>
                   </VisuallyHidden>
                   <Textarea
+                    borderRadius="none"
                     id="message"
                     name="message"
                     placeholder="Escribe tu mensaje"
                     type="text"
                     bg="white"
-                    variant="standard"
-                    outlineColor="brand.border"
-                    sx={{
-                      ":focus": {
-                        outlineColor: "brand.main",
-                      },
-                    }}
+                    variant="outline"
+                    borderColor="brand.border"
+                    focusBorderColor="brand.main"
+                    hoverBorderColor="brand.main"
                     color="black"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -431,17 +421,15 @@ export default function Footer() {
                         <FormLabel htmlFor="name">Nombre completo</FormLabel>
                       </VisuallyHidden>
                       <Input
+                        borderRadius="none"
                         id="name"
                         name="name"
                         placeholder="Nombre completo*"
                         type="text"
-                        variant="standard"
-                        outlineColor="brand.border"
-                        sx={{
-                          ":focus": {
-                            outlineColor: "brand.main",
-                          },
-                        }}
+                        variant="outline"
+                        borderColor="brand.border"
+                        focusBorderColor="brand.main"
+                        hoverBorderColor="brand.main"
                         color="black"
                         bg="white"
                         onChange={formik.handleChange}
@@ -461,17 +449,15 @@ export default function Footer() {
                         </FormLabel>
                       </VisuallyHidden>
                       <Input
+                        borderRadius="none"
                         id="email"
                         name="email"
                         placeholder="Correo electrónico*"
                         type="email"
-                        variant="standard"
-                        outlineColor="brand.border"
-                        sx={{
-                          ":focus": {
-                            outlineColor: "brand.main",
-                          },
-                        }}
+                        variant="outline"
+                        borderColor="brand.border"
+                        focusBorderColor="brand.main"
+                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -489,17 +475,15 @@ export default function Footer() {
                         <FormLabel htmlFor="phone">Teléfono</FormLabel>
                       </VisuallyHidden>
                       <Input
+                        borderRadius="none"
                         id="phone"
                         name="phone"
                         placeholder="Teléfono*"
                         type="tel"
-                        variant="standard"
-                        outlineColor="brand.border"
-                        sx={{
-                          ":focus": {
-                            outlineColor: "brand.main",
-                          },
-                        }}
+                        variant="outline"
+                        borderColor="brand.border"
+                        focusBorderColor="brand.main"
+                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -517,17 +501,15 @@ export default function Footer() {
                         <FormLabel htmlFor="company">Empresa</FormLabel>
                       </VisuallyHidden>
                       <Input
+                        borderRadius="none"
                         id="company"
                         name="company"
                         placeholder="Empresa"
                         type="text"
-                        variant="standard"
-                        outlineColor="brand.border"
-                        sx={{
-                          ":focus": {
-                            outlineColor: "brand.main",
-                          },
-                        }}
+                        variant="outline"
+                        borderColor="brand.border"
+                        focusBorderColor="brand.main"
+                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -542,18 +524,16 @@ export default function Footer() {
                         </FormLabel>
                       </VisuallyHidden>
                       <Textarea
+                        borderRadius="none"
                         id="message"
                         name="message"
                         placeholder="Escribe tu mensaje"
                         type="text"
                         bg="white"
-                        variant="standard"
-                        outlineColor="brand.border"
-                        sx={{
-                          ":focus": {
-                            outlineColor: "brand.main",
-                          },
-                        }}
+                        variant="outline"
+                        borderColor="brand.border"
+                        focusBorderColor="brand.main"
+                        hoverBorderColor="brand.main"
                         color="black"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
