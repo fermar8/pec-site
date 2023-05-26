@@ -1,9 +1,6 @@
-const basePath = process.env.NODE_ENV === "production" ? "/pec-site" : "";
+const basePath = process.env.NODE_ENV === "production" ? "" : "";
 
 module.exports = {
-  images: {
-    unoptimized: true
-  },
   env: {
     basePath,
     POSTS_PRERENDER_COUNT: 5,

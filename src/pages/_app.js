@@ -1,7 +1,8 @@
-import { ChakraProvider, Text, extendTheme} from "@chakra-ui/react";
-import { Inter } from 'next/font/google';
- 
-const inter = Inter({ weight: '400', subsets: ['latin'] });
+import { ChakraProvider, Text, extendTheme } from "@chakra-ui/react";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+
+const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 const fonts = {
   heading: inter.style.fontFamily,
@@ -20,15 +21,16 @@ function MyApp({ Component, pageProps = {} }) {
         cardBackground: "#E5E5E5",
         grey: "#808080",
         buttonHover: "#CE352D",
-        buttonActive: "#930C05"
+        buttonActive: "#930C05",
       },
     },
     fonts,
   });
   return (
     <ChakraProvider theme={theme}>
-        <Component {...pageProps}/>
-      </ChakraProvider>
+      <Component {...pageProps} />
+      <Analytics />
+    </ChakraProvider>
   );
 }
 
