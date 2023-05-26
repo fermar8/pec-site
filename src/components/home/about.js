@@ -118,7 +118,7 @@ export default function About({
                   color="brand.main"
                   textDecoration="underline"
                 >
-                  <Link href="/">{knowUs2}</Link>
+                  <Link href="/about">{knowUs2}</Link>
                 </Box>
               </Box>
             </Box>
@@ -232,7 +232,7 @@ export default function About({
                     color="brand.main"
                     textDecoration="underline"
                   >
-                    <Link href="/">{knowUs2}</Link>
+                    <Link href="/about">{knowUs2}</Link>
                   </Box>
                 </Box>
               </Box>

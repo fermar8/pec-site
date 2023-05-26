@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import { WavingHand } from "../../icons";
+import Link from "next/link";
 
 function buttonContact() {
   return (
@@ -11,8 +12,27 @@ function buttonContact() {
       verticalAlign="text-bottom"
       borderRadius="999"
       rightIcon={<WavingHand />}
+      sx={{
+        ":hover": {
+          bg: "brand.buttonHover",
+        },
+        ":focus": {
+          bg: "brand.main",
+          border: "1px solid white"
+        },
+        ":active": {
+          bg: "brand.buttonActive",
+          outline: "brand.whiteBackground"
+        },
+        ":after": {
+          bg: "brand.buttonActive",
+          outline: "brand.whiteBackground"
+        },
+      }}
     >
-      Contacta
+      <Link href="#footer" passHref>
+        Contacta
+        </Link>
     </Button>
   );
 }

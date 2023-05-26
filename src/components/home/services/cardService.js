@@ -35,7 +35,6 @@ export default function CardService(props) {
             borderColor="brand.grey"
             borderRadius="9px"
             alignItems="center"
-            bg="brand.grey"
           >
             <Box mt={["20px", "24px", null, null, null, null]}>
               <Image src={imageUrl} height={30} width={30} alt={imageAlt}/>
@@ -112,7 +111,7 @@ export default function CardService(props) {
         </Box>
         <Box
           h={[null, null, "48px", "48px", null, null]}
-          bg="brand.grey"
+          bg="brand.whiteBackground"
           borderTop="1px"
           borderColor="brand.border"
           display="flex"
@@ -136,7 +135,7 @@ export default function CardService(props) {
         </Box>
         <Box
           h={[null, null, 148, 148, null, null]}
-          bg="brand.grey"
+          bg="brand.whiteBackground"
           borderBottomRadius="9px"
           display="flex"
           flexDirection="column"
@@ -190,7 +189,7 @@ export default function CardService(props) {
         </Box>
         <Box
           h={[null, null, null, null, "180px", null]}
-          bg="brand.grey"
+          bg="brand.whiteBackground"
           borderTop="1px"
           borderColor="brand.border"
           borderRadius="0 0 9px 9px"

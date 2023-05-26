@@ -136,8 +136,8 @@ export default function Services(props) {
               flexWrap="wrap"
               justifyContent="space-between"
             >
-              <CardService title={webTitle} text={webText} image="web" />
-              <CardService title={designTitle} text={designText} image="design" />
+              <CardService title={webTitle} text={webText} image="web" link="/services/web"/>
+              <CardService title={designTitle} text={designText} image="design" link="/services/design"/>
             </Box>
             <Box
               h={[null, null, 422, 422, null, null]}
@@ -146,8 +146,8 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={uxTitle} text={uxText} image="ux-ui" />
-              <CardService title={seoTitle} text={seoText} image="seo" />
+              <CardService title={uxTitle} text={uxText} image="ux-ui" link="/services/ux-ui"/>
+              <CardService title={seoTitle} text={seoText} image="seo" link="/services/seo"/>
             </Box>
             <Box
               h={[null, null, 422, 422, null, null]}
@@ -156,8 +156,8 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={semTitle} text={semText} image="sem" />
-              <CardService title={socialTitle} text={socialText} image="social-media" />
+              <CardService title={semTitle} text={semText} image="sem" link="/services/sem"/>
+              <CardService title={socialTitle} text={socialText} image="social-media" link="/services/social-media"/>
             </Box>
           </Box>
         </VStack>
@@ -211,9 +211,9 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={webTitle} text={webText} image="web"/>
-              <CardService title={designTitle} text={designText} image="design" />
-              <CardService title={uxTitle} text={uxText} image="ux-ui" />
+              <CardService title={webTitle} text={webText} image="web" link="/services/web"/>
+              <CardService title={designTitle} text={designText} image="design" link="/services/design"/>
+              <CardService title={uxTitle} text={uxText} image="ux-ui" link="/services/ux-ui"/>
             </Box>
             <Box
               h={[null, null, null, null, 326, null]}
@@ -222,9 +222,9 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={seoTitle} text={seoText} image="seo" />
-              <CardService title={semTitle} text={semText} image="sem" />
-              <CardService title={socialTitle} text={socialText} image="social-media" />
+              <CardService title={seoTitle} text={seoText} image="seo" link="/services/seo"/>
+              <CardService title={semTitle} text={semText} image="sem" link="/services/sem"/>
+              <CardService title={socialTitle} text={socialText} image="social-media" link="/services/social-media"/>
             </Box>
           </Box>
           <ButtonContactWithUs buttonText={buttonText} />

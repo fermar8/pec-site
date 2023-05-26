@@ -86,7 +86,7 @@ export default function Blog() {
               <Text>
                 <chakra.span fontWeight="bold">
                   {" "}
-                  · Case Studies and Success Stories:{" "}
+                  · Análisis de casos de éxito:{" "}
                 </chakra.span>
                 Ejemplos reales de proyectos exitosos que hemos emprendido.
                 &nbsp; Obtendrás información sobre nuestros procesos de diseño y
@@ -173,7 +173,7 @@ export default function Blog() {
               <Text>
                 <chakra.span fontWeight="bold">
                   {" "}
-                  · Case Studies and Success Stories:{" "}
+                  · Análisis de casos de éxito:{" "}
                 </chakra.span>
                 Ejemplos reales de proyectos exitosos que hemos emprendido.
                 &nbsp; Obtendrás información sobre nuestros procesos de diseño y

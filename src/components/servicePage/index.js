@@ -93,7 +93,7 @@ export default function ServicePage(props) {
             >
               <Box
                 position="absolute"
-                top={["6.5%", null, null, null, null]}
+                top={["4.5%", null, null, null, null]}
                 left={["40%", null, null, null, null]}
               >
                 {smallIcon}
@@ -130,7 +130,7 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box>
+              <Box textAlign="center">
                 <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
@@ -162,7 +162,10 @@ export default function ServicePage(props) {
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="0 0 2px #F55951"
+                  textShadow="-1px 1px 0 #F55951,
+				  1px 1px 0 #F55951,
+				 1px -1px 0 #F55951,
+				-1px -1px 0 #F55951"
                 >
                   {whyText}
                 </Text>
@@ -248,7 +251,7 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box>
+              <Box textAlign="center">
                 <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
@@ -279,7 +282,10 @@ export default function ServicePage(props) {
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="0 0 2px #F55951"
+                  textShadow="-1px 1px 0 #F55951,
+				  1px 1px 0 #F55951,
+				 1px -1px 0 #F55951,
+				-1px -1px 0 #F55951"
                 >
                   {whyText}
                 </Text>

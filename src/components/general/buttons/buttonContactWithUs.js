@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import { WavingHand } from "../../icons";
+import Link from "next/link";
 
 function buttonContactWithUs({ buttonText }) {
   return (
@@ -33,7 +34,9 @@ function buttonContactWithUs({ buttonText }) {
         },
       }}
     >
-      {buttonText}
+      <Link href="#footer" passHref>
+        {buttonText}
+        </Link>
     </Button>
   );
 }

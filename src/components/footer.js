@@ -8,11 +8,11 @@ import {
   FormLabel,
   Input,
   VStack,
-  HStack,
   Textarea,
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import Link from "next/link";
 import { EmailIcon, PhoneIcon, LocationIcon } from "./icons";
 import { LinkedinIcon } from "./icons/socialMedia/linkedinIcon";
 import { TwitterIcon } from "./icons/socialMedia/twitterIcon";
@@ -92,16 +92,15 @@ export default function Footer() {
   if (!isDesktop) {
     return (
       <VStack
-        minHeight="890px"
         width="100%"
         color="white"
         textAlign="center"
-        justifyContent="space-around"
+        justifyContent="center"
+        id="footer"
       >
         <VStack
-          justifyContent="space-around"
           pb="40px"
-          minHeight="660px"
+          justifyContent="center"
           width="100%"
           backgroundColor="brand.warmBackground"
           color="white"
@@ -114,7 +113,10 @@ export default function Footer() {
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
-              textShadow="0 0 2px #F55951"
+              textShadow="-1px 1px 0 #F55951,
+				  1px 1px 0 #F55951,
+				 1px -1px 0 #F55951,
+				-1px -1px 0 #F55951"
               mt="32px"
             >
               ¿Hablamos?
@@ -123,7 +125,7 @@ export default function Footer() {
           {showForm ? (
             <form onSubmit={formik.handleSubmit}>
               <VStack
-                spacing={4}
+                spacing={6}
                 align="flex-start"
                 width={[320, 440, null, null, null, null]}
               >
@@ -151,9 +153,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.name && formik.errors.name ? (
-                  <Box mt="8px" color="brand.main">
-                    {formik.errors.name}
-                  </Box>
+                  <Box color="brand.main">{formik.errors.name}</Box>
                 ) : null}
                 <FormControl>
                   <VisuallyHidden>
@@ -179,9 +179,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.email && formik.errors.email ? (
-                  <Box mt="8px" color="brand.main">
-                    {formik.errors.email}
-                  </Box>
+                  <Box color="brand.main">{formik.errors.email}</Box>
                 ) : null}
                 <FormControl>
                   <VisuallyHidden>
@@ -207,9 +205,7 @@ export default function Footer() {
                   />
                 </FormControl>
                 {formik.touched.phone && formik.errors.phone ? (
-                  <Box mt="8px" color="brand.main">
-                    {formik.errors.phone}
-                  </Box>
+                  <Box color="brand.main">{formik.errors.phone}</Box>
                 ) : null}
                 <FormControl>
                   <VisuallyHidden>
@@ -341,25 +337,20 @@ export default function Footer() {
           w="100%"
           pb="20px"
         >
-          <Box w="100%" mt="16px">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" mt="16px" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Política de privacidad
-            </Text>
+            </Link>
           </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
-              Configuración de cookies
-            </Text>
-          </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Términos y condiciones
-            </Text>
+            </Link>
           </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Aviso Legal
-            </Text>
+            </Link>
           </Box>
           <Box display="flex" justifyContent="center" w="100%">
             <TwitterIcon />
@@ -376,6 +367,7 @@ export default function Footer() {
         textAlign="center"
         justifyContent="space-around"
         backgroundColor="brand.warmBackground"
+        id="footer"
       >
         <VStack
           justifyContent="space-around"
@@ -386,13 +378,16 @@ export default function Footer() {
           textAlign="center"
           overflow="hidden"
         >
-          <Box mb="16px">
+          <Box mb="32px">
             <Text
               color="brand.whiteBackground"
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
-              textShadow="0 0 2px #F55951"
+              textShadow="-1px 1px 0 #F55951,
+				  1px 1px 0 #F55951,
+				 1px -1px 0 #F55951,
+				-1px -1px 0 #F55951"
               mt="32px"
             >
               ¿Hablamos?
@@ -401,7 +396,6 @@ export default function Footer() {
           {showForm ? (
             <form onSubmit={formik.handleSubmit}>
               <VStack
-                spacing={4}
                 align="flex-start"
                 width={[320, 440, null, null, 720, null]}
               >
@@ -431,7 +425,7 @@ export default function Footer() {
                       </Text>
                     </Box>
                   </Box>
-                  <VStack>
+                  <VStack spacing={6}>
                     <FormControl minWidth="320px">
                       <VisuallyHidden>
                         <FormLabel htmlFor="name">Nombre completo</FormLabel>
@@ -456,7 +450,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.name && formik.errors.name ? (
-                      <Box mt="8px" color="brand.main">
+                      <Box mt="8px" color="brand.main" alignSelf="start">
                         {formik.errors.name}
                       </Box>
                     ) : null}
@@ -486,7 +480,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.email && formik.errors.email ? (
-                      <Box mt="8px" color="brand.main">
+                      <Box mt="8px" color="brand.main" alignSelf="start">
                         {formik.errors.email}
                       </Box>
                     ) : null}
@@ -514,7 +508,7 @@ export default function Footer() {
                       />
                     </FormControl>
                     {formik.touched.phone && formik.errors.phone ? (
-                      <Box mt="8px" color="brand.main">
+                      <Box mt="8px" color="brand.main" alignSelf="start">
                         {formik.errors.phone}
                       </Box>
                     ) : null}
@@ -576,14 +570,20 @@ export default function Footer() {
                       verticalAlign="text-bottom"
                       borderRadius="999"
                       sx={{
+                        ":hover": {
+                          bg: "brand.buttonHover",
+                        },
                         ":focus": {
                           bg: "brand.main",
+                          border: "1px solid white",
                         },
                         ":active": {
-                          bg: "brand.main",
+                          bg: "brand.buttonActive",
+                          outline: "brand.whiteBackground",
                         },
                         ":after": {
-                          bg: "brand.main",
+                          bg: "brand.buttonActive",
+                          outline: "brand.whiteBackground",
                         },
                       }}
                     >
@@ -623,32 +623,28 @@ export default function Footer() {
           <Box color="brand.main">{afterErrorMessage}</Box>
         </VStack>
         <Box
+          pt="30px"
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
           backgroundColor="brand.whiteBackground"
-          minHeight={[250, null, null, null, 280, null]}
+          minHeight={[250, null, null, null, 250, null]}
           w="100%"
         >
-          <Box w="100%" mt="16px">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" mt="16px" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Política de privacidad
-            </Text>
+            </Link>
           </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
-              Configuración de cookies
-            </Text>
-          </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Términos y condiciones
-            </Text>
+            </Link>
           </Box>
-          <Box w="100%">
-            <Text color="brand.text" ml="16px">
+          <Box w="100%" color="brand.text">
+            <Link href="/privacy" ml="16px">
               Aviso Legal
-            </Text>
+            </Link>
           </Box>
           <Box display="flex" justifyContent="center" w="100%" pb="20px">
             <TwitterIcon />

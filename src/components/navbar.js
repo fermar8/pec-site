@@ -6,6 +6,7 @@ import {
   AccordionIcon,
   ButtonGroup,
   Box,
+  Divider,
   Collapse,
   Flex,
   Text,
@@ -80,7 +81,7 @@ export default function Navbar({
         top={show ? "0px" : "-56px"}
         w="100%"
         flexDirection="column"
-        bg="brand.white"
+        bg="brand.whiteBackground"
         zIndex={300}
         transition="0.3s"
       >
@@ -88,15 +89,15 @@ export default function Navbar({
           as="header"
           justify="center"
           alignItems="center"
-          borderBottom={!isOpen ? "1px" : null}
-          borderBottomColor="brand.grey"
+          borderBottom="1px"
+          borderBottomColor="brand.border"
           h="56px"
         >
           <Box width={[320, 440, 728, 952, 1128, null]}>
             <HStack gap="24px">
               <Flex justify="space-between" alignItems="center" gap="24px">
                 <OnlineLogo />
-                <Box h="24px" w="1px" bg="brand.grey"></Box>
+                <Divider orientation="vertical" h="24px" w="1px" bg="brand.border"></Divider>
               </Flex>
               {isTablet ? (
                 <Flex justify="space-between" flex="1">
@@ -112,9 +113,9 @@ export default function Navbar({
                     </Box>
                     <Menu
                       isOpen={isDropdownOpen}
-                      backgroundColor="brand.white"
-                      _selected={{ color: "brand.main", bg: "brand.white" }}
-                      _focus={{ bg: "brand.white" }}
+                      backgroundColor="brand.whiteBackground"
+                      _selected={{ color: "brand.main", bg: "brand.whiteBackground" }}
+                      _focus={{ bg: "brand.whiteBackground" }}
                     >
                       {({ isOpen }) => (
                         <>
@@ -122,7 +123,7 @@ export default function Navbar({
                             colorScheme="whiteAlpha"
                             as={Button}
                             fontWeight="normal"
-                            backgroundColor="brand.white"
+                            backgroundColor="brand.whiteBackground"
                             _hover={{ color: "brand.main" }}
                             color={isService ? "brand.main" : "brand.text"}
                             textDecoration={isService ? "underline" : "none"}
@@ -140,8 +141,8 @@ export default function Navbar({
                           </MenuButton>
                           <MenuList>
                             <MenuItem
-                              _focus={{ bg: "white" }}
-                              _hover={{ bg: "brand.white" }}
+                              _focus={{ bg: "brand.whiteBackground" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Desarrollo Web"
                                   ? "brand.main"
@@ -151,7 +152,7 @@ export default function Navbar({
                               <Link href="/services/web">Desarrollo Web</Link>
                             </MenuItem>
                             <MenuItem
-                              _hover={{ bg: "brand.white" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Diseño Web"
                                   ? "brand.main"
@@ -161,7 +162,7 @@ export default function Navbar({
                               <Link href="/services/design">Diseño Web</Link>
                             </MenuItem>
                             <MenuItem
-                              _hover={{ bg: "brand.white" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Consultoría UX/UI"
                                   ? "brand.main"
@@ -173,7 +174,7 @@ export default function Navbar({
                               </Link>
                             </MenuItem>
                             <MenuItem
-                              _hover={{ bg: "brand.white" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Social Media"
                                   ? "brand.main"
@@ -185,7 +186,7 @@ export default function Navbar({
                               </Link>
                             </MenuItem>
                             <MenuItem
-                              _hover={{ bg: "brand.white" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Campañas SEM"
                                   ? "brand.main"
@@ -195,7 +196,7 @@ export default function Navbar({
                               <Link href="/services/sem">Campañas SEM</Link>
                             </MenuItem>
                             <MenuItem
-                              _hover={{ bg: "brand.white" }}
+                              _hover={{ bg: "brand.whiteBackground" }}
                               color={
                                 serviceType === "Posicionamiento SEO"
                                   ? "brand.main"
@@ -262,13 +263,13 @@ export default function Navbar({
                   marginTop="16vh"
                   marginLeft="24px"
                   width="100%"
-                  backgroundColor="brand.white"
-                  borderColor="brand.white"
+                  backgroundColor="brand.whiteBackground"
+                  borderColor="brand.whiteBackground"
                 >
-                  <AccordionItem backgroundColor="brand.white">
+                  <AccordionItem backgroundColor="brand.whiteBackground">
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="20px"
                         fontWeight="bold"
                       >
@@ -289,7 +290,7 @@ export default function Navbar({
                       <>
                         <h2>
                           <AccordionButton
-                            _focus={{ bg: "brand.white" }}
+                            _focus={{ bg: "brand.whiteBackground" }}
                             fontSize="20px"
                             fontWeight="bold"
                             onClick={() => setIsAccordionOpen(!isExpanded)}
@@ -313,7 +314,7 @@ export default function Navbar({
                             alignItems="flex-start"
                             justifyContent="space-between"
                             height="40vh"
-                            backgroundColor="brand.white"
+                            backgroundColor="brand.whiteBackground"
                           >
                             <Box
                               as="button"
@@ -393,10 +394,10 @@ export default function Navbar({
                       </>
                     )}
                   </AccordionItem>
-                  <AccordionItem backgroundColor="brand.white">
+                  <AccordionItem backgroundColor="brand.whiteBackground">
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="20px"
                         fontWeight="bold"
                       >
@@ -412,10 +413,10 @@ export default function Navbar({
                       </AccordionButton>
                     </h2>
                   </AccordionItem>
-                  <AccordionItem backgroundColor="brand.white">
+                  <AccordionItem backgroundColor="brand.whiteBackground">
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="20px"
                         fontWeight="bold"
                       >
@@ -432,13 +433,13 @@ export default function Navbar({
                     </h2>
                   </AccordionItem>
                   <AccordionItem
-                    backgroundColor="brand.white"
+                    backgroundColor="brand.whiteBackground"
                     mt="12vh"
                     visibility={isAccordionOpen ? "hidden" : "visible"}
                   >
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="16px"
                       >
                         <Box
@@ -453,10 +454,10 @@ export default function Navbar({
                       </AccordionButton>
                     </h2>
                   </AccordionItem>
-                  <AccordionItem backgroundColor="brand.white">
+                  <AccordionItem backgroundColor="brand.whiteBackground">
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="16px"
                         visibility={isAccordionOpen ? "hidden" : "visible"}
                       >
@@ -472,10 +473,10 @@ export default function Navbar({
                       </AccordionButton>
                     </h2>
                   </AccordionItem>
-                  <AccordionItem backgroundColor="brand.white">
+                  <AccordionItem backgroundColor="brand.whiteBackground">
                     <h2>
                       <AccordionButton
-                        _focus={{ bg: "brand.white" }}
+                        _focus={{ bg: "brand.whiteBackground" }}
                         fontSize="16px"
                         visibility={isAccordionOpen ? "hidden" : "visible"}
                       >
