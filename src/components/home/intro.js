@@ -25,7 +25,7 @@ export default function Intro(props) {
         <Flex
           justify="center"
           bg="brand.warmBackground"
-          minHeight="540px"
+          minHeight="600px"
           alignItems="center"
           flexDirection="column"
         >

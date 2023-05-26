@@ -28,11 +28,11 @@ export default function About({
         justify="center"
         alignItems="center"
         bg="brand.warmBackground"
-        h={[686, 686, null, null, null, null]}
+        minHeight={[740, 686, null, null, null, null]}
       >
         <VStack
           w={[320, 440, null, null, null, null]}
-          h={[606, 606, null, null, null, null]}
+          h={[660, 606, null, null, null, null]}
           display="flex"
           flexDirection="column"
           spacing="0"
