@@ -25,15 +25,15 @@ export default function Intro(props) {
         <Flex
           justify="center"
           bg="brand.warmBackground"
-          minHeight={[680, null, 600, null, null, null]}
+          minHeight={[640, null, 600, null, null, null]}
           alignItems="center"
           flexDirection="column"
         >
           <VStack
             w={[320, null, 528, null, null, null]}
-            minHeight={[480, null, 480, null, null, null]}
+            minHeight={[460, null, 480, null, null, null]}
             align="stretch"
-            justifyContent="space-around"
+            justifyContent="space-between"
             spacing="0px"
           >
             <Box>
