@@ -20,6 +20,7 @@ export default function Home({ page }) {
     introCta,
 
     servicesTitle,
+    servicesSubtitle,
     servicesMainText,
     servicesWebTitle,
     servicesWebText,
@@ -60,7 +61,8 @@ export default function Home({ page }) {
         buttonText={buttonText}
       />
       <Services
-        title={servicesTitle}
+        title={servicesTitle} 
+        subtitle={servicesSubtitle}
         mainText={servicesMainText}
         buttonText={buttonText}
         webTitle={servicesWebTitle}
@@ -107,7 +109,8 @@ export async function getStaticProps() {
       "Disponemos de un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio.",
     introCta: "Contáctanos para dar el siguiente paso con tu negocio",
 
-    servicesTitle: "Servicios de Marketing Digital",
+    servicesTitle: "Servicios",
+    servicesSubtitle: "Web y Marketing Digital",
     servicesMainText:
       "Con el objetivo de mejorar tu presencia online y posicionamiento web, tener una web rápida y eficiente, incrementar las ventas en tu eCommerce y captar nuevos clientes o conocer los existentes.",
     servicesWebTitle: "Desarrollo Web",

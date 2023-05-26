@@ -32,7 +32,7 @@ export default function CardBlog(props) {
           borderRadius="9px 9px 0px 0px"
         >
           <Image
-            layout="fill"
+            fill
             src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
           ></Image>

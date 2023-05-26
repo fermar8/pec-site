@@ -44,7 +44,7 @@ export default function About({
             position="relative"
           >
             <Image
-              layout="fill"
+              fill
               src={`${process.env.basePath}/img/home/home-intro.png`}
               alt="home-about"
             ></Image>
@@ -152,7 +152,7 @@ export default function About({
               borderRadius="9px 0px 0px 9px"
             >
               <Image
-                layout="fill"
+                fill
                 src={`${process.env.basePath}/img/home/home-intro.png`}
                 alt="home-about"
               ></Image>

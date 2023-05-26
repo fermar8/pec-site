@@ -29,7 +29,8 @@ export default function BlogPost(props) {
             borderRadius="50%"
           >
             <Image
-              layout="fill"
+              w={48}
+              h={48}
               src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
               alt="home-image"
             ></Image>
@@ -88,7 +89,8 @@ export default function BlogPost(props) {
             borderRadius="50%"
           >
             <Image
-              layout="fill"
+              w={48}
+              h={48}
               src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
               alt="home-image"
             ></Image>

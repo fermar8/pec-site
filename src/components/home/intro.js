@@ -24,7 +24,7 @@ export default function Intro(props) {
       <>
         <Flex
           justify="center"
-          bg="brand.whiteBackground"
+          bg="brand.warmBackground"
           minHeight="540px"
           alignItems="center"
           flexDirection="column"
@@ -77,7 +77,7 @@ export default function Intro(props) {
       <>
         <Flex
           justify="center"
-          bg="brand.whiteBackground"
+          bg="brand.warmBackground"
           minHeight="500px"
           alignItems="center"
           flexDirection="row"

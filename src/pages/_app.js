@@ -19,6 +19,8 @@ function MyApp({ Component, pageProps = {} }) {
         text: "#292929",
         cardBackground: "#E5E5E5",
         grey: "#80000000",
+        buttonHover: "#CE352D",
+        buttonActive: "#930C05"
       },
     },
     fonts,

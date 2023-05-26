@@ -1,12 +1,15 @@
 import { Box, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
-import { WavingHand } from "../../icons";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+
 export default function CardService(props) {
-  const { title, text, image } = props;
-  const [imageUrl, setImageUrl] = useState(`${process.env.basePath}/img/home/home-web.png`);
+  const { title, text, image, link} = props;
+  
+  const [imageUrl, setImageUrl] = useState(
+    `${process.env.basePath}/img/home/home-web.png`
+  );
   const [imageAlt, setImageAlt] = useState(`home-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
@@ -14,58 +17,65 @@ export default function CardService(props) {
   );
 
   useEffect(() => {
-    setImageUrl(`${process.env.basePath}/img/home/home-${image}.png`);
-    setImageAlt(`home-${image}`)
+    setImageUrl(`${process.env.basePath}/img/home/home-${image}.svg`);
+    setImageAlt(`home-${image}`);
   }, [image]);
 
   if (isMobile) {
     return (
       <>
-        <Box
-          w={[320, 440, null, null, null, null]}
-          h={[136, 136, null, null, null, null]}
-          display="flex"
-          flexDirection="column"
-          border="1px"
-          borderColor="brand.grey"
-          borderRadius="9px"
-          alignItems="center"
-          bg="brand.grey"
-        >
-          <Box mt={["20px", "24px", null, null, null, null]}>
-            <WavingHand
-              h={[24, null, null, null, null, null]}
-              w={[24, null, null, null, null, null]}
-            />
-          </Box>
+        <Box backgroundColor="brand.warmBackground" border="1px solid #FFE2DC" borderRadius="9px">
           <Box
-            mt={["8px", "8px", null, null, null, null]}
-            mb={["8px", "8px", null, null, null, null]}
-            h={["16px", "16px", null, null, null, null]}
-            display="flex"
-            justifyContent="center"
-            fontSize={["16px", "16px", null, null, null, null]}
-            fontWeight="bold"
-          >
-            <Heading
-              fontSize={["16px", "16px", null, null, null, null]}
-              as="h4"
-            >
-              {title}
-            </Heading>
-          </Box>
-
-          <Box
-            h={["44px", "44px", null, null, null, null]}
-            fontSize={["14px", "14px", null, null, null, null]}
+            w={[320, 440, null, null, null, null]}
+            h={[200, null, null, null, null, null]}
             display="flex"
             flexDirection="column"
-            justifyContent="center"
-            fontWeight="medium"
-            color="brand.main"
-            textDecoration="underline"
+            justifyContent="space-around"
+            border="1px"
+            borderColor="brand.grey"
+            borderRadius="9px"
+            alignItems="center"
+            bg="brand.grey"
           >
-            <Link href="/">Ver más</Link>
+            <Box mt={["20px", "24px", null, null, null, null]}>
+              <Image src={imageUrl} height={30} width={30} alt={imageAlt}/>
+            </Box>
+            <Box
+              mt={["8px", "8px", null, null, null, null]}
+              mb={["8px", "8px", null, null, null, null]}
+              h={["16px", "16px", null, null, null, null]}
+              display="flex"
+              justifyContent="center"
+              fontSize={["16px", "16px", null, null, null, null]}
+              fontWeight="bold"
+            >
+              <Heading
+                fontSize={["16px", "16px", null, null, null, null]}
+                as="h4"
+              >
+                {title}
+              </Heading>
+            </Box>
+            <Box
+              w={[null, null, null, null, 280, null]}
+              textAlign="center"
+              lineHeight="16px"
+            >
+              <Text>{text}</Text>
+            </Box>
+
+            <Box
+              h={["44px", "44px", null, null, null, null]}
+              fontSize={["14px", "14px", null, null, null, null]}
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              fontWeight="medium"
+              color="brand.main"
+              textDecoration="underline"
+            >
+              <Link href={`${link}`}>Ver servicios de {title}</Link>
+            </Box>
           </Box>
         </Box>
       </>
@@ -78,7 +88,7 @@ export default function CardService(props) {
         display="flex"
         flexDirection="column"
         border="1px"
-        borderColor="brand.main"
+        borderColor="brand.border"
         borderRadius="9px"
       >
         <Box
@@ -97,18 +107,14 @@ export default function CardService(props) {
             position="relative"
             borderRadiusTop="999"
           >
-            <Image
-              layout="fill"
-              src={imageUrl}
-              alt={imageAlt}
-            />
+            <Image src={imageUrl} height={60} width={60} alt={imageAlt}/>
           </Box>
         </Box>
         <Box
           h={[null, null, "48px", "48px", null, null]}
           bg="brand.grey"
           borderTop="1px"
-          borderColor="brand.main"
+          borderColor="brand.border"
           display="flex"
           flexDirection="column"
           justifyContent="space-around"
@@ -147,14 +153,13 @@ export default function CardService(props) {
           </Box>
           <Box
             h={[null, null, "44px", "44px", null, null]}
-            w={[null, null, 176, 176, null, null]}
             fontSize={[null, null, "14px", "14px", null, null]}
             color="brand.main"
             textDecoration="underline"
             display="flex"
             justifyContent="center"
           >
-            <Link href="/">Ver más</Link>
+            <Link href={`${link}`}>Ver servicios de {title}</Link>
           </Box>
         </Box>
       </Box>
@@ -167,7 +172,7 @@ export default function CardService(props) {
         display="flex"
         flexDirection="column"
         border="1px"
-        borderColor="brand.main"
+        borderColor="brand.border"
         borderRadius="9px"
       >
         <Box
@@ -177,17 +182,17 @@ export default function CardService(props) {
           flexDirection="column"
           justifyContent="space-around"
           alignItems="center"
-          borderColor="brand.main"
+          borderColor="brand.border"
           borderRadius="9px 9px 0 0"
           position="relative"
         >
-          <Image layout="fill" src={imageUrl} alt={imageAlt} />
+          <Image src={imageUrl} height={60} width={60} alt={imageAlt}/>
         </Box>
         <Box
           h={[null, null, null, null, "180px", null]}
           bg="brand.grey"
           borderTop="1px"
-          borderColor="brand.main"
+          borderColor="brand.border"
           borderRadius="0 0 9px 9px"
           display="flex"
           flexDirection="column"
@@ -207,14 +212,13 @@ export default function CardService(props) {
             <Text>{text}</Text>
           </Box>
           <Box
-            w={[null, null, null, null, 176, null]}
             fontSize={[null, null, null, null, "14px", null]}
             display="flex"
             justifyContent="center"
             color="brand.main"
             textDecoration="underline"
           >
-            <Link href="/">Ver más</Link>
+            <Link href={`${link}`}>Ver servicios de {title}</Link>
           </Box>
         </Box>
       </Box>

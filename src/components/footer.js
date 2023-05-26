@@ -266,14 +266,20 @@ export default function Footer() {
                   verticalAlign="text-bottom"
                   borderRadius="999"
                   sx={{
+                    ":hover": {
+                      bg: "brand.buttonHover",
+                    },
                     ":focus": {
                       bg: "brand.main",
+                      border: "1px solid white",
                     },
                     ":active": {
-                      bg: "brand.main",
+                      bg: "brand.buttonActive",
+                      outline: "brand.whiteBackground",
                     },
                     ":after": {
-                      bg: "brand.main",
+                      bg: "brand.buttonActive",
+                      outline: "brand.whiteBackground",
                     },
                   }}
                 >
@@ -592,7 +598,6 @@ export default function Footer() {
               display="flex"
               flexDirection="column"
               minHeight={[108, 128, null, null, null, null]}
-              
             >
               <Box display="flex" w="100%" mb="16px">
                 <EmailIcon />

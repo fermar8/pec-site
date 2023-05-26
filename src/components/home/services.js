@@ -4,13 +4,16 @@ import {
   Heading,
   VStack,
   useMediaQuery,
+  chakra,
 } from "@chakra-ui/react";
 
 import CardService from "./services/cardService";
+import  ButtonContactWithUs from "../../components/general/buttons/buttonContactWithUs";
 
 export default function Services(props) {
   const {
     title,
+    subtitle,
     mainText,
     webTitle,
     webText,
@@ -24,6 +27,7 @@ export default function Services(props) {
     semText,
     socialTitle,
     socialText,
+    buttonText,
   } = props;
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
@@ -31,18 +35,18 @@ export default function Services(props) {
   );
   if (isMobile) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
+      <Flex justify="center"  bg="brand.whiteBackground" h={[1800, 1720, null, null, null, null]}>
         <VStack
           mt={["64px", "64px", null, null, null, null]}
           mb={["64px", "64px", null, null, null, null]}
           w={[320, 440, null, null, null, null]}
-          h={[1176, 1176, null, null, null, null]}
+          h={[1680, 1600, null, null, null, null]}
           align="stretch"
         >
           <Box
             w={[320, 440, null, null, null, null]}
             h={[296, 256, null, null, null, null]}
-            mb={["24px", null, null, null, null, null]}
+            mb={["40px", null, null, null, null, null]}
             display="flex"
             flexDirection="column"
           >
@@ -54,7 +58,8 @@ export default function Services(props) {
               color="brand.main"
               mb={["16px", "16px", null, null, null, null]}
             >
-              {title}
+              {title} <br />
+              <chakra.span color="brand.text" fontWeight="bold">{subtitle}</chakra.span>
             </Heading>
             <Heading
               as="h3"
@@ -66,17 +71,17 @@ export default function Services(props) {
             </Heading>
           </Box>
           <Box
-            h={[896, 896, null, null, null, null]}
+            h={[1600, 1300, null, null, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
           >
-            <CardService title={webTitle} text={webText} image="web" />
-            <CardService title={designTitle} text={designText} image="ux" />
-            <CardService title={uxTitle} text={uxText} image="ux" />
-            <CardService title={seoTitle} text={seoText} image="seo" />
-            <CardService title={semTitle} text={semText} image="seo" />
-            <CardService title={socialTitle} text={socialText} image="web" />
+            <CardService title={webTitle} text={webText} image="web" link="/services/web"/>
+            <CardService title={designTitle} text={designText} image="design" link="services/design" />
+            <CardService title={uxTitle} text={uxText} image="ux-ui" link="services/ux-ui"/>
+            <CardService title={seoTitle} text={seoText} image="seo" link="services/seo"/>
+            <CardService title={semTitle} text={semText} image="sem" link="services/sem"/>
+            <CardService title={socialTitle} text={socialText} image="social-media" link="services/social-media"/>
           </Box>
         </VStack>
       </Flex>
@@ -104,7 +109,8 @@ export default function Services(props) {
               fontWeight="semi-bold"
               color="brand.main"
             >
-              {title}
+              {title} <br />
+              <chakra.span color="brand.text" fontWeight="bold">{subtitle}</chakra.span>
             </Heading>
             <Heading
               as="h3"
@@ -131,7 +137,7 @@ export default function Services(props) {
               justifyContent="space-between"
             >
               <CardService title={webTitle} text={webText} image="web" />
-              <CardService title={designTitle} text={designText} image="ux" />
+              <CardService title={designTitle} text={designText} image="design" />
             </Box>
             <Box
               h={[null, null, 422, 422, null, null]}
@@ -140,7 +146,7 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={uxTitle} text={uxText} image="ux" />
+              <CardService title={uxTitle} text={uxText} image="ux-ui" />
               <CardService title={seoTitle} text={seoText} image="seo" />
             </Box>
             <Box
@@ -150,8 +156,8 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService title={semTitle} text={semText} image="seo" />
-              <CardService title={socialTitle} text={socialText} image="web" />
+              <CardService title={semTitle} text={semText} image="sem" />
+              <CardService title={socialTitle} text={socialText} image="social-media" />
             </Box>
           </Box>
         </VStack>
@@ -164,23 +170,24 @@ export default function Services(props) {
           mt={[null, null, null, null, "64px", null]}
           mb={[null, null, null, null, "64px", null]}
           w={[null, null, null, null, 1128, null]}
-          h={[null, null, null, null, 956, null]}
+          h={[null, null, null, null, 1000, null]}
           align="stretch"
         >
           <Box
             w={[null, null, null, null, 1000, null]}
-            h={[null, null, null, null, 136, null]}
+            h={[null, null, null, null, 152, null]}
             display="flex"
             flexDirection="column"
-            justifyContent="space-around"
+            justifyContent="space-between"
           >
             <Heading
               as="h2"
               fontSize={[null, null, null, null, "32px", null]}
-              fontWeight="semi-bold"
-              color="brand.main"
+              fontWeight="bold"
+              color="brand.text"
+              mb="8px"
             >
-              {title}
+              {title} {subtitle}
             </Heading>
             <Heading
               as="h3"
@@ -205,8 +212,8 @@ export default function Services(props) {
               justifyContent="space-between"
             >
               <CardService title={webTitle} text={webText} image="web"/>
-              <CardService title={designTitle} text={designText} image="ux" />
-              <CardService title={uxTitle} text={uxText} image="ux" />
+              <CardService title={designTitle} text={designText} image="design" />
+              <CardService title={uxTitle} text={uxText} image="ux-ui" />
             </Box>
             <Box
               h={[null, null, null, null, 326, null]}
@@ -216,10 +223,11 @@ export default function Services(props) {
               justifyContent="space-between"
             >
               <CardService title={seoTitle} text={seoText} image="seo" />
-              <CardService title={semTitle} text={semText} image="seo" />
-              <CardService title={socialTitle} text={socialText} image="web" />
+              <CardService title={semTitle} text={semText} image="sem" />
+              <CardService title={socialTitle} text={socialText} image="social-media" />
             </Box>
           </Box>
+          <ButtonContactWithUs buttonText={buttonText} />
         </VStack>
       </Flex>
     );

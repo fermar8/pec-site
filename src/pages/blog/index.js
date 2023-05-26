@@ -62,7 +62,7 @@ export default function Blog() {
                   color="brand.text"
                   lineHeight="1"
                 >
-                  Coming Soon
+                  Próximamente
                 </Heading>
               </Box>
               <Text>
