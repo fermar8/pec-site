@@ -35,7 +35,7 @@ export default function Services(props) {
   );
   if (isMobile) {
     return (
-      <Flex justify="center"  bg="brand.whiteBackground" h={[1800, 1720, null, null, null, null]}>
+      <Flex justify="center" bg="brand.whiteBackground" h={[1800, 1720, null, null, null, null]}>
         <VStack
           mt={["64px", "64px", null, null, null, null]}
           mb={["64px", "64px", null, null, null, null]}

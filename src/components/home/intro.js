@@ -23,7 +23,7 @@ export default function Intro(props) {
     return (
       <Flex
         justify="center"
-        height="580px"
+        h={["100vh", null, null, null, null, null]}
         bg="brand.warmBackground"
         alignItems="center"
         flexDirection="column"
@@ -34,9 +34,8 @@ export default function Intro(props) {
           pb={["40px", null, "80px", null, null, null]}
           justifyContent="space-around"
           align="stretch"
-          height="580px"
         >
-          <Box height="240px" display="flex" flexDirection="column">
+          <Box display="flex" flexDirection="column">
             <Box display="flex" justifyContent="center" width="100%" mb="8px">
               <Image
                 alignSelf="center"
@@ -67,7 +66,7 @@ export default function Intro(props) {
               {subtitle}
             </Heading>
           </Box>
-          <Box pb={["20px", null, "30px", null, null, null]} height="140px">
+          <Box pb={["20px", null, "30px", null, null, null]}>
             <Text>{text}</Text>
           </Box>
           <ButtonContactWithUs buttonText={buttonText} />
