@@ -1,17 +1,22 @@
 import Layout from "../../components/layout";
 
-import { Text, Box, Flex, Heading, VStack, chakra, useMediaQuery } from "@chakra-ui/react";
+import {
+  Text,
+  Box,
+  Flex,
+  Heading,
+  VStack,
+  chakra,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 import Head from "next/head";
 import Image from "next/image";
 
 export default function Blog() {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
-  const [isTablet] = useMediaQuery(
-    "(min-width: 768px) and (max-width: 1280px)"
-  );
+  const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
 
-  if (isMobile || isTablet) {
+  if (isMobileOrTablet) {
     return (
       <Layout isBlog={true}>
         <Head>
@@ -26,24 +31,23 @@ export default function Blog() {
           <Flex
             justify="center"
             bg="brand.whiteBackground"
-            minHeight="1000px"
             alignItems="center"
             flexDirection="column"
           >
             <VStack
               w={[320, null, 720, null, null, null]}
-              minHeight={[900, null, 600, null, null, null]}
+              pb="40px"
+              pt="40px"
               align="stretch"
-              justifyContent="space-around"
               spacing="0px"
             >
-              <Box>
+              <Box mb="16px">
                 <Box marginLeft="140px">
                   <Image
                     width={120}
                     height={120}
                     src={`${process.env.basePath}/img/bookImage.png`}
-                    alt="about-image"
+                    alt="blog-image"
                   ></Image>
                 </Box>
                 <Heading
@@ -65,25 +69,30 @@ export default function Blog() {
                   Próximamente
                 </Heading>
               </Box>
-              <Text>
-                ¡Bienvenidos a nuestra sección de blogs! Estamos emocionados de
-                compartir contenido increíble contigo{" "}
-                <chakra.span fontWeight="bold">
-                  en un futuro próximo.
-                </chakra.span>
-                &nbsp; Mientras preparamos nuestra próxima publicaciones de
-                blog, aquí hay una vista previa de lo que puedes esperar:
-              </Text>
-              <Text>
-                <chakra.span fontWeight="bold">
-                  {" "}
-                  · Guías educacionales y tutoriales:{" "}
-                </chakra.span>
-                Tutoriales y guías paso a paso sobre principios de diseño web,
-                técnicas de programación, mejores prácticas de experiencia de
-                usuario y estrategias de marketing digital.{" "}
-              </Text>
-              <Text>
+              <Box>
+                <Text mb="32px">
+                  ¡Bienvenidos a nuestra sección de blogs! Estamos emocionados
+                  de compartir contenido increíble contigo{" "}
+                  <chakra.span fontWeight="bold">
+                    en un futuro próximo.
+                  </chakra.span>
+                  &nbsp; Mientras preparamos nuestra próxima publicaciones de
+                  blog, aquí hay una vista previa de lo que puedes esperar:
+                </Text>
+              </Box>
+              <Box>
+                <Text mb="16px">
+                  <chakra.span fontWeight="bold">
+                    {" "}
+                    · Guías educacionales y tutoriales:{" "}
+                  </chakra.span>
+                  Tutoriales y guías paso a paso sobre principios de diseño web,
+                  técnicas de programación, mejores prácticas de experiencia de
+                  usuario y estrategias de marketing digital.{" "}
+                </Text>
+              </Box>
+              <Box>
+              <Text mb="16px">
                 <chakra.span fontWeight="bold">
                   {" "}
                   · Análisis de casos de éxito:{" "}
@@ -92,7 +101,8 @@ export default function Blog() {
                 &nbsp; Obtendrás información sobre nuestros procesos de diseño y
                 desarrollo, decisiones UX/UI y estrategias de marketing que
                 condujeron a notables resultados.{" "}
-              </Text>
+                </Text>
+                </Box>
               <Text>
                 <chakra.span fontWeight="bold">
                   {" "}
@@ -190,13 +200,13 @@ export default function Blog() {
               </Text>
             </VStack>
             <Box marginLeft="140px">
-                  <Image
-                    width={256}
-                    height={256}
-                    src={`${process.env.basePath}/img/bookImage.png`}
-                    alt="about-image"
-                  ></Image>
-                </Box>
+              <Image
+                width={256}
+                height={256}
+                src={`${process.env.basePath}/img/bookImage.png`}
+                alt="about-image"
+              ></Image>
+            </Box>
           </Flex>
         </>
       </Layout>

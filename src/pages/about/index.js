@@ -14,43 +14,56 @@ import ServiceDescription from "components/services/serviceDescriptions";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 import Image from "next/image";
 
-export default function AboutPage() {
+export default function AboutPage({ page }) {
+  const {
+    titleTag,
+    description,
+    titleTextPart1,
+    titleTextPart2,
+    introTextPart1,
+    introTextPart2,
+    missionTitle,
+    missionText,
+    valuesTitle,
+    commitmentTitle,
+    commitmentText,
+    dedicationTitle,
+    dedicationText,
+    clientOrientedTitle,
+    clientOrientedText,
+    buttonText,
+  } = page;
+
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   if (isMobile) {
     return (
       <Layout isAbout={true}>
         <Head>
-          <title>ON LINE | Quiénes Somos</title>
-          <meta
-            name="description"
-            content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
-          />
+          <title>{titleTag}</title>
+          <meta name="description" content={description} />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <>
           <Flex justify="center" bg="brand.whiteBackground">
             <VStack
               w={[320, null, null, null, null, null]}
-              h={[648, null, null, null, null, null]}
-              align="stretch"
-              spacing="0px"
+              pb="40px"
+              pt="40px"
             >
               <Box
-                h={[648, null, null, null, null, null]}
                 display="flex"
                 flexDirection="column"
-                justifyContent="center"
               >
                 <Box
                   alignSelf="center"
                   display="flex"
                   justifyContent="center"
                   borderRadius="50%"
+                  width={174}
+                  height={174}
                   overflow="hidden"
-                  alignItems="center"
-                  w="174px"
-                  h="174px"
+                  
                   mb="16px"
                 >
                   <Image
@@ -68,7 +81,7 @@ export default function AboutPage() {
                     color="brand.main"
                     lineHeight="1"
                   >
-                    Sobre
+                    {titleTextPart1}
                   </Heading>
                   <Heading
                     as="h2"
@@ -76,7 +89,7 @@ export default function AboutPage() {
                     fontWeight="bold"
                     lineHeight="1"
                   >
-                    Nosotros
+                    {titleTextPart2}
                   </Heading>
                 </Box>
                 <Text
@@ -85,15 +98,10 @@ export default function AboutPage() {
                   fontWeight="light"
                   mb="16px"
                 >
-                  El talento humano es la columna vertebral de ON LINE. Formado
-                  por expertos en distintos ámbitos, nuestro equipo dispone de
-                  un gran talento multidisciplinar con años de experiencia
-                  delante de las pantallas.
+                  {introTextPart1}
                 </Text>
                 <Text lineHeight="28px" fontSize="16px" fontWeight="light">
-                  Somos una Agencia Digital completa formada por consultores
-                  SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y
-                  Community Managers.
+                  {introTextPart2}
                 </Text>
               </Box>
             </VStack>
@@ -101,15 +109,19 @@ export default function AboutPage() {
           <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[320, null, null, null, null, null]}
-              h={[192, null, null, null, null, null]}
+              pb="40px"
+              pt="40px"
               display="flex"
               flexDirection="column"
-              justify="space-around"
               align="stretch"
               spacing="0px"
             >
               <Box textAlign="center">
-                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
+                <Text
+                  color="brand.whiteBackground"
+                  fontSize="18px"
+                  fontWeight="bold"
+                >
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -125,18 +137,16 @@ export default function AboutPage() {
           >
             <VStack
               w={[320, null, null, null, null, null]}
-              mt="64px"
-              mb="64px"
+              pt="64px"
+              pb="64px"
               display="flex"
               flexDirection="column"
-              justify="space-between"
-              align="stretch"
-              spacing="0px"
             >
               <Box
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
+                mb="40px"
               >
                 <Box mb="16px">
                   <Heading
@@ -145,7 +155,7 @@ export default function AboutPage() {
                     fontWeight="bold"
                     color="brand.main"
                   >
-                    Nuestra misión
+                    {missionTitle}
                   </Heading>
                 </Box>
                 <Text
@@ -154,19 +164,7 @@ export default function AboutPage() {
                   fontWeight="light"
                   mb="16px"
                 >
-                  At the heart of everything we do is our mission to empower
-                  woman and black people.
-                </Text>
-                <Text
-                  lineHeight="28px"
-                  fontSize="16px"
-                  fontWeight="light"
-                  mb="24px"
-                >
-                  We strive to make a difference in the lives of our customers
-                  and the communities we serve. With a strong commitment to
-                  quality, integrity, and innovation, we are driven to create a
-                  better future for all.
+                  {missionText}
                 </Text>
               </Box>
               <Box mb="16px" display="flex" flexDirection="column">
@@ -179,27 +177,27 @@ export default function AboutPage() {
 				  1px 1px 0 #F55951,
 				 1px -1px 0 #F55951,
 				-1px -1px 0 #F55951"
-                  mb="16px"
+                  mb="40px"
                 >
-                  Nuestros valores
+                  {valuesTitle}
                 </Text>
                 <ServiceDescription
                   number={1}
-                  subtitle="Compromiso"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda "
+                  subtitle={commitmentTitle}
+                  subText={commitmentText}
                 />
                 <ServiceDescription
                   number={2}
-                  subtitle="Dedicación"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda"
+                  subtitle={dedicationTitle}
+                  subText={dedicationText}
                 />
                 <ServiceDescription
                   number={3}
-                  subtitle="Gay"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda"
+                  subtitle={clientOrientedTitle}
+                  subText={clientOrientedText}
                 />
-                <Box alignSelf="center" mt="16px">
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
+                <Box alignSelf="center" mt="30px">
+                  <ButtonContactWithUs buttonText={buttonText} />
                 </Box>
               </Box>
             </VStack>
@@ -235,7 +233,7 @@ export default function AboutPage() {
                   color="brand.main"
                   lineHeight="1"
                 >
-                  Sobre
+                  {titleTextPart1}
                 </Heading>
                 <Heading
                   as="h2"
@@ -252,15 +250,10 @@ export default function AboutPage() {
                   fontWeight="light"
                   mb="16px"
                 >
-                  El talento humano es la columna vertebral de ON LINE. Formado
-                  por expertos en distintos ámbitos, nuestro equipo dispone de
-                  un gran talento multidisciplinar con años de experiencia
-                  delante de las pantallas.
+                  {introTextPart1}
                 </Text>
                 <Text lineHeight="28px" fontSize="16px" fontWeight="light">
-                  Somos una Agencia Digital completa formada por consultores
-                  SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y
-                  Community Managers.
+                  {introTextPart2}
                 </Text>
               </Box>
               <Box
@@ -290,7 +283,11 @@ export default function AboutPage() {
               spacing="0px"
             >
               <Box textAlign="center">
-                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
+                <Text
+                  color="brand.whiteBackground"
+                  fontSize="18px"
+                  fontWeight="bold"
+                >
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -326,7 +323,7 @@ export default function AboutPage() {
                     fontWeight="bold"
                     color="brand.main"
                   >
-                    Nuestra misión
+                    {missionTitle}
                   </Heading>
                 </Box>
                 <Text
@@ -335,19 +332,7 @@ export default function AboutPage() {
                   fontWeight="light"
                   mb="16px"
                 >
-                  At the heart of everything we do is our mission to empower
-                  woman and black people.
-                </Text>
-                <Text
-                  lineHeight="28px"
-                  fontSize="16px"
-                  fontWeight="light"
-                  mb="24px"
-                >
-                  We strive to make a difference in the lives of our customers
-                  and the communities we serve. With a strong commitment to
-                  quality, integrity, and innovation, we are driven to create a
-                  better future for all.
+                  {missionText}
                 </Text>
               </Box>
               <Box mb="16px" display="flex" flexDirection="column">
@@ -362,25 +347,25 @@ export default function AboutPage() {
 				-1px -1px 0 #F55951"
                   mb="16px"
                 >
-                  Nuestros valores
+                  {valuesTitle}
                 </Text>
                 <ServiceDescription
                   number={1}
-                  subtitle="Compromiso"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda "
+                  subtitle={commitmentTitle}
+                  subText={commitmentText}
                 />
                 <ServiceDescription
                   number={2}
-                  subtitle="Dedicación"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda"
+                  subtitle={dedicationTitle}
+                  subText={dedicationText}
                 />
                 <ServiceDescription
                   number={3}
-                  subtitle="Gay"
-                  subText="Mejora tu posicionamiento como anunciante en los motores de búsqueda"
+                  subtitle={clientOrientedTitle}
+                  subText={clientOrientedText}
                 />
                 <Box alignSelf="center" mt="16px">
-                  <ButtonContactWithUs buttonText="Contacta con nosotros" />
+                  <ButtonContactWithUs buttonText={buttonText} />
                 </Box>
               </Box>
             </VStack>
@@ -389,4 +374,43 @@ export default function AboutPage() {
       </Layout>
     );
   }
+}
+
+export async function getStaticProps() {
+  const page = {
+    titleTag: "ON LINE | Agencia de Marketing Digital Barcelona",
+    description:
+      "ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web",
+
+    titleTextPart1: "Sobre",
+    titleTextPart2: "Nosotros",
+
+    introTextPart1:
+      "El talento humano es la columna vertebral de ON LINE. Formado por expertos en distintos ámbitos, nuestro equipo dispone de un gran talento multidisciplinar con años de experiencia delante de las pantallas.",
+    introTextPart2:
+      "Somos una Agencia de Marketing Digital completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
+
+    missionTitle: "Nuestra Misión",
+    missionText:
+      "Como Agencia de Marketing Digital, nuestra misión es adoptar los objetivos de nuestros clientes. En el mundo digital, las necesidades pueden ser muy variadas, desde la creación de tu página web hasta la gestión de las redes sociales. Estas necesidades son las que dan orígen a nuestros servicios, enfocados siempre a cumplir los objetivos de nuestros clientes. Tanto si necesitas mejorar tu presencia en redes como rediseñar por completo o desde cero tu página web, puedes contar con el equipo de expertos de ON LINE.",
+
+    valuesTitle: "Nuestros valores",
+    commitmentTitle: "Compromiso",
+    commitmentText:
+      "Nos esforzamos al máximo para cumplir siempre con nuestros plazos de entrega pero siempre brindando un trabajo de calidad.",
+    dedicationTitle: "Dedicación",
+    dedicationText:
+      "Nuestro equipo vive y respira el Marketing Digital. Tendremos la misma dedicación que tú tendrías en tu negocio.",
+    clientOrientedTitle: "Orientación al cliente",
+    clientOrientedText:
+      "En el Marketing Digital y Desarrollo Web cada cliente es un mundo y tiene unas necesidades específicas. Nos adaptamos al máximo para cubrirlas.",
+    
+    buttonText: "Contacta con nosotros"
+  };
+
+  return {
+    props: {
+      page,
+    },
+  };
 }

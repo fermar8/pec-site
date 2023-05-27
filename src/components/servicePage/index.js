@@ -82,14 +82,11 @@ export default function ServicePage(props) {
           <Flex
             justify="center"
             bg="brand.whiteBackground"
-            h={[440, null, null, null, null, null]}
           >
             <VStack
-              mt={["120px", null, null, null, null, null]}
+              pt="120px"
+              pb="60px"
               w={[320, null, null, null, null, null]}
-              h={[440, null, null, null, null, null]}
-              align="stretch"
-              spacing="0px"
             >
               <Box
                 position="absolute"
@@ -98,7 +95,7 @@ export default function ServicePage(props) {
               >
                 {smallIcon}
               </Box>
-              <Box h={["202px", null, null, null, null, null]}>
+              <Box>
                 <Heading
                   as="h5"
                   fontSize={["24px", null, null, null, null, null]}
@@ -108,22 +105,23 @@ export default function ServicePage(props) {
                   Servicios
                 </Heading>
                 <Heading
-                  as="h2"
+                  as="h1"
                   fontSize={["36px", null, null, null, null, null]}
                   fontWeight="bold"
                 >
                   {title}
                 </Heading>
-                <Text lineHeight="28px" fontSize="16px" fontWeight="light">
+                <Heading as="h2" lineHeight="28px" fontSize="16px" fontWeight="light">
                   {mainText}
-                </Text>
+                </Heading>
               </Box>
             </VStack>
           </Flex>
           <Flex justify="center" w="100%" bg="brand.main">
             <VStack
               w={[320, null, null, null, null, null]}
-              h={[192, null, null, null, null, null]}
+              pb="40px"
+              pt="40px"
               display="flex"
               flexDirection="column"
               justify="space-around"
@@ -142,21 +140,19 @@ export default function ServicePage(props) {
             w="100%"
             bg="brand.whiteBackground"
             flexDirection="column"
-            justify="space-around"
             alignItems="center"
           >
             <VStack
               w={[320, null, null, null, null, null]}
-              h={[688, null, null, null, null, null]}
-              mt="64px"
-              mb="64px"
+              pt="64px"
+              pb="64px"
               display="flex"
               flexDirection="column"
               justify="space-between"
               align="stretch"
               spacing="0px"
             >
-              <Box mb="16px">
+              <Box mb="32px">
                 <Text
                   color="brand.whiteBackground"
                   fontSize="30px"
@@ -232,9 +228,9 @@ export default function ServicePage(props) {
                 >
                   {title}
                 </Heading>
-                <Text lineHeight="28px" fontSize="16px" fontWeight="light">
+                <Heading as="h2" lineHeight="28px" fontSize="16px" fontWeight="light">
                   {mainText}
-                </Text>
+                </Heading>
               </Box>
               <Box>
                 {bigIcon}

@@ -18,7 +18,7 @@ export default function CardService(props) {
 
   useEffect(() => {
     setImageUrl(`${process.env.basePath}/img/home/home-${image}.svg`);
-    setImageAlt(`home-${image}`);
+    setImageAlt(`logo-servicio-${image}`);
   }, [image]);
 
   if (isMobile) {

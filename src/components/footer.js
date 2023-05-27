@@ -107,7 +107,7 @@ export default function Footer() {
           textAlign="center"
           overflow="hidden"
         >
-          <Box mb="16px">
+          <Box mb="32px">
             <Text
               color="brand.whiteBackground"
               fontSize="40px"
@@ -279,8 +279,8 @@ export default function Footer() {
           <Box
             display="flex"
             flexDirection="column"
-            justifyContent="space-between"
-            minHeight={[108, 128, null, null, null, null]}
+            pt="20px"
+            
             w={[320, 440, null, null, null, null]}
           >
             <Box
@@ -288,6 +288,7 @@ export default function Footer() {
               alignItems="center"
               w="100%"
               marginLeft={[0, "60px", null, null, null, null]}
+              mb="16px"
             >
               <EmailIcon />
               <Text color="brand.text" ml="16px">
@@ -299,6 +300,7 @@ export default function Footer() {
               alignItems="center"
               w="100%"
               marginLeft={[0, "60px", null, null, null, null]}
+              mb="16px"
             >
               <PhoneIcon />
               <Text color="brand.text" ml="16px">
@@ -310,6 +312,7 @@ export default function Footer() {
               alignItems="center"
               w="100%"
               marginLeft={[0, "60px", null, null, null, null]}
+              mb="16px"
             >
               <LocationIcon />
               <Text color="brand.text" ml="16px">
@@ -321,28 +324,27 @@ export default function Footer() {
         <Box
           display="flex"
           flexDirection="column"
-          justifyContent="space-around"
           backgroundColor="brand.whiteBackground"
-          minHeight={[250, null, null, null, null, null]}
           w="100%"
           pb="20px"
+          pt="20px"
         >
-          <Box w="100%" mt="16px" color="brand.text">
+          <Box w="100%" color="brand.text" mb="16px">
             <Link href="/privacy" ml="16px">
               Política de privacidad
             </Link>
           </Box>
-          <Box w="100%" color="brand.text">
+          <Box w="100%" color="brand.text" mb="16px">
             <Link href="/privacy" ml="16px">
               Términos y condiciones
             </Link>
           </Box>
-          <Box w="100%" color="brand.text">
+          <Box w="100%" color="brand.text" mb="16px">
             <Link href="/privacy" ml="16px">
               Aviso Legal
             </Link>
           </Box>
-          <Box display="flex" justifyContent="center" w="100%">
+          <Box display="flex" justifyContent="center" w="100%" mb="16px">
             <TwitterIcon />
             <LinkedinIcon />
           </Box>

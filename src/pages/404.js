@@ -13,12 +13,9 @@ import Image from "next/image";
 import Layout from "../components/layout";
 
 export default function Custom404() {
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
-  const [isTablet] = useMediaQuery(
-    "(min-width: 768px) and (max-width: 1280px)"
-  );
+  const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
 
-  if (isMobile || isTablet) {
+  if (isMobileOrTablet) {
     return (
       <Layout>
         <Head>

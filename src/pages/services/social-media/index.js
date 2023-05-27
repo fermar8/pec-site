@@ -40,7 +40,7 @@ export async function getStaticProps() {
     subText2:
       "En ON LINE te brindamos estrategias a tu medida, consensuando y adaptándonos a tus objetivos e ideas. ",
     subText3:
-      "Deja en manos de nuestro equipo la ardua tarea de gestionar tu Instagram, Facebook, etc. y céntrate en tu día a día, que nosotros nos encargamos de que tu marca mejore en imagen y aumente en seguidores.",
+      "Deja en manos de nuestro equipo la ardua tarea de gestionar tus redes sociales y céntrate en tu día a día. Nosotros potenciaremos tu presencia online.",
     whyText: "¿Por qué invertir en redes sociales?"
   };
 

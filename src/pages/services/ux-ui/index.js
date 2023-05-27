@@ -40,7 +40,7 @@ export async function getStaticProps() {
     subText2:
       "Con tener una página bonita no basta, debe ser fácil de navegar y que lleve a tus clientes a donde tú quieres para así aprovechar cada visita a tu página web.",
     subText3:
-      "Una página web mal optimizada en cuanto a UX/UI resulta en un mayor porcentaje de rebote lo que se traduce en ventas no realizadas o perdidas. Déjanos guiar a tus clientes para minimizar el porcentaje de rebote y maximizar el de conversión.",
+      "Una página web mal optimizada en cuanto a UX/UI resulta en un mayor porcentaje de rebote lo que se traduce en ventas no realizadas. Déjanos guiar a tus clientes.",
     whyText: "¿Por qué invertir en diseño UX/UI?"
   };
 

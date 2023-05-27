@@ -38,9 +38,9 @@ export async function getStaticProps() {
     subText:
       "Nuestra visión es siempre la de conseguir que el usuario final (tus clientes) tengan una experiencia agradable y fácil en tu página web.",
     subText2:
-      "Lo logramos gracias a la atención y delicadeza de nuestros diseñadores.",
+      "Esto lo logramos gracias a la atención y delicadeza de nuestros diseñadores, diseñando siempre con la perspectiva del usuario final en mente.",
     subText3:
-      "Buscamos alcanzar la mejor conversión posible, es por eso que diseñamos las páginas web siempre desde el punto de vista del usuario buscando el equilibrio entre un posicionamiento SEO idóneo y un UX/UI óptimo para el usuario.",
+      "Buscamos alcanzar la mejor conversión posible buscando el equilibrio entre un posicionamiento SEO idóneo y un UX/UI óptimo para el usuario.",
     whyText: "¿Por qué invertir en diseño?"
   };
 

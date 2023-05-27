@@ -34,13 +34,13 @@ export async function getStaticProps() {
     subtitle2: "Cómo lo hacemos",
     subtitle3: "Nuestro objetivo",
     mainText:
-      "Aceleramos el posicionamiento con campañas SEM cuidadas y eficaces para obtener un máximo rendimiento.",
+      "Mejora el posicionamiento de tu web instantáneamente a través de una campaña de publicidad en los motores de búsqueda.",
     subText:
       "Existe una manera de mejorar tu posicionamiento instantáneamente y es haciendo publicidad en los motores de búsqueda para que tu web aparezca en las primeras posiciones.",
     subText2:
-      "Requiere un especial cuidado a la hora de seleccionar las palabras clave por las cuáles queremos aparecer y es por eso que disponemos de expertos en SEM que se aseguraran que el dinero invertido no sea en vano.",
+      "Analizamos con especial cuidado las palabras clave a potenciar mediante la campaña SEM gracias a nuestro experimentado equipo.",
     subText3:
-      "Las campañas SEM son una muy buena opción para potenciar tu negocio y complementar el posicionamiento SEO, disparando tu página web a las primeras posiciones de Google o Bing.",
+      "Potenciar tu negocio y complementar el posicionamiento SEO, disparando tu página web a las primeras posiciones de Google o Bing.",
     whyText: "¿Por qué invertir en campañas SEM?",
   };
 

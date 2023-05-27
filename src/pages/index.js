@@ -112,29 +112,29 @@ export async function getStaticProps() {
     servicesTitle: "Servicios",
     servicesSubtitle: "Web y Marketing Digital",
     servicesMainText:
-      "Con el objetivo de mejorar tu presencia online y posicionamiento web, tener una web rápida y eficiente, incrementar las ventas en tu eCommerce y captar nuevos clientes o conocer los existentes.",
+      "Somos un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio. También ofrecemos servicios de Marketing Digital como gestión del Social Media o campañas SEM.",
     servicesWebTitle: "Desarrollo Web",
     servicesWebText:
-      "Desarrollamos páginas web desde cero para adaptarnos lo máximo posible al cliente y a los motores de búsqueda para un buen posicionamiento",
+      "Desarrollamos páginas web rápidas adaptándonos a todas tus necesidades",
     servicesDesignTitle: "Diseño Web",
     servicesDesignText:
-      "Cuidamos al detalle el diseño para brindar al usuario final una experiencia óptima y mejorar la conversión de tu página web",
+      "Cuidamos al detalle el diseño para conseguir una alta conversión y aumentar las ventas",
     servicesUxTitle: "Consultoría UX/UI",
     servicesUxText:
-      "Analizamos tu página web desde la mirada de tus usuarios para implementar soluciones eficientes que resulten en mayores ventas",
+      "Analizamos tu web para implementar soluciones enfocadas una mejor conversión",
     servicesSeoTitle: "Posicionamiento SEO",
     servicesSeoText:
-      "Nos enfocamos en que tu negocio sea encontrado con la máxima facilidad posible por tus clientes potenciales",
+      "Hacemos que tu web aparezca entre los primeros resultados de Google y otros buscadores",
     servicesSemTitle: "Campañas SEM",
     servicesSemText:
-      "Aceleramos el posicionamiento con campañas SEM cuidadas y eficaces para obtener un máximo rendimiento",
+      "Aceleramos el posicionamiento con campañas SEM para obtener un máximo rendimiento",
     servicesSocialTitle: "Social Media",
     servicesSocialText:
-      "Reforzamos tu marca y su influencia gracias a una medida gestión de las redes sociales de tu empresa",
+      "Reforzamos tu marca y su presencia online gestionando  las redes sociales de tu empresa",
     
     aboutKnowUs: "Conócenos",
     aboutTitle: "Nuestro equipo",
-    aboutText: "Formado por expertos en distintos ámbitos, nuestro equipo dispone de un gran talento multidisciplinar con años de experiencia delante de las pantallas.",
+    aboutText: "Somos una Agencia de Marketing Digital y Diseño Web completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
     aboutText2: "Somos una Agencia Digital completa formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
     aboutTag: "Multidisciplinar",
     aboutTag2: "Ámbito Digital",

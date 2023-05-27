@@ -28,14 +28,12 @@ export default function Blog() {
           bg="brand.whiteBackground"
           alignItems="center"
           flexDirection="column"
-          mt="60px"
-          mb="60px"
+          pt="60px"
+          pb="60px"
         >
           <VStack
             w={[320, null, 720, null, 1128, null]}
             align="stretch"
-            justifyContent="space-around"
-            spacing="0px"
           >
             <Box mb="40px">
               <Heading

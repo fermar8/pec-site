@@ -36,11 +36,11 @@ export async function getStaticProps() {
     mainText:
       "Nos enfocamos en que tu negocio sea encontrado con la máxima facilidad por tus clientes potenciales",
     subText:
-      "El posicionamiento SEO es clave para cualquier negocio hoy en día. Sin él, tu presencia online disminuye drásticamente. Es vital que tu negocio se encuentre entre los primeros resultados cuando tus posibles clientes busquen tus servicios.",
+      "Es clave para cualquier negocio hoy en día. Sin él, tu presencia online disminuye drásticamente. Es vital que tu negocio se encuentre entre los primeros resultados.",
     subText2:
       "En ON LINE realizamos un análisis intensivo de tu negocio para afinar tu página web a las palabras clave que buscan tus clientes potenciales.",
     subText3:
-      "Verás cómo aumentar tus visitas y generar tráfico orgánico no es tan difícil como parece y puedes encontrar nuevos clientes (o más bien que ellos te encuentren a ti) sin hacer nada!",
+      "Verás cómo aumentar tus visitas no es tan difícil como parece y puedes encontrar nuevos clientes (o más bien que ellos te encuentren a ti) ¡sin hacer nada!",
     whyText: "¿Por qué invertir en posicionamiento SEO?",
     
   };
