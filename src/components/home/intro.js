@@ -23,15 +23,21 @@ export default function Intro(props) {
     return (
       <>
         <Flex
+          justify="center"
           bg="brand.warmBackground"
-          pt="4.5em"
-          pb="4.5em"
+          pt={["40px", null, "80px", null, null, null]}
+          pb={["40px", null, "80px", null, null, null]}
           alignItems="center"
           flexDirection="column"
         >
-          <VStack w={[320, null, 528, null, null, null]}>
+          <VStack
+            w={[320, null, 528, null, null, null]}
+            align="stretch"
+            height="100%"
+            spacing={8}
+          >
             <Box>
-              <Box display="flex" justifyContent="center" width="100%" mb="0.5em">
+              <Box display="flex" justifyContent="center" width="100%" mb="8px">
                 <Image
                   alignSelf="center"
                   width={154}
@@ -46,7 +52,7 @@ export default function Intro(props) {
                 fontWeight="bold"
                 color="brand.main"
                 lineHeight="1"
-                mb="0.5em"
+                mb="8px"
               >
                 {title}
               </Heading>
@@ -56,12 +62,12 @@ export default function Intro(props) {
                 fontWeight="bold"
                 color="brand.text"
                 lineHeight="1"
-                mb="1em"
+                mb="16px"
               >
                 {subtitle}
               </Heading>
             </Box>
-            <Box pb="2em">
+            <Box pb={["20px", null, "30px", null, null, null]}>
               <Text>{text}</Text>
             </Box>
             <ButtonContactWithUs buttonText={buttonText} />
