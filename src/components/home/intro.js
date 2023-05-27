@@ -34,7 +34,7 @@ export default function Intro(props) {
           pb={["40px", null, "80px", null, null, null]}
           justifyContent="space-around"
           align="stretch"
-          height="100%"
+          height="580px"
         >
           <Box height="240px" display="flex" flexDirection="column">
             <Box display="flex" justifyContent="center" width="100%" mb="8px">
