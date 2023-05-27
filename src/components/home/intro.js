@@ -24,14 +24,14 @@ export default function Intro(props) {
       <>
         <Flex
           bg="brand.warmBackground"
-          pt="80px"
-          pb="80px"
+          pt="4.5em"
+          pb="4.5em"
           alignItems="center"
           flexDirection="column"
         >
           <VStack w={[320, null, 528, null, null, null]}>
             <Box>
-              <Box display="flex" justifyContent="center" width="100%" mb="8px">
+              <Box display="flex" justifyContent="center" width="100%" mb="0.5em">
                 <Image
                   alignSelf="center"
                   width={154}
@@ -46,7 +46,7 @@ export default function Intro(props) {
                 fontWeight="bold"
                 color="brand.main"
                 lineHeight="1"
-                mb="8px"
+                mb="0.5em"
               >
                 {title}
               </Heading>
@@ -56,12 +56,12 @@ export default function Intro(props) {
                 fontWeight="bold"
                 color="brand.text"
                 lineHeight="1"
-                mb="16px"
+                mb="1em"
               >
                 {subtitle}
               </Heading>
             </Box>
-            <Box pb="30px">
+            <Box pb="2em">
               <Text>{text}</Text>
             </Box>
             <ButtonContactWithUs buttonText={buttonText} />
