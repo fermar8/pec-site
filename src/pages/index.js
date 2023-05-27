@@ -104,7 +104,7 @@ export async function getStaticProps() {
     buttonText: "Contacta con nosotros",
 
     introSubtitle: "Agencia Marketing Digital y Diseño Web Barcelona",
-    introTitle: "ONLINE",
+    introTitle: "ON LINE",
     introText:
       "Disponemos de un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio.",
     introCta: "Contáctanos para dar el siguiente paso con tu negocio",

@@ -25,25 +25,24 @@ export default function Intro(props) {
         <Flex
           justify="center"
           bg="brand.warmBackground"
-          minHeight={[640, null, 600, null, null, null]}
+          pt="80px"
+          pb="80px"
           alignItems="center"
           flexDirection="column"
         >
           <VStack
             w={[320, null, 528, null, null, null]}
-            minHeight={[460, null, 480, null, null, null]}
             align="stretch"
-            justifyContent="space-between"
             spacing="0px"
           >
             <Box>
-              <Box display="flex" justifyContent="center" width="100%">
+              <Box display="flex" justifyContent="center" width="100%" mb="8px">
                 <Image
                   alignSelf="center"
                   width={154}
                   height={154}
                   src={`${process.env.basePath}/img/digital-workplace.png`}
-                  alt="Treballadors ON LINE Marketing Digital"
+                  alt="Trabajadores ON LINE Marketing Digital"
                 ></Image>
               </Box>
               <Heading
@@ -62,11 +61,14 @@ export default function Intro(props) {
                 fontWeight="bold"
                 color="brand.text"
                 lineHeight="1"
+                mb="16px"
               >
                 {subtitle}
               </Heading>
             </Box>
-            <Text>{text}</Text>
+            <Box pb="30px">
+              <Text>{text}</Text>
+            </Box>
             <ButtonContactWithUs buttonText={buttonText} />
           </VStack>
         </Flex>
@@ -120,7 +122,7 @@ export default function Intro(props) {
               width={256}
               height={256}
               src={`${process.env.basePath}/img/digital-workplace.png`}
-              alt="Treballadors ON LINE Marketing Digital"
+              alt="Trabajadores ON LINE Marketing Digital"
             ></Image>
           </Box>
         </Flex>
