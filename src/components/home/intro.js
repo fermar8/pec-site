@@ -36,7 +36,7 @@ export default function Intro(props) {
             height="100%"
             spacing={8}
           >
-            <Box>
+            <Box height="240px">
               <Box display="flex" justifyContent="center" width="100%" mb="8px">
                 <Image
                   alignSelf="center"
@@ -67,7 +67,7 @@ export default function Intro(props) {
                 {subtitle}
               </Heading>
             </Box>
-            <Box pb={["20px", null, "30px", null, null, null]}>
+            <Box pb={["20px", null, "30px", null, null, null]} height="140px">
               <Text>{text}</Text>
             </Box>
             <ButtonContactWithUs buttonText={buttonText} />
