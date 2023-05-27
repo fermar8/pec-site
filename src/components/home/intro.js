@@ -23,18 +23,13 @@ export default function Intro(props) {
     return (
       <>
         <Flex
-          justify="center"
           bg="brand.warmBackground"
           pt="80px"
           pb="80px"
           alignItems="center"
           flexDirection="column"
         >
-          <VStack
-            w={[320, null, 528, null, null, null]}
-            align="stretch"
-            spacing="0px"
-          >
+          <VStack w={[320, null, 528, null, null, null]}>
             <Box>
               <Box display="flex" justifyContent="center" width="100%" mb="8px">
                 <Image

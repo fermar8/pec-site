@@ -1,4 +1,4 @@
-import { ChakraProvider, Text, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, CSSReset , extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps = {} }) {
   });
   return (
     <ChakraProvider theme={theme}>
+      <CSSReset />
       <Component {...pageProps} />
       <Analytics />
     </ChakraProvider>
