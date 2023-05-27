@@ -21,59 +21,58 @@ export default function Intro(props) {
 
   if (isMobile || isTablet) {
     return (
-      <>
-        <Flex
-          justify="center"
-          bg="brand.warmBackground"
+      <Flex
+        justify="center"
+        height="580px"
+        bg="brand.warmBackground"
+        alignItems="center"
+        flexDirection="column"
+      >
+        <VStack
+          w={[320, null, 528, null, null, null]}
           pt={["40px", null, "80px", null, null, null]}
           pb={["40px", null, "80px", null, null, null]}
-          alignItems="center"
-          flexDirection="column"
+          justifyContent="space-around"
+          align="stretch"
+          height="100%"
         >
-          <VStack
-            w={[320, null, 528, null, null, null]}
-            align="stretch"
-            height="100%"
-            spacing={8}
-          >
-            <Box height="240px">
-              <Box display="flex" justifyContent="center" width="100%" mb="8px">
-                <Image
-                  alignSelf="center"
-                  width={154}
-                  height={154}
-                  src={`${process.env.basePath}/img/digital-workplace.png`}
-                  alt="Trabajadores ON LINE Marketing Digital"
-                ></Image>
-              </Box>
-              <Heading
-                as="h2"
-                fontSize={["22px", null, null, null, null, null]}
-                fontWeight="bold"
-                color="brand.main"
-                lineHeight="1"
-                mb="8px"
-              >
-                {title}
-              </Heading>
-              <Heading
-                as="h1"
-                fontSize={["24px", null, null, null, null, null]}
-                fontWeight="bold"
-                color="brand.text"
-                lineHeight="1"
-                mb="16px"
-              >
-                {subtitle}
-              </Heading>
+          <Box height="240px" display="flex" flexDirection="column">
+            <Box display="flex" justifyContent="center" width="100%" mb="8px">
+              <Image
+                alignSelf="center"
+                width={154}
+                height={154}
+                src={`${process.env.basePath}/img/digital-workplace.png`}
+                alt="Trabajadores ON LINE Marketing Digital"
+              ></Image>
             </Box>
-            <Box pb={["20px", null, "30px", null, null, null]} height="140px">
-              <Text>{text}</Text>
-            </Box>
-            <ButtonContactWithUs buttonText={buttonText} />
-          </VStack>
-        </Flex>
-      </>
+            <Heading
+              as="h2"
+              fontSize={["22px", null, null, null, null, null]}
+              fontWeight="bold"
+              color="brand.main"
+              lineHeight="1"
+              mb="8px"
+            >
+              {title}
+            </Heading>
+            <Heading
+              as="h1"
+              fontSize={["24px", null, null, null, null, null]}
+              fontWeight="bold"
+              color="brand.text"
+              lineHeight="1"
+              mb="16px"
+            >
+              {subtitle}
+            </Heading>
+          </Box>
+          <Box pb={["20px", null, "30px", null, null, null]} height="140px">
+            <Text>{text}</Text>
+          </Box>
+          <ButtonContactWithUs buttonText={buttonText} />
+        </VStack>
+      </Flex>
     );
   } else {
     return (
