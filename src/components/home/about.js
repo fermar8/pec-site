@@ -28,15 +28,15 @@ export default function About({
         justify="center"
         alignItems="center"
         bg="brand.warmBackground"
-        minHeight={[740, 686, null, null, null, null]}
+        pt="40px"
+        pb="40px"
       >
         <VStack
           w={[320, 440, null, null, null, null]}
-          h={[660, 606, null, null, null, null]}
           display="flex"
           flexDirection="column"
-          spacing="0"
           bg="brand.whiteBackground"
+          pb="40px"
         >
           <Box
             h={[227, 227, null, null, null, null]}
@@ -52,19 +52,17 @@ export default function About({
           <VStack
             w={[320, 440, null, null, null, null]}
             bg="brand.whiteBackground"
-            spacing="0"
           >
             <Box
-              h={[307, 300, null, null, null, null]}
               w={[280, 400, null, null, null, null]}
               display="flex"
               flexDirection="column"
             >
               <Box
-                h={["16px", "16px", null, null, null, null]}
                 w={[199, 199, null, null, null, null]}
                 mt={["40px", "40px", null, null, null, null]}
                 fontSize={["18px", "18px", null, null, null, null]}
+                color="brand.main"
               >
                 <Text>{knowUs}</Text>
               </Box>
@@ -72,7 +70,6 @@ export default function About({
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
-                h={["40px", "40px", null, null, null, null]}
                 w={[185, 185, null, null, null, null]}
                 mb={["24px", "24px", null, null, null, null]}
               >
@@ -86,12 +83,10 @@ export default function About({
               </Box>
               <Box
                 w={[280, 400, null, null, null, null]}
-                h={[227, null, null, null, null, null]}
                 display="flex"
                 flexDirection="column"
               >
                 <Box
-                  maxH={[132, 148, null, null, null, null]}
                   mb={["24px", "24px", null, null, null, null]}
                   fontSize={["16px", "16px", null, null, null, null]}
                   fontWeight="light"
@@ -100,7 +95,6 @@ export default function About({
                   <Text>{text}</Text>
                 </Box>
                 <Box
-                  h={["68px", "30px", null, null, null, null]}
                   w={[247, 372, null, null, null, null]}
                   display="flex"
                   justifyContent="space-between"
@@ -111,8 +105,7 @@ export default function About({
                   <TagWhiteBg tagText={tag3} />
                 </Box>
                 <Box
-                  h={["20px", "20px", null, null, null, null]}
-                  mt={["54px", "54px", null, null, null, null]}
+                  mt={["24px", "54px", null, null, null, null]}
                   fontSize={["16px", null, null, null, null, null]}
                   fontWeight="medium"
                   color="brand.main"
@@ -204,7 +197,10 @@ export default function About({
                   flexDirection="column"
                   justifyContent="space-between"
                 >
-                  <Text fontSize={[null, null, "16px", "16px", "16px", null]} mb="8px">
+                  <Text
+                    fontSize={[null, null, "16px", "16px", "16px", null]}
+                    mb="8px"
+                  >
                     {text}
                   </Text>
                   <Text

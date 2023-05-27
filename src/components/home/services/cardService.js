@@ -24,10 +24,9 @@ export default function CardService(props) {
   if (isMobile) {
     return (
       <>
-        <Box backgroundColor="brand.warmBackground" border="1px solid #FFE2DC" borderRadius="9px">
+        <Box backgroundColor="brand.warmBackground" border="1px solid #FFE2DC" borderRadius="9px" mb="16px">
           <Box
             w={[320, 440, null, null, null, null]}
-            h={[200, null, null, null, null, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-around"
@@ -42,7 +41,6 @@ export default function CardService(props) {
             <Box
               mt={["8px", "8px", null, null, null, null]}
               mb={["8px", "8px", null, null, null, null]}
-              h={["16px", "16px", null, null, null, null]}
               display="flex"
               justifyContent="center"
               fontSize={["16px", "16px", null, null, null, null]}

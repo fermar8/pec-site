@@ -139,7 +139,7 @@ export async function getStaticProps() {
     aboutTag: "Multidisciplinar",
     aboutTag2: "Ámbito Digital",
     aboutTag3: "Emprendenduría",
-    aboutKnowUs2: "Conóce al equipo",
+    aboutKnowUs2: "Conoce al equipo",
 
     blogTitle: "Blog"
   };

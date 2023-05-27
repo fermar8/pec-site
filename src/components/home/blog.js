@@ -12,10 +12,9 @@ import Link from "next/link";
 export default function Blog() {
   {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground" pb="40px" pt="40px">
         <VStack
           w={[320, 480, 728, 952, 1128, null]}
-          minHeight={[240, null, null, null, null]}
           display="flex"
           flexDirection="column"
           justifyContent="center"

@@ -18,57 +18,53 @@ export default function Intro(props) {
 
   if (isMobileOrTablet) {
     return (
-      <Flex
-        justify="center"
-        h={["100vh", null, null, null, null, null]}
-        bg="brand.warmBackground"
-        alignItems="center"
-        flexDirection="column"
-      >
-        <VStack
-          w={[320, null, 528, null, null, null]}
-          pt={["40px", null, "80px", null, null, null]}
-          pb={["40px", null, "80px", null, null, null]}
-          justifyContent="space-around"
-          align="stretch"
+      <>
+        <Flex
+          bg="brand.warmBackground"
+          pt="80px"
+          pb="80px"
+          alignItems="center"
+          flexDirection="column"
         >
-          <Box display="flex" flexDirection="column">
-            <Box display="flex" justifyContent="center" width="100%" mb="8px">
-              <Image
-                alignSelf="center"
-                width={154}
-                height={154}
-                src={`${process.env.basePath}/img/digital-workplace.png`}
-                alt="Trabajadores ON LINE Marketing Digital"
-              ></Image>
+          <VStack w={[320, null, 528, null, null, null]}>
+            <Box>
+              <Box display="flex" justifyContent="center" width="100%" mb="8px">
+                <Image
+                  alignSelf="center"
+                  width={154}
+                  height={154}
+                  src={`${process.env.basePath}/img/digital-workplace.png`}
+                  alt="Trabajadores ON LINE Marketing Digital"
+                ></Image>
+              </Box>
+              <Heading
+                as="h2"
+                fontSize={["22px", null, null, null, null, null]}
+                fontWeight="bold"
+                color="brand.main"
+                lineHeight="1"
+                mb="8px"
+              >
+                {title}
+              </Heading>
+              <Heading
+                as="h1"
+                fontSize={["24px", null, null, null, null, null]}
+                fontWeight="bold"
+                color="brand.text"
+                lineHeight="1"
+                mb="16px"
+              >
+                {subtitle}
+              </Heading>
             </Box>
-            <Heading
-              as="h2"
-              fontSize={["22px", null, null, null, null, null]}
-              fontWeight="bold"
-              color="brand.main"
-              lineHeight="1"
-              mb="8px"
-            >
-              {title}
-            </Heading>
-            <Heading
-              as="h1"
-              fontSize={["24px", null, null, null, null, null]}
-              fontWeight="bold"
-              color="brand.text"
-              lineHeight="1"
-              mb="16px"
-            >
-              {subtitle}
-            </Heading>
-          </Box>
-          <Box pb={["20px", null, "30px", null, null, null]}>
-            <Text>{text}</Text>
-          </Box>
-          <ButtonContactWithUs buttonText={buttonText} />
-        </VStack>
-      </Flex>
+            <Box pb="30px">
+              <Text>{text}</Text>
+            </Box>
+            <ButtonContactWithUs buttonText={buttonText} />
+          </VStack>
+        </Flex>
+      </>
     );
   } else {
     return (
