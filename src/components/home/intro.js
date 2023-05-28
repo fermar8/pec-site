@@ -33,7 +33,7 @@ export default function Intro(props) {
                   width={154}
                   height={154}
                   src={`${process.env.basePath}/img/digital-workplace.png`}
-                  alt="Oficines ON LINE Marketing Digital"
+                  alt="Trabajadores ON LINE Marketing Digital"
                 ></Image>
               </Box>
               <Heading

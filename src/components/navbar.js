@@ -182,7 +182,7 @@ export default function Navbar({
                               }
                             >
                               <Link href="/services/social-media">
-                                Marketing Digital
+                                Social Media
                               </Link>
                             </MenuItem>
                             <MenuItem
@@ -362,7 +362,7 @@ export default function Navbar({
                               fontSize="16px"
                             >
                               <Link href="/services/social-media">
-                                Marketing Digital
+                                Social Media
                               </Link>
                             </Box>
                             <Box

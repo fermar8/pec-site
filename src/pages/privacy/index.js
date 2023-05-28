@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <Layout>
       <Head>
-        <title>ON LINE | Quiénes Somos</title>
+        <title>ON LINE | Política de privacidad</title>
         <meta
           name="description"
           content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
@@ -30,6 +30,7 @@ export default function Blog() {
           flexDirection="column"
           pt="60px"
           pb="60px"
+          textAlign="justify"
         >
           <VStack
             w={[320, null, 720, null, 1128, null]}

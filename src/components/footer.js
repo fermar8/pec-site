@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import dynamic from "next/dynamic";
 import {
   Text,
   Box,
@@ -17,6 +18,7 @@ import { EmailIcon, PhoneIcon, LocationIcon } from "./icons";
 import { LinkedinIcon } from "./icons/socialMedia/linkedinIcon";
 import { TwitterIcon } from "./icons/socialMedia/twitterIcon";
 import { useState } from "react";
+
 
 export default function Footer() {
   const [showForm, setShowForm] = useState(true);
@@ -141,8 +143,12 @@ export default function Footer() {
                     type="text"
                     variant="outline"
                     borderColor="brand.border"
+                    sx={{
+                      ":hover": {
+                        borderColor: "brand.buttonHover",
+                      },
+                    }}
                     focusBorderColor="brand.main"
-                    hoverBorderColor="brand.main"
                     color="black"
                     bg="white"
                     onChange={formik.handleChange}
@@ -165,8 +171,12 @@ export default function Footer() {
                     type="email"
                     variant="outline"
                     borderColor="brand.border"
+                    sx={{
+                      ":hover": {
+                        borderColor: "brand.buttonHover",
+                      },
+                    }}
                     focusBorderColor="brand.main"
-                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -189,8 +199,12 @@ export default function Footer() {
                     type="tel"
                     variant="outline"
                     borderColor="brand.border"
+                    sx={{
+                      ":hover": {
+                        borderColor: "brand.buttonHover",
+                      },
+                    }}
                     focusBorderColor="brand.main"
-                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -213,8 +227,12 @@ export default function Footer() {
                     type="text"
                     variant="outline"
                     borderColor="brand.border"
+                    sx={{
+                      ":hover": {
+                        borderColor: "brand.buttonHover",
+                      },
+                    }}
                     focusBorderColor="brand.main"
-                    hoverBorderColor="brand.main"
                     bg="white"
                     color="black"
                     onChange={formik.handleChange}
@@ -235,8 +253,12 @@ export default function Footer() {
                     bg="white"
                     variant="outline"
                     borderColor="brand.border"
+                    sx={{
+                      ":hover": {
+                        borderColor: "brand.buttonHover",
+                      },
+                    }}
                     focusBorderColor="brand.main"
-                    hoverBorderColor="brand.main"
                     color="black"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -245,6 +267,7 @@ export default function Footer() {
                 </FormControl>
                 <Button
                   type="submit"
+                  fontWeight="light"
                   bg="brand.main"
                   color="brand.whiteBackground"
                   w={["50%", "30%", null, null, null, null]}
@@ -280,7 +303,6 @@ export default function Footer() {
             display="flex"
             flexDirection="column"
             pt="20px"
-            
             w={[320, 440, null, null, null, null]}
           >
             <Box
@@ -329,17 +351,56 @@ export default function Footer() {
           pb="20px"
           pt="20px"
         >
-          <Box w="100%" color="brand.text" mb="16px">
+          <Box
+            w="100%"
+            color="brand.text"
+            mb="16px"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Política de privacidad
             </Link>
           </Box>
-          <Box w="100%" color="brand.text" mb="16px">
+          <Box
+            w="100%"
+            color="brand.text"
+            mb="16px"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Términos y condiciones
             </Link>
           </Box>
-          <Box w="100%" color="brand.text" mb="16px">
+          <Box
+            w="100%"
+            color="brand.text"
+            mb="16px"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Aviso Legal
             </Link>
@@ -430,8 +491,12 @@ export default function Footer() {
                         type="text"
                         variant="outline"
                         borderColor="brand.border"
+                        sx={{
+                          ":hover": {
+                            borderColor: "brand.buttonHover",
+                          },
+                        }}
                         focusBorderColor="brand.main"
-                        hoverBorderColor="brand.main"
                         color="black"
                         bg="white"
                         onChange={formik.handleChange}
@@ -458,8 +523,12 @@ export default function Footer() {
                         type="email"
                         variant="outline"
                         borderColor="brand.border"
+                        sx={{
+                          ":hover": {
+                            borderColor: "brand.buttonHover",
+                          },
+                        }}
                         focusBorderColor="brand.main"
-                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -484,8 +553,12 @@ export default function Footer() {
                         type="tel"
                         variant="outline"
                         borderColor="brand.border"
+                        sx={{
+                          ":hover": {
+                            borderColor: "brand.buttonHover",
+                          },
+                        }}
                         focusBorderColor="brand.main"
-                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -510,8 +583,12 @@ export default function Footer() {
                         type="text"
                         variant="outline"
                         borderColor="brand.border"
+                        sx={{
+                          ":hover": {
+                            borderColor: "brand.buttonHover",
+                          },
+                        }}
                         focusBorderColor="brand.main"
-                        hoverBorderColor="brand.main"
                         bg="white"
                         color="black"
                         onChange={formik.handleChange}
@@ -534,8 +611,12 @@ export default function Footer() {
                         bg="white"
                         variant="outline"
                         borderColor="brand.border"
+                        sx={{
+                          ":hover": {
+                            borderColor: "brand.buttonHover",
+                          },
+                        }}
                         focusBorderColor="brand.main"
-                        hoverBorderColor="brand.main"
                         color="black"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -546,6 +627,7 @@ export default function Footer() {
                       type="submit"
                       bg="brand.main"
                       alignSelf="start"
+                      fontWeight="light"
                       color="brand.whiteBackground"
                       w={["50%", "30%", null, null, null, null]}
                       h="36px"
@@ -613,17 +695,54 @@ export default function Footer() {
           minHeight={[250, null, null, null, 250, null]}
           w="100%"
         >
-          <Box w="100%" mt="16px" color="brand.text">
+          <Box
+            w="100%"
+            mt="16px"
+            color="brand.text"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Política de privacidad
             </Link>
           </Box>
-          <Box w="100%" color="brand.text">
+          <Box
+            w="100%"
+            color="brand.text"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Términos y condiciones
             </Link>
           </Box>
-          <Box w="100%" color="brand.text">
+          <Box
+            w="100%"
+            color="brand.text"
+            sx={{
+              ":hover": {
+                color: "brand.main",
+              },
+              ":focus": {
+                color: "brand.main",
+                border: "1px solid white",
+              },
+            }}
+          >
             <Link href="/privacy" ml="16px">
               Aviso Legal
             </Link>

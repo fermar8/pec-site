@@ -9,6 +9,7 @@ function buttonContact() {
       color="brand.whiteBackground"
       w="168px"
       h="36px"
+      fontWeight="light"
       verticalAlign="text-bottom"
       borderRadius="999"
       rightIcon={<WavingHand />}

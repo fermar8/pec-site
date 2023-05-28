@@ -33,6 +33,7 @@ export default function Blog() {
             bg="brand.whiteBackground"
             alignItems="center"
             flexDirection="column"
+            
           >
             <VStack
               w={[320, null, 720, null, null, null]}
@@ -134,6 +135,7 @@ export default function Blog() {
             minHeight="600px"
             alignItems="center"
             flexDirection="row"
+            textAlign="justify"
           >
             <VStack
               w={[320, null, 720, null, 720, null]}
