@@ -218,7 +218,7 @@ export default function Navbar({
                       _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/about">Nosotros</Link>
+                      <Link href="/nosotros">Nosotros</Link>
                     </Box>
                     <Box
                       as="button"
@@ -408,7 +408,7 @@ export default function Navbar({
                           color={isAbout ? "brand.main" : "brand.text"}
                           textDecoration={isAbout ? "underline" : "none"}
                         >
-                          <Link href="/about">Sobre nosotros</Link>
+                          <Link href="/nosotros">Sobre nosotros</Link>
                         </Box>
                       </AccordionButton>
                     </h2>

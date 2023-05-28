@@ -365,7 +365,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Política de privacidad
             </Link>
           </Box>
@@ -383,7 +383,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Términos y condiciones
             </Link>
           </Box>
@@ -401,7 +401,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Aviso Legal
             </Link>
           </Box>
@@ -709,7 +709,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Política de privacidad
             </Link>
           </Box>
@@ -726,7 +726,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Términos y condiciones
             </Link>
           </Box>
@@ -743,7 +743,7 @@ export default function Footer() {
               },
             }}
           >
-            <Link href="/privacy" ml="16px">
+            <Link href="/privacidad" ml="16px">
               Aviso Legal
             </Link>
           </Box>
