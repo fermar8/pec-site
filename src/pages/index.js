@@ -6,7 +6,6 @@ import Services from "../components/home/services";
 import About from "../components/home/about";
 import Blog from "../components/home/blog";
 
-
 export default function Home({ page }) {
   const {
     title,
@@ -44,15 +43,34 @@ export default function Home({ page }) {
     aboutTag3,
     aboutKnowUs2,
 
-    blogTitle
+    blogTitle,
   } = page;
   return (
     <Layout isHome={true}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
-          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Intro
         title={introTitle}
@@ -62,7 +80,7 @@ export default function Home({ page }) {
         buttonText={buttonText}
       />
       <Services
-        title={servicesTitle} 
+        title={servicesTitle}
         subtitle={servicesSubtitle}
         mainText={servicesMainText}
         buttonText={buttonText}
@@ -79,7 +97,7 @@ export default function Home({ page }) {
         socialTitle={servicesSocialTitle}
         socialText={servicesSocialText}
       />
-      <About 
+      <About
         knowUs={aboutKnowUs}
         title={aboutTitle}
         text={aboutText}
@@ -89,9 +107,7 @@ export default function Home({ page }) {
         tag3={aboutTag3}
         knowUs2={aboutKnowUs2}
       />
-      <Blog 
-        title={blogTitle}
-      />
+      <Blog title={blogTitle} />
     </Layout>
   );
 }
@@ -101,7 +117,7 @@ export async function getStaticProps() {
     title: "ON LINE | Agencia de Marketing Digital Barcelona",
     description:
       "ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web",
-    
+
     buttonText: "Contacta con nosotros",
 
     introSubtitle: "Agencia Marketing Digital y Diseño Web Barcelona",
@@ -132,17 +148,19 @@ export async function getStaticProps() {
     servicesSocialTitle: "Social Media",
     servicesSocialText:
       "Reforzamos tu marca y su presencia online gestionando  las redes sociales de tu empresa",
-    
+
     aboutKnowUs: "Conócenos",
     aboutTitle: "Nuestro equipo",
-    aboutText: "Somos una Agencia de Marketing Digital y Diseño Web completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
-    aboutText2: "Somos una Agencia Digital completa formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
+    aboutText:
+      "Somos una Agencia de Marketing Digital y Diseño Web completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
+    aboutText2:
+      "Somos una Agencia Digital completa formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
     aboutTag: "Multidisciplinar",
     aboutTag2: "Ámbito Digital",
     aboutTag3: "Emprendenduría",
     aboutKnowUs2: "Conoce al equipo",
 
-    blogTitle: "Blog"
+    blogTitle: "Blog",
   };
 
   return {

@@ -42,20 +42,32 @@ export default function AboutPage({ page }) {
         <Head>
           <title>{titleTag}</title>
           <meta name="description" content={description} />
-          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
-          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <>
           <Flex justify="center" bg="brand.whiteBackground">
-            <VStack
-              w={[320, null, null, null, null, null]}
-              pb="40px"
-              pt="40px"
-            >
-              <Box
-                display="flex"
-                flexDirection="column"
-              >
+            <VStack w={[320, null, null, null, null, null]} pb="40px" pt="40px">
+              <Box display="flex" flexDirection="column">
                 <Box
                   alignSelf="center"
                   display="flex"
@@ -64,7 +76,6 @@ export default function AboutPage({ page }) {
                   width={174}
                   height={174}
                   overflow="hidden"
-                  
                   mb="16px"
                 >
                   <Image
@@ -215,8 +226,27 @@ export default function AboutPage({ page }) {
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
           />
-          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
-          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <>
           <Flex justify="center" bg="brand.whiteBackground">
@@ -406,8 +436,8 @@ export async function getStaticProps() {
     clientOrientedTitle: "Orientación al cliente",
     clientOrientedText:
       "En el Marketing Digital y Desarrollo Web cada cliente es un mundo y tiene unas necesidades específicas. Nos adaptamos al máximo para cubrirlas.",
-    
-    buttonText: "Contacta con nosotros"
+
+    buttonText: "Contacta con nosotros",
   };
 
   return {

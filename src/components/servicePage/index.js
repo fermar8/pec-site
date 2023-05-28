@@ -33,7 +33,7 @@ export default function ServicePage(props) {
   const [title] = useState(props.title);
   const [smallIcon, setSmallIcon] = useState(SemIcon);
   const [bigIcon, setBigIcon] = useState(SemIconBig);
-  
+
   useEffect(() => {
     if (title === "Campañas SEM") {
       setSmallIcon(SemIcon);
@@ -66,7 +66,7 @@ export default function ServicePage(props) {
     subText3,
     whyText,
   } = props;
-  
+
   if (isMobile) {
     return (
       <Layout isService={true} serviceType={title}>
@@ -76,14 +76,30 @@ export default function ServicePage(props) {
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web"
           />
-          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
-          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <>
-          <Flex
-            justify="center"
-            bg="brand.whiteBackground"
-          >
+          <Flex justify="center" bg="brand.whiteBackground">
             <VStack
               pt="120px"
               pb="60px"
@@ -112,7 +128,12 @@ export default function ServicePage(props) {
                 >
                   {title}
                 </Heading>
-                <Heading as="h2" lineHeight="28px" fontSize="16px" fontWeight="light">
+                <Heading
+                  as="h2"
+                  lineHeight="28px"
+                  fontSize="16px"
+                  fontWeight="light"
+                >
                   {mainText}
                 </Heading>
               </Box>
@@ -130,7 +151,11 @@ export default function ServicePage(props) {
               spacing="0px"
             >
               <Box textAlign="center">
-                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
+                <Text
+                  color="brand.whiteBackground"
+                  fontSize="18px"
+                  fontWeight="bold"
+                >
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -198,8 +223,27 @@ export default function ServicePage(props) {
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web"
           />
-          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
-          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <>
           <Flex
@@ -230,13 +274,16 @@ export default function ServicePage(props) {
                 >
                   {title}
                 </Heading>
-                <Heading as="h2" lineHeight="28px" fontSize="16px" fontWeight="light">
+                <Heading
+                  as="h2"
+                  lineHeight="28px"
+                  fontSize="16px"
+                  fontWeight="light"
+                >
                   {mainText}
                 </Heading>
               </Box>
-              <Box>
-                {bigIcon}
-              </Box>
+              <Box>{bigIcon}</Box>
             </Flex>
           </Flex>
           <Flex justify="center" w="100%" bg="brand.main">
@@ -250,7 +297,11 @@ export default function ServicePage(props) {
               spacing="0px"
             >
               <Box textAlign="center">
-                <Text color="brand.whiteBackground" fontSize="18px" fontWeight="bold">
+                <Text
+                  color="brand.whiteBackground"
+                  fontSize="18px"
+                  fontWeight="bold"
+                >
                   En ON LINE te brindamos estrategias a tu medida, consensuando
                   y adaptándonos a tus objetivos e ideas.
                 </Text>
@@ -310,5 +361,5 @@ export default function ServicePage(props) {
         </>
       </Layout>
     );
-  } 
+  }
 }
