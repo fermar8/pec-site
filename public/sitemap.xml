@@ -2,14 +2,17 @@
   <url>
     <loc>https://pec-site-git-develop-fermar8.vercel.app/</loc>
     <changefreq>hourly</changefreq>
+    <priority>1.0</loc>
   </url>
   <url>
     <loc>https://pec-site-git-develop-fermar8.vercel.app/nosotros</loc>
     <changefreq>hourly</changefreq>
+    <priority>0.8</loc>
   </url>
   <url>
     <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/web</loc>
     <changefreq>hourly</changefreq>
+    <priority>0.7</loc>
   </url>
   <url>
     <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/diseño</loc>

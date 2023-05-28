@@ -51,7 +51,8 @@ export default function Home({ page }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
+          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
       </Head>
       <Intro
         title={introTitle}

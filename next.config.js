@@ -6,4 +6,8 @@ module.exports = {
     POSTS_PRERENDER_COUNT: 5,
     WORDPRESS_GRAPHQL_ENDPOINT: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
   },
+  i18n: {
+    locales: ["es"],
+    defaultLocale: "es",
+  },
 };

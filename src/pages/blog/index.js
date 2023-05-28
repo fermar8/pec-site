@@ -25,7 +25,8 @@ export default function Blog() {
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
+          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
         </Head>
         <>
           <Flex
@@ -126,7 +127,8 @@ export default function Blog() {
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" type="image/svg+xml" href={`${process.env.basePath}/img/favicon.svg`} />
+          <link rel="icon" type="image/png" href={`${process.env.basePath}/img/favicon.png`} />
         </Head>
         <>
           <Flex
