@@ -33,7 +33,7 @@ export default function Blog() {
               Blog
             </Heading>
             <Heading
-              as="h1"
+              as="h6"
               fontSize={["24px", null, null, null, null, null]}
               fontWeight="bold"
               color="brand.text"

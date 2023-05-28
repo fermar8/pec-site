@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 
+import dynamic from "next/dynamic";
 import Intro from "../components/home/intro";
-import Services from "../components/home/services";
-import About from "../components/home/about";
-import Blog from "../components/home/blog";
+
+const Services = dynamic(() => import("../components/home/services"), { ssr: false });
+const About = dynamic(() => import("../components/home/about") , { ssr: false });
+const Blog = dynamic(() => import("../components/home/blog") , { ssr: false });
+
 
 export default function Home({ page }) {
   const {

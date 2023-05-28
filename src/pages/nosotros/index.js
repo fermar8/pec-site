@@ -8,11 +8,14 @@ import {
 } from "@chakra-ui/react";
 
 import Head from "next/head";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import Layout from "components/layout";
-import ServiceDescription from "components/services/serviceDescriptions";
-import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
-import Image from "next/image";
+const ServiceDescription = dynamic(() => import("components/services/serviceDescriptions"), { ssr: false });
+const ButtonContactWithUs = dynamic(() => import("components/general/buttons/buttonContactWithUs"), { ssr: false });
+
+
 
 export default function AboutPage({ page }) {
   const {
