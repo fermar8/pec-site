@@ -10,4 +10,5 @@ module.exports = {
     locales: ["es"],
     defaultLocale: "es",
   },
+  output: "standalone",
 };
