@@ -114,7 +114,7 @@ export default function ServicePage(props) {
               </Box>
               <Box>
                 <Heading
-                  as="h5"
+                  as="h3"
                   fontSize={["24px", null, null, null, null, null]}
                   fontWeight="bold"
                   color="brand.main"
@@ -260,7 +260,7 @@ export default function ServicePage(props) {
             >
               <Box>
                 <Heading
-                  as="h5"
+                  as="h3"
                   fontSize={[null, null, "24px", null, null, null]}
                   fontWeight="bold"
                   color="brand.main"
@@ -268,7 +268,7 @@ export default function ServicePage(props) {
                   Servicios
                 </Heading>
                 <Heading
-                  as="h2"
+                  as="h1"
                   fontSize={[null, null, "36px", null, null, null]}
                   fontWeight="bold"
                 >

@@ -99,7 +99,7 @@ export default function AboutPage({ page }) {
                     {titleTextPart1}
                   </Heading>
                   <Heading
-                    as="h2"
+                    as="h1"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
                     lineHeight="1"
@@ -271,13 +271,13 @@ export default function AboutPage({ page }) {
                   {titleTextPart1}
                 </Heading>
                 <Heading
-                  as="h2"
+                  as="h1"
                   fontSize={[null, null, "36px", null, null, null]}
                   fontWeight="bold"
                   lineHeight="1"
                   mb="16px"
                 >
-                  Nosotros
+                  {titleTextPart2}
                 </Heading>
                 <Text
                   lineHeight="28px"
@@ -353,7 +353,7 @@ export default function AboutPage({ page }) {
               >
                 <Box mb="16px">
                   <Heading
-                    as="h5"
+                    as="h3"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
                     color="brand.main"
