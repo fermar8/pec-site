@@ -149,7 +149,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/web">Desarrollo Web</Link>
+                              <Link href="/servicios/web">Desarrollo Web</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -159,7 +159,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/design">Diseño Web</Link>
+                              <Link href="/servicios/diseño">Diseño Web</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -169,7 +169,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/ux-ui">
+                              <Link href="/servicios/ux-ui">
                                 Consultoría UX/UI
                               </Link>
                             </MenuItem>
@@ -181,7 +181,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/social-media">
+                              <Link href="/servicios/social-media">
                                 Social Media
                               </Link>
                             </MenuItem>
@@ -193,7 +193,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/sem">Campañas SEM</Link>
+                              <Link href="/servicios/sem">Campañas SEM</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -203,7 +203,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/services/seo">
+                              <Link href="/servicios/seo">
                                 Posicionamiento SEO
                               </Link>
                             </MenuItem>
@@ -326,7 +326,7 @@ export default function Navbar({
                               fontSize="16px"
                               ml="8px"
                             >
-                              <Link href="/services/web">Desarrollo Web</Link>
+                              <Link href="/servicios/web">Desarrollo Web</Link>
                             </Box>
                             <Box
                               as="button"
@@ -337,7 +337,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/services/design">Diseño Web</Link>
+                              <Link href="/servicios/diseño">Diseño Web</Link>
                             </Box>
                             <Box
                               as="button"
@@ -348,7 +348,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/services/ux-ui">
+                              <Link href="/servicios/ux-ui">
                                 Consultoría UX/UI
                               </Link>
                             </Box>
@@ -361,7 +361,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/services/social-media">
+                              <Link href="/servicios/social-media">
                                 Social Media
                               </Link>
                             </Box>
@@ -374,7 +374,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/services/sem">Campañas SEM</Link>
+                              <Link href="/servicios/sem">Campañas SEM</Link>
                             </Box>
                             <Box
                               as="button"
@@ -385,7 +385,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/services/seo">
+                              <Link href="/servicios/seo">
                                 Posicionamiento SEO
                               </Link>
                             </Box>

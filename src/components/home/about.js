@@ -135,7 +135,7 @@ export default function About({
             h={[null, null, 480, 480, 480, null]}
             w={[null, null, 728, 952, 1128, null]}
             bg="brand.whiteBackground"
-            borderRadius="0px 9px 0px 0px"
+            borderRadius="0px 9px 9px 0px"
             display="flex"
           >
             <Box

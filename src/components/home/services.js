@@ -75,37 +75,37 @@ export default function Services(props) {
               title={webTitle}
               text={webText}
               image="web"
-              link="/services/web"
+              link="/servicios/web"
             />
             <CardService
               title={designTitle}
               text={designText}
               image="design"
-              link="services/design"
+              link="servicios/design"
             />
             <CardService
               title={uxTitle}
               text={uxText}
               image="ux-ui"
-              link="services/ux-ui"
+              link="servicios/ux-ui"
             />
             <CardService
               title={seoTitle}
               text={seoText}
               image="seo"
-              link="services/seo"
+              link="servicios/seo"
             />
             <CardService
               title={semTitle}
               text={semText}
               image="sem"
-              link="services/sem"
+              link="servicios/sem"
             />
             <CardService
               title={socialTitle}
               text={socialText}
               image="social-media"
-              link="services/social-media"
+              link="servicios/social-media"
             />
           </Box>
         </VStack>
@@ -167,13 +167,13 @@ export default function Services(props) {
                 title={webTitle}
                 text={webText}
                 image="web"
-                link="/services/web"
+                link="/servicios/web"
               />
               <CardService
                 title={designTitle}
                 text={designText}
                 image="design"
-                link="/services/design"
+                link="/servicios/diseño"
               />
             </Box>
             <Box
@@ -187,13 +187,13 @@ export default function Services(props) {
                 title={uxTitle}
                 text={uxText}
                 image="ux-ui"
-                link="/services/ux-ui"
+                link="/servicios/ux-ui"
               />
               <CardService
                 title={seoTitle}
                 text={seoText}
                 image="seo"
-                link="/services/seo"
+                link="/servicios/seo"
               />
             </Box>
             <Box
@@ -207,13 +207,13 @@ export default function Services(props) {
                 title={semTitle}
                 text={semText}
                 image="sem"
-                link="/services/sem"
+                link="/servicios/sem"
               />
               <CardService
                 title={socialTitle}
                 text={socialText}
                 image="social-media"
-                link="/services/social-media"
+                link="/servicios/social-media"
               />
             </Box>
           </Box>
@@ -272,19 +272,19 @@ export default function Services(props) {
                 title={webTitle}
                 text={webText}
                 image="web"
-                link="/services/web"
+                link="/servicios/web"
               />
               <CardService
                 title={designTitle}
                 text={designText}
                 image="design"
-                link="/services/design"
+                link="/servicios/diseño"
               />
               <CardService
                 title={uxTitle}
                 text={uxText}
                 image="ux-ui"
-                link="/services/ux-ui"
+                link="/servicios/ux-ui"
               />
             </Box>
             <Box
@@ -298,19 +298,19 @@ export default function Services(props) {
                 title={seoTitle}
                 text={seoText}
                 image="seo"
-                link="/services/seo"
+                link="/servicios/seo"
               />
               <CardService
                 title={semTitle}
                 text={semText}
                 image="sem"
-                link="/services/sem"
+                link="/servicios/sem"
               />
               <CardService
                 title={socialTitle}
                 text={socialText}
                 image="social-media"
-                link="/services/social-media"
+                link="/servicios/social-media"
               />
             </Box>
           </Box>
