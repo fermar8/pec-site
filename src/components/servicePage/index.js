@@ -171,7 +171,7 @@ export default function ServicePage(props) {
             <VStack
               w={[320, null, null, null, null, null]}
               pt="64px"
-              pb="64px"
+              pb="32px"
               display="flex"
               flexDirection="column"
               justify="space-between"
@@ -207,9 +207,8 @@ export default function ServicePage(props) {
                 subtitle={subtitle3}
                 subText={subText3}
               />
-              <Box padding="16px"></Box>
-              <ButtonContactWithUs buttonText="Contacta con nosotros" />
             </VStack>
+            <ButtonContactWithUs buttonText="Contacta con nosotros" />
           </Flex>
         </>
       </Layout>
@@ -318,7 +317,7 @@ export default function ServicePage(props) {
             <VStack
               w={[720, null, null, null, null, null]}
               mt="64px"
-              mb="64px"
+              mb="32px"
               display="flex"
               flexDirection="column"
               justify="space-around"
@@ -354,9 +353,10 @@ export default function ServicePage(props) {
                 subtitle={subtitle3}
                 subText={subText3}
               />
-              <Box padding="16px"></Box>
-              <ButtonContactWithUs buttonText="Contacta con nosotros" />
             </VStack>
+            <Box pb="20px">
+              <ButtonContactWithUs buttonText="Contacta con nosotros" />
+            </Box>
           </Flex>
         </>
       </Layout>
