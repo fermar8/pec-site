@@ -6,10 +6,15 @@ import {
   useMediaQuery,
   chakra,
 } from "@chakra-ui/react";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const CardService = dynamic(() => import("./services/cardService") , { ssr: false });
-const ButtonContactWithUs = dynamic(() => import("../../components/general/buttons/buttonContactWithUs"), { ssr: false });
+const CardService = dynamic(() => import("./services/cardService"), {
+  ssr: false,
+});
+const ButtonContactWithUs = dynamic(
+  () => import("../../components/general/buttons/buttonContactWithUs"),
+  { ssr: false }
+);
 
 export default function Services(props) {
   const {
@@ -85,12 +90,6 @@ export default function Services(props) {
               link="servicios/design"
             />
             <CardService
-              title={uxTitle}
-              text={uxText}
-              image="ux-ui"
-              link="servicios/ux-ui"
-            />
-            <CardService
               title={seoTitle}
               text={seoText}
               image="seo"
@@ -108,32 +107,37 @@ export default function Services(props) {
               image="social-media"
               link="servicios/social-media"
             />
+            <CardService
+              title={uxTitle}
+              text={uxText}
+              image="ux-ui"
+              link="servicios/ux-ui"
+            />
           </Box>
         </VStack>
       </Flex>
     );
   } else if (isTablet) {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
-        <VStack
-          mt={[null, null, "64px", "64px", null, null]}
-          mb={[null, null, "64px", "64px", null, null]}
-          w={[null, null, 728, 952, null, null]}
-          h={[null, null, 1330, 1330, null, null]}
-          align="stretch"
-        >
+      <Flex
+        justify="center"
+        alignItems="center"
+        bg="brand.whiteBackground"
+        pt={[null, null, "64px", "64px", null, null]}
+        pb={[null, null, "64px", "64px", null, null]}
+      >
+        <VStack w={[null, null, 728, 952, null, null]}>
           <Box
             w={[null, null, 728, 952, null, null]}
-            h={[null, null, "136px", "136px", null, null]}
             display="flex"
             flexDirection="column"
-            justifyContent="space-around"
           >
             <Heading
               as="h2"
               fontSize={[null, null, "24px", "24px", null, null]}
               fontWeight="semi-bold"
               color="brand.main"
+              mb="16px"
             >
               {title} <br />
               <chakra.span color="brand.text" fontWeight="bold">
@@ -149,14 +153,8 @@ export default function Services(props) {
               {mainText}
             </Heading>
           </Box>
-          <Box
-            h={[null, null, 1170, 1170, null, null]}
-            display="flex"
-            flexDirection="column"
-            justifyContent="space-around"
-          >
+          <Box display="flex" flexDirection="column">
             <Box
-              h={[null, null, 422, 422, null, null]}
               w={[null, null, 728, 952, null, null]}
               mt={[null, null, "48px", "48px", null, null]}
               mb={[null, null, "48px", "48px", null, null]}
@@ -178,43 +176,41 @@ export default function Services(props) {
               />
             </Box>
             <Box
-              h={[null, null, 422, 422, null, null]}
               w={[null, null, 728, 952, null, null]}
               mb={[null, null, "48px", "48px", null, null]}
               display="flex"
               justifyContent="space-between"
             >
-              <CardService
-                title={uxTitle}
-                text={uxText}
-                image="ux-ui"
-                link="/servicios/ux-ui"
-              />
               <CardService
                 title={seoTitle}
                 text={seoText}
                 image="seo"
                 link="/servicios/seo"
               />
-            </Box>
-            <Box
-              h={[null, null, 422, 422, null, null]}
-              w={[null, null, 728, 952, null, null]}
-              mb={[null, null, "48px", "48px", null, null]}
-              display="flex"
-              justifyContent="space-between"
-            >
               <CardService
                 title={semTitle}
                 text={semText}
                 image="sem"
                 link="/servicios/sem"
               />
+            </Box>
+            <Box
+              w={[null, null, 728, 952, null, null]}
+              mb={[null, null, "48px", "48px", null, null]}
+              display="flex"
+              justifyContent="space-between"
+            >
               <CardService
                 title={socialTitle}
                 text={socialText}
                 image="social-media"
                 link="/servicios/social-media"
+              />
+              <CardService
+                title={uxTitle}
+                text={uxText}
+                image="ux-ui"
+                link="/servicios/ux-ui"
               />
             </Box>
           </Box>
@@ -282,10 +278,10 @@ export default function Services(props) {
                 link="/servicios/diseño"
               />
               <CardService
-                title={uxTitle}
-                text={uxText}
-                image="ux-ui"
-                link="/servicios/ux-ui"
+                title={seoTitle}
+                text={seoText}
+                image="seo"
+                link="/servicios/seo"
               />
             </Box>
             <Box
@@ -295,12 +291,6 @@ export default function Services(props) {
               display="flex"
               justifyContent="space-between"
             >
-              <CardService
-                title={seoTitle}
-                text={seoText}
-                image="seo"
-                link="/servicios/seo"
-              />
               <CardService
                 title={semTitle}
                 text={semText}
@@ -312,6 +302,12 @@ export default function Services(props) {
                 text={socialText}
                 image="social-media"
                 link="/servicios/social-media"
+              />
+              <CardService
+                title={uxTitle}
+                text={uxText}
+                image="ux-ui"
+                link="/servicios/ux-ui"
               />
             </Box>
           </Box>

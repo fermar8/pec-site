@@ -98,7 +98,7 @@ export default function Footer() {
         color="white"
         textAlign="center"
         justifyContent="center"
-        id="footer"
+        id="contacto"
       >
         <VStack
           pb="40px"
@@ -144,10 +144,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                      ":hover": {
-                        borderColor: "brand.buttonHover",
-                      },
-                    }}
+                          ":hover": {
+                            borderColor: "brand.main",
+                          },
+                        }}
                     focusBorderColor="brand.main"
                     color="black"
                     bg="white"
@@ -172,10 +172,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                      ":hover": {
-                        borderColor: "brand.buttonHover",
-                      },
-                    }}
+                          ":hover": {
+                            borderColor: "brand.main",
+                          },
+                        }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -200,10 +200,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                      ":hover": {
-                        borderColor: "brand.buttonHover",
-                      },
-                    }}
+                          ":hover": {
+                            borderColor: "brand.main",
+                          },
+                        }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -228,10 +228,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                      ":hover": {
-                        borderColor: "brand.buttonHover",
-                      },
-                    }}
+                          ":hover": {
+                            borderColor: "brand.main",
+                          },
+                        }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -254,10 +254,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                      ":hover": {
-                        borderColor: "brand.buttonHover",
-                      },
-                    }}
+                          ":hover": {
+                            borderColor: "brand.main",
+                          },
+                        }}
                     focusBorderColor="brand.main"
                     color="black"
                     onChange={formik.handleChange}
@@ -420,7 +420,7 @@ export default function Footer() {
         textAlign="center"
         justifyContent="space-around"
         backgroundColor="brand.warmBackground"
-        id="footer"
+        id="contacto"
       >
         <VStack
           justifyContent="space-around"
@@ -493,7 +493,7 @@ export default function Footer() {
                         borderColor="brand.border"
                         sx={{
                           ":hover": {
-                            borderColor: "brand.buttonHover",
+                            borderColor: "brand.main",
                           },
                         }}
                         focusBorderColor="brand.main"
@@ -525,7 +525,7 @@ export default function Footer() {
                         borderColor="brand.border"
                         sx={{
                           ":hover": {
-                            borderColor: "brand.buttonHover",
+                            borderColor: "brand.main",
                           },
                         }}
                         focusBorderColor="brand.main"
@@ -555,7 +555,7 @@ export default function Footer() {
                         borderColor="brand.border"
                         sx={{
                           ":hover": {
-                            borderColor: "brand.buttonHover",
+                            borderColor: "brand.main",
                           },
                         }}
                         focusBorderColor="brand.main"
@@ -585,7 +585,7 @@ export default function Footer() {
                         borderColor="brand.border"
                         sx={{
                           ":hover": {
-                            borderColor: "brand.buttonHover",
+                            borderColor: "brand.main",
                           },
                         }}
                         focusBorderColor="brand.main"
@@ -613,7 +613,7 @@ export default function Footer() {
                         borderColor="brand.border"
                         sx={{
                           ":hover": {
-                            borderColor: "brand.buttonHover",
+                            borderColor: "brand.main",
                           },
                         }}
                         focusBorderColor="brand.main"

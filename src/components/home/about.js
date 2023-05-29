@@ -121,18 +121,13 @@ export default function About({
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.warmBackground">
+      <Flex justify="center" alignItems="center" bg="brand.warmBackground" pb="80px" pt="80px">
         <VStack
           w={[null, null, 728, 952, 1128, null]}
-          h={[null, null, 640, 640, 640, null]}
           display="flex"
           flexDirection="column"
-          justifyContent="space-around"
-          align="stretch"
-          spacing="0px"
         >
           <Box
-            h={[null, null, 480, 480, 480, null]}
             w={[null, null, 728, 952, 1128, null]}
             bg="brand.whiteBackground"
             borderRadius="0px 9px 9px 0px"
@@ -163,9 +158,8 @@ export default function About({
                 flexDirection="column"
               >
                 <Box
-                  h={[null, null, "16px", "16px", "16px", null]}
                   w={[null, null, 200, 200, 232, null]}
-                  mb="8px"
+                  mb="16px"
                 >
                   <Text
                     fontSize={[null, null, "18px", "18px", "21px", null]}
@@ -173,15 +167,6 @@ export default function About({
                   >
                     {knowUs}
                   </Text>
-                </Box>
-                <Box
-                  h={[null, null, "40px", "40px", "64px", null]}
-                  w={[null, null, 186, 186, 232, null]}
-                  fontWeight="bold"
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="center"
-                >
                   <Heading
                     as="h3"
                     fontSize={[null, null, "24px", "24px", "30px", null]}
@@ -191,11 +176,8 @@ export default function About({
                 </Box>
                 <Box
                   w={[null, null, 342, 566, 436, null]}
-                  h={[null, null, 348, 282, 300, null]}
-                  mt={[null, null, "24px", "24px", "24px", null]}
                   display="flex"
                   flexDirection="column"
-                  justifyContent="space-between"
                 >
                   <Text
                     fontSize={[null, null, "16px", "16px", "16px", null]}
@@ -205,17 +187,17 @@ export default function About({
                   </Text>
                   <Text
                     fontSize={[null, null, "16px", "16px", "16px", null]}
-                    mb="8px"
+                    mb="16px"
                     fontWeight="bold"
                   >
                     {text2}
                   </Text>
                   <Box
-                    h={[null, null, "68px", "68px", "68px", null]}
                     w={[null, null, 247, 247, 372, null]}
                     display="flex"
                     flexWrap="wrap"
                     justifyContent="space-between"
+                    mb="16px"
                   >
                     <TagWhiteBg tagText={tag} />
                     <TagWhiteBg tagText={tag2} />

@@ -57,6 +57,8 @@ export default function CardService(props) {
               w={[null, null, null, null, 280, null]}
               textAlign="center"
               lineHeight="16px"
+              pl="4px"
+              pr="4px"
             >
               <Text>{text}</Text>
             </Box>

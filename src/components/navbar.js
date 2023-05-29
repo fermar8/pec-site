@@ -97,7 +97,12 @@ export default function Navbar({
             <HStack gap="24px">
               <Flex justify="space-between" alignItems="center" gap="24px">
                 <OnlineLogo />
-                <Divider orientation="vertical" h="24px" w="1px" bg="brand.border"></Divider>
+                <Divider
+                  orientation="vertical"
+                  h="24px"
+                  w="1px"
+                  bg="brand.border"
+                ></Divider>
               </Flex>
               {isTablet ? (
                 <Flex justify="space-between" flex="1">
@@ -114,7 +119,10 @@ export default function Navbar({
                     <Menu
                       isOpen={isDropdownOpen}
                       backgroundColor="brand.whiteBackground"
-                      _selected={{ color: "brand.main", bg: "brand.whiteBackground" }}
+                      _selected={{
+                        color: "brand.main",
+                        bg: "brand.whiteBackground",
+                      }}
                       _focus={{ bg: "brand.whiteBackground" }}
                     >
                       {({ isOpen }) => (
@@ -164,14 +172,24 @@ export default function Navbar({
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
                               color={
-                                serviceType === "Consultoría UX/UI"
+                                serviceType === "Posicionamiento SEO"
                                   ? "brand.main"
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/ux-ui">
-                                Consultoría UX/UI
+                              <Link href="/servicios/seo">
+                                Posicionamiento SEO
                               </Link>
+                            </MenuItem>
+                            <MenuItem
+                              _hover={{ bg: "brand.whiteBackground" }}
+                              color={
+                                serviceType === "Campañas SEM"
+                                  ? "brand.main"
+                                  : "brand.text"
+                              }
+                            >
+                              <Link href="/servicios/sem">Campañas SEM</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -188,23 +206,13 @@ export default function Navbar({
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
                               color={
-                                serviceType === "Campañas SEM"
+                                serviceType === "Consultoría UX/UI"
                                   ? "brand.main"
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/sem">Campañas SEM</Link>
-                            </MenuItem>
-                            <MenuItem
-                              _hover={{ bg: "brand.whiteBackground" }}
-                              color={
-                                serviceType === "Posicionamiento SEO"
-                                  ? "brand.main"
-                                  : "brand.text"
-                              }
-                            >
-                              <Link href="/servicios/seo">
-                                Posicionamiento SEO
+                              <Link href="/servicios/ux-ui">
+                                Consultoría UX/UI
                               </Link>
                             </MenuItem>
                           </MenuList>
@@ -342,15 +350,26 @@ export default function Navbar({
                             <Box
                               as="button"
                               color={
-                                serviceType === "Consultoría UX/UI"
+                                serviceType === "Posicionamiento SEO"
                                   ? "brand.main"
                                   : "brand.text"
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/ux-ui">
-                                Consultoría UX/UI
+                              <Link href="/servicios/seo">
+                                Posicionamiento SEO
                               </Link>
+                            </Box>
+                            <Box
+                              as="button"
+                              color={
+                                serviceType === "Campañas SEM"
+                                  ? "brand.main"
+                                  : "brand.text"
+                              }
+                              fontSize="16px"
+                            >
+                              <Link href="/servicios/sem">Campañas SEM</Link>
                             </Box>
                             <Box
                               as="button"
@@ -368,25 +387,14 @@ export default function Navbar({
                             <Box
                               as="button"
                               color={
-                                serviceType === "Campañas SEM"
+                                serviceType === "Consultoría UX/UI"
                                   ? "brand.main"
                                   : "brand.text"
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/sem">Campañas SEM</Link>
-                            </Box>
-                            <Box
-                              as="button"
-                              color={
-                                serviceType === "Posicionamiento SEO"
-                                  ? "brand.main"
-                                  : "brand.text"
-                              }
-                              fontSize="16px"
-                            >
-                              <Link href="/servicios/seo">
-                                Posicionamiento SEO
+                              <Link href="/servicios/ux-ui">
+                                Consultoría UX/UI
                               </Link>
                             </Box>
                           </ButtonGroup>
