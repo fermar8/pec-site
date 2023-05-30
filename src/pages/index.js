@@ -5,16 +5,10 @@ import dynamic from "next/dynamic";
 const Layout = dynamic(() => import("../components/layout"), {
   ssr: false,
 });
-const Intro = dynamic(() => import("../components/home/intro"), {
-  ssr: false,
-});
-
+import Intro from "../components/home/intro";
 import Services from "../components/home/services";
-//const Services = dynamic(() => import("../components/home/services"), {
-//  ssr: false,
-//});
-const About = dynamic(() => import("../components/home/about"), { ssr: false });
-const Blog = dynamic(() => import("../components/home/blog"), { ssr: false });
+import About from "../components/home/about";
+import Blog from "../components/home/blog";
 
 export default function Home({ page }) {
   const {
