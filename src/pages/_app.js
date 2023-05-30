@@ -1,4 +1,4 @@
-import { ChakraProvider, CSSReset , extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, CSSReset, extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ weight: "400", subsets: ["latin"] });

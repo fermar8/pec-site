@@ -113,7 +113,7 @@ export default function Intro(props) {
             <ButtonContactWithUs buttonText={buttonText} />
           </Box>
         </VStack>
-        <Box marginLeft="140px" width="100%" height="256px">
+        <Box marginLeft="140px" width="256px" height="256px">
           <Image
             width={256}
             height={256}
@@ -123,7 +123,7 @@ export default function Intro(props) {
             blurDataURL="url"
           ></Image>
         </Box>
-      </Flex>
+        </Flex>
     );
   }
 }
