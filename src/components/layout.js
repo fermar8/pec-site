@@ -1,5 +1,12 @@
-import Navbar from "./navbar";
-import Footer from "./footer";
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(() => import("./navbar"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("./footer"), {
+  ssr: false,
+});
+
 import { Box } from "@chakra-ui/react";
 
 export default function Layout({ children, isHome, isService, serviceType, isAbout, isBlog }) {

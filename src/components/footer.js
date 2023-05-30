@@ -1,5 +1,4 @@
 import { useFormik } from "formik";
-import dynamic from "next/dynamic";
 import {
   Text,
   Box,

@@ -8,10 +8,17 @@ import {
 } from "@chakra-ui/react";
 
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
-import Layout from "components/layout";
-import ServiceDescription from "components/services/serviceDescriptions";
-import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
+const Layout = dynamic(() => import("components/layout"), {
+  ssr: false,
+});
+const ServiceDescription = dynamic(() => import("components/services/serviceDescriptions"), {
+  ssr: false,
+});
+const ButtonContactWithUs = dynamic(() => import("components/general/buttons/buttonContactWithUs"), {
+  ssr: false,
+});
 
 import { SemIcon } from "components/icons/services/semIcon";
 import { SemIconBig } from "components/icons/services/semIconBig";

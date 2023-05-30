@@ -9,8 +9,12 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import TagWhiteBg from "../general/buttons/tagWhiteBg";
+const TagWhiteBg = dynamic(() => import("../general/buttons/tagWhiteBg"), {
+  ssr: false,
+});
+
 export default function About({
   knowUs,
   title,

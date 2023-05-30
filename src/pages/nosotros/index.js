@@ -11,7 +11,7 @@ import Head from "next/head";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-import Layout from "components/layout";
+const Layout = dynamic(() => import("components/layout"), { ssr: false });
 const ServiceDescription = dynamic(() => import("components/services/serviceDescriptions"), { ssr: false });
 const ButtonContactWithUs = dynamic(() => import("components/general/buttons/buttonContactWithUs"), { ssr: false });
 

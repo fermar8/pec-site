@@ -21,7 +21,12 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
-import ButtonContact from "./general/buttons/buttonContact";
+
+import dynamic from "next/dynamic";
+
+const ButtonContact = dynamic(() => import("./general/buttons/buttonContact"), {
+  ssr: false,
+});
 import {
   HamburgerIcon,
   CloseIcon,

@@ -1,8 +1,11 @@
 import { Box, Text, Heading, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
-import BlogPost from "./blogPost";
-
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+const BlogPost = dynamic(() => import("./blogPost"), {
+  ssr: false,
+});
 
 export default function CardBlog(props) {
   const opacityChange = (loaded) => {

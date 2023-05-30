@@ -1,10 +1,14 @@
-import Layout from "../../components/layout";
+import dynamic from "next/dynamic";
+
+const Layout = dynamic(() => import("../../components/layout"), {
+  ssr: false,
+});
 
 import { Text, Box, Flex, Heading, VStack } from "@chakra-ui/react";
 
 import Head from "next/head";
 
-export default function Blog() {
+export default function Privacy() {
   return (
     <Layout>
       <Head>

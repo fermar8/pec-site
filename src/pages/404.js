@@ -8,9 +8,14 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import dynamic from "next/dynamic";
+
+const Layout = dynamic(() => import("../components/layout"), {
+  ssr: false,
+});
+
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "../components/layout";
 
 export default function Custom404() {
   const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
