@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 const ChakraProvider = dynamic(() => import("@chakra-ui/provider").then(
         (mod) => mod.ChakraProvider)
 );
-const CSSReset = dynamic(() => import("@chakra-ui/css-reset"));
+// const CSSReset = dynamic(() => import("@chakra-ui/css-reset"));
 
 import { extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
@@ -33,7 +33,6 @@ function MyApp({ Component, pageProps = {} }) {
   });
   return (
     <ChakraProvider theme={theme}>
-      <CSSReset />
       <Component {...pageProps} />
     </ChakraProvider>
   );
