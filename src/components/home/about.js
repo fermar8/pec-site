@@ -94,12 +94,7 @@ export default function About({
                 >
                   <Text>{text}</Text>
                 </Box>
-                <Box
-                  w={[247, 372, null, null, null, null]}
-                  display="flex"
-                  justifyContent="space-between"
-                  flexWrap="wrap"
-                >
+                <Box w="100%" display="flex" flexWrap="wrap">
                   <TagWhiteBg tagText={tag} />
                   <TagWhiteBg tagText={tag2} />
                   <TagWhiteBg tagText={tag3} />
@@ -121,7 +116,13 @@ export default function About({
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.warmBackground" pb="80px" pt="80px">
+      <Flex
+        justify="center"
+        alignItems="center"
+        bg="brand.warmBackground"
+        pb="80px"
+        pt="80px"
+      >
         <VStack
           w={[null, null, 728, 952, 1128, null]}
           display="flex"
@@ -157,10 +158,7 @@ export default function About({
                 display="flex"
                 flexDirection="column"
               >
-                <Box
-                  w={[null, null, 200, 200, 232, null]}
-                  mb="16px"
-                >
+                <Box w={[null, null, 200, 200, 232, null]} mb="16px">
                   <Text
                     fontSize={[null, null, "18px", "18px", "21px", null]}
                     fontWeight="light"
@@ -192,13 +190,7 @@ export default function About({
                   >
                     {text2}
                   </Text>
-                  <Box
-                    w={[null, null, 247, 247, 372, null]}
-                    display="flex"
-                    flexWrap="wrap"
-                    justifyContent="space-between"
-                    mb="16px"
-                  >
+                  <Box w="100%" display="flex" flexWrap="wrap" mb="16px">
                     <TagWhiteBg tagText={tag} />
                     <TagWhiteBg tagText={tag2} />
                     <TagWhiteBg tagText={tag3} />

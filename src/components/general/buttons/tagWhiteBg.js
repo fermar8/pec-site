@@ -11,6 +11,7 @@ export default function tagsWhiteBg({ tagText }) {
       fontWeight="bold"
       textAlign="center"
       border="1px"
+      mr="8px"
       mb="8px"
       borderColor="brand.main"
       borderRadius="999"
