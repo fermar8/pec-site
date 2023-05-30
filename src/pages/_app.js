@@ -1,6 +1,5 @@
 import { ChakraProvider, CSSReset , extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 
@@ -30,7 +29,6 @@ function MyApp({ Component, pageProps = {} }) {
     <ChakraProvider theme={theme}>
       <CSSReset />
       <Component {...pageProps} />
-      <Analytics />
     </ChakraProvider>
   );
 }
