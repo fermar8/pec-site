@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 const ChakraProvider = dynamic(() => import("@chakra-ui/provider").then(
-        (mod) => mod.ChakraProvider)
+        (mod) => mod.ChakraProvider), { ssr: false }
 );
 // const CSSReset = dynamic(() => import("@chakra-ui/css-reset"));
 
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps = {} }) {
     fonts,
   });
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} cssVarsRoot="#__next">
       <Component {...pageProps} />
     </ChakraProvider>
   );
