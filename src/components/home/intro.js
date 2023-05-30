@@ -4,7 +4,6 @@ import {
   Flex,
   Heading,
   VStack,
-  useMediaQuery,
 } from "@chakra-ui/react";
 
 import Image from "next/image";

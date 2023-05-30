@@ -1,13 +1,19 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-const Layout = dynamic(() => import("../components/layout"));
-const Services = dynamic(() => import("../components/home/services"));
-const About = dynamic(() => import("../components/home/about"));
-const Blog = dynamic(() => import("../components/home/blog"));
-
+const Layout = dynamic(() => import("../components/layout"), {
+  ssr: false,
+});
 import Intro from "../components/home/intro";
-
+const Services = dynamic(() => import("../components/home/services"), {
+  ssr: false,
+});
+const About = dynamic(() => import("../components/home/about"), {
+  ssr: false,
+});
+const Blog = dynamic(() => import("../components/home/blog"), {
+  ssr: false,
+});
 
 export default function Home({ page }) {
   const {
@@ -75,42 +81,42 @@ export default function Home({ page }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-        <Intro
-          title={introTitle}
-          subtitle={introSubtitle}
-          text={introText}
-          cta={introCta}
-          buttonText={buttonText}
-        />
-        <Services
-          title={servicesTitle}
-          subtitle={servicesSubtitle}
-          mainText={servicesMainText}
-          buttonText={buttonText}
-          webTitle={servicesWebTitle}
-          webText={servicesWebText}
-          designTitle={servicesDesignTitle}
-          designText={servicesDesignText}
-          uxTitle={servicesUxTitle}
-          uxText={servicesUxText}
-          seoTitle={servicesSeoTitle}
-          seoText={servicesSeoText}
-          semTitle={servicesSemTitle}
-          semText={servicesSemText}
-          socialTitle={servicesSocialTitle}
-          socialText={servicesSocialText}
-        />
-        <About
-          knowUs={aboutKnowUs}
-          title={aboutTitle}
-          text={aboutText}
-          text2={aboutText2}
-          tag={aboutTag}
-          tag2={aboutTag2}
-          tag3={aboutTag3}
-          knowUs2={aboutKnowUs2}
-        />
-        <Blog title={blogTitle} />
+      <Intro
+        title={introTitle}
+        subtitle={introSubtitle}
+        text={introText}
+        cta={introCta}
+        buttonText={buttonText}
+      />
+      <Services
+        title={servicesTitle}
+        subtitle={servicesSubtitle}
+        mainText={servicesMainText}
+        buttonText={buttonText}
+        webTitle={servicesWebTitle}
+        webText={servicesWebText}
+        designTitle={servicesDesignTitle}
+        designText={servicesDesignText}
+        uxTitle={servicesUxTitle}
+        uxText={servicesUxText}
+        seoTitle={servicesSeoTitle}
+        seoText={servicesSeoText}
+        semTitle={servicesSemTitle}
+        semText={servicesSemText}
+        socialTitle={servicesSocialTitle}
+        socialText={servicesSocialText}
+      />
+      <About
+        knowUs={aboutKnowUs}
+        title={aboutTitle}
+        text={aboutText}
+        text2={aboutText2}
+        tag={aboutTag}
+        tag2={aboutTag2}
+        tag3={aboutTag3}
+        knowUs2={aboutKnowUs2}
+      />
+      <Blog title={blogTitle} />
     </Layout>
   );
 }
@@ -127,7 +133,6 @@ export async function getStaticProps() {
     introTitle: "ON LINE",
     introText:
       "Disponemos de un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio.",
-    introCta: "Contáctanos para dar el siguiente paso con tu negocio",
 
     servicesTitle: "Servicios",
     servicesSubtitle: "Web y Marketing Digital",
