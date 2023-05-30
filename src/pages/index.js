@@ -123,7 +123,7 @@ export default function Home({ page }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const page = {
     title: "ON LINE | Agencia de Marketing Digital Barcelona",
     description:
