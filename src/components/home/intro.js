@@ -4,13 +4,15 @@ import {
   Flex,
   Heading,
   VStack,
+  useMediaQuery
 } from "@chakra-ui/react";
 
 import Image from "next/image";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 
 export default function Intro(props) {
-  const { title, subtitle, text, buttonText, isMobileOrTablet } = props;
+  const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
+  const { title, subtitle, text, buttonText } = props;
 
   if (isMobileOrTablet) {
     return (

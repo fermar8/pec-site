@@ -1,9 +1,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-const Layout = dynamic(() => import("../components/layout"), {
-  ssr: false,
-});
+import Layout from "../components/layout";
 import Intro from "../components/home/intro";
 const Services = dynamic(() => import("../components/home/services"), {
   ssr: false,
