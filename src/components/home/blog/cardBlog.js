@@ -39,6 +39,7 @@ export default function CardBlog(props) {
             src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
             placeholder="blur"
+            blurDataURL="url"
           ></Image>
         </Box>
         <Box
@@ -86,6 +87,7 @@ export default function CardBlog(props) {
             src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
             placeholder="blur"
+            blurDataURL="url"
           ></Image>
         </Box>
         <Box
@@ -125,6 +127,7 @@ export default function CardBlog(props) {
             src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
             alt="home-image"
             placeholder="blur"
+            blurDataURL="url"
           ></Image>
         </Box>
         <Box h="32px"></Box>
@@ -169,6 +172,7 @@ export default function CardBlog(props) {
                 src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
                 alt="home-image"
                 placeholder="blur"
+                blurDataURL="url"
               ></Image>
             </Box>
             <Box w="16px"></Box>

@@ -1,5 +1,6 @@
-import Head from "next/head";
+import { Flex } from "@chakra-ui/react";
 
+import Head from "next/head";
 import dynamic from "next/dynamic";
 
 const Layout = dynamic(() => import("../components/layout"), {
@@ -76,42 +77,42 @@ export default function Home({ page }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Intro
-        title={introTitle}
-        subtitle={introSubtitle}
-        text={introText}
-        cta={introCta}
-        buttonText={buttonText}
-      />
-      <Services
-        title={servicesTitle}
-        subtitle={servicesSubtitle}
-        mainText={servicesMainText}
-        buttonText={buttonText}
-        webTitle={servicesWebTitle}
-        webText={servicesWebText}
-        designTitle={servicesDesignTitle}
-        designText={servicesDesignText}
-        uxTitle={servicesUxTitle}
-        uxText={servicesUxText}
-        seoTitle={servicesSeoTitle}
-        seoText={servicesSeoText}
-        semTitle={servicesSemTitle}
-        semText={servicesSemText}
-        socialTitle={servicesSocialTitle}
-        socialText={servicesSocialText}
-      />
-      <About
-        knowUs={aboutKnowUs}
-        title={aboutTitle}
-        text={aboutText}
-        text2={aboutText2}
-        tag={aboutTag}
-        tag2={aboutTag2}
-        tag3={aboutTag3}
-        knowUs2={aboutKnowUs2}
-      />
-      <Blog title={blogTitle} />
+        <Intro
+          title={introTitle}
+          subtitle={introSubtitle}
+          text={introText}
+          cta={introCta}
+          buttonText={buttonText}
+        />
+        <Services
+          title={servicesTitle}
+          subtitle={servicesSubtitle}
+          mainText={servicesMainText}
+          buttonText={buttonText}
+          webTitle={servicesWebTitle}
+          webText={servicesWebText}
+          designTitle={servicesDesignTitle}
+          designText={servicesDesignText}
+          uxTitle={servicesUxTitle}
+          uxText={servicesUxText}
+          seoTitle={servicesSeoTitle}
+          seoText={servicesSeoText}
+          semTitle={servicesSemTitle}
+          semText={servicesSemText}
+          socialTitle={servicesSocialTitle}
+          socialText={servicesSocialText}
+        />
+        <About
+          knowUs={aboutKnowUs}
+          title={aboutTitle}
+          text={aboutText}
+          text2={aboutText2}
+          tag={aboutTag}
+          tag2={aboutTag2}
+          tag3={aboutTag3}
+          knowUs2={aboutKnowUs2}
+        />
+        <Blog title={blogTitle} />
     </Layout>
   );
 }

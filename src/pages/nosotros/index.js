@@ -87,6 +87,7 @@ export default function AboutPage({ page }) {
                     src={`${process.env.basePath}/img/home/home-intro.png`}
                     alt="about-image"
                     placeholder="blur"
+                    blurDataURL="url"
                   ></Image>
                 </Box>
                 <Box mb="16px">
@@ -305,6 +306,7 @@ export default function AboutPage({ page }) {
                   src={`${process.env.basePath}/img/home/home-intro.png`}
                   alt="about-image"
                   placeholder="blur"
+                  blurDataURL="url"
                 ></Image>
               </Box>
             </Flex>

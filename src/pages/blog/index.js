@@ -71,6 +71,7 @@ export default function Blog() {
                     src={`${process.env.basePath}/img/bookImage.png`}
                     alt="blog-image"
                     placeholder="blur"
+                    blurDataURL="url"
                   ></Image>
                 </Box>
                 <Heading
@@ -250,6 +251,7 @@ export default function Blog() {
                 src={`${process.env.basePath}/img/bookImage.png`}
                 alt="about-image"
                 placeholder="blur"
+                blurDataURL="url"
               ></Image>
             </Box>
           </Flex>

@@ -7,7 +7,7 @@ export default function CardService(props) {
   const { title, text, image, link } = props;
 
   const [imageUrl, setImageUrl] = useState(
-    `${process.env.basePath}/img/home/home-web.png`
+    `${process.env.basePath}/img/home/home-web.svg`
   );
   const [imageAlt, setImageAlt] = useState(`home-default`);
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -46,6 +46,7 @@ export default function CardService(props) {
                 width={30}
                 alt={imageAlt}
                 placeholder="blur"
+                blurDataURL="url"
               />
             </Box>
             <Box
@@ -122,6 +123,7 @@ export default function CardService(props) {
               width={60}
               alt={imageAlt}
               placeholder="blur"
+              blurDataURL="url"
             />
           </Box>
         </Box>
@@ -207,6 +209,7 @@ export default function CardService(props) {
             width={60}
             alt={imageAlt}
             placeholder="blur"
+            blurDataURL="url"
           />
         </Box>
         <Box
