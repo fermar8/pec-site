@@ -8,9 +8,11 @@ const Layout = dynamic(() => import("../components/layout"), {
 const Intro = dynamic(() => import("../components/home/intro"), {
   ssr: false,
 });
-const Services = dynamic(() => import("../components/home/services"), {
-  ssr: false,
-});
+
+import Services from "../components/home/services";
+//const Services = dynamic(() => import("../components/home/services"), {
+//  ssr: false,
+//});
 const About = dynamic(() => import("../components/home/about"), { ssr: false });
 const Blog = dynamic(() => import("../components/home/blog"), { ssr: false });
 
