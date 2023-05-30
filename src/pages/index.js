@@ -1,5 +1,3 @@
-import { Flex } from "@chakra-ui/react";
-
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
@@ -134,7 +132,7 @@ export async function getStaticProps() {
     servicesTitle: "Servicios",
     servicesSubtitle: "Web y Marketing Digital",
     servicesMainText:
-      "Somos un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio. También ofrecemos servicios de Marketing Digital como gestión del Social Media o campañas SEM.",
+      "Somos una agencia de Marketing Digital y Diseño Web formada por un equipo de especialistas enfocado al diseño web de páginas eficientes, rápidas y con buen posicionamiento SEO para mejorar la presencia online de tu negocio. También ofrecemos servicios de Marketing Digital como gestión del Social Media o campañas SEM.",
     servicesWebTitle: "Desarrollo Web",
     servicesWebText:
       "Desarrollamos páginas web rápidas adaptándonos a todas tus necesidades",
@@ -157,7 +155,7 @@ export async function getStaticProps() {
     aboutKnowUs: "Conócenos",
     aboutTitle: "Nuestro equipo",
     aboutText:
-      "Formado por expertos en distintos ámbitos, nuestro equipo dispone de un gran talento multidisciplinar con años de experiencia delante de las pantallas.",
+      "ON LINE es una agencia de Marketing Digital y Diseño Web basada en Barcelona. Formado por expertos en distintos ámbitos, nuestro equipo dispone de un gran talento multidisciplinar con años de experiencia delante de las pantallas.",
     aboutText2:
       "Somos una Agencia de Marketing Digital y Diseño Web completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
     aboutTag: "Multidisciplinar",
