@@ -30,7 +30,7 @@ export default function Footer() {
     const errors = {};
     if (!values.name) {
       errors.name = "Este campo es obligatorio";
-    } else if (values.name.length > 20) {
+    } else if (values.name.length > 40) {
       errors.name = "El nombre es demasiado largo";
     }
 
@@ -297,8 +297,8 @@ export default function Footer() {
               </VStack>
             </form>
           ) : null}
-          <Box color="brand.main">{afterSuccessMessage}</Box>
-          <Box color="brand.main">{afterErrorMessage}</Box>
+          <Box w={[320, 440, null, null, null, null]} color="brand.main">{afterSuccessMessage}</Box>
+          <Box w={[320, 440, null, null, null, null]} color="brand.main">{afterErrorMessage}</Box>
           <Box
             display="flex"
             flexDirection="column"
