@@ -120,7 +120,7 @@ export default function Navbar({
                       _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/">Inicio</Link>
+                      <Link href="/" prefetch={false}>Inicio</Link>
                     </Box>
                     <Menu
                       isOpen={isDropdownOpen}
@@ -163,7 +163,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/web">Desarrollo Web</Link>
+                              <Link href="/servicios/web" prefetch={false}>Desarrollo Web</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -173,7 +173,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/diseño">Diseño Web</Link>
+                              <Link href="/servicios/diseño" prefetch={false}>Diseño Web</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -183,7 +183,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/seo">
+                              <Link href="/servicios/seo" prefetch={false}>
                                 Posicionamiento SEO
                               </Link>
                             </MenuItem>
@@ -195,7 +195,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/sem">Campañas SEM</Link>
+                              <Link href="/servicios/sem" prefetch={false}>Campañas SEM</Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -205,7 +205,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/social-media">
+                              <Link href="/servicios/social-media" prefetch={false}>
                                 Social Media
                               </Link>
                             </MenuItem>
@@ -217,7 +217,7 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/ux-ui">
+                              <Link href="/servicios/ux-ui" prefetch={false}>
                                 Consultoría UX/UI
                               </Link>
                             </MenuItem>
@@ -232,7 +232,7 @@ export default function Navbar({
                       _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/nosotros">Nosotros</Link>
+                      <Link href="/nosotros" prefetch={false}>Nosotros</Link>
                     </Box>
                     <Box
                       as="button"
@@ -241,7 +241,7 @@ export default function Navbar({
                       color={isBlog ? "brand.main" : "brand.text"}
                       textDecoration={isBlog ? "underline" : "none"}
                     >
-                      <Link href="/blog">Blog</Link>
+                      <Link href="/blog" prefetch={false}>Blog</Link>
                     </Box>
                   </ButtonGroup>
                   <HStack>
@@ -294,7 +294,7 @@ export default function Navbar({
                           color={isHome ? "brand.main" : "brand.text"}
                           textDecoration={isHome ? "underline" : "none"}
                         >
-                          <Link href="/">Inicio</Link>
+                          <Link href="/" prefetch={false}>Inicio</Link>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -340,7 +340,7 @@ export default function Navbar({
                               fontSize="16px"
                               ml="8px"
                             >
-                              <Link href="/servicios/web">Desarrollo Web</Link>
+                              <Link href="/servicios/web" prefetch={false}>Desarrollo Web</Link>
                             </Box>
                             <Box
                               as="button"
@@ -362,7 +362,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/seo">
+                              <Link href="/servicios/seo" prefetch={false}>
                                 Posicionamiento SEO
                               </Link>
                             </Box>
@@ -375,7 +375,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/sem">Campañas SEM</Link>
+                              <Link href="/servicios/sem" prefetch={false}>Campañas SEM</Link>
                             </Box>
                             <Box
                               as="button"
@@ -386,7 +386,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/social-media">
+                              <Link href="/servicios/social-media" prefetch={false}>
                                 Social Media
                               </Link>
                             </Box>
@@ -399,7 +399,7 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/ux-ui">
+                              <Link href="/servicios/ux-ui" prefetch={false}>
                                 Consultoría UX/UI
                               </Link>
                             </Box>
@@ -422,7 +422,7 @@ export default function Navbar({
                           color={isAbout ? "brand.main" : "brand.text"}
                           textDecoration={isAbout ? "underline" : "none"}
                         >
-                          <Link href="/nosotros">Sobre nosotros</Link>
+                          <Link href="/nosotros" prefetch={false}>Sobre nosotros</Link>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -441,7 +441,7 @@ export default function Navbar({
                           color={isBlog ? "brand.main" : "brand.text"}
                           textDecoration={isBlog ? "underline" : "none"}
                         >
-                          <Link href="/blog">Nuestro Blog</Link>
+                          <Link href="/blog" prefetch={false}>Nuestro Blog</Link>
                         </Box>
                       </AccordionButton>
                     </h2>

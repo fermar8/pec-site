@@ -43,7 +43,7 @@ export default function Blog() {
             </Heading>
           </Box>
           <Text>
-            Bienvenido a <chakra.span color="brand.main"><Link href="/blog">nuestro blog</Link></chakra.span>. Estamos emocionados de poder compartir
+            Bienvenido a <chakra.span color="brand.main"><Link href="/blog" prefetch={false}>nuestro blog</Link></chakra.span>. Estamos emocionados de poder compartir
             increíble contenido contigo en el futuro.
           </Text>
         </VStack>

@@ -84,7 +84,7 @@ export default function CardService(props) {
               color="brand.main"
               textDecoration="underline"
             >
-              <Link href={`${link}`}>Ver servicios de {title}</Link>
+              <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
             </Box>
           </Box>
         </Box>
@@ -176,7 +176,7 @@ export default function CardService(props) {
             display="flex"
             justifyContent="center"
           >
-            <Link href={`${link}`}>Ver servicios de {title}</Link>
+            <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
           </Box>
         </Box>
       </Box>
@@ -242,7 +242,7 @@ export default function CardService(props) {
             color="brand.main"
             textDecoration="underline"
           >
-            <Link href={`${link}`}>Ver servicios de {title}</Link>
+            <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
           </Box>
         </Box>
       </Box>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function buttonContact() {
   return (
-    <Link href="#contacto" passHref>
+    <Link href="#contacto" passHref prefetch={false}>
       <Button
         bg="brand.main"
         color="brand.whiteBackground"
