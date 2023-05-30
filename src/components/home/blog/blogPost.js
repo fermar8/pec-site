@@ -33,6 +33,7 @@ export default function BlogPost(props) {
               h={48}
               src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
               alt="home-image"
+              placeholder="blur"
             ></Image>
           </Box>
           <Box
@@ -93,6 +94,7 @@ export default function BlogPost(props) {
               h={48}
               src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
               alt="home-image"
+              placeholder="blur"
             ></Image>
           </Box>
           <Box

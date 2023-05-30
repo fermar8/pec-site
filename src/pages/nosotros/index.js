@@ -86,6 +86,7 @@ export default function AboutPage({ page }) {
                     height={174}
                     src={`${process.env.basePath}/img/home/home-intro.png`}
                     alt="about-image"
+                    placeholder="blur"
                   ></Image>
                 </Box>
                 <Box mb="16px">
@@ -303,6 +304,7 @@ export default function AboutPage({ page }) {
                   height={308}
                   src={`${process.env.basePath}/img/home/home-intro.png`}
                   alt="about-image"
+                  placeholder="blur"
                 ></Image>
               </Box>
             </Flex>

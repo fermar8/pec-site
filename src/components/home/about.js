@@ -47,6 +47,7 @@ export default function About({
               fill
               src={`${process.env.basePath}/img/home/home-intro.png`}
               alt="home-about"
+              placeholder="blur"
             ></Image>
           </Box>
           <VStack
@@ -144,6 +145,7 @@ export default function About({
                 fill
                 src={`${process.env.basePath}/img/home/home-intro.png`}
                 alt="home-about"
+                placeholder="blur"
               ></Image>
             </Box>
             <Box

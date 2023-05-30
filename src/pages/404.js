@@ -52,6 +52,7 @@ export default function Custom404() {
             width={140}
             src={`${process.env.basePath}/img/404error.png`}
             alt="error-image"
+            placeholder="blur"
           ></Image>
           <Box mb="40px">
             <Heading
@@ -146,6 +147,7 @@ export default function Custom404() {
               width={140}
               src={`${process.env.basePath}/img/404error.png`}
               alt="error-image"
+              placeholder="blur"
             ></Image>
           </HStack>
         </Flex>

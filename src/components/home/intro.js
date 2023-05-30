@@ -34,6 +34,7 @@ export default function Intro(props) {
                   height={154}
                   src={`${process.env.basePath}/img/digital-workplace.png`}
                   alt="Trabajadores ON LINE Marketing Digital"
+                  placeholder="blur"
                 ></Image>
               </Box>
               <Heading
@@ -114,6 +115,7 @@ export default function Intro(props) {
               height={256}
               src={`${process.env.basePath}/img/digital-workplace.png`}
               alt="Trabajadores ON LINE Marketing Digital"
+              placeholder="blur"
             ></Image>
           </Box>
         </Flex>

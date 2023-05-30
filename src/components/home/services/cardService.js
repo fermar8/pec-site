@@ -3,10 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-
 export default function CardService(props) {
-  const { title, text, image, link} = props;
-  
+  const { title, text, image, link } = props;
+
   const [imageUrl, setImageUrl] = useState(
     `${process.env.basePath}/img/home/home-web.png`
   );
@@ -24,7 +23,12 @@ export default function CardService(props) {
   if (isMobile) {
     return (
       <>
-        <Box backgroundColor="brand.warmBackground" border="1px solid #FFE2DC" borderRadius="9px" mb="16px">
+        <Box
+          backgroundColor="brand.warmBackground"
+          border="1px solid #FFE2DC"
+          borderRadius="9px"
+          mb="16px"
+        >
           <Box
             w={[320, 440, null, null, null, null]}
             display="flex"
@@ -36,7 +40,13 @@ export default function CardService(props) {
             alignItems="center"
           >
             <Box mt={["20px", "24px", null, null, null, null]}>
-              <Image src={imageUrl} height={30} width={30} alt={imageAlt}/>
+              <Image
+                src={imageUrl}
+                height={30}
+                width={30}
+                alt={imageAlt}
+                placeholder="blur"
+              />
             </Box>
             <Box
               mt={["8px", "8px", null, null, null, null]}
@@ -106,7 +116,13 @@ export default function CardService(props) {
             position="relative"
             borderRadiusTop="999"
           >
-            <Image src={imageUrl} height={60} width={60} alt={imageAlt}/>
+            <Image
+              src={imageUrl}
+              height={60}
+              width={60}
+              alt={imageAlt}
+              placeholder="blur"
+            />
           </Box>
         </Box>
         <Box
@@ -185,7 +201,13 @@ export default function CardService(props) {
           borderRadius="9px 9px 0 0"
           position="relative"
         >
-          <Image src={imageUrl} height={60} width={60} alt={imageAlt}/>
+          <Image
+            src={imageUrl}
+            height={60}
+            width={60}
+            alt={imageAlt}
+            placeholder="blur"
+          />
         </Box>
         <Box
           h={[null, null, null, null, "180px", null]}
