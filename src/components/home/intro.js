@@ -30,7 +30,8 @@ export default function Intro(props) {
         >
           <VStack w={[320, null, 528, null, null, null]}>
             <Box>
-              <Box display="flex" justifyContent="center" width="100%" mb="8px">
+              <Box display="flex" justifyContent="center" width="154px"
+                  height="154px" mb="8px">
                 <Image
                   alignSelf="center"
                   width={154}

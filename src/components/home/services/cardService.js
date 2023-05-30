@@ -39,7 +39,7 @@ export default function CardService(props) {
             borderRadius="9px"
             alignItems="center"
           >
-            <Box mt={["20px", "24px", null, null, null, null]}>
+            <Box mt={["20px", "24px", null, null, null, null]} width="30px" height="30px">
               <Image
                 src={imageUrl}
                 height={30}
