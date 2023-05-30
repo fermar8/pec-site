@@ -4,9 +4,7 @@ import dynamic from "next/dynamic";
 const Layout = dynamic(() => import("../components/layout"), {
   ssr: false,
 });
-const Intro = dynamic(() => import("../components/home/intro"), {
-  ssr: false,
-});
+import Intro from "../components/home/intro";
 const Services = dynamic(() => import("../components/home/services"), {
   ssr: false,
 });
