@@ -2,37 +2,12 @@ import dynamic from "next/dynamic";
 const ChakraProvider = dynamic(() => import("@chakra-ui/provider").then(
         (mod) => mod.ChakraProvider), { ssr: false }
 );
-// const CSSReset = dynamic(() => import("@chakra-ui/css-reset"));
 
-import { extendTheme } from "@chakra-ui/react";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ weight: "400", subsets: ["latin"] });
-
-const fonts = {
-  heading: inter.style.fontFamily,
-  body: inter.style.fontFamily,
-};
+import extendedTheme from "../components/extendedTheme";
 
 function MyApp({ Component, pageProps = {} }) {
-  const theme = extendTheme({
-    colors: {
-      brand: {
-        main: "#F55951",
-        border: "#FFE2DC",
-        whiteBackground: "#ffffff",
-        warmBackground: "#fff9f4",
-        text: "#292929",
-        cardBackground: "#E5E5E5",
-        grey: "#808080",
-        buttonHover: "#CE352D",
-        buttonActive: "#930C05",
-      },
-    },
-    fonts,
-  });
   return (
-    <ChakraProvider theme={theme} cssVarsRoot="#__next">
+    <ChakraProvider theme={extendedTheme} cssVarsRoot="#__next">
       <Component {...pageProps} />
     </ChakraProvider>
   );

@@ -20,6 +20,7 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
+
 import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
 
 import dynamic from "next/dynamic";
