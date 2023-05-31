@@ -7,8 +7,6 @@ const Footer = dynamic(() => import("./footer"), {
   ssr: false,
 });
 
-import { Box } from "@chakra-ui/react";
-
 export default function Layout({
   children,
   isHome,
@@ -26,7 +24,7 @@ export default function Layout({
         isAbout={isAbout}
         isBlog={isBlog}
       />
-      <Box paddingTop="56px">{children}</Box>
+      <div style={{paddingTop:"56px"}}>{children}</div>
       <Footer />
     </>
   );

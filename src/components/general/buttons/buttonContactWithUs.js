@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/button";
 import { WavingHand } from "../../icons";
 import Link from "next/link";
 

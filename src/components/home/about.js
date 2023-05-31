@@ -1,11 +1,4 @@
-import {
-  Box,
-  Flex,
-  Text,
-  Heading,
-  VStack,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { chakra, Flex, VStack, useMediaQuery } from "@chakra-ui/react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -42,7 +35,7 @@ export default function About({
           bg="brand.whiteBackground"
           pb="40px"
         >
-          <Box
+          <chakra.div
             h={[227, 227, null, null, null, null]}
             w={[320, 440, null, null, null, null]}
             position="relative"
@@ -54,68 +47,69 @@ export default function About({
               placeholder="blur"
               blurDataURL="url"
             ></Image>
-          </Box>
+          </chakra.div>
           <VStack
             w={[320, 440, null, null, null, null]}
             bg="brand.whiteBackground"
           >
-            <Box
+            <chakra.div
               w={[280, 400, null, null, null, null]}
               display="flex"
               flexDirection="column"
             >
-              <Box
+              <chakra.div
                 w={[199, 199, null, null, null, null]}
                 mt={["40px", "40px", null, null, null, null]}
                 fontSize={["18px", "18px", null, null, null, null]}
                 color="brand.main"
               >
-                <Text>{knowUs}</Text>
-              </Box>
-              <Box
+                <p>{knowUs}</p>
+              </chakra.div>
+              <chakra.div
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
                 w={[185, 185, null, null, null, null]}
                 mb={["24px", "24px", null, null, null, null]}
               >
-                <Heading
-                  as="h3"
+                <chakra.h3
                   fontSize={["24px", "24px", null, null, null, null]}
                   fontWeight="bold"
                 >
                   {title}
-                </Heading>
-              </Box>
-              <Box
+                </chakra.h3>
+              </chakra.div>
+              <chakra.div
                 w={[280, 400, null, null, null, null]}
                 display="flex"
                 flexDirection="column"
               >
-                <Box
+                <chakra.div
                   mb={["24px", "24px", null, null, null, null]}
                   fontSize={["16px", "16px", null, null, null, null]}
                   fontWeight="light"
                   lineHeight="22px"
                 >
-                  <Text>{text}</Text>
-                </Box>
-                <Box w="100%" display="flex" flexWrap="wrap">
+                  <p>{text}</p>
+                </chakra.div>
+                <chakra.div w="100%" display="flex" flexWrap="wrap">
                   <TagWhiteBg tagText={tag} />
                   <TagWhiteBg tagText={tag2} />
                   <TagWhiteBg tagText={tag3} />
-                </Box>
-                <Box
+                </chakra.div>
+                <chakra.div
                   mt={["24px", "54px", null, null, null, null]}
                   fontSize={["16px", null, null, null, null, null]}
                   fontWeight="medium"
                   color="brand.main"
                   textDecoration="underline"
                 >
-                  <Link href="/nosotros" prefetch={false}>{knowUs2}</Link>
-                </Box>
-              </Box>
-            </Box>
+                  <Link href="/nosotros" prefetch={false}>
+                    {knowUs2}
+                  </Link>
+                </chakra.div>
+              </chakra.div>
+            </chakra.div>
           </VStack>
         </VStack>
       </Flex>
@@ -134,13 +128,13 @@ export default function About({
           display="flex"
           flexDirection="column"
         >
-          <Box
+          <chakra.div
             w={[null, null, 728, 952, 1128, null]}
             bg="brand.whiteBackground"
             borderRadius="0px 9px 9px 0px"
             display="flex"
           >
-            <Box
+            <chakra.div
               h={[null, null, 480, 480, 480, null]}
               w={[null, null, 346, 346, 454, null]}
               position="relative"
@@ -153,12 +147,12 @@ export default function About({
                 placeholder="blur"
                 blurDataURL="url"
               ></Image>
-            </Box>
-            <Box
+            </chakra.div>
+            <chakra.div
               h={[null, null, 480, 488, 480, null]}
               w={[null, null, 382, 606, 674, null]}
             >
-              <Box
+              <chakra.div
                 h={[null, null, 404, 338, 338, null]}
                 w={[null, null, 342, 556, 436, null]}
                 mt={[null, null, "40px", "40px", "56px", null]}
@@ -166,56 +160,57 @@ export default function About({
                 display="flex"
                 flexDirection="column"
               >
-                <Box w={[null, null, 200, 200, 232, null]} mb="16px">
-                  <Text
+                <chakra.div w={[null, null, 200, 200, 232, null]} mb="16px">
+                  <chakra.p
                     fontSize={[null, null, "18px", "18px", "21px", null]}
                     fontWeight="light"
                   >
                     {knowUs}
-                  </Text>
-                  <Heading
-                    as="h3"
+                  </chakra.p>
+                  <chakra.h3
                     fontSize={[null, null, "24px", "24px", "30px", null]}
                   >
                     {title}
-                  </Heading>
-                </Box>
-                <Box
+                  </chakra.h3>
+                </chakra.div>
+                <chakra.div
                   w={[null, null, 342, 566, 436, null]}
                   display="flex"
                   flexDirection="column"
                 >
-                  <Text
+                  <p
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     mb="8px"
                   >
                     {text}
-                  </Text>
-                  <Text
+                  </p>
+                  <p
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     mb="16px"
                     fontWeight="bold"
                   >
                     {text2}
-                  </Text>
-                  <Box w="100%" display="flex" flexWrap="wrap" mb="16px">
+                  </p>
+                  <chakra.div w="100%" display="flex" flexWrap="wrap" mb="16px">
                     <TagWhiteBg tagText={tag} />
                     <TagWhiteBg tagText={tag2} />
                     <TagWhiteBg tagText={tag3} />
-                  </Box>
-                  <Box
+                  </chakra.div>
+                  <chakra.div
                     h={[null, null, "20px", "20px", "20px", null]}
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     fontWeight="medium"
                     color="brand.main"
                     textDecoration="underline"
                   >
-                    <Link href="/nosotros" prefetch={false}>{knowUs2}</Link>
-                  </Box>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
+                    <Link href="/nosotros" prefetch={false}>
+                      {knowUs2}
+                    </Link>
+                  </chakra.div>
+                </chakra.div>
+              </chakra.div>
+            </chakra.div>
+          </chakra.div>
         </VStack>
       </Flex>
     );

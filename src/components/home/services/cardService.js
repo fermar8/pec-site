@@ -1,4 +1,4 @@
-import { Box, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import { chakra, useMediaQuery } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -23,13 +23,13 @@ export default function CardService(props) {
   if (isMobile) {
     return (
       <>
-        <Box
+        <chakra.div
           backgroundColor="brand.warmBackground"
           border="1px solid #FFE2DC"
           borderRadius="9px"
           mb="16px"
         >
-          <Box
+          <chakra.div
             w={[320, 440, null, null, null, null]}
             display="flex"
             flexDirection="column"
@@ -39,7 +39,7 @@ export default function CardService(props) {
             borderRadius="9px"
             alignItems="center"
           >
-            <Box mt={["20px", "24px", null, null, null, null]} width="30px" height="30px">
+            <chakra.div mt={["20px", "24px", null, null, null, null]} width="30px" height="30px">
               <Image
                 src={imageUrl}
                 height={30}
@@ -48,8 +48,8 @@ export default function CardService(props) {
                 placeholder="blur"
                 blurDataURL="url"
               />
-            </Box>
-            <Box
+            </chakra.div>
+            <chakra.div
               mt={["8px", "8px", null, null, null, null]}
               mb={["8px", "8px", null, null, null, null]}
               display="flex"
@@ -57,24 +57,22 @@ export default function CardService(props) {
               fontSize={["16px", "16px", null, null, null, null]}
               fontWeight="bold"
             >
-              <Heading
-                fontSize={["16px", "16px", null, null, null, null]}
-                as="h4"
+              <h4 style={{ fontSize: "16px"}}
               >
                 {title}
-              </Heading>
-            </Box>
-            <Box
+              </h4>
+            </chakra.div>
+            <chakra.div
               w={[null, null, null, null, 280, null]}
               textAlign="center"
               lineHeight="16px"
               pl="4px"
               pr="4px"
             >
-              <Text>{text}</Text>
-            </Box>
+              <p>{text}</p>
+            </chakra.div>
 
-            <Box
+            <chakra.div
               h={["44px", "44px", null, null, null, null]}
               fontSize={["14px", "14px", null, null, null, null]}
               display="flex"
@@ -85,14 +83,14 @@ export default function CardService(props) {
               textDecoration="underline"
             >
               <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
-            </Box>
-          </Box>
-        </Box>
+            </chakra.div>
+          </chakra.div>
+        </chakra.div>
       </>
     );
   } else if (isTablet) {
     return (
-      <Box
+      <chakra.div
         w={[null, null, 360, 472, null, null]}
         h={[null, null, 326, 326, null, null]}
         display="flex"
@@ -101,7 +99,7 @@ export default function CardService(props) {
         borderColor="brand.border"
         borderRadius="9px"
       >
-        <Box
+        <chakra.div
           w={[null, null, 360, 472, null, null]}
           h={[null, null, 146, 146, null, null]}
           display="flex"
@@ -109,7 +107,7 @@ export default function CardService(props) {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box
+          <chakra.div
             w={[null, null, 360, 472, null, null]}
             h={[null, null, 146, 146, null, null]}
             display="flex"
@@ -125,9 +123,9 @@ export default function CardService(props) {
               placeholder="blur"
               blurDataURL="url"
             />
-          </Box>
-        </Box>
-        <Box
+          </chakra.div>
+        </chakra.div>
+        <chakra.div
           h={[null, null, "48px", "48px", null, null]}
           bg="brand.whiteBackground"
           borderTop="1px"
@@ -137,21 +135,19 @@ export default function CardService(props) {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box
+          <chakra.div
             h={[null, null, "16px", "16px", null, null]}
             display="flex"
             justifyContent="center"
             fontWeight="bold"
           >
-            <Heading
-              as="h4"
-              fontSize={[null, null, "16px", "16px", null, null]}
+            <h4 style={{fontSize: "h4"}}
             >
               {title}
-            </Heading>
-          </Box>
-        </Box>
-        <Box
+            </h4>
+          </chakra.div>
+        </chakra.div>
+        <chakra.div
           h={[null, null, 148, 148, null, null]}
           bg="brand.whiteBackground"
           borderBottomRadius="9px"
@@ -160,15 +156,15 @@ export default function CardService(props) {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box
+          <chakra.div
             h={[null, null, "72px", "48px", null, null]}
             w={[null, null, 280, 392, null, null]}
             textAlign="center"
             lineHeight={[null, null, "16px", "16px", null, null]}
           >
-            <Text>{text}</Text>
-          </Box>
-          <Box
+            <p>{text}</p>
+          </chakra.div>
+          <chakra.div
             h={[null, null, "44px", "44px", null, null]}
             fontSize={[null, null, "14px", "14px", null, null]}
             color="brand.main"
@@ -177,13 +173,13 @@ export default function CardService(props) {
             justifyContent="center"
           >
             <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
-          </Box>
-        </Box>
-      </Box>
+          </chakra.div>
+        </chakra.div>
+      </chakra.div>
     );
   } else {
     return (
-      <Box
+      <chakra.div
         w={[null, null, null, null, 360, null]}
         h={[null, null, null, null, 326, null]}
         display="flex"
@@ -192,7 +188,7 @@ export default function CardService(props) {
         borderColor="brand.border"
         borderRadius="9px"
       >
-        <Box
+        <chakra.div
           w={[null, null, null, null, 360, null]}
           h={[null, null, null, null, 146, null]}
           display="flex"
@@ -211,8 +207,8 @@ export default function CardService(props) {
             placeholder="blur"
             blurDataURL="url"
           />
-        </Box>
-        <Box
+        </chakra.div>
+        <chakra.div
           h={[null, null, null, null, "180px", null]}
           bg="brand.whiteBackground"
           borderTop="1px"
@@ -223,19 +219,19 @@ export default function CardService(props) {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box display="flex" justifyContent="center" fontWeight="bold">
-            <Heading as="h4" fontSize={[null, null, null, null, "16px", null]}>
+          <chakra.div display="flex" justifyContent="center" fontWeight="bold">
+            <h4 style={{fontSize: "16px"}}>
               {title}
-            </Heading>
-          </Box>
-          <Box
+            </h4>
+          </chakra.div>
+          <chakra.div
             w={[null, null, null, null, 280, null]}
             textAlign="center"
             lineHeight="16px"
           >
-            <Text>{text}</Text>
-          </Box>
-          <Box
+            <p>{text}</p>
+          </chakra.div>
+          <chakra.div
             fontSize={[null, null, null, null, "14px", null]}
             display="flex"
             justifyContent="center"
@@ -243,9 +239,9 @@ export default function CardService(props) {
             textDecoration="underline"
           >
             <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
-          </Box>
-        </Box>
-      </Box>
+          </chakra.div>
+        </chakra.div>
+      </chakra.div>
     );
   }
 }

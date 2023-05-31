@@ -1,17 +1,9 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  VStack,
-  useMediaQuery,
-  chakra,
-} from "@chakra-ui/react";
+import { Flex, VStack, useMediaQuery, chakra } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 
-const CardService = dynamic(
-  () => import("./services/cardService"),
-  { ssr: false }
-);
+const CardService = dynamic(() => import("./services/cardService"), {
+  ssr: false,
+});
 const ButtonContactWithUs = dynamic(
   () => import("../../components/general/buttons/buttonContactWithUs"),
   { ssr: false }
@@ -49,14 +41,13 @@ export default function Services(props) {
           w={[320, 440, null, null, null, null]}
           align="stretch"
         >
-          <Box
+          <chakra.div
             w={[320, 440, null, null, null, null]}
             mb={["40px", null, null, null, null, null]}
             display="flex"
             flexDirection="column"
           >
-            <Heading
-              as="h2"
+            <chakra.h2
               fontSize={["24px", "24px", null, null, null, null]}
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="semi-bold"
@@ -67,17 +58,16 @@ export default function Services(props) {
               <chakra.span color="brand.text" fontWeight="bold">
                 {subtitle}
               </chakra.span>
-            </Heading>
-            <Heading
-              as="h3"
+            </chakra.h2>
+            <chakra.h3
               fontSize={["18px", "18px", null, null, null, null]}
               lineHeight={["40px", "40px", null, null, null, null]}
               fontWeight="light"
             >
               {mainText}
-            </Heading>
-          </Box>
-          <Box display="flex" flexDirection="column">
+            </chakra.h3>
+          </chakra.div>
+          <chakra.div display="flex" flexDirection="column">
             <CardService
               title={webTitle}
               text={webText}
@@ -114,7 +104,7 @@ export default function Services(props) {
               image="ux-ui"
               link="servicios/ux-ui"
             />
-          </Box>
+          </chakra.div>
         </VStack>
       </Flex>
     );
@@ -128,13 +118,12 @@ export default function Services(props) {
         pb={[null, null, "64px", "64px", null, null]}
       >
         <VStack w={[null, null, 728, 952, null, null]}>
-          <Box
+          <chakra.div
             w={[null, null, 728, 952, null, null]}
             display="flex"
             flexDirection="column"
           >
-            <Heading
-              as="h2"
+            <chakra.h2
               fontSize={[null, null, "24px", "24px", null, null]}
               fontWeight="semi-bold"
               color="brand.main"
@@ -144,18 +133,18 @@ export default function Services(props) {
               <chakra.span color="brand.text" fontWeight="bold">
                 {subtitle}
               </chakra.span>
-            </Heading>
-            <Heading
+            </chakra.h2>
+            <chakra.h3
               as="h3"
               fontSize={[null, null, "18px", "18px", null, null]}
               lineHeight={[null, null, "40px", "40px", null, null]}
               fontWeight="light"
             >
               {mainText}
-            </Heading>
-          </Box>
-          <Box display="flex" flexDirection="column">
-            <Box
+            </chakra.h3>
+          </chakra.div>
+          <chakra.div display="flex" flexDirection="column">
+            <chakra.div
               w={[null, null, 728, 952, null, null]}
               mt={[null, null, "48px", "48px", null, null]}
               mb={[null, null, "48px", "48px", null, null]}
@@ -175,8 +164,8 @@ export default function Services(props) {
                 image="design"
                 link="/servicios/diseño"
               />
-            </Box>
-            <Box
+            </chakra.div>
+            <chakra.div
               w={[null, null, 728, 952, null, null]}
               mb={[null, null, "48px", "48px", null, null]}
               display="flex"
@@ -194,8 +183,8 @@ export default function Services(props) {
                 image="sem"
                 link="/servicios/sem"
               />
-            </Box>
-            <Box
+            </chakra.div>
+            <chakra.div
               w={[null, null, 728, 952, null, null]}
               mb={[null, null, "48px", "48px", null, null]}
               display="flex"
@@ -213,8 +202,8 @@ export default function Services(props) {
                 image="ux-ui"
                 link="/servicios/ux-ui"
               />
-            </Box>
-          </Box>
+            </chakra.div>
+          </chakra.div>
         </VStack>
       </Flex>
     );
@@ -228,37 +217,35 @@ export default function Services(props) {
           h={[null, null, null, null, 1000, null]}
           align="stretch"
         >
-          <Box
+          <chakra.div
             w={[null, null, null, null, 1000, null]}
             h={[null, null, null, null, 152, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
           >
-            <Heading
-              as="h2"
+            <chakra.h2
               fontSize={[null, null, null, null, "32px", null]}
               fontWeight="bold"
               color="brand.text"
               mb="8px"
             >
               {title} {subtitle}
-            </Heading>
-            <Heading
-              as="h3"
+            </chakra.h2>
+            <chakra.h3
               fontSize={[null, null, null, null, "22px", null]}
               fontWeight="light"
             >
               {mainText}
-            </Heading>
-          </Box>
-          <Box
+            </chakra.h3>
+          </chakra.div>
+          <chakra.div
             h={[null, null, null, null, 844, null]}
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
           >
-            <Box
+            <chakra.div
               h={[null, null, null, null, 422, null]}
               w={[null, null, null, null, 1128, null]}
               mt={[null, null, null, null, "48px", null]}
@@ -284,8 +271,8 @@ export default function Services(props) {
                 image="seo"
                 link="/servicios/seo"
               />
-            </Box>
-            <Box
+            </chakra.div>
+            <chakra.div
               h={[null, null, null, null, 326, null]}
               w={[null, null, null, null, 1128, null]}
               mb={[null, null, null, null, "48px", null]}
@@ -310,11 +297,11 @@ export default function Services(props) {
                 image="ux-ui"
                 link="/servicios/ux-ui"
               />
-            </Box>
-          </Box>
-          <Box alignSelf="center">
+            </chakra.div>
+          </chakra.div>
+          <chakra.div alignSelf="center">
             <ButtonContactWithUs buttonText={buttonText} />
-          </Box>
+          </chakra.div>
         </VStack>
       </Flex>
     );

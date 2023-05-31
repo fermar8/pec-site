@@ -1,4 +1,4 @@
-import { Tag } from "@chakra-ui/react";
+import { Tag } from "@chakra-ui/tag";
 
 export default function tagsWhiteBg({ tagText }) {
   return (

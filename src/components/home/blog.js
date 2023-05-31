@@ -1,18 +1,17 @@
-import {
-  Box,
-  Text,
-  Flex,
-  Heading,
-  VStack,
-  chakra
-} from "@chakra-ui/react";
+import { Text, Flex, VStack, chakra } from "@chakra-ui/react";
 
 import Link from "next/link";
 
 export default function Blog() {
   {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.whiteBackground" pb="40px" pt="40px">
+      <Flex
+        justify="center"
+        alignItems="center"
+        bg="brand.whiteBackground"
+        pb="40px"
+        pt="40px"
+      >
         <VStack
           w={[320, 480, 728, 952, 1128, null]}
           display="flex"
@@ -21,9 +20,8 @@ export default function Blog() {
           align="stretch"
           spacing="0px"
         >
-          <Box mb="16px">
-            <Heading
-              as="h2"
+          <chakra.div mb="16px">
+            <chakra.h2
               fontSize={["22px", null, null, null, null, null]}
               fontWeight="bold"
               color="brand.main"
@@ -31,8 +29,8 @@ export default function Blog() {
               mb="8px"
             >
               Blog
-            </Heading>
-            <Heading
+            </chakra.h2>
+            <chakra.h6
               as="h6"
               fontSize={["24px", null, null, null, null, null]}
               fontWeight="bold"
@@ -40,12 +38,18 @@ export default function Blog() {
               lineHeight="1"
             >
               Próximamente
-            </Heading>
-          </Box>
-          <Text>
-            Bienvenido a <chakra.span color="brand.main"><Link href="/blog" prefetch={false}>nuestro blog</Link></chakra.span>. Estamos emocionados de poder compartir
-            increíble contenido contigo en el futuro.
-          </Text>
+            </chakra.h6>
+          </chakra.div>
+          <chakra.p>
+            Bienvenido a{" "}
+            <chakra.span color="brand.main">
+              <Link href="/blog" prefetch={false}>
+                nuestro blog
+              </Link>
+            </chakra.span>
+            . Estamos emocionados de poder compartir increíble contenido contigo
+            en el futuro.
+          </chakra.p>
         </VStack>
       </Flex>
     );

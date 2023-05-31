@@ -1,11 +1,4 @@
-import {
-  Text,
-  Box,
-  Flex,
-  Heading,
-  VStack,
-  useMediaQuery
-} from "@chakra-ui/react";
+import { Flex, VStack, chakra, useMediaQuery } from "@chakra-ui/react";
 
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -29,8 +22,8 @@ export default function Intro(props) {
         flexDirection="column"
       >
         <VStack w={[320, null, 528, null, null, null]}>
-          <Box>
-            <Box
+          <div>
+            <chakra.div
               display="flex"
               justifyContent="center"
               width="100%"
@@ -45,9 +38,8 @@ export default function Intro(props) {
                 placeholder="blur"
                 blurDataURL="url"
               ></Image>
-            </Box>
-            <Heading
-              as="h2"
+            </chakra.div>
+            <chakra.h2
               fontSize="22px"
               fontWeight="bold"
               color="brand.main"
@@ -55,9 +47,8 @@ export default function Intro(props) {
               mb="8px"
             >
               {title}
-            </Heading>
-            <Heading
-              as="h1"
+            </chakra.h2>
+            <chakra.h1
               fontSize="24px"
               fontWeight="bold"
               color="brand.text"
@@ -65,11 +56,11 @@ export default function Intro(props) {
               mb="16px"
             >
               {subtitle}
-            </Heading>
-            <Box pb="30px">
-              <Text>{text}</Text>
-            </Box>
-          </Box>
+            </chakra.h1>
+            <chakra.div pb="30px">
+              <p>{text}</p>
+            </chakra.div>
+          </div>
           <ButtonContactWithUs buttonText={buttonText} />
         </VStack>
       </Flex>
@@ -90,9 +81,8 @@ export default function Intro(props) {
           justifyContent="space-around"
           spacing="0px"
         >
-          <Box>
-            <Heading
-              as="h2"
+          <div>
+            <chakra.h2
               fontSize="22px"
               fontWeight="bold"
               color="brand.main"
@@ -100,23 +90,22 @@ export default function Intro(props) {
               mb="8px"
             >
               {title}
-            </Heading>
-            <Heading
-              as="h1"
+            </chakra.h2>
+            <chakra.h1
               fontSize="24px"
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"
             >
               {subtitle}
-            </Heading>
-          </Box>
-          <Text>{text}</Text>
-          <Box>
+            </chakra.h1>
+          </div>
+          <p>{text}</p>
+          <div>
             <ButtonContactWithUs buttonText={buttonText} />
-          </Box>
+          </div>
         </VStack>
-        <Box marginLeft="140px" width="256px" height="256px">
+        <chakra.div marginLeft="140px" width="256px" height="256px">
           <Image
             width={256}
             height={256}
@@ -125,8 +114,8 @@ export default function Intro(props) {
             placeholder="blur"
             blurDataURL="url"
           ></Image>
-        </Box>
-        </Flex>
+        </chakra.div>
+      </Flex>
     );
   }
 }
