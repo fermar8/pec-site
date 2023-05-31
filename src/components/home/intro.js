@@ -48,7 +48,7 @@ export default function Intro(props) {
             </Box>
             <Heading
               as="h2"
-              fontSize={["22px", null, null, null, null, null]}
+              fontSize="22px"
               fontWeight="bold"
               color="brand.main"
               lineHeight="1"
@@ -58,7 +58,7 @@ export default function Intro(props) {
             </Heading>
             <Heading
               as="h1"
-              fontSize={["24px", null, null, null, null, null]}
+              fontSize="24px"
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"
@@ -84,8 +84,8 @@ export default function Intro(props) {
         flexDirection="row"
       >
         <VStack
-          w={[320, null, 528, null, 520, null]}
-          minHeight={[480, null, 480, null, 320, null]}
+          w="520px"
+          minHeight="320px"
           align="stretch"
           justifyContent="space-around"
           spacing="0px"
@@ -93,7 +93,7 @@ export default function Intro(props) {
           <Box>
             <Heading
               as="h2"
-              fontSize={["22px", null, null, null, null, null]}
+              fontSize="22px"
               fontWeight="bold"
               color="brand.main"
               lineHeight="1"
@@ -103,7 +103,7 @@ export default function Intro(props) {
             </Heading>
             <Heading
               as="h1"
-              fontSize={["24px", null, null, null, null, null]}
+              fontSize="24px"
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"
