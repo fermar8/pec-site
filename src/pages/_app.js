@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-const ChakraProvider = dynamic(() => import("@chakra-ui/provider").then(
-        (mod) => mod.ChakraProvider), { ssr: false }
+const ChakraProvider = dynamic(
+  () => import("@chakra-ui/provider").then((mod) => mod.ChakraProvider),
+  { ssr: false }
 );
 
-/*
 import { extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
 
@@ -13,10 +13,8 @@ const fonts = {
   heading: inter.style.fontFamily,
   body: inter.style.fontFamily,
 };
-*/
 
 function MyApp({ Component, pageProps = {} }) {
-  /*
   const theme = extendTheme({
     colors: {
       brand: {
@@ -32,9 +30,9 @@ function MyApp({ Component, pageProps = {} }) {
       },
     },
     fonts,
-  }) */
+  });
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme} cssVarsRoot="#__next">
       <Component {...pageProps} />
     </ChakraProvider>
   );
