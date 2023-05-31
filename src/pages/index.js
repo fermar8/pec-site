@@ -59,7 +59,6 @@ export default function Home({ page }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="ahrefs-site-verification" content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"></meta>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -176,5 +175,6 @@ export async function getStaticProps() {
     props: {
       page,
     },
+    fallback: true
   };
 }

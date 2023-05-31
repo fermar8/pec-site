@@ -52,5 +52,6 @@ export async function getStaticProps() {
     props: {
       page,
     },
+    fallback: true
   };
 }
