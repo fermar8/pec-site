@@ -8,8 +8,11 @@ import {
 } from "@chakra-ui/react";
 
 import Image from "next/image";
-import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
-
+import dynamic from "next/dynamic";
+const ButtonContactWithUs = dynamic(
+  () => import("components/general/buttons/buttonContactWithUs"),
+  { ssr: false }
+);
 export default function Intro(props) {
   const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
   const { title, subtitle, text, buttonText } = props;

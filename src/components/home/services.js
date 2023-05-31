@@ -8,7 +8,10 @@ import {
 } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 
-import CardService from "./services/cardService";
+const CardService = dynamic(
+  () => import("./services/cardService"),
+  { ssr: false }
+);
 const ButtonContactWithUs = dynamic(
   () => import("../../components/general/buttons/buttonContactWithUs"),
   { ssr: false }
