@@ -1,33 +1,23 @@
 import {
+  Collapse,
+  useBreakpointValue,
+  useDisclosure,
+} from "@chakra-ui/react";
+
+import { Flex, HStack, Box, Text, Divider } from "@chakra-ui/layout";
+import {
   Accordion,
   AccordionButton,
   AccordionItem,
   AccordionPanel,
   AccordionIcon,
-  ButtonGroup,
-  Box,
-  Divider,
-  Collapse,
-  Flex,
-  Text,
-  HStack,
-  Button,
-  IconButton,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  useBreakpointValue,
-  useDisclosure,
-} from "@chakra-ui/react";
+} from "@chakra-ui/accordion";
+import { Button, IconButton, ButtonGroup } from "@chakra-ui/button";
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/menu";
 
 import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
 
-import dynamic from "next/dynamic";
-
-const ButtonContact = dynamic(() => import("./general/buttons/buttonContact"), {
-  ssr: false,
-});
+import ButtonContact from "./general/buttons/buttonContact";
 import {
   HamburgerIcon,
   CloseIcon,
@@ -120,7 +110,9 @@ export default function Navbar({
                       _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/" prefetch={false}>Inicio</Link>
+                      <Link href="/" prefetch={false}>
+                        Inicio
+                      </Link>
                     </Box>
                     <Menu
                       isOpen={isDropdownOpen}
@@ -163,7 +155,9 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/web" prefetch={false}>Desarrollo Web</Link>
+                              <Link href="/servicios/web" prefetch={false}>
+                                Desarrollo Web
+                              </Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -173,7 +167,9 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/diseño" prefetch={false}>Diseño Web</Link>
+                              <Link href="/servicios/diseño" prefetch={false}>
+                                Diseño Web
+                              </Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -195,7 +191,9 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/sem" prefetch={false}>Campañas SEM</Link>
+                              <Link href="/servicios/sem" prefetch={false}>
+                                Campañas SEM
+                              </Link>
                             </MenuItem>
                             <MenuItem
                               _hover={{ bg: "brand.whiteBackground" }}
@@ -205,7 +203,10 @@ export default function Navbar({
                                   : "brand.text"
                               }
                             >
-                              <Link href="/servicios/social-media" prefetch={false}>
+                              <Link
+                                href="/servicios/social-media"
+                                prefetch={false}
+                              >
                                 Social Media
                               </Link>
                             </MenuItem>
@@ -232,7 +233,9 @@ export default function Navbar({
                       _hover={{ color: "brand.main" }}
                       fontSize={[null, null, "16px", "16px", "16px", null]}
                     >
-                      <Link href="/nosotros" prefetch={false}>Nosotros</Link>
+                      <Link href="/nosotros" prefetch={false}>
+                        Nosotros
+                      </Link>
                     </Box>
                     <Box
                       as="button"
@@ -241,7 +244,9 @@ export default function Navbar({
                       color={isBlog ? "brand.main" : "brand.text"}
                       textDecoration={isBlog ? "underline" : "none"}
                     >
-                      <Link href="/blog" prefetch={false}>Blog</Link>
+                      <Link href="/blog" prefetch={false}>
+                        Blog
+                      </Link>
                     </Box>
                   </ButtonGroup>
                   <HStack>
@@ -294,7 +299,9 @@ export default function Navbar({
                           color={isHome ? "brand.main" : "brand.text"}
                           textDecoration={isHome ? "underline" : "none"}
                         >
-                          <Link href="/" prefetch={false}>Inicio</Link>
+                          <Link href="/" prefetch={false}>
+                            Inicio
+                          </Link>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -340,7 +347,9 @@ export default function Navbar({
                               fontSize="16px"
                               ml="8px"
                             >
-                              <Link href="/servicios/web" prefetch={false}>Desarrollo Web</Link>
+                              <Link href="/servicios/web" prefetch={false}>
+                                Desarrollo Web
+                              </Link>
                             </Box>
                             <Box
                               as="button"
@@ -375,7 +384,9 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/sem" prefetch={false}>Campañas SEM</Link>
+                              <Link href="/servicios/sem" prefetch={false}>
+                                Campañas SEM
+                              </Link>
                             </Box>
                             <Box
                               as="button"
@@ -386,7 +397,10 @@ export default function Navbar({
                               }
                               fontSize="16px"
                             >
-                              <Link href="/servicios/social-media" prefetch={false}>
+                              <Link
+                                href="/servicios/social-media"
+                                prefetch={false}
+                              >
                                 Social Media
                               </Link>
                             </Box>
@@ -422,7 +436,9 @@ export default function Navbar({
                           color={isAbout ? "brand.main" : "brand.text"}
                           textDecoration={isAbout ? "underline" : "none"}
                         >
-                          <Link href="/nosotros" prefetch={false}>Sobre nosotros</Link>
+                          <Link href="/nosotros" prefetch={false}>
+                            Sobre nosotros
+                          </Link>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -441,7 +457,9 @@ export default function Navbar({
                           color={isBlog ? "brand.main" : "brand.text"}
                           textDecoration={isBlog ? "underline" : "none"}
                         >
-                          <Link href="/blog" prefetch={false}>Nuestro Blog</Link>
+                          <Link href="/blog" prefetch={false}>
+                            Nuestro Blog
+                          </Link>
                         </Box>
                       </AccordionButton>
                     </h2>

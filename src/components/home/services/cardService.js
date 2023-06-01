@@ -45,8 +45,6 @@ export default function CardService(props) {
                 height={30}
                 width={30}
                 alt={imageAlt}
-                placeholder="blur"
-                blurDataURL="url"
               />
             </chakra.div>
             <chakra.div

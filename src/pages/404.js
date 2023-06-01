@@ -8,11 +8,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-import dynamic from "next/dynamic";
-
-const Layout = dynamic(() => import("../components/layout"), {
-  ssr: false,
-});
+import Layout from "../components/layout"; 
 
 import Head from "next/head";
 import Image from "next/image";
@@ -55,7 +51,7 @@ export default function Custom404() {
           <Image
             height={140}
             width={140}
-            src={`${process.env.basePath}/img/404error.png`}
+            src={`${process.env.basePath}/img/404error.webp`}
             alt="error-image"
             placeholder="blur"
             blurDataURL="url"
@@ -151,7 +147,7 @@ export default function Custom404() {
             <Image
               height={140}
               width={140}
-              src={`${process.env.basePath}/img/404error.png`}
+              src={`${process.env.basePath}/img/404error.webp`}
               alt="error-image"
               placeholder="blur"
               blurDataURL="url"

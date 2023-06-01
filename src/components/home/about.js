@@ -42,10 +42,11 @@ export default function About({
           >
             <Image
               fill
-              src={`${process.env.basePath}/img/home/home-intro.png`}
+              src={`${process.env.basePath}/img/home/home-intro.webp`}
               alt="home-about"
               placeholder="blur"
               blurDataURL="url"
+              sizes="(min-width: 320) 320px, (min-width: 480) 440px"
             ></Image>
           </chakra.div>
           <VStack
@@ -142,10 +143,11 @@ export default function About({
             >
               <Image
                 fill
-                src={`${process.env.basePath}/img/home/home-intro.png`}
+                src={`${process.env.basePath}/img/home/home-intro.webp`}
                 alt="home-about"
                 placeholder="blur"
                 blurDataURL="url"
+                sizes="(min-width: 320) 346px, (min-width: 1280) 454px"
               ></Image>
             </chakra.div>
             <chakra.div

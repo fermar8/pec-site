@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
-
-const Layout = dynamic(() => import("components/layout"), { ssr: false });
+import Layout from "components/layout";
 
 import {
   Text,
@@ -68,7 +66,7 @@ export default function Blog() {
                   <Image
                     width={120}
                     height={120}
-                    src={`${process.env.basePath}/img/bookImage.png`}
+                    src={`${process.env.basePath}/img/bookImage.webp`}
                     alt="blog-image"
                     placeholder="blur"
                     blurDataURL="url"
@@ -248,7 +246,7 @@ export default function Blog() {
               <Image
                 width={256}
                 height={256}
-                src={`${process.env.basePath}/img/bookImage.png`}
+                src={`${process.env.basePath}/img/bookImage.webp`}
                 alt="about-image"
                 placeholder="blur"
                 blurDataURL="url"

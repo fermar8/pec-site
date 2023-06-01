@@ -11,7 +11,7 @@ import Head from "next/head";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const Layout = dynamic(() => import("components/layout"), { ssr: false });
+import Layout from "components/layout";
 const ServiceDescription = dynamic(() => import("components/services/serviceDescriptions"), { ssr: false });
 const ButtonContactWithUs = dynamic(() => import("components/general/buttons/buttonContactWithUs"), { ssr: false });
 
@@ -84,10 +84,11 @@ export default function AboutPage({ page }) {
                   <Image
                     width={174}
                     height={174}
-                    src={`${process.env.basePath}/img/home/home-intro.png`}
+                    src={`${process.env.basePath}/img/home/home-intro.webp`}
                     alt="about-image"
                     placeholder="blur"
                     blurDataURL="url"
+                    priority={true}
                   ></Image>
                 </Box>
                 <Box mb="16px">
@@ -303,10 +304,11 @@ export default function AboutPage({ page }) {
                 <Image
                   width={308}
                   height={308}
-                  src={`${process.env.basePath}/img/home/home-intro.png`}
+                  src={`${process.env.basePath}/img/home/home-intro.webp`}
                   alt="about-image"
                   placeholder="blur"
                   blurDataURL="url"
+                  priority={true}
                 ></Image>
               </Box>
             </Flex>

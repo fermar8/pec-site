@@ -1,8 +1,7 @@
 import dynamic from "next/dynamic";
 
-const ServicePage = dynamic(() => import("../../../components/servicePage"), {
-  ssr: false,
-});
+import ServicePage from "../../../components/servicePage";
+
 
 export default function SemPage({ page }) {
   const {

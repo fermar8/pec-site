@@ -1,4 +1,5 @@
-import { Flex, VStack, chakra, useMediaQuery } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/media-query";
+import { Flex, VStack, Box, Heading } from "@chakra-ui/layout";
 
 import Image from "next/image";
 import dynamic from "next/dynamic";
@@ -23,7 +24,7 @@ export default function Intro(props) {
       >
         <VStack w={[320, null, 528, null, null, null]}>
           <div>
-            <chakra.div
+            <Box
               display="flex"
               justifyContent="center"
               width="100%"
@@ -33,13 +34,15 @@ export default function Intro(props) {
               <Image
                 width={154}
                 height={154}
-                src={`${process.env.basePath}/img/digital-workplace.png`}
+                src={`${process.env.basePath}/img/digital-workplace.webp`}
                 alt="Trabajadores ON LINE Marketing Digital"
                 placeholder="blur"
                 blurDataURL="url"
+                priority={true}
               ></Image>
-            </chakra.div>
-            <chakra.h2
+            </Box>
+            <Heading
+              as="h2"
               fontSize="22px"
               fontWeight="bold"
               color="brand.main"
@@ -47,8 +50,9 @@ export default function Intro(props) {
               mb="8px"
             >
               {title}
-            </chakra.h2>
-            <chakra.h1
+            </Heading>
+            <Heading
+              as="h1"
               fontSize="24px"
               fontWeight="bold"
               color="brand.text"
@@ -56,10 +60,10 @@ export default function Intro(props) {
               mb="16px"
             >
               {subtitle}
-            </chakra.h1>
-            <chakra.div pb="30px">
+            </Heading>
+            <Box pb="30px">
               <p>{text}</p>
-            </chakra.div>
+            </Box>
           </div>
           <ButtonContactWithUs buttonText={buttonText} />
         </VStack>
@@ -82,7 +86,8 @@ export default function Intro(props) {
           spacing="0px"
         >
           <div>
-            <chakra.h2
+            <Heading
+              as="h2"
               fontSize="22px"
               fontWeight="bold"
               color="brand.main"
@@ -90,31 +95,33 @@ export default function Intro(props) {
               mb="8px"
             >
               {title}
-            </chakra.h2>
-            <chakra.h1
+            </Heading>
+            <Heading
+              as="h1"
               fontSize="24px"
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"
             >
               {subtitle}
-            </chakra.h1>
+            </Heading>
           </div>
           <p>{text}</p>
           <div>
             <ButtonContactWithUs buttonText={buttonText} />
           </div>
         </VStack>
-        <chakra.div marginLeft="140px" width="256px" height="256px">
+        <Box marginLeft="140px" width="256px" height="256px">
           <Image
             width={256}
             height={256}
-            src={`${process.env.basePath}/img/digital-workplace.png`}
+            src={`${process.env.basePath}/img/digital-workplace.webp`}
             alt="Trabajadores ON LINE Marketing Digital"
             placeholder="blur"
             blurDataURL="url"
+            priority={true}
           ></Image>
-        </chakra.div>
+        </Box>
       </Flex>
     );
   }

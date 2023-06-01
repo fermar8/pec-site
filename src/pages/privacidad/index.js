@@ -1,8 +1,4 @@
-import dynamic from "next/dynamic";
-
-const Layout = dynamic(() => import("../../components/layout"), {
-  ssr: false,
-});
+import Layout from "../../components/layout";
 
 import { Text, Box, Flex, Heading, VStack } from "@chakra-ui/react";
 
