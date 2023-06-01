@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Layout from "../components/layout";
 import Intro from "../components/home/intro";
 const Services = dynamic(() => import("../components/home/services"), {
+  loading: () => <div>Loading...</div>,
   ssr: false,
 });
 const About = dynamic(() => import("../components/home/about"), {
