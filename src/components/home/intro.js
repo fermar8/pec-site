@@ -3,12 +3,6 @@ import { Flex, VStack, Box, Heading } from "@chakra-ui/layout";
 import Image from "next/image";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 
-import dynamic from "next/dynamic";
-const HomeImageMolecule = dynamic(() => import("./molecules/homeImage"), {
-  loading: () => <div>Loading...</div>,
-  ssr: false,
-});
-
 export default function Intro(props) {
   const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
   const { title, subtitle, text, buttonText } = props;
@@ -20,15 +14,30 @@ export default function Intro(props) {
         pt="80px"
         pb="80px"
         width="100vw"
-        height="100vh"
+        height="100%"
         alignItems="center"
-        justifyContent="center"
         flexDirection="column"
       >
         <VStack w={[320, null, 528, null, null, null]}>
           <div>
             <Box height="154px">
-            <HomeImageMolecule />
+              <Box
+                display="flex"
+                justifyContent="center"
+                width="100%"
+                height="154px"
+                mb="8px"
+              >
+                <Image
+                  width={154}
+                  height={154}
+                  src={`${process.env.basePath}/img/digital-workplace.webp`}
+                  alt="Trabajadores ON LINE Marketing Digital"
+                  placeholder="blur"
+                  blurDataURL="url"
+                  priority={true}
+                ></Image>
+              </Box>
             </Box>
             <Heading
               as="h2"

@@ -3,7 +3,6 @@ const ChakraProvider = dynamic(
   () => import("@chakra-ui/provider").then((mod) => mod.ChakraProvider),
   { ssr: false }
 );
-
 import { extendTheme } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
 
