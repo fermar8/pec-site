@@ -1,11 +1,7 @@
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { Flex, VStack, Box, Heading } from "@chakra-ui/layout";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const ButtonContactWithUs = dynamic(
-  () => import("components/general/buttons/buttonContactWithUs"),
-  { ssr: false }
-);
+import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 
 export default function Intro(props) {
   const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
