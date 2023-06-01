@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 const Navbar = dynamic(() => import("./navbar"), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <div style={{maxHeight: "56px"}}>Loading...</div>,
   ssr: false,
 });
 const Footer = dynamic(() => import("./footer"), {
