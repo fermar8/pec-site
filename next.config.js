@@ -1,5 +1,8 @@
 const basePath = process.env.NODE_ENV === "production" ? "" : "";
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 module.exports = {
   env: {
     basePath,
@@ -10,5 +13,4 @@ module.exports = {
     locales: ["es"],
     defaultLocale: "es",
   },
-  output: "standalone",
 };

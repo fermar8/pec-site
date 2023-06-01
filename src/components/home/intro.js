@@ -20,8 +20,9 @@ export default function Intro(props) {
         pt="80px"
         pb="80px"
         width="100vw"
-        height="100%"
+        height="100vh"
         alignItems="center"
+        justifyContent="center"
         flexDirection="column"
       >
         <VStack w={[320, null, 528, null, null, null]}>
