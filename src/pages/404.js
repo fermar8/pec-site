@@ -127,6 +127,7 @@ export default function Custom404() {
                 fontWeight="bold"
                 color="brand.main"
                 lineHeight="1"
+                mb="4px"
               >
                 Error
               </Heading>
@@ -136,11 +137,12 @@ export default function Custom404() {
                 fontWeight="bold"
                 color="brand.text"
                 lineHeight="1"
+                mb="16px"
               >
                 404
               </Heading>
 
-              <Text maxWidth="320px" textAlign="center">
+              <Text maxWidth="320px">
                 Oops! Parece que te has desviado de la ruta correcta.
               </Text>
             </Box>

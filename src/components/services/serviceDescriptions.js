@@ -3,16 +3,16 @@ import { Text, Box } from "@chakra-ui/react";
 export default function ServiceDescription(props) {
   const { number, subtitle, subText } = props;
   return (
-    <Box display="flex" alignItems="center" mb="30px">
+    <Box display="flex" mt="16px">
       <Box display="flex" alignItems="center" minWidth="50px">
         <Text
           color="brand.whiteBackground"
           fontSize="80px"
           fontWeight="bold"
-          textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+          textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
         >
           {number}
         </Text>

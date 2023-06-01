@@ -93,7 +93,7 @@ export default function AboutPage({ page }) {
                 </Box>
                 <Box mb="16px">
                   <Heading
-                    as="h5"
+                    as="h1"
                     fontSize={["24px", null, null, null, null, null]}
                     fontWeight="bold"
                     color="brand.main"
@@ -102,7 +102,7 @@ export default function AboutPage({ page }) {
                     {titleTextPart1}
                   </Heading>
                   <Heading
-                    as="h1"
+                    as="h2"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
                     lineHeight="1"
@@ -168,7 +168,7 @@ export default function AboutPage({ page }) {
               >
                 <Box mb="16px">
                   <Heading
-                    as="h5"
+                    as="h3"
                     fontSize={["36px", null, null, null, null, null]}
                     fontWeight="bold"
                     color="brand.main"
@@ -191,10 +191,10 @@ export default function AboutPage({ page }) {
                   fontSize="40px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+                  textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
                   mb="40px"
                 >
                   {valuesTitle}
@@ -257,7 +257,7 @@ export default function AboutPage({ page }) {
         <>
           <Flex justify="center" bg="brand.whiteBackground">
             <Flex
-              w={[null, null, 720, null, null, null]}
+              w={[null, null, 720, null, 1128, null]}
               h={[null, null, 500, null, null, null]}
               justify="space-around"
               align="center"
@@ -348,14 +348,12 @@ export default function AboutPage({ page }) {
               mb="64px"
               display="flex"
               flexDirection="column"
-              justify="space-between"
               align="stretch"
               spacing="0px"
             >
               <Box
                 display="flex"
                 flexDirection="column"
-                justifyContent="center"
               >
                 <Box mb="16px">
                   <Heading
@@ -382,10 +380,11 @@ export default function AboutPage({ page }) {
                   fontSize="40px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+                  textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
+                  mt="32px"
                   mb="16px"
                 >
                   {valuesTitle}

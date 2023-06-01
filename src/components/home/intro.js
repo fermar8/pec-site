@@ -40,8 +40,8 @@ export default function Intro(props) {
               </Box>
             </Box>
             <Heading
-              as="h2"
-              fontSize="22px"
+              as="h1"
+              fontSize="24px"
               fontWeight="bold"
               color="brand.main"
               lineHeight="1"
@@ -50,8 +50,8 @@ export default function Intro(props) {
               {title}
             </Heading>
             <Heading
-              as="h1"
-              fontSize="24px"
+              as="h2"
+              fontSize="26px"
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"
@@ -85,8 +85,8 @@ export default function Intro(props) {
         >
           <div>
             <Heading
-              as="h2"
-              fontSize="22px"
+              as="h1"
+              fontSize="24px"
               fontWeight="bold"
               color="brand.main"
               lineHeight="1"
@@ -95,8 +95,8 @@ export default function Intro(props) {
               {title}
             </Heading>
             <Heading
-              as="h1"
-              fontSize="24px"
+              as="h2"
+              fontSize={["26px", null, null, null, "36px", null]}
               fontWeight="bold"
               color="brand.text"
               lineHeight="1"

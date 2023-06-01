@@ -13,12 +13,18 @@ import dynamic from "next/dynamic";
 const Layout = dynamic(() => import("components/layout"), {
   ssr: false,
 });
-const ServiceDescription = dynamic(() => import("components/services/serviceDescriptions"), {
-  ssr: false,
-});
-const ButtonContactWithUs = dynamic(() => import("components/general/buttons/buttonContactWithUs"), {
-  ssr: false,
-});
+const ServiceDescription = dynamic(
+  () => import("components/services/serviceDescriptions"),
+  {
+    ssr: false,
+  }
+);
+const ButtonContactWithUs = dynamic(
+  () => import("components/general/buttons/buttonContactWithUs"),
+  {
+    ssr: false,
+  }
+);
 
 import { SemIcon } from "components/icons/services/semIcon";
 import { SemIconBig } from "components/icons/services/semIconBig";
@@ -120,14 +126,13 @@ export default function ServicePage(props) {
                 {smallIcon}
               </Box>
               <Box>
-                <Heading
-                  as="h3"
+                <Text
                   fontSize={["24px", null, null, null, null, null]}
                   fontWeight="bold"
                   color="brand.main"
                 >
                   Servicios
-                </Heading>
+                </Text>
                 <Heading
                   as="h1"
                   fontSize={["36px", null, null, null, null, null]}
@@ -191,10 +196,10 @@ export default function ServicePage(props) {
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+                  textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
                 >
                   {whyText}
                 </Text>
@@ -258,33 +263,36 @@ export default function ServicePage(props) {
             h={[null, null, 500, null, null, null]}
           >
             <Flex
-              w={[null, null, 720, null, null, null]}
+              w={[null, null, 720, null, 1128, null]}
               h={[null, null, 440, null, null, null]}
-              justify="center"
+              justify="space-around"
               align="center"
               spacing="0px"
             >
               <Box>
-                <Heading
-                  as="h3"
+                <Text
                   fontSize={[null, null, "24px", null, null, null]}
                   fontWeight="bold"
                   color="brand.main"
+                  lineHeight="100%"
                 >
                   Servicios
-                </Heading>
+                </Text>
                 <Heading
                   as="h1"
                   fontSize={[null, null, "36px", null, null, null]}
                   fontWeight="bold"
+                  lineHeight="100%"
                 >
                   {title}
                 </Heading>
                 <Heading
                   as="h2"
-                  lineHeight="28px"
+                  lineHeight="100%"
+                  mt="16px"
                   fontSize="16px"
                   fontWeight="light"
+                  maxWidth="500px"
                 >
                   {mainText}
                 </Heading>
@@ -331,16 +339,16 @@ export default function ServicePage(props) {
               align="stretch"
               spacing="0px"
             >
-              <Box mb="16px">
+              <Box mb="32px">
                 <Text
                   color="brand.whiteBackground"
                   fontSize="30px"
                   lineHeight="36px"
                   fontWeight="bold"
-                  textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+                  textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
                 >
                   {whyText}
                 </Text>

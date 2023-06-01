@@ -1,8 +1,4 @@
-import {
-  Collapse,
-  useBreakpointValue,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Collapse, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 
 import { Flex, HStack, Box, Text, Divider } from "@chakra-ui/layout";
 import {
@@ -481,7 +477,7 @@ export default function Navbar({
                           textAlign="left"
                         >
                           <EmailIcon />
-                          <Text ml="16px">mail@mailto.com</Text>
+                          <Text ml="16px">info@onlinedigital.es</Text>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -500,7 +496,7 @@ export default function Navbar({
                           textAlign="left"
                         >
                           <PhoneIcon />
-                          <Text ml="16px">933237184</Text>
+                          <Text ml="16px">646746050</Text>
                         </Box>
                       </AccordionButton>
                     </h2>
@@ -520,7 +516,7 @@ export default function Navbar({
                         >
                           <LocationIcon />
                           <Text ml="16px">
-                            C/ Eudald el dèbil, 2n 2a, Gelida
+                            Av. de Madrid, 190, 1, 08028 Barcelona
                           </Text>
                         </Box>
                       </AccordionButton>

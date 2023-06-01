@@ -114,10 +114,10 @@ export default function Footer() {
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
-              textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+              textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
               mt="32px"
             >
               ¿Hablamos?
@@ -313,7 +313,7 @@ export default function Footer() {
             >
               <EmailIcon />
               <Text color="brand.text" ml="16px">
-                mail@mailto.com
+                info@onlinedigital.es
               </Text>
             </Box>
             <Box
@@ -325,7 +325,7 @@ export default function Footer() {
             >
               <PhoneIcon />
               <Text color="brand.text" ml="16px">
-                933237184
+                646746050
               </Text>
             </Box>
             <Box
@@ -337,7 +337,7 @@ export default function Footer() {
             >
               <LocationIcon />
               <Text color="brand.text" ml="16px">
-                C/ Eudald el dèbil, 2n 2a, Gelida
+                Av. de Madrid, 190, 1, 08028 Barcelona
               </Text>
             </Box>
           </Box>
@@ -436,10 +436,10 @@ export default function Footer() {
               fontSize="40px"
               lineHeight="36px"
               fontWeight="bold"
-              textShadow="-1px 1px 0 #F55951,
-				  1px 1px 0 #F55951,
-				 1px -1px 0 #F55951,
-				-1px -1px 0 #F55951"
+              textShadow="-1px 1px 0 #B1150D,
+				  1px 1px 0 #B1150D,
+				 1px -1px 0 #B1150D,
+				-1px -1px 0 #B1150D"
               mt="32px"
             >
               ¿Hablamos?
@@ -461,19 +461,19 @@ export default function Footer() {
                     <Box display="flex" w="100%" mb="16px">
                       <EmailIcon />
                       <Text color="brand.text" ml="16px">
-                        mail@mailto.com
+                        info@onlinedigital.es
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
                       <PhoneIcon />
                       <Text color="brand.text" ml="16px">
-                        933237184
+                        646746050
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
                       <LocationIcon />
                       <Text color="brand.text" ml="16px">
-                        C/ Eudald el dèbil, 2n 2a, Gelida
+                        Av. de Madrid, 190, 1, 08028 Barcelona
                       </Text>
                     </Box>
                   </Box>
@@ -665,19 +665,19 @@ export default function Footer() {
               <Box display="flex" w="100%" mb="16px">
                 <EmailIcon />
                 <Text color="brand.text" ml="16px">
-                  mail@mailto.com
+                  info@onlinedigital.es
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
                 <PhoneIcon />
                 <Text color="brand.text" ml="16px">
-                  933237184
+                  646746050
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
                 <LocationIcon />
                 <Text color="brand.text" ml="16px">
-                  C/ Eudald el dèbil, 2n 2a, Gelida
+                  Av. de Madrid, 190, 1, 08028 Barcelona
                 </Text>
               </Box>
             </Box>

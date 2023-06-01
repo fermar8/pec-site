@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps = {} }) {
   const theme = extendTheme({
     colors: {
       brand: {
-        main: "#F55951",
+        main: "#B1150D",
         border: "#FFE2DC",
         whiteBackground: "#ffffff",
         warmBackground: "#fff9f4",
