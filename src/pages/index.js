@@ -2,11 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import Layout from "../components/layout";
-
-const Intro = dynamic(() => import("../components/home/intro"), {
-  loading: () => <div>Loading...</div>,
-  ssr: false,
-});
+import Intro from "../components/home/intro";
 const Services = dynamic(() => import("../components/home/services"), {
   ssr: false,
 });
