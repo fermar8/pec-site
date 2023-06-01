@@ -1,6 +1,9 @@
 import dynamic from "next/dynamic";
 
-import Navbar from "./navbar";
+const Navbar = dynamic(() => import("./navbar"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
 const Footer = dynamic(() => import("./footer"), {
   ssr: false,
 });
@@ -15,14 +18,14 @@ export default function Layout({
 }) {
   return (
     <>
-      <Navbar
-        isHome={isHome}
-        isService={isService}
-        serviceType={serviceType}
-        isAbout={isAbout}
-        isBlog={isBlog}
-      />
-      <div style={{paddingTop:"56px"}}>{children}</div>
+        <Navbar
+          isHome={isHome}
+          isService={isService}
+          serviceType={serviceType}
+          isAbout={isAbout}
+          isBlog={isBlog}
+        />
+      <div style={{ paddingTop: "56px" }}>{children}</div>
       <Footer />
     </>
   );
