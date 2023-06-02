@@ -59,7 +59,7 @@ export default function Footer() {
     },
     validate,
     onSubmit: async (values) => {
-      const res = await fetch("/api/sendgrid", {
+      const res = await fetch("/api/nodemailer", {
         body: JSON.stringify({
           email: values.email,
           name: values.name,

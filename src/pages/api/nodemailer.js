@@ -1,12 +1,25 @@
-import sendgrid from "@sendgrid/mail";
+import nodemailer from "nodemailer";
 
 export default async function sendEmail(req, res) {
   try {
-    sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+    const transporter = nodemailer.createTransport({
+      host: "onlinedigital-es.correoseguro.dinaserver.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+      tls: {
+        ciphers: "SSLv3",
+      },
+      requireTLS: true,
+      authMethod: "PLAIN",
+    });
 
     const options = {
-      from: process.env.SENDGRID_EMAIL,
-      to: process.env.SENDGRID_EMAIL,
+      from: process.env.SMTP_USER,
+      to: process.env.SMTP_USER,
       subject: `Contacto de ${req.body.name}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
@@ -39,7 +52,7 @@ export default async function sendEmail(req, res) {
       </html>`,
     };
 
-    await sendgrid.send(options);
+    await transporter.sendMail(options);
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
