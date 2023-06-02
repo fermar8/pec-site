@@ -39,26 +39,22 @@ export default function CardService(props) {
             borderRadius="9px"
             alignItems="center"
           >
-            <chakra.div mt={["20px", "24px", null, null, null, null]} width="30px" height="30px">
-              <Image
-                src={imageUrl}
-                height={30}
-                width={30}
-                alt={imageAlt}
-              />
+            <chakra.div
+              mt={["20px", "24px", null, null, null, null]}
+              width="30px"
+              height="30px"
+            >
+              <Image src={imageUrl} height={30} width={30} alt={imageAlt} />
             </chakra.div>
             <chakra.div
               mt={["8px", "8px", null, null, null, null]}
               mb={["8px", "8px", null, null, null, null]}
               display="flex"
               justifyContent="center"
-              fontSize={["16px", "16px", null, null, null, null]}
+              fontSize={["18px", "18px", null, null, null, null]}
               fontWeight="bold"
             >
-              <h4 style={{ fontSize: "16px"}}
-              >
-                {title}
-              </h4>
+              <h4>{title}</h4>
             </chakra.div>
             <chakra.div
               w={[null, null, null, null, 280, null]}
@@ -80,7 +76,9 @@ export default function CardService(props) {
               color="brand.main"
               textDecoration="underline"
             >
-              <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
+              <Link href={`${link}`} prefetch={false}>
+                Ver servicios de {title}
+              </Link>
             </chakra.div>
           </chakra.div>
         </chakra.div>
@@ -138,11 +136,9 @@ export default function CardService(props) {
             display="flex"
             justifyContent="center"
             fontWeight="bold"
+            fontSize="18px"
           >
-            <h4 style={{fontSize: "h4"}}
-            >
-              {title}
-            </h4>
+            <h4>{title}</h4>
           </chakra.div>
         </chakra.div>
         <chakra.div
@@ -151,14 +147,14 @@ export default function CardService(props) {
           borderBottomRadius="9px"
           display="flex"
           flexDirection="column"
-          justifyContent="space-between"
+          justifyContent="space-around"
           alignItems="center"
         >
           <chakra.div
             h={[null, null, "72px", "48px", null, null]}
             w={[null, null, 280, 392, null, null]}
             textAlign="center"
-            lineHeight={[null, null, "16px", "16px", null, null]}
+            lineHeight="100%"
           >
             <p>{text}</p>
           </chakra.div>
@@ -170,7 +166,9 @@ export default function CardService(props) {
             display="flex"
             justifyContent="center"
           >
-            <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
+            <Link href={`${link}`} prefetch={false}>
+              Ver servicios de {title}
+            </Link>
           </chakra.div>
         </chakra.div>
       </chakra.div>
@@ -218,9 +216,7 @@ export default function CardService(props) {
           alignItems="center"
         >
           <chakra.div display="flex" justifyContent="center" fontWeight="bold">
-            <h4 style={{fontSize: "16px"}}>
-              {title}
-            </h4>
+            <h4 style={{ fontSize: "18px" }}>{title}</h4>
           </chakra.div>
           <chakra.div
             w={[null, null, null, null, 280, null]}
@@ -236,7 +232,9 @@ export default function CardService(props) {
             color="brand.main"
             textDecoration="underline"
           >
-            <Link href={`${link}`} prefetch={false}>Ver servicios de {title}</Link>
+            <Link href={`${link}`} prefetch={false}>
+              Ver servicios de {title}
+            </Link>
           </chakra.div>
         </chakra.div>
       </chakra.div>

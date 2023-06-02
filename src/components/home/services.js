@@ -209,12 +209,9 @@ export default function Services(props) {
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.whiteBackground">
+      <Flex justify="center" alignItems="center" bg="brand.whiteBackground"  pt="80px" pb="80px">
         <VStack
-          mt={[null, null, null, null, "64px", null]}
-          mb={[null, null, null, null, "64px", null]}
           w={[null, null, null, null, 1128, null]}
-          h={[null, null, null, null, 1000, null]}
           align="stretch"
         >
           <chakra.div
@@ -222,7 +219,6 @@ export default function Services(props) {
             h={[null, null, null, null, 152, null]}
             display="flex"
             flexDirection="column"
-            justifyContent="space-between"
           >
             <chakra.h2
               fontSize={[null, null, null, null, "32px", null]}

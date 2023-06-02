@@ -336,7 +336,7 @@ export default function Footer() {
               mb="16px"
             >
               <LocationIcon />
-              <Text color="brand.text" ml="16px">
+              <Text color="brand.text" ml="16px" textAlign="left">
                 Av. de Madrid, 190, 1, 08028 Barcelona
               </Text>
             </Box>

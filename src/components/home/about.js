@@ -19,6 +19,9 @@ export default function About({
   knowUs2,
 }) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const [isTablet] = useMediaQuery(
+    "(min-width: 768px) and (max-width: 1280px)"
+  );
   if (isMobile) {
     return (
       <Flex
@@ -157,20 +160,24 @@ export default function About({
               <chakra.div
                 h={[null, null, 404, 338, 338, null]}
                 w={[null, null, 342, 556, 436, null]}
-                mt={[null, null, "40px", "40px", "56px", null]}
+                pt={[null, null, "40px", "40px", "40px", null]}
                 ml={[null, null, "20px", "20px", "56px", null]}
                 display="flex"
                 flexDirection="column"
+                
               >
                 <chakra.div w={[null, null, 200, 200, 232, null]} mb="16px">
                   <chakra.p
                     fontSize={[null, null, "18px", "18px", "21px", null]}
                     fontWeight="light"
+                    color="brand.main"
                   >
                     {knowUs}
                   </chakra.p>
                   <chakra.h3
                     fontSize={[null, null, "24px", "24px", "30px", null]}
+                    lineHeight="100%"
+                    fontWeight="bold"
                   >
                     {title}
                   </chakra.h3>
@@ -180,19 +187,19 @@ export default function About({
                   display="flex"
                   flexDirection="column"
                 >
-                  <p
+                  <chakra.p
                     fontSize={[null, null, "16px", "16px", "16px", null]}
-                    mb="8px"
+                    mb="16px"
                   >
                     {text}
-                  </p>
-                  <p
+                  </chakra.p>
+                  {!isTablet ? <chakra.p
                     fontSize={[null, null, "16px", "16px", "16px", null]}
                     mb="16px"
                     fontWeight="bold"
                   >
                     {text2}
-                  </p>
+                  </chakra.p> : null}
                   <chakra.div w="100%" display="flex" flexWrap="wrap" mb="16px">
                     <TagWhiteBg tagText={tag} />
                     <TagWhiteBg tagText={tag2} />

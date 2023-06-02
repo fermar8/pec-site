@@ -163,7 +163,7 @@ export async function getStaticProps() {
       "Somos una Agencia de Marketing Digital y Diseño Web completa basada en Barcelona formada por consultores SEO, SEM, UX/UI, diseñadores gráficos, Programadores Web y Community Managers.",
     aboutTag: "Multidisciplinar",
     aboutTag2: "Ámbito Digital",
-    aboutTag3: "Emprendenduría",
+    aboutTag3: "Emprendimiento",
     aboutKnowUs2: "Conoce al equipo",
 
     blogTitle: "Blog",
