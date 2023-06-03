@@ -6,6 +6,7 @@ import ServicePage from "../../../components/servicePage";
 export default function WebPage({ page }) {
   const {
     title,
+    image,
     subtitle,
     subtitle2,
     subtitle3,
@@ -18,6 +19,7 @@ export default function WebPage({ page }) {
   return (
     <ServicePage
       title={title}
+      image={image}
       subtitle={subtitle}
       subtitle2={subtitle2}
       subtitle3={subtitle3}
@@ -33,6 +35,7 @@ export default function WebPage({ page }) {
 export async function getStaticProps() {
   const page = {
     title: "Desarrollo Web",
+    image: "webIcon",
     subtitle: "Qué ofrecemos",
     subtitle2: "Cómo lo hacemos",
     subtitle3: "Siempre a la última",

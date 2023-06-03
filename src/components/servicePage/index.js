@@ -7,6 +7,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
@@ -26,50 +27,12 @@ const ButtonContactWithUs = dynamic(
   }
 );
 
-import { SemIcon } from "components/icons/services/semIcon";
-import { SemIconBig } from "components/icons/services/semIconBig";
-import { DesignIcon } from "components/icons/services/designIcon";
-import { DesignIconBig } from "components/icons/services/designIconBig";
-import { SeoIcon } from "components/icons/services/seoIcon";
-import { SeoIconBig } from "components/icons/services/seoIconBig";
-import { SocialMediaIcon } from "components/icons/services/socialMediaIcon";
-import { SocialMediaIconBig } from "components/icons/services/socialMediaIconBig";
-import { UxUiIcon } from "components/icons/services/uxUiIcon";
-import { UxUiIconBig } from "components/icons/services/uxUiIconBig";
-import { WebIcon } from "components/icons/services/webIcon";
-import { WebIconBig } from "components/icons/services/webIconBig";
-
-import { useEffect, useState } from "react";
-
 export default function ServicePage(props) {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
-  const [title] = useState(props.title);
-  const [smallIcon, setSmallIcon] = useState(SemIcon);
-  const [bigIcon, setBigIcon] = useState(SemIconBig);
-
-  useEffect(() => {
-    if (title === "Campañas SEM") {
-      setSmallIcon(SemIcon);
-      setBigIcon(SemIconBig);
-    } else if (title === "Diseño Web") {
-      setSmallIcon(DesignIcon);
-      setBigIcon(DesignIconBig);
-    } else if (title === "Posicionamiento SEO") {
-      setSmallIcon(SeoIcon);
-      setBigIcon(SeoIconBig);
-    } else if (title === "Social Media") {
-      setSmallIcon(SocialMediaIcon);
-      setBigIcon(SocialMediaIconBig);
-    } else if (title === "Consultoría UX/UI") {
-      setSmallIcon(UxUiIcon);
-      setBigIcon(UxUiIconBig);
-    } else {
-      setSmallIcon(WebIcon);
-      setBigIcon(WebIconBig);
-    }
-  }, [title]);
 
   const {
+    title,
+    image,
     subtitle,
     subtitle2,
     subtitle3,
@@ -120,10 +83,18 @@ export default function ServicePage(props) {
             >
               <Box
                 position="absolute"
-                top={["4.5%", null, null, null, null]}
+                top={["4%", null, null, null, null]}
                 left={["40%", null, null, null, null]}
+                width="100px"
+                height="100px"
               >
-                {smallIcon}
+                <Image
+                  width={100}
+                  height={100}
+                  src={`${process.env.basePath}/img/services/${image}.svg`}
+                  alt="home-image"
+                  priority={true}
+                ></Image>
               </Box>
               <Box>
                 <Text
@@ -297,7 +268,15 @@ export default function ServicePage(props) {
                   {mainText}
                 </Heading>
               </Box>
-              <Box>{bigIcon}</Box>
+              <Box width="200px" height="200px">
+              <Image
+                  width={200}
+                  height={200}
+                  src={`${process.env.basePath}/img/services/${image}Big.svg`}
+                  alt="home-image"
+                  priority={true}
+                ></Image>
+              </Box>
             </Flex>
           </Flex>
           <Flex justify="center" w="100%" bg="brand.main">

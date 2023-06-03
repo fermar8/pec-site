@@ -1,5 +1,5 @@
-import { Button } from "@chakra-ui/react";
-import { WavingHand } from "../../icons";
+import { Button, Box } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 
 function buttonContact() {
@@ -13,7 +13,15 @@ function buttonContact() {
         fontWeight="light"
         verticalAlign="text-bottom"
         borderRadius="999"
-        rightIcon={<WavingHand />}
+        rightIcon={
+          <Image
+            height={24}
+            width={24}
+            src={`${process.env.basePath}/img/social-media/wavingHand.svg`}
+            alt="wavingHand-icon"
+            priority={true}
+          ></Image>
+        }
         sx={{
           ":hover": {
             bg: "brand.buttonHover",

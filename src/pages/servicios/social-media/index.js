@@ -6,6 +6,7 @@ import ServicePage from "../../../components/servicePage";
 export default function SocialMediaPage({ page }) {
   const {
     title,
+    image,
     subtitle,
     subtitle2,
     subtitle3,
@@ -18,6 +19,7 @@ export default function SocialMediaPage({ page }) {
   return (
     <ServicePage
       title={title}
+      image={image}
       subtitle={subtitle}
       subtitle2={subtitle2}
       subtitle3={subtitle3}
@@ -33,6 +35,7 @@ export default function SocialMediaPage({ page }) {
 export async function getStaticProps() {
   const page = {
     title: "Social Media",
+    image: "socialMediaIcon",
     subtitle: "Por qué",
     subtitle2: "Cómo lo hacemos",
     subtitle3: "Relájate y ve crecer tu negocio",

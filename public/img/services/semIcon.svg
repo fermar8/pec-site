@@ -1,7 +1,4 @@
-import { chakra } from "@chakra-ui/react";
-
-export const SemIcon = () => (
-  <chakra.svg
+<svg
     width="88"
     height="103"
     viewBox="0 0 88 103"
@@ -40,5 +37,5 @@ export const SemIcon = () => (
       strokeWidth="0.173903"
     />
     <circle cx="16.2685" cy="78.9461" r="4.43452" fill="#F8B3B8" />
-  </chakra.svg>
-);
+</svg>
+

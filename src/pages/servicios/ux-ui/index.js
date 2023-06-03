@@ -6,6 +6,7 @@ import ServicePage from "../../../components/servicePage";
 export default function UxUiPage({ page }) {
   const {
     title,
+    image,
     subtitle,
     subtitle2,
     subtitle3,
@@ -18,6 +19,7 @@ export default function UxUiPage({ page }) {
   return (
     <ServicePage
       title={title}
+      image={image}
       subtitle={subtitle}
       subtitle2={subtitle2}
       subtitle3={subtitle3}
@@ -33,6 +35,7 @@ export default function UxUiPage({ page }) {
 export async function getStaticProps() {
   const page = {
     title: "Consultoría UX/UI",
+    image: "uxUiIcon",
     subtitle: "Qué ofrecemos",
     subtitle2: "Por qué",
     subtitle3: "La importancia del UX/UI",

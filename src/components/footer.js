@@ -12,12 +12,9 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
+import Image from "next/image";
 import Link from "next/link";
-import { EmailIcon, PhoneIcon, LocationIcon } from "./icons";
-import { LinkedinIcon } from "./icons/socialMedia/linkedinIcon";
-import { TwitterIcon } from "./icons/socialMedia/twitterIcon";
 import { useState } from "react";
-
 
 export default function Footer() {
   const [showForm, setShowForm] = useState(true);
@@ -143,10 +140,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                          ":hover": {
-                            borderColor: "brand.main",
-                          },
-                        }}
+                      ":hover": {
+                        borderColor: "brand.main",
+                      },
+                    }}
                     focusBorderColor="brand.main"
                     color="black"
                     bg="white"
@@ -171,10 +168,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                          ":hover": {
-                            borderColor: "brand.main",
-                          },
-                        }}
+                      ":hover": {
+                        borderColor: "brand.main",
+                      },
+                    }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -199,10 +196,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                          ":hover": {
-                            borderColor: "brand.main",
-                          },
-                        }}
+                      ":hover": {
+                        borderColor: "brand.main",
+                      },
+                    }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -227,10 +224,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                          ":hover": {
-                            borderColor: "brand.main",
-                          },
-                        }}
+                      ":hover": {
+                        borderColor: "brand.main",
+                      },
+                    }}
                     focusBorderColor="brand.main"
                     bg="white"
                     color="black"
@@ -253,10 +250,10 @@ export default function Footer() {
                     variant="outline"
                     borderColor="brand.border"
                     sx={{
-                          ":hover": {
-                            borderColor: "brand.main",
-                          },
-                        }}
+                      ":hover": {
+                        borderColor: "brand.main",
+                      },
+                    }}
                     focusBorderColor="brand.main"
                     color="black"
                     onChange={formik.handleChange}
@@ -296,8 +293,12 @@ export default function Footer() {
               </VStack>
             </form>
           ) : null}
-          <Box w={[320, 440, null, null, null, null]} color="brand.main">{afterSuccessMessage}</Box>
-          <Box w={[320, 440, null, null, null, null]} color="brand.main">{afterErrorMessage}</Box>
+          <Box w={[320, 440, null, null, null, null]} color="brand.main">
+            {afterSuccessMessage}
+          </Box>
+          <Box w={[320, 440, null, null, null, null]} color="brand.main">
+            {afterErrorMessage}
+          </Box>
           <Box
             display="flex"
             flexDirection="column"
@@ -311,7 +312,14 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
               mb="16px"
             >
-              <EmailIcon />
+              <Box width="24px" height="24px">
+                <Image
+                  height={24}
+                  width={24}
+                  src={`${process.env.basePath}/img/social-media/emailIcon.svg`}
+                  alt="email-icon"
+                ></Image>
+              </Box>
               <Text color="brand.text" ml="16px">
                 info@onlinedigital.es
               </Text>
@@ -323,7 +331,14 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
               mb="16px"
             >
-              <PhoneIcon />
+              <Box width="24px" height="24px">
+                <Image
+                  height={24}
+                  width={24}
+                  src={`${process.env.basePath}/img/social-media/phoneIcon.svg`}
+                  alt="phone-icon"
+                ></Image>
+              </Box>
               <Text color="brand.text" ml="16px">
                 646746050
               </Text>
@@ -335,7 +350,14 @@ export default function Footer() {
               marginLeft={[0, "60px", null, null, null, null]}
               mb="16px"
             >
-              <LocationIcon />
+              <Box width="24px" height="24px">
+                <Image
+                  height={24}
+                  width={24}
+                  src={`${process.env.basePath}/img/social-media/locationIcon.svg`}
+                  alt="online-logo"
+                ></Image>
+              </Box>
               <Text color="brand.text" ml="16px" textAlign="left">
                 Av. de Madrid, 190, 1, 08028 Barcelona
               </Text>
@@ -405,8 +427,24 @@ export default function Footer() {
             </Link>
           </Box>
           <Box display="flex" justifyContent="center" w="100%" mb="16px">
-            <TwitterIcon />
-            <LinkedinIcon />
+            <Box width="48px" height="48px">
+              <Image
+                height={48}
+                width={48}
+                src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
+                alt="twitter-icon"
+              ></Image>
+            </Box>
+            <Box width="48px" height="48px">
+              <Image
+                height={48}
+                width={48}
+                src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
+                alt="linkedin-icon"
+                placeholder="blur"
+                blurDataURL="url"
+              ></Image>
+            </Box>
           </Box>
         </Box>
       </VStack>
@@ -459,19 +497,40 @@ export default function Footer() {
                     w={[320, 440, null, null, 360, null]}
                   >
                     <Box display="flex" w="100%" mb="16px">
-                      <EmailIcon />
+                      <Box width="24px" height="24px">
+                        <Image
+                          height={24}
+                          width={24}
+                          src={`${process.env.basePath}/img/social-media/emailIcon.svg`}
+                          alt="email-icon"
+                        ></Image>
+                      </Box>
                       <Text color="brand.text" ml="16px">
                         info@onlinedigital.es
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
-                      <PhoneIcon />
+                      <Box width="24px" height="24px">
+                        <Image
+                          height={24}
+                          width={24}
+                          src={`${process.env.basePath}/img/social-media/phoneIcon.svg`}
+                          alt="phone-icon"
+                        ></Image>
+                      </Box>
                       <Text color="brand.text" ml="16px">
                         646746050
                       </Text>
                     </Box>
                     <Box display="flex" w="100%" mb="16px">
-                      <LocationIcon />
+                      <Box width="24px" height="24px">
+                        <Image
+                          height={24}
+                          width={24}
+                          src={`${process.env.basePath}/img/social-media/locationIcon.svg`}
+                          alt="online-logo"
+                        ></Image>
+                      </Box>
                       <Text color="brand.text" ml="16px">
                         Av. de Madrid, 190, 1, 08028 Barcelona
                       </Text>
@@ -663,19 +722,40 @@ export default function Footer() {
               minHeight={[108, 128, null, null, null, null]}
             >
               <Box display="flex" w="100%" mb="16px">
-                <EmailIcon />
+                <Box width="24px" height="24px">
+                  <Image
+                    height={24}
+                    width={24}
+                    src={`${process.env.basePath}/img/social-media/emailIcon.svg`}
+                    alt="email-icon"
+                  ></Image>
+                </Box>
                 <Text color="brand.text" ml="16px">
                   info@onlinedigital.es
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
-                <PhoneIcon />
+                <Box width="24px" height="24px">
+                  <Image
+                    height={24}
+                    width={24}
+                    src={`${process.env.basePath}/img/social-media/phoneIcon.svg`}
+                    alt="phone-icon"
+                  ></Image>
+                </Box>
                 <Text color="brand.text" ml="16px">
                   646746050
                 </Text>
               </Box>
               <Box display="flex" w="100%" mb="16px">
-                <LocationIcon />
+                <Box width="24px" height="24px">
+                  <Image
+                    height={24}
+                    width={24}
+                    src={`${process.env.basePath}/img/social-media/locationIcon.svg`}
+                    alt="online-logo"
+                  ></Image>
+                </Box>
                 <Text color="brand.text" ml="16px">
                   Av. de Madrid, 190, 1, 08028 Barcelona
                 </Text>
@@ -747,8 +827,24 @@ export default function Footer() {
             </Link>
           </Box>
           <Box display="flex" justifyContent="center" w="100%" pb="20px">
-            <TwitterIcon />
-            <LinkedinIcon />
+            <Box width="48px" height="48px">
+              <Image
+                height={48}
+                width={48}
+                src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
+                alt="twitter-icon"
+              ></Image>
+            </Box>
+            <Box width="48px" height="48px">
+              <Image
+                height={48}
+                width={48}
+                src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
+                alt="linkedin-icon"
+                placeholder="blur"
+                blurDataURL="url"
+              ></Image>
+            </Box>
           </Box>
         </Box>
       </VStack>

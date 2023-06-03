@@ -11,8 +11,6 @@ import {
 import { Button, IconButton, ButtonGroup } from "@chakra-ui/button";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/menu";
 
-import { OnlineLogo, EmailIcon, PhoneIcon, LocationIcon } from "./icons";
-
 import ButtonContact from "./general/buttons/buttonContact";
 import {
   HamburgerIcon,
@@ -23,6 +21,7 @@ import {
 
 import { useState, useEffect } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar({
@@ -88,7 +87,15 @@ export default function Navbar({
           <Box width={[320, 440, 728, 952, 1128, null]}>
             <HStack gap="24px">
               <Flex justify="space-between" alignItems="center" gap="24px">
-                <OnlineLogo />
+                <Box width="80px" height="50px">
+                  <Image
+                    height={50}
+                    width={80}
+                    src={`${process.env.basePath}/img/social-media/onlineLogo.svg`}
+                    alt="online-logo"
+                    priority={true}
+                  ></Image>
+                </Box>
                 <Divider
                   orientation="vertical"
                   h="24px"
@@ -476,7 +483,14 @@ export default function Navbar({
                           alignItems="center"
                           textAlign="left"
                         >
-                          <EmailIcon />
+                          <Box width="24px" height="24px">
+                            <Image
+                              height={24}
+                              width={24}
+                              src={`${process.env.basePath}/img/social-media/emailIcon.svg`}
+                              alt="email-icon"
+                            ></Image>
+                          </Box>
                           <Text ml="16px">info@onlinedigital.es</Text>
                         </Box>
                       </AccordionButton>
@@ -495,7 +509,14 @@ export default function Navbar({
                           alignItems="center"
                           textAlign="left"
                         >
-                          <PhoneIcon />
+                          <Box width="24px" height="24px">
+                            <Image
+                              height={24}
+                              width={24}
+                              src={`${process.env.basePath}/img/social-media/phoneIcon.svg`}
+                              alt="phone-icon"
+                            ></Image>
+                          </Box>
                           <Text ml="16px">646746050</Text>
                         </Box>
                       </AccordionButton>
@@ -514,7 +535,14 @@ export default function Navbar({
                           alignItems="center"
                           textAlign="left"
                         >
-                          <LocationIcon />
+                          <Box width="24px" height="24px">
+                            <Image
+                              height={24}
+                              width={24}
+                              src={`${process.env.basePath}/img/social-media/locationIcon.svg`}
+                              alt="online-logo"
+                            ></Image>
+                          </Box>
                           <Text ml="16px">
                             Av. de Madrid, 190, 1, 08028 Barcelona
                           </Text>

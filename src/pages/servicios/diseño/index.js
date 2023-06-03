@@ -3,6 +3,7 @@ import ServicePage from "../../../components/servicePage";
 export default function DesignPage({ page }) {
   const {
     title,
+    image,
     subtitle,
     subtitle2,
     subtitle3,
@@ -15,6 +16,7 @@ export default function DesignPage({ page }) {
   return (
     <ServicePage
       title={title}
+      image={image}
       subtitle={subtitle}
       subtitle2={subtitle2}
       subtitle3={subtitle3}
@@ -30,6 +32,7 @@ export default function DesignPage({ page }) {
 export async function getStaticProps() {
   const page = {
     title: "Diseño Web",
+    image: "designIcon",
     subtitle: "Qué ofrecemos",
     subtitle2: "Cómo lo hacemos",
     subtitle3: "Nuestro objetivo",

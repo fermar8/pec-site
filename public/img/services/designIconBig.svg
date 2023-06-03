@@ -1,7 +1,4 @@
-import { chakra } from "@chakra-ui/react";
-
-export const DesignIconBig = () => (
-  <chakra.svg
+<svg
     width="298"
     height="160"
     viewBox="0 0 298 160"
@@ -33,5 +30,4 @@ export const DesignIconBig = () => (
         />
       </clipPath>
     </defs>
-  </chakra.svg>
-);
+  </svg>
