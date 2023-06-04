@@ -14,7 +14,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function QueEsPosicionamientoSeo() {
+export default function ComoRealizarUnaAuditoriaSEO() {
   return (
     <Layout isBlog={true}>
       <Head>
