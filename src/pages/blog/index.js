@@ -20,7 +20,7 @@ export default function Blog() {
     return (
       <Layout isBlog={true}>
         <Head>
-          <title>ON LINE | Quiénes Somos</title>
+          <title>ON LINE | Blog</title>
           <meta
             name="description"
             content="ON LINE es una Agencia de Marketing Digital basada en Barcelona que ofrece todo lo que necesitas: posicionamiento SEO, SEM, Desarrollo Web, Diseño Web"
