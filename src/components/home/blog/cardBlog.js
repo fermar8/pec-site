@@ -1,13 +1,56 @@
 import { Box, Text, Heading, useMediaQuery } from "@chakra-ui/react";
 import { TimeIcon } from "@chakra-ui/icons";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogPost = dynamic(() => import("./blogPost"), {
   ssr: false,
 });
 
 export default function CardBlog(props) {
+  const {
+    mainImageSrc,
+    title,
+    summary,
+    authorImgSrc,
+    author,
+    date,
+    timestamp,
+    url,
+  } = props.blogInfo;
+
+  const [ timePassed, setTimePassed ] = useState("Loading...")
+
+  useEffect(() => {
+    setTimePassed(calculateTimePassed(timestamp));
+  }, [timestamp]);
+
+  const calculateTimePassed = (timestamp) => {
+    const date = new Date(timestamp);
+    const currentDate = new Date();
+
+    const diff = Math.floor(currentDate.getTime() - date.getTime());
+    const day = 1000 * 60 * 60 * 24;
+
+    const days = Math.floor(diff/day);
+    const months = Math.floor(days/31);
+    const years = Math.floor(months/12);
+
+    if (days < 1) {
+      return "Hoy";
+    } else if (days > 0 && months < 1) {
+      const text = days === 1 ? "día" : "días";
+      return `${days} ${text}`;
+    } else if (months > 0 && years < 1) {
+      const text = months === 1 ? "mes" : "meses";
+      return `${months} ${text}`;
+    } else {
+      const text = years === 1 ? "año" : "años";
+      return `${years} ${text}`;
+    }
+  };
   const opacityChange = (loaded) => {
     let opacity;
     opacity = loaded ? 1 : 0;
@@ -29,6 +72,7 @@ export default function CardBlog(props) {
         transition="1s"
       >
         <Box
+          w={[320, 320, null, null, null, null]}
           h={[146, 146, null, null, null, null]}
           mb={["16px", "16px", null, null, null, null]}
           position="relative"
@@ -36,7 +80,7 @@ export default function CardBlog(props) {
         >
           <Image
             fill
-            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
+            src={mainImageSrc}
             alt="home-image"
             placeholder="blur"
             blurDataURL="url"
@@ -47,9 +91,11 @@ export default function CardBlog(props) {
           mb={["16px", null, null, null, null, null]}
           ml={["8px", null, null, null, null, null]}
         >
-          <Heading as="h4" fontSize="18px">
-            Trabajo y salud mental, un delicado equilibrio
-          </Heading>
+          <Link href={url} prefetch={false}>
+            <Heading as="h4" fontSize="18px">
+              {title}
+            </Heading>
+          </Link>
         </Box>
         <Box
           w={[280, 432, null, null, null, null]}
@@ -57,12 +103,9 @@ export default function CardBlog(props) {
           ml={["8px", null, null, null, null, null]}
           lineHeight="16px"
         >
-          <Text fontSize="16px">
-            El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
-            veces el equilibrio entre salud mental y trabajo no es fácil.
-          </Text>
+          <Text fontSize="16px">{summary}</Text>
         </Box>
-        <BlogPost selectedAuthor={props.selectedAuthor} />
+        <BlogPost selectedAuthor={author} imageSrc={authorImgSrc} date={date} timePassed={timePassed} />
       </Box>
     );
   } else if (isTablet) {
@@ -84,7 +127,7 @@ export default function CardBlog(props) {
         >
           <Image
             fill
-            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
+            src={mainImageSrc}
             alt="home-image"
             placeholder="blur"
             blurDataURL="url"
@@ -95,9 +138,14 @@ export default function CardBlog(props) {
           mb={[null, null, "16px", "16px", null, null]}
           lineHeight={[null, null, "16px", "16px", null, null]}
         >
-          <Heading as="h4" fontSize={[null, null, "18px", "18px", null, null]}>
-            Trabajo y salud mental, un delicado equilibrio
-          </Heading>
+          <Link href={url} prefetch={false}>
+            <Heading
+              as="h4"
+              fontSize={[null, null, "18px", "18px", null, null]}
+            >
+              {title}
+            </Heading>
+          </Link>
         </Box>
         <Box
           w={[null, null, 352, 464, null, null]}
@@ -106,11 +154,10 @@ export default function CardBlog(props) {
           lineHeight={[null, null, "16px", "16px", null, null]}
         >
           <Text fontSize={[null, null, "18px", "18px", null, null]}>
-            El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
-            veces el equilibrio entre salud mental y trabajo no es fácil.
+            {summary}
           </Text>
         </Box>
-        <BlogPost selectedAuthor={props.selectedAuthor} />
+        <BlogPost selectedAuthor={author} imageSrc={authorImgSrc} date={date} timePassed={timePassed} />
       </Box>
     );
   } else {
@@ -118,13 +165,13 @@ export default function CardBlog(props) {
       <Box h="378px" w="359px" display="flex" flexDirection="column">
         <Box
           h="146px"
-          w="359"
+          w="359px"
           position="relative"
           borderRadius="9px 9px 0px 0px"
         >
           <Image
             fill
-            src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
+            src={mainImageSrc}
             alt="home-image"
             placeholder="blur"
             blurDataURL="url"
@@ -132,21 +179,20 @@ export default function CardBlog(props) {
         </Box>
         <Box h="32px"></Box>
         <Box h="32px">
-          <Heading
-            as="h4"
-            fontSize="18px"
-            fontWeight="semibold"
-            lineHeight="16px"
-          >
-            Trabajo y salud mental, un delicado equilibrio
-          </Heading>
+          <Link href={url} prefetch={false}>
+            <Heading
+              as="h4"
+              fontSize="18px"
+              fontWeight="semibold"
+              lineHeight="16px"
+            >
+              {title}
+            </Heading>
+          </Link>
         </Box>
         <Box h="16px"></Box>
         <Box h="64px">
-          <Text lineHeight="16px">
-            El trabajo es algo que nos ocupa mucho tiempo de nuestra vida, y a
-            veces el equilibrio entre salud mental y trabajo no es fácil.
-          </Text>
+          <Text lineHeight="16px">{summary}</Text>
         </Box>
         <Box h="24px"></Box>
         <Box
@@ -169,7 +215,7 @@ export default function CardBlog(props) {
             >
               <Image
                 fill
-                src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
+                src={authorImgSrc}
                 alt="home-image"
                 placeholder="blur"
                 blurDataURL="url"
@@ -184,10 +230,10 @@ export default function CardBlog(props) {
               fontWeight="light"
             >
               <Box w="151px">
-                <p>Eudald Capellades</p>
+                <p>{author}</p>
               </Box>
               <Box w="151px" color="brand.grey">
-                <p>16 de desembre 2022</p>
+                <p>{date}</p>
               </Box>
             </Box>
           </Box>
@@ -201,7 +247,7 @@ export default function CardBlog(props) {
           >
             <TimeIcon />
             <Box fontSize="14px" fontWeight="light">
-              <Text>3 min</Text>
+              <Text>{timePassed}</Text>
             </Box>
           </Box>
         </Box>

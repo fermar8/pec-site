@@ -4,6 +4,8 @@ import { TimeIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 
 export default function BlogPost(props) {
+  const { selectedAuthor, imageSrc, date, timePassed } = props;
+
   const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isTablet] = useMediaQuery(
     "(min-width: 768px) and (max-width: 1280px)"
@@ -13,12 +15,13 @@ export default function BlogPost(props) {
       <>
         <Box
           w={[320, 440, null, null, null, null]}
-          h={["64px", "64px", null, null, null, null]}
+          minHeight={["64px", "64px", null, null, null, null]}
           borderTop="1px"
           borderBottom="1px"
           borderColor="brand.grey"
           display="flex"
           alignItems="center"
+          justifyContent="space-between"
         >
           <Box
             w="48px"
@@ -29,32 +32,28 @@ export default function BlogPost(props) {
             borderRadius="50%"
           >
             <Image
-              w={48}
-              h={48}
-              src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
-              alt="home-image"
+              width={48}
+              height={48}
+              src={imageSrc}
+              alt="online-icon"
               placeholder="blur"
               blurDataURL="url"
             ></Image>
           </Box>
           <Box
-            w={[138, 258, null, null, null, null]}
-            ml={["16px", "16px", null, null, null, null]}
             display="flex"
             flexDirection="column"
             fontSize="14px"
             fontWeight="light"
           >
-            <Box w={[138, 258, null, null, null, null]}>
-              <Text>{props.selectedAuthor}</Text>
+            <Box >
+              <Text>{selectedAuthor}</Text>
             </Box>
-            <Box w={[138, 258, null, null, null, null]} color="brand.grey">
-              <Text>16/12/2022</Text>
+            <Box  color="brand.grey">
+              <Text>{date}</Text>
             </Box>
           </Box>
           <Box
-            w={["70px", "70px", null, null, null, null]}
-            h={["24px", "24px", null, null, null, null]}
             display="flex"
             alignItems="center"
           >
@@ -64,7 +63,7 @@ export default function BlogPost(props) {
               fontWeight="light"
               ml={["8px", null, null, null, null, null]}
             >
-              <Text>3 min</Text>
+              <Text>{timePassed}</Text>
             </Box>
           </Box>
         </Box>
@@ -75,12 +74,13 @@ export default function BlogPost(props) {
       <>
         <Box
           w={[null, null, 352, 464, null, null]}
-          h={[null, null, "64px", "64px", null, null]}
+          minHeight={[null, null, "64px", "64px", null, null]}
           borderTop="1px"
           borderBottom="1px"
           borderColor="brand.grey"
           display="flex"
           alignItems="center"
+          justifyContent="space-between"
         >
           <Box
             w={[null, null, "48px", "48px", null, null]}
@@ -91,31 +91,28 @@ export default function BlogPost(props) {
             borderRadius="50%"
           >
             <Image
-              w={48}
-              h={48}
-              src={`${process.env.basePath}/img/Placeholder1128x280.jpg`}
-              alt="home-image"
+              width={48}
+              height={48}
+              src={imageSrc}
+              alt="online-logo"
               placeholder="blur"
               blurDataURL="url"
             ></Image>
           </Box>
           <Box
-            w={[null, null, 151, 151, null, null]}
-            ml={[null, null, "16px", "16px", null, null]}
             display="flex"
             flexDirection="column"
             fontSize="14px"
             fontWeight="light"
           >
-            <Box w={[null, null, 151, 151, null, null]}>
-              <Text>{props.selectedAuthor}</Text>
+            <Box>
+              <Text>{selectedAuthor}</Text>
             </Box>
-            <Box w={[null, null, 151, 151, null, null]} color="brand.grey">
-              <Text>16/12/2022</Text>
+            <Box color="brand.grey">
+              <Text>{date}</Text>
             </Box>
           </Box>
           <Box
-            w={[null, null, "70px", "70px", null, null]}
             h={[null, null, "24px", "24px", null, null]}
             display="flex"
             alignItems="center"
@@ -126,7 +123,7 @@ export default function BlogPost(props) {
               fontWeight="light"
               ml={[null, null, "8px", "8px", null, null]}
             >
-              <Text>3 min</Text>
+              <Text>{timePassed}</Text>
             </Box>
           </Box>
         </Box>

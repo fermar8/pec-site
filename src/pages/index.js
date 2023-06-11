@@ -51,7 +51,9 @@ export default function Home({ page }) {
     aboutKnowUs2,
 
     blogTitle,
+    blogInfo
   } = page;
+
   return (
     <Layout isHome={true}>
       <Head>
@@ -114,7 +116,7 @@ export default function Home({ page }) {
         tag3={aboutTag3}
         knowUs2={aboutKnowUs2}
       />
-      <Blog title={blogTitle} />
+      <Blog title={blogTitle} blogInfo={blogInfo} />
     </Layout>
   );
 }
@@ -167,6 +169,53 @@ export async function getStaticProps() {
     aboutKnowUs2: "Conoce al equipo",
 
     blogTitle: "Blog",
+    blogInfo: [
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
+        title: "Campañas SEM. Potencia tu presencia en línea",
+        summary: "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "4 de junio de 2023",
+        timestamp: 1685875800000,
+        url: "blog/potenciando-tu-presencia-en-linea",
+        tags: ["SEM", "Social Media"]
+      },
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/3-La-importancia-de-las-redes-sociales.jpg`,
+        title: "La importancia de las redes sociales",
+        summary: "En el panorama digital actual, una buena gestión del Social Media se ha vuelto crucial para el éxito de las empresas.",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "27 de mayo de 2023",
+        timestamp: 1685184600000,
+        url: "blog/la-importancia-de-las-redes-sociales",
+        tags: ["Social Media"]
+      },
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/2-Como-realizar-una-auditoría-SEO.jpg`,
+        title: "Cómo realizar una auditoría SEO",
+        summary: "Realizar una auditoría SEO es un paso crucial para asegurarte de que tu sitio web esté optimizado para los motores de búsqueda",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "19 de mayo 2023",
+        timestamp: 1684493400000,
+        url: "blog/como-realizar-una-auditoria-seo",
+        tags: ["SEO"]
+      },
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/1-Que-es-el-Posicionamiento-SEO.jpg`,
+        title: "¿Qué es el posicionamiento SEO?",
+        summary:
+          "El Posicionamiento SEO es un conjunto de técnicas y estrategias enfocadas en mejorar la visibilidad de un sitio web",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "13 de mayo de 2023",
+        timestamp: 1684002003000,
+        url: "blog/que-es-el-posicionamiento-seo",
+        tags: ["SEO"]
+      },
+    ]
   };
 
   return {
