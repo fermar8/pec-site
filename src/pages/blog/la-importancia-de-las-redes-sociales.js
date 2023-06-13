@@ -86,13 +86,19 @@ export default function ImportanciaDeLasRedesSociales() {
                 27/05/2023 - Eudald Capellades
               </Text>
               <Text mb="32px">
-                En el panorama digital actual, una buena gestión del Social
-                Media se ha vuelto crucial para el éxito de las empresas. Las
-                redes sociales ofrecen una plataforma dinámica y de amplio
-                alcance para interactuar con la audiencia, promover la marca y
-                generar oportunidades de negocio. En este artículo, exploraremos
-                la importancia de una buena gestión del Social Media y cómo
-                puede beneficiar a las empresas en su estrategia de marketing y
+                En el panorama digital actual, una{" "}
+                <chakra.span fontWeight="bold">
+                  buena gestión del Social Media se ha vuelto crucial para el
+                  éxito de las empresas.
+                </chakra.span>{" "}
+                Las redes sociales ofrecen una{" "}
+                <chakra.span fontWeight="bold">
+                  plataforma dinámica y de amplio alcance
+                </chakra.span>{" "}
+                para interactuar con la audiencia, promover la marca y generar
+                oportunidades de negocio. En este artículo, exploraremos la
+                importancia de una buena gestión del Social Media y cómo puede
+                beneficiar a las empresas en su estrategia de marketing y
                 comunicación.
               </Text>
 
@@ -125,21 +131,32 @@ export default function ImportanciaDeLasRedesSociales() {
             </Box>
             <Box>
               <Text mb="32px">
-                Una buena gestión del Social Media implica la creación y
-                ejecución de una estrategia de contenido coherente y relevante.
+                Una buena gestión del Social Media{" "}
+                <chakra.span fontWeight="bold">
+                  implica la creación y ejecución de una estrategia de contenido
+                  coherente y relevante.
+                </chakra.span>
                 Es fundamental definir los objetivos, identificar a la audiencia
                 objetivo y seleccionar las plataformas adecuadas. Al publicar
-                contenido de calidad, interesante y útil para la audiencia, las
-                empresas pueden fortalecer su presencia en las redes sociales y
-                mantener la atención y el interés de los seguidores. La gestión
-                del Social Media también implica una interacción activa con los
-                seguidores y la atención al cliente en las redes sociales.
-                Responder a los comentarios, mensajes y preguntas de manera
-                oportuna y personalizada crea un sentido de cercanía y confianza
-                con la audiencia. Esta interacción permite a las empresas
-                construir relaciones duraderas, resolver problemas de manera
-                eficiente y demostrar su compromiso con la satisfacción del
-                cliente.
+                <chakra.span fontWeight="bold">
+                  contenido de calidad, interesante y útil para la audiencia,
+                </chakra.span>{" "}
+                las empresas pueden fortalecer su presencia en las redes
+                sociales y mantener la atención y el interés de los seguidores.{" "}
+                <br />
+                <br /> La gestión del Social Media{" "}
+                <chakra.span fontWeight="bold">
+                  también implica una interacción activa con los seguidores
+                </chakra.span>{" "}
+                y la atención al cliente en las redes sociales. Responder a los
+                comentarios, mensajes y preguntas de manera oportuna y
+                personalizada{" "}
+                <chakra.span fontWeight="bold">
+                  crea un sentido de cercanía y confianza con la audiencia.
+                </chakra.span>{" "}
+                Esta interacción permite a las empresas construir relaciones
+                duraderas, resolver problemas de manera eficiente y demostrar su
+                compromiso con la satisfacción del cliente.
               </Text>
             </Box>
             <Box>
@@ -159,20 +176,37 @@ export default function ImportanciaDeLasRedesSociales() {
             <Box>
               <Text mt="16px">
                 Una buena gestión del Social Media es una herramienta poderosa
-                para aumentar la visibilidad de la marca. Al utilizar
-                estrategias como la publicación regular, el uso de hashtags
-                relevantes y la colaboración con influencers, las empresas
-                pueden ampliar su alcance y atraer a nuevos seguidores y
-                clientes potenciales. La visibilidad en las redes sociales
-                también puede mejorar el reconocimiento de la marca en otros
-                canales y fortalecer su posición en el mercado. La gestión
-                eficaz del Social Media puede generar oportunidades de negocio
-                reales. A través de estrategias como la promoción de productos,
-                la publicidad segmentada y la implementación de llamadas a la
-                acción (CTA), las empresas pueden captar la atención de la
-                audiencia y dirigirla hacia su sitio web o tienda en línea. Esto
-                puede resultar en un aumento de las conversiones, la generación
-                de leads y la adquisición de nuevos clientes.
+                para{" "}
+                <chakra.span fontWeight="bold">
+                  aumentar la visibilidad de la marca.
+                </chakra.span>{" "}
+                Al utilizar estrategias como la publicación regular, el uso de
+                hashtags relevantes y la colaboración con influencers, las
+                empresas pueden{" "}
+                <chakra.span fontWeight="bold">
+                  ampliar su alcance y atraer a nuevos seguidores y clientes
+                  potenciales.
+                </chakra.span>{" "}
+                La visibilidad en las redes sociales también puede{" "}
+                <chakra.span fontWeight="bold">
+                  mejorar el reconocimiento de la marca
+                </chakra.span>{" "}
+                en otros canales y fortalecer su posición en el mercado. <br />
+                <br />
+                La
+                <chakra.span fontWeight="bold">
+                  gestión eficaz del Social Media puede generar oportunidades de
+                  negocio reales.
+                </chakra.span>{" "}
+                A través de estrategias como la promoción de productos, la
+                publicidad segmentada y la implementación de llamadas a la
+                acción (CTA), las empresas pueden{" "}
+                <chakra.span fontWeight="bold">
+                  captar la atención de la audiencia
+                </chakra.span>{" "}
+                y dirigirla hacia su sitio web o tienda en línea. Esto puede
+                resultar en un aumento de las conversiones, la generación de
+                leads y la adquisición de nuevos clientes.
               </Text>
             </Box>
             <Box>
@@ -191,17 +225,26 @@ export default function ImportanciaDeLasRedesSociales() {
             </Box>
             <Box>
               <Text mt="16px" mb="32px">
-                La gestión de las redes sociales requiere mucho tiempo y
-                recursos, por lo que contratar a profesionales como ON LINE,
+                La{" "}
+                <chakra.span fontWeight="bold">
+                  gestión de las redes sociales requiere mucho tiempo y
+                  recursos,
+                </chakra.span>{" "}
+                por lo que contratar a profesionales como{" "}
+                <chakra.span fontWeight="bold">ON LINE,</chakra.span>
                 Agencia de Marketing Digital y Diseño Web en Barcelona, para
                 encargarse de esta tarea puede ser una decisión acertada.
-                Nuestro equipo dedicado se encargará de crear y ejecutar una
-                estrategia sólida en redes sociales, optimizando el tiempo y los
-                recursos disponibles. Nos ocuparemos de la creación de
+                <chakra.span fontWeight="bold">
+                  Nuestro equipo dedicado se encargará de crear y ejecutar
+                </chakra.span>{" "}
+                una estrategia sólida en redes sociales, optimizando el tiempo y
+                los recursos disponibles. Nos ocuparemos de la creación de
                 contenido, la interacción con la audiencia, el análisis de
                 resultados y la adaptación continua a las tendencias del
-                mercado, permitiéndote enfocarte en otras áreas clave de tu
-                negocio.
+                mercado,{" "}
+                <chakra.span fontWeight="bold">
+                  permitiéndote enfocarte en otras áreas clave de tu negocio.
+                </chakra.span>
               </Text>
             </Box>
             <Divider orientation="horizontal" />
@@ -218,9 +261,9 @@ export default function ImportanciaDeLasRedesSociales() {
                 Fuentes
               </Heading>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mt="16px" mb="8px" fontWeight="bold">
-              Redbooth  -{" "}
+                Redbooth -{" "}
                 <Link
                   href="https://redbooth.com/hub/es/social-media-es-importante-para-las-empresas/#:~:text=A%20trav%C3%A9s%20del%20Social%20Media,pero%20que%20resultan%20incluso%20m%C3%A1s"
                   passHref
@@ -239,9 +282,9 @@ export default function ImportanciaDeLasRedesSociales() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="8px" fontWeight="bold">
-              Puromarketing  -{" "}
+                Puromarketing -{" "}
                 <Link
                   href="https://www.puromarketing.com/42/16032/social-media-realmente-importante"
                   passHref
@@ -260,9 +303,9 @@ export default function ImportanciaDeLasRedesSociales() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="32px" fontWeight="bold">
-              Nuteco  -{" "}
+                Nuteco -{" "}
                 <Link
                   href="https://www.nutecoweb.com/importancia-social-media-una-empresa/"
                   passHref

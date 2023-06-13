@@ -329,7 +329,7 @@ export default function QueEsPosicionamientoSeo() {
                 Fuentes
               </Heading>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mt="16px" mb="8px" fontWeight="bold">
                 Go Daddy -{" "}
                 <Link
@@ -350,7 +350,7 @@ export default function QueEsPosicionamientoSeo() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="8px" fontWeight="bold">
                 Rockcontent -{" "}
                 <Link
@@ -371,7 +371,7 @@ export default function QueEsPosicionamientoSeo() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="32px" fontWeight="bold">
                 40defiebre -{" "}
                 <Link

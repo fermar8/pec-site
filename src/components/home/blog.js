@@ -5,12 +5,11 @@ import ButtonCarousel from "./blog/buttonCarousel";
 import { useState } from "react";
 
 export default function Blog(props) {
-  const { blogTitle, blogInfo } = props;
+  const { title, blogInfo } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
-  console.log('props', blogInfo[selectedIndex]);
   const [loaded, setLoaded] = useState(true);
 
-  const selectNewAuthor = (buttonIndex) => {
+  const selectNewBlog = (buttonIndex) => {
     setLoaded(false);
     setTimeout(() => {
       setSelectedIndex(buttonIndex);
@@ -19,7 +18,7 @@ export default function Blog(props) {
   };
 
   const selectButton = (buttonIndex) => {
-    selectNewAuthor(buttonIndex);
+    selectNewBlog(buttonIndex);
   };
 
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -45,7 +44,7 @@ export default function Blog(props) {
             color="brand.red"
             fontWeight="semibold"
           >
-            <Heading as="h3">Blog</Heading>
+            <Heading as="h3">{title}</Heading>
           </Box>
           <CardBlog
             loaded={loaded}
@@ -111,7 +110,7 @@ export default function Blog(props) {
             color="brand.red"
             fontWeight="semibold"
           >
-            <Heading as="h3">Blog</Heading>
+            <Heading as="h3">{title}</Heading>
           </Box>
           <Box
             display="flex"
@@ -184,7 +183,7 @@ export default function Blog(props) {
               color="brand.red"
               fontWeight="semibold"
             >
-              Blog
+              {title}
             </Heading>
           </Box>
           <Box h={[null, null, null, null, "24px", null]}></Box>
@@ -193,9 +192,9 @@ export default function Blog(props) {
             display="flex"
             justifyContent="space-between"
           >
-            <CardBlog blogInfo={blogInfo[0]}/>
-            <CardBlog blogInfo={blogInfo[1]}/>
-            <CardBlog blogInfo={blogInfo[2]}/>
+            <CardBlog blogInfo={blogInfo[0]} loaded={loaded}/>
+            <CardBlog blogInfo={blogInfo[1]} loaded={loaded}/>
+            <CardBlog blogInfo={blogInfo[2]} loaded={loaded}/>
           </Box>
         </VStack>
       </Flex>

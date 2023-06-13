@@ -1,45 +1,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/</loc>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</loc>
+    <loc>https://onlinedigital.es/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/nosotros</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</loc>
+    <loc>https://onlinedigital.es/nosotros</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/web</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</loc>
+    <loc>https://onlinedigital.es/servicios/web</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/diseño</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/diseño</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/ux-ui</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/ux-ui</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/seo</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/seo</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/sem</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/sem</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/social-media</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/social-media</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/blog</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/servicios/privacidad</loc>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pec-site-git-develop-fermar8.vercel.app/servicios/privacidad</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://onlinedigital.es/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://onlinedigital.es/blog/la-importancia-de-las-redes-sociales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onlinedigital.es/blog/potenciando-tu-presencia-en-linea</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onlinedigital.es/blog/como-realizar-una-auditoria-seo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onlinedigital.es/blog/que-es-el-posicionamiento-seo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

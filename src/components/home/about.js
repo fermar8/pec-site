@@ -42,6 +42,8 @@ export default function About({
             h={[227, 227, null, null, null, null]}
             w={[320, 440, null, null, null, null]}
             position="relative"
+            borderRadius="9px 9px 0px 0px"
+            overflow="hidden"
           >
             <Image
               fill

@@ -85,12 +85,20 @@ export default function ComoRealizarUnaAuditoriaSEO() {
               </Text>
               <Text mb="32px">
                 Realizar una auditoría SEO es un paso crucial para asegurarte de
-                que tu sitio web esté optimizado para los motores de búsqueda y
-                obtenga el máximo rendimiento en términos de visibilidad y
-                tráfico. En este artículo, te guiaremos a través de los pasos
-                esenciales para llevar a cabo una auditoría SEO efectiva,
-                identificar áreas de mejora y potenciar la presencia en línea de
-                tu sitio web.
+                que{" "}
+                <chakra.span fontWeight="bold">
+                  tu sitio web esté optimizado
+                </chakra.span>{" "}
+                para los motores de búsqueda y obtenga el{" "}
+                <chakra.span fontWeight="bold">
+                  máximo rendimiento en términos de visibilidad y tráfico.
+                </chakra.span>{" "}
+                En este artículo, te guiaremos a través de los pasos esenciales
+                para llevar a cabo una auditoría SEO efectiva, identificar áreas
+                de mejora y{" "}
+                <chakra.span fontWeight="bold">
+                  potenciar la presencia en línea de tu sitio web.
+                </chakra.span>
               </Text>
 
               <Box
@@ -122,13 +130,18 @@ export default function ComoRealizarUnaAuditoriaSEO() {
             </Box>
             <Box>
               <Text mb="32px">
-                Antes de comenzar con la auditoría SEO, es importante tener
-                claros los objetivos que deseas alcanzar. ¿Quieres mejorar la
-                posición en los motores de búsqueda? ¿Optimizar la velocidad de
-                carga del sitio web? ¿Aumentar la tasa de conversión? Definir
-                estos objetivos te permitirá enfocar tus esfuerzos en las áreas
-                clave durante la auditoría. Para llevar a cabo una auditoría SEO
-                efectiva, es fundamental contar con las herramientas adecuadas.
+                Antes de comenzar con la auditoría SEO, es importante{" "}
+                <chakra.span fontWeight="bold">
+                  tener claros los objetivos que deseas alcanzar.
+                </chakra.span>{" "}
+                ¿Quieres mejorar la posición en los motores de búsqueda?
+                ¿Optimizar la velocidad de carga del sitio web? ¿Aumentar la
+                tasa de conversión? Definir estos objetivos te permitirá enfocar
+                tus esfuerzos en las áreas clave durante la auditoría. <br />{" "}
+                Para llevar a cabo una auditoría SEO efectiva, es fundamental{" "}
+                <chakra.span fontWeight="bold">
+                  contar con las herramientas adecuadas.
+                </chakra.span>
                 Utiliza herramientas como{" "}
                 <Link href="https://analytics.google.com/analytics/web/">
                   <chakra.span
@@ -173,21 +186,38 @@ export default function ComoRealizarUnaAuditoriaSEO() {
             </Box>
             <Box>
               <Text mt="16px">
-                El análisis de palabras clave es esencial en una auditoría SEO.
-                Identifica las palabras clave relevantes para tu negocio y
-                analiza su rendimiento en términos de búsquedas, competencia y
-                relevancia. Asegúrate de utilizar estas palabras clave
-                estratégicamente en el contenido de tu sitio web y optimizar los
-                elementos como las metaetiquetas y los encabezados para mejorar
-                el posicionamiento en los motores de búsqueda. La experiencia
-                del usuario y la estructura de tu sitio web desempeñan un papel
-                crucial en el posicionamiento SEO. Evalúa la usabilidad de tu
-                sitio, la navegación, la velocidad de carga y la adaptabilidad a
-                dispositivos móviles. Asegúrate de que tu sitio sea intuitivo,
-                fácil de navegar y ofrezca una experiencia agradable para los
-                usuarios. Además, verifica que la estructura del sitio sea clara
-                y coherente, con URLs amigables y enlaces internos bien
-                estructurados.
+                El{" "}
+                <chakra.span fontWeight="bold">
+                  análisis de palabras clave es esencial
+                </chakra.span>{" "}
+                en una auditoría SEO. Identifica las palabras clave relevantes
+                para tu negocio y
+                <chakra.span fontWeight="bold">
+                  analiza su rendimiento
+                </chakra.span>{" "}
+                en términos de búsquedas, competencia y relevancia. Asegúrate de{" "}
+                <chakra.span fontWeight="bold">
+                  utilizar estas palabras clave estratégicamente
+                </chakra.span>{" "}
+                en el contenido de tu sitio web y optimizar los elementos como
+                las metaetiquetas y los encabezados para mejorar el
+                posicionamiento en los motores de búsqueda. <br /> <br /> La{" "}
+                <chakra.span fontWeight="bold">
+                  experiencia del usuario y la estructura
+                </chakra.span>{" "}
+                de tu sitio web desempeñan un papel crucial en el
+                posicionamiento SEO. Evalúa{" "}
+                <chakra.span fontWeight="bold">
+                  la usabilidad de tu sitio, la navegación, la velocidad de
+                  carga y la adaptabilidad a dispositivos móviles.
+                </chakra.span>{" "}
+                Asegúrate de que tu sitio sea intuitivo, fácil de navegar y
+                ofrezca una experiencia agradable para los usuarios. Además,
+                verifica que la{" "}
+                <chakra.span fontWeight="bold">
+                  estructura del sitio sea clara y coherente,
+                </chakra.span>{" "}
+                con URLs amigables y enlaces internos bien estructurados.
               </Text>
             </Box>
             <Box>
@@ -208,14 +238,24 @@ export default function ComoRealizarUnaAuditoriaSEO() {
               <Text mt="16px" mb="32px">
                 Contratar a profesionales como ON LINE, Agencia de Marketing
                 Digital y Diseño Web en Barcelona, para realizar una auditoría
-                SEO es una decisión estratégica que puede marcar la diferencia
-                en el rendimiento de tu sitio web. Nuestro equipo de expertos
+                SEO es una{" "}
+                <chakra.span fontWeight="bold">
+                  decisión estratégica que puede marcar la diferencia en el
+                  rendimiento de tu sitio web.
+                </chakra.span>{" "}
+                Nuestro{" "}
+                <chakra.span fontWeight="bold">equipo de expertos</chakra.span>
                 está altamente capacitado en las mejores prácticas de auditoría
                 SEO, y cuenta con el conocimiento y las herramientas necesarias
-                para realizar un análisis exhaustivo y preciso. Con nuestra
-                experiencia y enfoque personalizado, podemos identificar
-                oportunidades de mejora, optimizar tu sitio web y maximizar su
-                visibilidad en los motores de búsqueda.{" "}
+                <chakra.span fontWeight="bold">
+                  para realizar un análisis exhaustivo y preciso.
+                </chakra.span>{" "}
+                Con nuestra experiencia y enfoque personalizado,{" "}
+                <chakra.span fontWeight="bold">
+                  podemos identificar oportunidades de mejora, optimizar tu
+                  sitio web y maximizar su visibilidad en los motores de
+                  búsqueda.
+                </chakra.span>{" "}
                 <Link href="#contacto" passHref prefetch={false}>
                   {" "}
                   <chakra.span
@@ -245,7 +285,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 Fuentes
               </Heading>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mt="16px" mb="8px" fontWeight="bold">
                 HubSpot -{" "}
                 <Link
@@ -266,7 +306,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="8px" fontWeight="bold">
                 Semrush -{" "}
                 <Link
@@ -287,7 +327,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="32px" fontWeight="bold">
                 SEOptimer -{" "}
                 <Link

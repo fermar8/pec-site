@@ -21,7 +21,7 @@ export default function CardBlog(props) {
     url,
   } = props.blogInfo;
 
-  const [ timePassed, setTimePassed ] = useState("Loading...")
+  const [timePassed, setTimePassed] = useState("Loading...");
 
   useEffect(() => {
     setTimePassed(calculateTimePassed(timestamp));
@@ -34,9 +34,9 @@ export default function CardBlog(props) {
     const diff = Math.floor(currentDate.getTime() - date.getTime());
     const day = 1000 * 60 * 60 * 24;
 
-    const days = Math.floor(diff/day);
-    const months = Math.floor(days/31);
-    const years = Math.floor(months/12);
+    const days = Math.floor(diff / day);
+    const months = Math.floor(days / 31);
+    const years = Math.floor(months / 12);
 
     if (days < 1) {
       return "Hoy";
@@ -72,11 +72,12 @@ export default function CardBlog(props) {
         transition="1s"
       >
         <Box
-          w={[320, 320, null, null, null, null]}
+          w={[320, 440, null, null, null, null]}
           h={[146, 146, null, null, null, null]}
           mb={["16px", "16px", null, null, null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"
+          overflow="hidden"
         >
           <Image
             fill
@@ -105,25 +106,32 @@ export default function CardBlog(props) {
         >
           <Text fontSize="16px">{summary}</Text>
         </Box>
-        <BlogPost selectedAuthor={author} imageSrc={authorImgSrc} date={date} timePassed={timePassed} />
+        <BlogPost
+          selectedAuthor={author}
+          imageSrc={authorImgSrc}
+          date={date}
+          timePassed={timePassed}
+        />
       </Box>
     );
   } else if (isTablet) {
     return (
       <Box
-        h={[null, null, 434, 418, null, null]}
-        w={[null, null, 728, 952, null, null]}
+        h={[null, null, 434, null, null, null]}
+        w={[null, null, 720, null, null, null]}
         display="flex"
         flexDirection="column"
+        alignItems={props.isFirstPost ? "center" : "null"}
         opacity={opacityChange(props.loaded)}
         transition="1s"
       >
         <Box
-          w={[null, null, 352, 464, null, null]}
-          h={[null, null, 146, 146, null, null]}
+          w={props.isFirstPost ? "680px" : "352px"}
+          h={props.isFirstPost ? "286px" : "146px"}
           mb={[null, null, "32px", "32px", null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"
+          overflow="hidden"
         >
           <Image
             fill
@@ -134,7 +142,8 @@ export default function CardBlog(props) {
           ></Image>
         </Box>
         <Box
-          w={[null, null, 352, 464, null, null]}
+          w={props.isFirstPost ? "680px" : "352px"}
+          minHeight={props.isFirstPost ? null : "60px"}
           mb={[null, null, "16px", "16px", null, null]}
           lineHeight={[null, null, "16px", "16px", null, null]}
         >
@@ -148,7 +157,7 @@ export default function CardBlog(props) {
           </Link>
         </Box>
         <Box
-          w={[null, null, 352, 464, null, null]}
+          w={props.isFirstPost ? "680px" : "352px"}
           h={[null, null, "64px", "64px", null, null]}
           mb={[null, null, "24px", "24px", null, null]}
           lineHeight={[null, null, "16px", "16px", null, null]}
@@ -157,17 +166,32 @@ export default function CardBlog(props) {
             {summary}
           </Text>
         </Box>
-        <BlogPost selectedAuthor={author} imageSrc={authorImgSrc} date={date} timePassed={timePassed} />
+        <BlogPost
+          selectedAuthor={author}
+          imageSrc={authorImgSrc}
+          date={date}
+          timePassed={timePassed}
+          isFirstPost={props.isFirstPost}
+        />
       </Box>
     );
   } else {
     return (
-      <Box h="378px" w="359px" display="flex" flexDirection="column">
+      <Box
+        w={[null, null, null, null, 1128, null]}
+        display="flex"
+        flexDirection="column"
+        alignItems={props.isFirstPost ? "center" : "null"}
+        opacity={opacityChange(props.loaded)}
+        transition="1s"
+      >
         <Box
-          h="146px"
-          w="359px"
+          w={props.isFirstPost ? "1100px" : "352px"}
+          h={props.isFirstPost ? "360px" : "146px"}
+          mb={[null, null, "32px", "32px", null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"
+          overflow="hidden"
         >
           <Image
             fill
@@ -177,80 +201,38 @@ export default function CardBlog(props) {
             blurDataURL="url"
           ></Image>
         </Box>
-        <Box h="32px"></Box>
-        <Box h="32px">
+        <Box
+          w={props.isFirstPost ? "1100px" : "352px"}
+          minHeight={props.isFirstPost ? null : "60px"}
+          mb={[null, null, "16px", "16px", null, null]}
+          lineHeight={[null, null, "16px", "16px", null, null]}
+        >
           <Link href={url} prefetch={false}>
             <Heading
               as="h4"
-              fontSize="18px"
-              fontWeight="semibold"
-              lineHeight="16px"
+              fontSize={[null, null, "18px", "18px", null, null]}
             >
               {title}
             </Heading>
           </Link>
         </Box>
-        <Box h="16px"></Box>
-        <Box h="64px">
-          <Text lineHeight="16px">{summary}</Text>
-        </Box>
-        <Box h="24px"></Box>
         <Box
-          h="64px"
-          w="360px"
-          display="flex"
-          alignItems="center"
-          borderTop="1px"
-          borderBottom="1px"
-          borderColor="brand.grey"
+          w={props.isFirstPost ? "1100px" : "352px"}
+          h={[null, null, "64px", "64px", null, null]}
+          mb={[null, null, "24px", "24px", null, null]}
+          lineHeight={[null, null, "16px", "16px", null, null]}
         >
-          <Box w="16px"></Box>
-          <Box w="215px" h="48px" display="flex">
-            <Box
-              w="48px"
-              h="48px"
-              display="flex"
-              position="relative"
-              borderRadius="50%"
-            >
-              <Image
-                fill
-                src={authorImgSrc}
-                alt="home-image"
-                placeholder="blur"
-                blurDataURL="url"
-              ></Image>
-            </Box>
-            <Box w="16px"></Box>
-            <Box
-              w="151px"
-              display="flex"
-              flexDirection="column"
-              fontSize="14px"
-              fontWeight="light"
-            >
-              <Box w="151px">
-                <p>{author}</p>
-              </Box>
-              <Box w="151px" color="brand.grey">
-                <p>{date}</p>
-              </Box>
-            </Box>
-          </Box>
-          <Box w="38px"></Box>
-          <Box
-            w="70px"
-            h="24px"
-            display="flex"
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <TimeIcon />
-            <Box fontSize="14px" fontWeight="light">
-              <Text>{timePassed}</Text>
-            </Box>
-          </Box>
+          <Text fontSize={[null, null, "18px", "18px", null, null]}>
+            {summary}
+          </Text>
         </Box>
+        <BlogPost
+          selectedAuthor={author}
+          imageSrc={authorImgSrc}
+          date={date}
+          timePassed={timePassed}
+          isFirstPost={props.isFirstPost}
+        />
       </Box>
     );
   }

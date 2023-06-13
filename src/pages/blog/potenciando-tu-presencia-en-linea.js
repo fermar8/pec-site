@@ -84,13 +84,21 @@ export default function PotenciandoTuPresenciaEnLinea() {
               </Text>
               <Text mb="32px">
                 Las campañas SEM (Search Engine Marketing) se han convertido en
-                una herramienta fundamental en el mundo del marketing digital.
-                Consisten en estrategias de publicidad en los motores de
-                búsqueda, como Google, donde se muestran anuncios relevantes a
-                los usuarios que realizan búsquedas específicas. En este
+                una herramienta{" "}
+                <chakra.span fontWeight="bold">fundamental</chakra.span> en el
+                mundo del marketing digital. Consisten en{" "}
+                <chakra.span fontWeight="bold">
+                  estrategias de publicidad
+                </chakra.span>{" "}
+                en los motores de búsqueda, como Google, donde se muestran{" "}
+                <chakra.span fontWeight="bold">anuncios relevantes</chakra.span>{" "}
+                a los usuarios que realizan búsquedas específicas. En este
                 artículo, exploraremos los beneficios de las campañas SEM y cómo
-                pueden ayudar a las empresas a aumentar su visibilidad, atraer
-                tráfico cualificado y alcanzar sus objetivos de negocio.
+                pueden ayudar a las empresas a{" "}
+                <chakra.span fontWeight="bold">
+                  aumentar su visibilidad, atraer tráfico cualificado y alcanzar
+                  sus objetivos de negocio.
+                </chakra.span>
               </Text>
               <Box
                 alignSelf="center"
@@ -122,20 +130,40 @@ export default function PotenciandoTuPresenciaEnLinea() {
             <Box>
               <Text mb="32px">
                 Uno de los principales beneficios de las campañas SEM es la
-                capacidad de obtener un posicionamiento inmediato en los motores
-                de búsqueda. A través de los anuncios pagados, las empresas
-                pueden aparecer en los primeros resultados de búsqueda,
+                capacidad de{" "}
+                <chakra.span fontWeight="bold">
+                  obtener un posicionamiento inmediato
+                </chakra.span>{" "}
+                en los motores de búsqueda. A través de los{" "}
+                <chakra.span fontWeight="bold">anuncios pagados</chakra.span>,
+                las empresas pueden aparecer en los{" "}
+                <chakra.span fontWeight="bold">
+                  primeros resultados de búsqueda,
+                </chakra.span>
                 aumentando su visibilidad frente a una audiencia relevante. Esto
-                es especialmente útil para empresas nuevas o aquellas que deseen
-                destacar rápidamente en un mercado competitivo. p: Las campañas
-                SEM permiten a las empresas dirigirse a una audiencia altamente
-                específica y cualificada. Al configurar palabras clave
-                relevantes y segmentar según la ubicación, intereses o
-                demografía, se puede asegurar que los anuncios se muestren a las
-                personas adecuadas en el momento adecuado. Esto no solo aumenta
-                la probabilidad de generar tráfico a tu sitio web, sino que
-                también atrae a usuarios con más posibilidades de convertirse en
-                clientes.
+                es especialmente{" "}
+                <chakra.span fontWeight="bold">
+                  útil para empresas nuevas o aquellas que deseen destacar
+                  rápidamente
+                </chakra.span>{" "}
+                en un mercado competitivo. <br /> <br /> Las{" "}
+                <chakra.span fontWeight="bold">campañas SEM </chakra.span>
+                permiten a las empresas{" "}
+                <chakra.span fontWeight="bold">
+                  dirigirse a una audiencia altamente específica y cualificada.
+                </chakra.span>{" "}
+                Al configurar palabras clave relevantes y segmentar según la
+                ubicación, intereses o demografía,{" "}
+                <chakra.span fontWeight="bold">
+                  se puede asegurar que los anuncios se muestren a las personas
+                  adecuadas en el momento adecuado.
+                </chakra.span>{" "}
+                Esto no solo aumenta la probabilidad de generar tráfico a tu
+                sitio web, sino que también{" "}
+                <chakra.span fontWeight="bold">
+                  atrae a usuarios con más posibilidades de convertirse en
+                  clientes.
+                </chakra.span>
               </Text>
             </Box>
             <Box>
@@ -153,19 +181,25 @@ export default function PotenciandoTuPresenciaEnLinea() {
             </Box>
             <Box>
               <Text mt="16px">
-                Con las campañas SEM, las empresas tienen un control total sobre
-                su presupuesto y estrategia. Puedes establecer límites de gasto
-                diario y ajustar las pujas según tus necesidades y objetivos.
-                Además, puedes pausar o modificar las campañas en cualquier
-                momento, lo que brinda flexibilidad para adaptarte a los cambios
-                en el mercado o a los resultados obtenidos. Una de las grandes
-                ventajas de las campañas SEM es la posibilidad de medir de
-                manera precisa los resultados obtenidos. Puedes obtener
-                información detallada sobre el rendimiento de tus anuncios, como
-                las impresiones, clics y conversiones. Esta información te
-                permite evaluar el retorno de la inversión (ROI) y realizar
-                ajustes para optimizar tu estrategia y obtener mejores
-                resultados.
+                Con las campañas SEM, las empresas tienen un{" "}
+                <chakra.span fontWeight="bold">
+                  control total sobre su presupuesto y estrategia.
+                </chakra.span>{" "}
+                Puedes establecer límites de gasto diario y ajustar las pujas
+                según tus necesidades y objetivos. Además, puedes pausar o
+                modificar las campañas en cualquier momento, lo que brinda{" "}
+                <chakra.span fontWeight="bold">flexibilidad</chakra.span> para
+                adaptarte a los cambios en el mercado o a los resultados
+                obtenidos. <br /> <br /> Una de las grandes ventajas de las
+                campañas SEM es la posibilidad de{" "}
+                <chakra.span fontWeight="bold">
+                  medir de manera precisa
+                </chakra.span>{" "}
+                los resultados obtenidos. Puedes obtener información detallada
+                sobre el rendimiento de tus anuncios, como las impresiones,
+                clics y conversiones. Esta información te permite evaluar el
+                retorno de la inversión (ROI) y realizar ajustes para optimizar
+                tu estrategia y obtener mejores resultados.
               </Text>
             </Box>
             <Box>
@@ -184,17 +218,31 @@ export default function PotenciandoTuPresenciaEnLinea() {
             </Box>
             <Box>
               <Text mt="16px" mb="32px">
-                Las campañas SEM son una estrategia efectiva para aumentar la
-                visibilidad, atraer tráfico cualificado y alcanzar los objetivos
-                de negocio en el entorno digital. Al obtener un posicionamiento
-                inmediato en los motores de búsqueda y dirigirse a una audiencia
+                Las campañas SEM son una{" "}
+                <chakra.span fontWeight="bold">estrategia efectiva</chakra.span>{" "}
+                para aumentar la visibilidad, atraer tráfico cualificado y
+                alcanzar los objetivos de negocio en el entorno digital. Al
+                obtener un{" "}
+                <chakra.span fontWeight="bold">
+                  posicionamiento inmediato
+                </chakra.span>{" "}
+                en los motores de búsqueda y dirigirse a una audiencia
                 específica, las empresas pueden generar resultados rápidos y
-                significativos. Además, el control total del presupuesto y la
-                medición precisa de los resultados brindan la oportunidad de
-                optimizar constantemente la estrategia y obtener un ROI
-                favorable. Contratar a profesionales como ON LINE, Agencia de
-                Marketing Digital y Diseño Web en Barcelona, para gestionar tus
-                campañas de SEM es clave para obtener resultados óptimos.
+                significativos. Además, el{" "}
+                <chakra.span fontWeight="bold">
+                  control total del presupuesto
+                </chakra.span>{" "}
+                y la medición precisa de los resultados brindan la oportunidad
+                de optimizar constantemente la estrategia y obtener un ROI
+                favorable. <br /> <br />{" "}
+                <chakra.span fontWeight="bold">
+                  Contratar a profesionales como ON LINE
+                </chakra.span>
+                , Agencia de Marketing Digital y Diseño Web en Barcelona, para
+                gestionar tus campañas de SEM{" "}
+                <chakra.span fontWeight="bold">
+                  es clave para obtener resultados óptimos.
+                </chakra.span>
                 Nuestro equipo experto cuenta con el conocimiento y la
                 experiencia necesaria para diseñar estrategias efectivas,
                 optimizar tus anuncios y maximizar tu ROI, permitiéndote
@@ -216,7 +264,7 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 Fuentes
               </Heading>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mt="16px" mb="8px" fontWeight="bold">
                 Cyberclick -{" "}
                 <Link
@@ -237,7 +285,7 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="8px" fontWeight="bold">
                 Camara de Comercio España -{" "}
                 <Link
@@ -258,9 +306,9 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 </Link>
               </Text>
             </Box>
-            <Box>
+            <Box textAlign="start">
               <Text mb="32px" fontWeight="bold">
-              Eserp  -{" "}
+                Eserp -{" "}
                 <Link
                   href="https://es.eserp.com/articulos/que-es-y-para-que-sirve-el-sem/"
                   passHref
