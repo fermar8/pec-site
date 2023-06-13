@@ -82,7 +82,7 @@ export default function ImportanciaDeLasRedesSociales() {
                 lineHeight="1"
                 mb="32px"
               >
-                27/05/2023 - Eudald Capellades
+                27/05/2023 - Online Digital
               </Text>
               <Text mb="32px">
                 En el panorama digital actual, una{" "}

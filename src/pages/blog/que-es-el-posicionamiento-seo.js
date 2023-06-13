@@ -80,7 +80,7 @@ export default function QueEsPosicionamientoSeo() {
                 lineHeight="1"
                 mb="32px"
               >
-                13/05/2023 - Eudald Capellades
+                13/05/2023 - Online Digital
               </Text>
               <Box
                 alignSelf="center"

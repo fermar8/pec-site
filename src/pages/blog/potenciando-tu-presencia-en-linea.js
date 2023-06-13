@@ -79,7 +79,7 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 lineHeight="1"
                 mb="32px"
               >
-                4/06/2023 - Eudald Capellades
+                4/06/2023 - Online Digital
               </Text>
               <Text mb="32px">
                 Las campañas SEM (Search Engine Marketing) se han convertido en

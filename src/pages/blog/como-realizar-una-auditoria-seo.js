@@ -80,7 +80,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 lineHeight="1"
                 mb="32px"
               >
-                19/05/2023 - Eudald Capellades
+                19/05/2023 - Online Digital
               </Text>
               <Text mb="32px">
                 Realizar una auditoría SEO es un paso crucial para asegurarte de
