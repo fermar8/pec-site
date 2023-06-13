@@ -51,7 +51,6 @@ export default function PotenciandoTuPresenciaEnLinea() {
           bg="brand.whiteBackground"
           alignItems="center"
           flexDirection="column"
-          textAlign="justify"
         >
           <VStack
             w={[320, null, 720, null, 1128, null]}
