@@ -97,7 +97,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 para llevar a cabo una auditoría SEO efectiva, identificar áreas
                 de mejora y{" "}
                 <chakra.span fontWeight="bold">
-                  potenciar la presencia en línea de tu sitio web.
+                  potenciar la presencia en línea de tu sitio web. 
                 </chakra.span>
               </Text>
 
