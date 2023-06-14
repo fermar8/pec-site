@@ -82,19 +82,22 @@ export default function QueEsPosicionamientoSeo() {
               >
                 13/05/2023 - Online Digital
               </Text>
-              <Box
-                alignSelf="center"
-                width={[320, null, 720, null, 1128, null]}
-                height={[264, null, 340, null, 440, null]}
-                position="relative"
-              >
-                <Image
-                  fill
-                  src={`${process.env.basePath}/img/blog/1-Que-es-el-Posicionamiento-SEO.jpg`}
-                  alt="gráfica-posicionamiento-SEO"
-                  sizes="(min-width: 360) 320px, (min-width: 720) 460px, (min-width: 1200), 1128px"
-                  priority={true}
-                ></Image>
+              <Box display="flex" justifyContent="center" alignItems="center">
+                <Box
+                  width={[320, null, 720, null, 720, null]}
+                  height={[264, null, 340, null, 340, null]}
+                  position="relative"
+                  mt="30px"
+                  mb="30px"
+                >
+                  <Image
+                    fill
+                    src={`${process.env.basePath}/img/blog/1-Que-es-el-Posicionamiento-SEO.jpg`}
+                    alt="gráfica-posicionamiento-SEO"
+                    sizes="(min-width: 360) 320px, (min-width: 720) 720px, (min-width: 1200), 720px"
+                    priority={true}
+                  ></Image>
+                </Box>
               </Box>
               <Heading
                 as="h2"
