@@ -127,7 +127,7 @@ export default function CardBlog(props) {
       >
         <Box
           w={props.isFirstPost ? "680px" : "352px"}
-          h={props.isFirstPost ? "286px" : "146px"}
+          h={props.isFirstPost ? "286px" : "180px"}
           mb={[null, null, "32px", "32px", null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"
@@ -187,7 +187,7 @@ export default function CardBlog(props) {
       >
         <Box
           w={props.isFirstPost ? "1100px" : "352px"}
-          h={props.isFirstPost ? "360px" : "146px"}
+          h={props.isFirstPost ? "360px" : "240px"}
           mb={[null, null, "32px", "32px", null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"

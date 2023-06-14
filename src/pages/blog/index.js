@@ -52,7 +52,12 @@ export default function Blog({ page }) {
           <meta name="theme-color" content="#ffffff" />
         </Head>
         <>
-          <Flex justify="center" alignItems="center" bg="brand.pureWhite" mb="32px">
+          <Flex
+            justify="center"
+            alignItems="center"
+            bg="brand.pureWhite"
+            mb="32px"
+          >
             <VStack
               w={[320, 480, null, null, null, null]}
               display="flex"
@@ -168,22 +173,31 @@ export default function Blog({ page }) {
                   Blog
                 </Heading>
               </Box>
-              <Box display="flex" flexWrap="wrap" width="100%" overflow="hidden">
-                  {blogInfo.map((post, i) => (
-                    <Box
-                      key={i}
-                      backgroundColor={i === 0 ? "brand.warmBackground" : null}
-                      padding={i === 0 ? "24px 0px 0px 0px" : null}
-                      width={i === 0 ? "720px" : "360px"}
-                      borderRadius={i === 0 ? "9px 9px 9px 9px" : null}
-                      border={i === 0 ? "1px solid #FFE2DC" : null}
-                      display="inline-block"
-                      mb="40px"
-                    >
-                      <CardBlog loaded={true} blogInfo={post} isFirstPost={i === 0 ? true : false} />
-                    </Box>
-                  ))}
-                </Box>
+              <Box
+                display="flex"
+                flexWrap="wrap"
+                width="100%"
+                overflow="hidden"
+              >
+                {blogInfo.map((post, i) => (
+                  <Box
+                    key={i}
+                    backgroundColor={i === 0 ? "brand.warmBackground" : null}
+                    padding={i === 0 ? "24px 0px 24px 0px" : null}
+                    width={i === 0 ? "720px" : "360px"}
+                    borderRadius={i === 0 ? "9px 9px 9px 9px" : null}
+                    border={i === 0 ? "1px solid #FFE2DC" : null}
+                    display="inline-block"
+                    mb="40px"
+                  >
+                    <CardBlog
+                      loaded={true}
+                      blogInfo={post}
+                      isFirstPost={i === 0 ? true : false}
+                    />
+                  </Box>
+                ))}
+              </Box>
             </VStack>
           </Flex>
         </>
@@ -255,22 +269,31 @@ export default function Blog({ page }) {
                   Blog
                 </Heading>
               </Box>
-              <Box display="flex" flexWrap="wrap" width="100%" overflow="hidden">
-                  {blogInfo.map((post, i) => (
-                    <Box
-                      key={i}
-                      backgroundColor={i === 0 ? "brand.warmBackground" : null}
-                      padding={i === 0 ? "64px 0px 64px 0px" : null}
-                      width={i === 0 ? "1128px" : "370px"}
-                      borderRadius={i === 0 ? "9px 9px 9px 9px" : null}
-                      border={i === 0 ? "1px solid #FFE2DC" : null}
-                      display="inline-block"
-                      mb="40px"
-                    >
-                      <CardBlog loaded={true} blogInfo={post} isFirstPost={i === 0 ? true : false} />
-                    </Box>
-                  ))}
-                </Box>
+              <Box
+                display="flex"
+                flexWrap="wrap"
+                width="100%"
+                overflow="hidden"
+              >
+                {blogInfo.map((post, i) => (
+                  <Box
+                    key={i}
+                    backgroundColor={i === 0 ? "brand.warmBackground" : null}
+                    padding={i === 0 ? "64px 0px 64px 0px" : null}
+                    width={i === 0 ? "1128px" : "370px"}
+                    borderRadius={i === 0 ? "9px 9px 9px 9px" : null}
+                    border={i === 0 ? "1px solid #FFE2DC" : null}
+                    display="inline-block"
+                    mb="80px"
+                  >
+                    <CardBlog
+                      loaded={true}
+                      blogInfo={post}
+                      isFirstPost={i === 0 ? true : false}
+                    />
+                  </Box>
+                ))}
+              </Box>
             </VStack>
           </Flex>
         </>
@@ -283,28 +306,28 @@ export async function getStaticProps() {
   const page = {
     blogInfo: [
       {
-        mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
-        title: "Campañas SEM. Potencia tu presencia en línea",
-        summary:
-          "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
-        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
-        author: "Online Digital",
-        date: "4 de junio de 2023",
-        timestamp: 1685875800000,
-        url: "blog/potenciando-tu-presencia-en-linea",
-        tags: ["SEM", "Social Media"],
-      },
-      {
         mainImageSrc: `${process.env.basePath}/img/blog/3-La-importancia-de-las-redes-sociales.jpg`,
         title: "La importancia de las redes sociales",
         summary:
           "En el panorama digital actual, una buena gestión del Social Media se ha vuelto crucial para el éxito de las empresas.",
         authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
         author: "Online Digital",
-        date: "27 de mayo de 2023",
-        timestamp: 1685184600000,
+        date: "4 de junio de 2023",
+        timestamp: 1685875800000,
         url: "blog/la-importancia-de-las-redes-sociales",
         tags: ["Social Media"],
+      },
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
+        title: "Campañas SEM. Potencia tu presencia en línea",
+        summary:
+          "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "27 de mayo de 2023",
+        timestamp: 1685184600000,
+        url: "blog/potenciando-tu-presencia-en-linea",
+        tags: ["SEM", "Social Media"],
       },
       {
         mainImageSrc: `${process.env.basePath}/img/blog/2-Como-realizar-una-auditoría-SEO.jpg`,

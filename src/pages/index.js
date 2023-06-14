@@ -171,26 +171,26 @@ export async function getStaticProps() {
     blogTitle: "Blog",
     blogInfo: [
       {
-        mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
-        title: "Campañas SEM. Potencia tu presencia en línea",
-        summary: "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
-        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
-        author: "Online Digital",
-        date: "4 de junio de 2023",
-        timestamp: 1685875800000,
-        url: "blog/potenciando-tu-presencia-en-linea",
-        tags: ["SEM", "Social Media"]
-      },
-      {
         mainImageSrc: `${process.env.basePath}/img/blog/3-La-importancia-de-las-redes-sociales.jpg`,
         title: "La importancia de las redes sociales",
         summary: "En el panorama digital actual, una buena gestión del Social Media se ha vuelto crucial para el éxito de las empresas.",
         authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
         author: "Online Digital",
-        date: "27 de mayo de 2023",
-        timestamp: 1685184600000,
+        date: "4 de junio de 2023",
+        timestamp: 1685875800000,
         url: "blog/la-importancia-de-las-redes-sociales",
         tags: ["Social Media"]
+      },
+      {
+        mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
+        title: "Campañas SEM. Potencia tu presencia en línea",
+        summary: "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
+        authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
+        author: "Online Digital",
+        date: "27 de mayo de 2023",
+        timestamp: 1685184600000,
+        url: "blog/potenciando-tu-presencia-en-linea",
+        tags: ["SEM", "Social Media"]
       },
       {
         mainImageSrc: `${process.env.basePath}/img/blog/2-Como-realizar-una-auditoría-SEO.jpg`,

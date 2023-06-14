@@ -166,17 +166,15 @@ export default function Blog(props) {
     );
   } else {
     return (
-      <Flex justify="center" alignItems="center" bg="brand.pureWhite">
+      <Flex justify="center" alignItems="center" bg="brand.pureWhite" pb="80px" pt="80px">
         <VStack
           w={[null, null, null, null, 1128, null]}
-          h={[null, null, null, null, 570, null]}
           display="flex"
           flexDirection="column"
           align="stretch"
           spacing="0px"
         >
-          <Box h={[null, null, null, null, "64px", null]}></Box>
-          <Box h={[null, null, null, null, "40px", null]}>
+          <Box>
             <Heading
               as="h3"
               fontSize={[null, null, null, null, "32px", null]}
@@ -186,9 +184,7 @@ export default function Blog(props) {
               {title}
             </Heading>
           </Box>
-          <Box h={[null, null, null, null, "24px", null]}></Box>
           <Box
-            h={[null, null, null, null, "378px", null]}
             display="flex"
             justifyContent="space-between"
           >
