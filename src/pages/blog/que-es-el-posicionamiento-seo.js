@@ -124,9 +124,9 @@ export default function QueEsPosicionamientoSeo() {
                 objetivo principal es lograr{" "}
                 <chakra.span fontWeight="bold">
                   que el sitio web aparezca en los primeros lugares de las
-                  páginas de resultados{" "}
+                  páginas de resultados,{" "}
                 </chakra.span>
-                , aumentando así la cantidad y calidad del tráfico web. <br />
+                 aumentando así la cantidad y calidad del tráfico web. <br />
                 <br />
                 El Posicionamiento SEO se basa en una serie de principios
                 fundamentales que los motores de búsqueda utilizan para

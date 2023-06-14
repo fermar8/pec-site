@@ -105,7 +105,8 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                   width={[320, null, 720, null, 720, null]}
                   height={[264, null, 340, null, 340, null]}
                   position="relative"
-                  mt="30px" mb="30px"
+                  mt="30px"
+                  mb="30px"
                 >
                   <Image
                     fill
@@ -142,7 +143,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 Para llevar a cabo una auditoría SEO efectiva, es fundamental{" "}
                 <chakra.span fontWeight="bold">
                   contar con las herramientas adecuadas.
-                </chakra.span>
+                </chakra.span>{" "}
                 Utiliza herramientas como{" "}
                 <Link href="https://analytics.google.com/analytics/web/">
                   <chakra.span
@@ -194,6 +195,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 en una auditoría SEO. Identifica las palabras clave relevantes
                 para tu negocio y
                 <chakra.span fontWeight="bold">
+                  {" "}
                   analiza su rendimiento
                 </chakra.span>{" "}
                 en términos de búsquedas, competencia y relevancia. Asegúrate de{" "}
@@ -247,7 +249,7 @@ export default function ComoRealizarUnaAuditoriaSEO() {
                 Nuestro{" "}
                 <chakra.span fontWeight="bold">equipo de expertos</chakra.span>
                 está altamente capacitado en las mejores prácticas de auditoría
-                SEO, y cuenta con el conocimiento y las herramientas necesarias
+                SEO, y cuenta con el conocimiento y las herramientas necesarias{" "}
                 <chakra.span fontWeight="bold">
                   para realizar un análisis exhaustivo y preciso.
                 </chakra.span>{" "}

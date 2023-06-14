@@ -138,7 +138,7 @@ export default function ImportanciaDeLasRedesSociales() {
                   implica la creación y ejecución de una estrategia de contenido
                   coherente y relevante.
                 </chakra.span>
-                Es fundamental definir los objetivos, identificar a la audiencia
+                {" "}Es fundamental definir los objetivos, identificar a la audiencia
                 objetivo y seleccionar las plataformas adecuadas. Al publicar
                 <chakra.span fontWeight="bold">
                   contenido de calidad, interesante y útil para la audiencia,
@@ -197,7 +197,7 @@ export default function ImportanciaDeLasRedesSociales() {
                 <br />
                 La
                 <chakra.span fontWeight="bold">
-                  gestión eficaz del Social Media puede generar oportunidades de
+                {" "}gestión eficaz del Social Media puede generar oportunidades de
                   negocio reales.
                 </chakra.span>{" "}
                 A través de estrategias como la promoción de productos, la
@@ -233,9 +233,9 @@ export default function ImportanciaDeLasRedesSociales() {
                   recursos,
                 </chakra.span>{" "}
                 por lo que contratar a profesionales como{" "}
-                <chakra.span fontWeight="bold">ON LINE,</chakra.span>
+                <chakra.span fontWeight="bold">ON LINE, {" "}</chakra.span>
                 Agencia de Marketing Digital y Diseño Web en Barcelona, para
-                encargarse de esta tarea puede ser una decisión acertada.
+                encargarse de esta tarea puede ser una decisión acertada. {" "}
                 <chakra.span fontWeight="bold">
                   Nuestro equipo dedicado se encargará de crear y ejecutar
                 </chakra.span>{" "}

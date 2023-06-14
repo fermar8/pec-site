@@ -428,22 +428,29 @@ export default function Footer() {
           </Box>
           <Box display="flex" justifyContent="center" w="100%" mb="16px">
             <Box width="48px" height="48px">
-              <Image
-                height={48}
-                width={48}
-                src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
-                alt="twitter-icon"
-              ></Image>
+              <Link href="https://twitter.com/ONLINEMktDig" prefetch={false}>
+                <Image
+                  height={48}
+                  width={48}
+                  src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
+                  alt="twitter-icon"
+                ></Image>
+              </Link>
             </Box>
             <Box width="48px" height="48px">
-              <Image
-                height={48}
-                width={48}
-                src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
-                alt="linkedin-icon"
-                placeholder="blur"
-                blurDataURL="url"
-              ></Image>
+              <Link
+                href="https://www.linkedin.com/company/online-marketingdigital/"
+                prefetch={false}
+              >
+                <Image
+                  height={48}
+                  width={48}
+                  src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
+                  alt="linkedin-icon"
+                  placeholder="blur"
+                  blurDataURL="url"
+                ></Image>
+              </Link>
             </Box>
           </Box>
         </Box>
@@ -828,22 +835,29 @@ export default function Footer() {
           </Box>
           <Box display="flex" justifyContent="center" w="100%" pb="20px">
             <Box width="48px" height="48px">
-              <Image
-                height={48}
-                width={48}
-                src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
-                alt="twitter-icon"
-              ></Image>
+              <Link href="https://twitter.com/ONLINEMktDig" prefetch={false}>
+                <Image
+                  height={48}
+                  width={48}
+                  src={`${process.env.basePath}/img/social-media/twitterIcon.svg`}
+                  alt="twitter-icon"
+                ></Image>
+              </Link>
             </Box>
             <Box width="48px" height="48px">
-              <Image
-                height={48}
-                width={48}
-                src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
-                alt="linkedin-icon"
-                placeholder="blur"
-                blurDataURL="url"
-              ></Image>
+              <Link
+                href="https://www.linkedin.com/company/online-marketingdigital/"
+                prefetch={false}
+              >
+                <Image
+                  height={48}
+                  width={48}
+                  src={`${process.env.basePath}/img/social-media/linkedinIcon.svg`}
+                  alt="linkedin-icon"
+                  placeholder="blur"
+                  blurDataURL="url"
+                ></Image>
+              </Link>
             </Box>
           </Box>
         </Box>

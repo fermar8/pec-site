@@ -140,7 +140,7 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 <chakra.span fontWeight="bold">anuncios pagados</chakra.span>,
                 las empresas pueden aparecer en los{" "}
                 <chakra.span fontWeight="bold">
-                  primeros resultados de búsqueda,
+                  primeros resultados de búsqueda,{" "}
                 </chakra.span>
                 aumentando su visibilidad frente a una audiencia relevante. Esto
                 es especialmente{" "}
@@ -245,7 +245,7 @@ export default function PotenciandoTuPresenciaEnLinea() {
                 <chakra.span fontWeight="bold">
                   es clave para obtener resultados óptimos.
                 </chakra.span>
-                Nuestro equipo experto cuenta con el conocimiento y la
+                {" "}Nuestro equipo experto cuenta con el conocimiento y la
                 experiencia necesaria para diseñar estrategias efectivas,
                 optimizar tus anuncios y maximizar tu ROI, permitiéndote
                 enfocarte en tu negocio mientras nosotros nos encargamos del
