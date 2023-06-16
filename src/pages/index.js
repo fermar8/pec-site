@@ -51,7 +51,7 @@ export default function Home({ page }) {
     aboutKnowUs2,
 
     blogTitle,
-    blogInfo
+    blogInfo,
   } = page;
 
   return (
@@ -80,8 +80,10 @@ export default function Home({ page }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="ahrefs-site-verification" content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"/>
-        <meta name="google-site-verification" content="8NmG--7mCxfd2zdhGXe6aOglIqUqB5ld92zKh0XZS1E" />
+        <meta
+          name="ahrefs-site-verification"
+          content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"
+        />
       </Head>
       <Intro
         title={introTitle}
@@ -175,35 +177,38 @@ export async function getStaticProps() {
       {
         mainImageSrc: `${process.env.basePath}/img/blog/3-La-importancia-de-las-redes-sociales.jpg`,
         title: "La importancia de las redes sociales",
-        summary: "En el panorama digital actual, una buena gestión del Social Media se ha vuelto crucial para el éxito de las empresas.",
+        summary:
+          "En el panorama digital actual, una buena gestión del Social Media se ha vuelto crucial para el éxito de las empresas.",
         authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
         author: "Online Digital",
         date: "4 de junio de 2023",
         timestamp: 1685875800000,
         url: "blog/la-importancia-de-las-redes-sociales",
-        tags: ["Social Media"]
+        tags: ["Social Media"],
       },
       {
         mainImageSrc: `${process.env.basePath}/img/blog/4-Campañas-SEM-Potenciando-tu-presencia-en-línea.jpg`,
         title: "Campañas SEM. Potencia tu presencia en línea",
-        summary: "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
+        summary:
+          "Las campañas SEM se han convertido en una herramienta fundamental en el mundo del marketing digital.",
         authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
         author: "Online Digital",
         date: "27 de mayo de 2023",
         timestamp: 1685184600000,
         url: "blog/potenciando-tu-presencia-en-linea",
-        tags: ["SEM", "Social Media"]
+        tags: ["SEM", "Social Media"],
       },
       {
         mainImageSrc: `${process.env.basePath}/img/blog/2-Como-realizar-una-auditoría-SEO.jpg`,
         title: "Cómo realizar una auditoría SEO",
-        summary: "Realizar una auditoría SEO es un paso crucial para asegurarte de que tu sitio web esté optimizado para los motores de búsqueda",
+        summary:
+          "Realizar una auditoría SEO es un paso crucial para asegurarte de que tu sitio web esté optimizado para los motores de búsqueda",
         authorImgSrc: `${process.env.basePath}/img/social-media/onlineLogo.svg`,
         author: "Online Digital",
         date: "19 de mayo 2023",
         timestamp: 1684493400000,
         url: "blog/como-realizar-una-auditoria-seo",
-        tags: ["SEO"]
+        tags: ["SEO"],
       },
       {
         mainImageSrc: `${process.env.basePath}/img/blog/1-Que-es-el-Posicionamiento-SEO.jpg`,
@@ -215,9 +220,9 @@ export async function getStaticProps() {
         date: "13 de mayo de 2023",
         timestamp: 1684002003000,
         url: "blog/que-es-el-posicionamiento-seo",
-        tags: ["SEO"]
+        tags: ["SEO"],
       },
-    ]
+    ],
   };
 
   return {
