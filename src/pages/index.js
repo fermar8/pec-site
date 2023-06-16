@@ -81,6 +81,7 @@ export default function Home({ page }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="ahrefs-site-verification" content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"/>
+        <meta name="google-site-verification" content="8NmG--7mCxfd2zdhGXe6aOglIqUqB5ld92zKh0XZS1E" />
       </Head>
       <Intro
         title={introTitle}
