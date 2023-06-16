@@ -80,6 +80,7 @@ export default function Home({ page }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="ahrefs-site-verification" content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"/>
       </Head>
       <Intro
         title={introTitle}
