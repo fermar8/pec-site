@@ -4,6 +4,7 @@ import Image from "next/image";
 import ButtonContactWithUs from "components/general/buttons/buttonContactWithUs";
 
 export default function Intro(props) {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   const [isMobileOrTablet] = useMediaQuery("(max-width: 1280px)");
   const { title, subtitle, text, buttonText } = props;
 
@@ -20,17 +21,17 @@ export default function Intro(props) {
       >
         <VStack w={[320, null, 528, null, null, null]}>
           <div>
-            <Box height="154px">
+            <Box height={isMobile ? 125 : 250} display="flex" justifyContent="center">
               <Box
                 display="flex"
                 justifyContent="center"
-                width="100%"
-                height="154px"
+                width={isMobile ? 188 : 375}
+                position="relative"
+                height={isMobile ? 125 : 250}
                 mb="8px"
               >
                 <Image
-                  width={154}
-                  height={154}
+                  fill
                   src={`${process.env.basePath}/img/digital-workplace.webp`}
                   alt="Trabajadores ON LINE Marketing Digital"
                   placeholder="blur"
@@ -109,10 +110,10 @@ export default function Intro(props) {
             <ButtonContactWithUs buttonText={buttonText} />
           </div>
         </VStack>
-        <Box marginLeft="140px" width="256px" height="256px">
+        <Box marginLeft="140px" width="375px" height="250px">
           <Image
-            width={256}
-            height={256}
+            width={375}
+            height={250}
             src={`${process.env.basePath}/img/digital-workplace.webp`}
             alt="Trabajadores ON LINE Marketing Digital"
             placeholder="blur"
