@@ -81,21 +81,21 @@ export default function Privacy() {
             </Text>
             <br />
             <Text>
-              _____________________________, en aplicación de la normativa
+              EUDALD CAPELLADES ORTEGA, en aplicación de la normativa
               vigente en materia de protección de datos de carácter personal,
               informa que los datos personales que se recogen a través de los
-              formularios del Sitio web: ________________________________, se
+              formularios del Sitio web: onlinedigital.es, se
               incluyen en los ficheros automatizados específicos de usuarios de
-              los servicios de _______________________________. <br /> <br />
+              los servicios de EUDALD CAPELLADES ORTEGA. <br /> <br />
               La recogida y tratamiento automatizado de los datos de carácter
               personal tiene como finalidad el mantenimiento de la relación
               comercial y el desempeño de tareas de información, formación,
               asesoramiento y otras actividades propias de
-              ______________________________________. <br /> <br />
+              EUDALD CAPELLADES ORTEGA. <br /> <br />
               Estos datos únicamente serán cedidos a aquellas entidades que sean
               necesarias con el único objetivo de dar cumplimiento a la
               finalidad anteriormente expuesta. <br /> <br />
-              _______________________________________ adopta las medidas
+              EUDALD CAPELLADES ORTEGA adopta las medidas
               necesarias para garantizar la seguridad, integridad y
               confidencialidad de los datos conforme a lo dispuesto en el
               Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de
@@ -106,12 +106,12 @@ export default function Privacy() {
               acceso, oposición, rectificación y cancelación reconocidos en el
               citado Reglamento (UE). El ejercicio de estos derechos puede
               realizarlo el propio usuario a través de email a:
-              _________________________________ o en la dirección:
-              ________________________________________ <br /> <br />
+              info@onlinedigital.es o en la dirección:
+              Av. de Madrid, 190, 1, 08028 Barcelona<br /> <br />
               El usuario manifiesta que todos los datos facilitados por él son
               ciertos y correctos, y se compromete a mantenerlos actualizados,
               comunicando los cambios a
-              _________________________________________ <br />
+              EUDALD CAPELLADES ORTEGA <br />
             </Text>{" "}
             <br />
             <Text fontWeight="bold">
@@ -119,19 +119,19 @@ export default function Privacy() {
             </Text>{" "}
             <br />
             <Text>
-              En __________________________________, trataremos tus datos
+              En EUDALD CAPELLADES ORTEGA, trataremos tus datos
               personales recabados a través del Sitio Web:
-              ______________________________, con las siguientes finalidades:{" "}
+              onlinedigital.es, con las siguientes finalidades:{" "}
               <br />
               1. En caso de contratación de los bienes y servicios ofertados a
-              través de ____________________________, para mantener la relación
+              través de onlinedigital.es, para mantener la relación
               contractual, así como la gestión, administración, información,
               prestación y mejora del servicio. <br />
               2. Envío de información solicitada a través de los formularios
-              dispuestos en ____________________________ <br />
+              dispuestos en onlinedigital.es <br />
               3. Remitir boletines (newsletters), así como comunicaciones
               comerciales de promociones y/o publicidad de
-              ______________________________ y del sector. <br /> <br />
+              onlinedigital.es y del sector. <br /> <br />
               Te recordamos que puedes oponerte al envío de comunicaciones
               comerciales por cualquier vía y en cualquier momento, remitiendo
               un correo electrónico a la dirección indicada anteriormente.{" "}
@@ -157,7 +157,7 @@ export default function Privacy() {
               El tratamiento de tus datos se realiza con las siguientes bases
               jurídicas que legitiman el mismo: <br />
               1. La solicitud de información y/o la contratación de los
-              servicios de ___________________________, cuyos términos y
+              servicios de EUDALD CAPELLADES ORTEGA, cuyos términos y
               condiciones se pondrán a tu disposición en todo caso, de forma
               previa a una eventual contratación. <br />
               2. El consentimiento libre, específico, informado e inequívoco, en
@@ -174,7 +174,7 @@ export default function Privacy() {
             <Text fontWeight="bold">¿Destinatarios:</Text> <br />
             <Text>
               Los datos no se comunicarán a ningún tercero ajeno a
-              ____________________, salvo obligación legal.
+              EUDALD CAPELLADES ORTEGA, salvo obligación legal.
             </Text>
             <br />
             <Text fontWeight="bold">
@@ -184,7 +184,7 @@ export default function Privacy() {
             <Text>
               En los casos en que el usuario incluya ficheros con datos de
               carácter personal en los servidores de alojamiento compartido,
-              _______________________________________ no se hace responsable del
+              EUDALD CAPELLADES ORTEGA no se hace responsable del
               incumplimiento por parte del usuario del RGPD
             </Text>
             <br />
@@ -193,19 +193,19 @@ export default function Privacy() {
             </Text>{" "}
             <br />
             <Text>
-              En __________________________________, trataremos tus datos
+              En EUDALD CAPELLADES ORTEGA, trataremos tus datos
               personales recabados a través del Sitio Web:
-              ______________________________, con las siguientes finalidades:{" "}
+              onlinedigital.es, con las siguientes finalidades:{" "}
               <br /> <br />
               1. En caso de contratación de los bienes y servicios ofertados a
-              través de ____________________________, para mantener la relación
+              través de onlinedigital.es, para mantener la relación
               contractual, así como la gestión, administración, información,
               prestación y mejora del servicio. <br />
               2. Envío de información solicitada a través de los formularios
-              dispuestos en ____________________________ <br />
+              dispuestos en onlinedigital.es <br />
               3. Remitir boletines (newsletters), así como comunicaciones
               comerciales de promociones y/o publicidad de
-              ______________________________ y del sector. <br /> <br />
+              onlinedigital.es y del sector. <br /> <br />
               Te recordamos que puedes oponerte al envío de comunicaciones
               comerciales por cualquier vía y en cualquier momento, remitiendo
               un correo electrónico a la dirección indicada anteriormente.{" "}
@@ -220,7 +220,7 @@ export default function Privacy() {
             </Text>{" "}
             <br />
             <Text>
-              ______________________________________ informa de que, como
+              EUDALD CAPELLADES ORTEGA informa de que, como
               prestador de servicio de alojamiento de datos y en virtud de lo
               establecido en la Ley 34/2002 de 11 de julio de Servicios de la
               Sociedad de la Información y de Comercio Electrónico (LSSI),
@@ -241,19 +241,19 @@ export default function Privacy() {
             </Text>{" "}
             <br />
             <Text fontWeight="bold">
-              Derechos propiedad intelectual ____________
+              Derechos propiedad intelectual EUDALD CAPELLADES ORTEGA
             </Text>{" "}
             <br />
             <Text>
-              _________________________________ es titular de todos los derechos
+              EUDALD CAPELLADES ORTEGA es titular de todos los derechos
               de autor, propiedad intelectual, industrial, &quot;know how&quot;
               y cuantos otros derechos guardan relación con los contenidos del
-              sitio web _______________________ y los servicios ofertados en el
+              sitio web onlinedigital.es y los servicios ofertados en el
               mismo, así como de los programas necesarios para su implementación
               y la información relacionada. No se permite la reproducción,
               publicación y/o uso no estrictamente privado de los contenidos,
               totales o parciales, del sitio web
-              __________________________________ sin el consentimiento previo y
+              onlinedigital.es sin el consentimiento previo y
               por escrito.
             </Text>
             <br />
@@ -263,8 +263,8 @@ export default function Privacy() {
             <br />
             <Text>
               El usuario debe respetar los programas de terceros puestos a su
-              disposición por ____________________________, aun siendo gratuitos
-              y/o de disposición pública. __________________________ dispone de
+              disposición por EUDALD CAPELLADES ORTEGA, aun siendo gratuitos
+              y/o de disposición pública. EUDALD CAPELLADES ORTEGA dispone de
               los derechos de explotación y propiedad intelectual necesarios del
               software. El usuario no adquiere derecho alguno o licencia por el
               servicio contratado, sobre el software necesario para la
@@ -274,10 +274,10 @@ export default function Privacy() {
               contratados y únicamente durante la duración de los mismos. Para
               toda actuación que exceda del cumplimiento del contrato, el
               usuario necesitará autorización por escrito por parte de
-              _______________________________, quedando prohibido al usuario
+              EUDALD CAPELLADES ORTEGA, quedando prohibido al usuario
               acceder, modificar, visualizar la configuración, estructura y
               ficheros de los servidores propiedad de
-              _______________________________, asumiendo la responsabilidad
+              EUDALD CAPELLADES ORTEGA, asumiendo la responsabilidad
               civil y penal derivada de cualquier incidencia que se pudiera
               producir en los servidores y sistemas de seguridad como
               consecuencia directa de una actuación negligente o maliciosa por
@@ -291,12 +291,12 @@ export default function Privacy() {
             <Text>
               Se prohíbe el uso contrario a la legislación sobre propiedad
               intelectual de los servicios prestados por
-              _______________________________ y, en particular de:  <br />{" "}
+              EUDALD CAPELLADES ORTEGA y, en particular de:  <br />{" "}
               <br />
               • La utilización que resulte contraria a las leyes españolas o que
               infrinja los derechos de terceros.  <br />
               • La publicación o la transmisión de cualquier contenido que, a
-              juicio de ________________________, resulte violento, obsceno,
+              juicio de EUDALD CAPELLADES ORTEGA, resulte violento, obsceno,
               abusivo, ilegal, racial, xenófobo o difamatorio.  <br />
               • Los cracks, números de serie de programas o cualquier otro
               contenido que vulnere derechos de la propiedad intelectual de
@@ -319,8 +319,8 @@ export default function Privacy() {
               tienen que ver con el funcionamiento del servicio online, comercio
               electrónico, derechos de autor, mantenimiento del orden público,
               así como principios universales de uso de Internet. El usuario
-              indemnizará a ___________________ por los gastos que generara la
-              imputación de ______________________________ en alguna causa cuya
+              indemnizará a EUDALD CAPELLADES ORTEGA por los gastos que generara la
+              imputación de EUDALD CAPELLADES ORTEGA en alguna causa cuya
               responsabilidad fuera atribuible al usuario, incluidos honorarios
               y gastos de defensa jurídica, incluso en el caso de una decisión
               judicial no definitiva.
@@ -331,7 +331,7 @@ export default function Privacy() {
             </Text>{" "}
             <br />
             <Text>
-              ____________________ realiza copias de seguridad de los contenidos
+              EUDALD CAPELLADES ORTEGA realiza copias de seguridad de los contenidos
               alojados en sus servidores, sin embargo no se responsabiliza de la
               pérdida o el borrado accidental de los datos por parte de los
               usuarios. De igual manera, no garantiza la reposición total de los
@@ -340,26 +340,26 @@ export default function Privacy() {
               tiempo transcurrido desde la última copia de seguridad. Los
               servicios ofertados, excepto los servicios específicos de backup,
               no incluyen la reposición de los contenidos conservados en las
-              copias de seguridad realizadas por ______________________________,
+              copias de seguridad realizadas por EUDALD CAPELLADES ORTEGA,
               cuando esta pérdida sea imputable al usuario; en este caso, se
               determinará una tarifa acorde a la complejidad y volumen de la
               recuperación, siempre previa aceptación del usuario. La reposición
               de datos borrados sólo está incluida en el precio del servicio
               cuando la pérdida del contenido sea debida a causas atribuibles a
-              ________________________________
+              EUDALD CAPELLADES ORTEGA.
             </Text>
             <br />
             <Text fontWeight="bold">Comunicaciones comerciales</Text> <br />
             <Text>
-              En aplicación de la LSSI. _______________________________ no
+              En aplicación de la LSSI. EUDALD CAPELLADES ORTEGA no
               enviará comunicaciones publicitarias o promocionales por correo
               electrónico u otro medio de comunicación electrónica equivalente
               que previamente no hubieran sido solicitadas o expresamente
               autorizadas por los destinatarios de las mismas. En el caso de
               usuarios con los que exista una relación contractual previa,
-              ______________________________ sí está autorizado al envío de
+             EUDALD CAPELLADES ORTEGA sí está autorizado al envío de
               comunicaciones comerciales referentes a productos o servicios de
-              ____________________________ que sean similares a los que
+              EUDALD CAPELLADES ORTEGA que sean similares a los que
               inicialmente fueron objeto de contratación con el cliente. En todo
               caso, el usuario, tras acreditar su identidad, podrá solicitar que
               no se le haga llegar más información comercial a través de los

@@ -39,7 +39,7 @@ export default function About({
           pb="40px"
         >
           <chakra.div
-            h={[227, 227, null, null, null, null]}
+            h={[380, 520, null, null, null, null]}
             w={[320, 440, null, null, null, null]}
             position="relative"
             borderRadius="9px 9px 0px 0px"
