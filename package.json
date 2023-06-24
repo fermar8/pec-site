@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "sharp": "^0.31.3"
   },
+  "sideEffects": false,
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.4",
     "cross-env": "^7.0.3",
