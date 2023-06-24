@@ -73,7 +73,7 @@ export default function CardBlog(props) {
       >
         <Box
           w={[320, 440, null, null, null, null]}
-          h={[146, 146, null, null, null, null]}
+          h={[240.5, 331, null, null, null, null]}
           mb={["16px", "16px", null, null, null, null]}
           position="relative"
           borderRadius="9px 9px 0px 0px"
@@ -82,7 +82,7 @@ export default function CardBlog(props) {
           <Image
             fill
             src={mainImageSrc}
-            alt="home-image"
+            alt="blog-image"
             placeholder="blur"
             blurDataURL="url"
           ></Image>
@@ -136,7 +136,7 @@ export default function CardBlog(props) {
           <Image
             fill
             src={mainImageSrc}
-            alt="home-image"
+            alt="blog-image"
             placeholder="blur"
             blurDataURL="url"
           ></Image>
@@ -196,7 +196,7 @@ export default function CardBlog(props) {
           <Image
             fill
             src={mainImageSrc}
-            alt="home-image"
+            alt="blog-image"
             placeholder="blur"
             blurDataURL="url"
           ></Image>

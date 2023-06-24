@@ -174,7 +174,7 @@ export default function Blog(props) {
           align="stretch"
           spacing="0px"
         >
-          <Box>
+          <Box mb="40px">
             <Heading
               as="h3"
               fontSize={[null, null, null, null, "32px", null]}

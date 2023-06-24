@@ -14,6 +14,7 @@ export default function ButtonCarousel(props) {
       <Box
         onClick={() => props.selectButton(props.index)}
         as="button"
+        aria-label="button-blog-carrousel"
         h={["24px", "24px", null, null, null, null]}
         w={["24px", "24px", null, null, null, null]}
         borderRadius="50%"
@@ -25,6 +26,7 @@ export default function ButtonCarousel(props) {
       <Box
         onClick={() => props.selectButton(props.index)}
         as="button"
+        aria-label="button-blog-carrousel"
         h={["24px", "24px", null, null, null, null]}
         w={["24px", "24px", null, null, null, null]}
         borderRadius="50%"

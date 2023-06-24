@@ -219,6 +219,7 @@ export default function Services(props) {
             h={[null, null, null, null, 152, null]}
             display="flex"
             flexDirection="column"
+            mb="64px"
           >
             <chakra.h2
               fontSize={[null, null, null, null, "32px", null]}
@@ -271,7 +272,7 @@ export default function Services(props) {
             <chakra.div
               h={[null, null, null, null, 326, null]}
               w={[null, null, null, null, 1128, null]}
-              mb={[null, null, null, null, "48px", null]}
+              mb={[null, null, null, null, "80px", null]}
               display="flex"
               justifyContent="space-between"
             >
