@@ -54,73 +54,65 @@ export default function Home({ page }) {
   } = page;
 
   return (
-    <Layout isHome={true}>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta
-          name="ahrefs-site-verification"
-          content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4"
-        />
-      </Head>
-      <Intro
-        title={introTitle}
-        subtitle={introSubtitle}
-        text={introText}
-        cta={introCta}
-        buttonText={buttonText}
-      />
-      <Services
-        title={servicesTitle}
-        subtitle={servicesSubtitle}
-        mainText={servicesMainText}
-        buttonText={buttonText}
-        webTitle={servicesWebTitle}
-        webText={servicesWebText}
-        designTitle={servicesDesignTitle}
-        designText={servicesDesignText}
-        uxTitle={servicesUxTitle}
-        uxText={servicesUxText}
-        seoTitle={servicesSeoTitle}
-        seoText={servicesSeoText}
-        semTitle={servicesSemTitle}
-        semText={servicesSemText}
-        socialTitle={servicesSocialTitle}
-        socialText={servicesSocialText}
-      />
-      <About
-        knowUs={aboutKnowUs}
-        title={aboutTitle}
-        text={aboutText}
-        text2={aboutText2}
-        tag={aboutTag}
-        tag2={aboutTag2}
-        tag3={aboutTag3}
-        knowUs2={aboutKnowUs2}
-      />
-      <Blog title={blogTitle} blogInfo={blogInfo} />
-    </Layout>
+    <><Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="theme-color" content="#ffffff" />
+      <meta
+        name="ahrefs-site-verification"
+        content="8a51fb864791d0d1b655cca0ad5ee7df7d10c2667119da159d2b16d40ce3c9b4" />
+    </Head><Layout isHome={true}>
+        <Intro
+          title={introTitle}
+          subtitle={introSubtitle}
+          text={introText}
+          cta={introCta}
+          buttonText={buttonText} />
+        <Services
+          title={servicesTitle}
+          subtitle={servicesSubtitle}
+          mainText={servicesMainText}
+          buttonText={buttonText}
+          webTitle={servicesWebTitle}
+          webText={servicesWebText}
+          designTitle={servicesDesignTitle}
+          designText={servicesDesignText}
+          uxTitle={servicesUxTitle}
+          uxText={servicesUxText}
+          seoTitle={servicesSeoTitle}
+          seoText={servicesSeoText}
+          semTitle={servicesSemTitle}
+          semText={servicesSemText}
+          socialTitle={servicesSocialTitle}
+          socialText={servicesSocialText} />
+        <About
+          knowUs={aboutKnowUs}
+          title={aboutTitle}
+          text={aboutText}
+          text2={aboutText2}
+          tag={aboutTag}
+          tag2={aboutTag2}
+          tag3={aboutTag3}
+          knowUs2={aboutKnowUs2} />
+        <Blog title={blogTitle} blogInfo={blogInfo} />
+      </Layout></>
   );
 }
 
