@@ -14,7 +14,6 @@
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@sendgrid/mail": "^7.7.0",
     "formik": "^2.2.9",
     "framer-motion": "^10.12.16",
     "fs": "^0.0.1-security",
@@ -24,7 +23,6 @@
     "react-dom": "^18.2.0",
     "sharp": "^0.31.3"
   },
-  "sideEffects": false,
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.4",
     "cross-env": "^7.0.3",
